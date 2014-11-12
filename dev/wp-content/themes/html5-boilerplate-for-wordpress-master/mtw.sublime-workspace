@@ -1,0 +1,765 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"bk",
+				"bkgrdImg"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"tex",
+				"text-shadow"
+			],
+			[
+				"webcast",
+				"webcastFrame"
+			],
+			[
+				"fon",
+				"fontAwesome"
+			],
+			[
+				"muse",
+				"museo500"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"carousel",
+				"carouselControls"
+			],
+			[
+				"agend",
+				"agendaBlack"
+			],
+			[
+				"ag",
+				"agendaLight"
+			],
+			[
+				"agne",
+				"agendaBlack"
+			],
+			[
+				"btnOTC",
+				"btnOTCTeach"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"chara",
+				"characterOxygenator"
+			],
+			[
+				"ca",
+				"characterBigRooty"
+			],
+			[
+				"cara",
+				"characterProfessorBotany"
+			],
+			[
+				"carouse",
+				"carouselControls"
+			],
+			[
+				"sectio",
+				"sectionContent"
+			],
+			[
+				"vertica",
+				"vertical-align"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"lo",
+				"lowercase"
+			],
+			[
+				"backgrou",
+				"background-position"
+			],
+			[
+				"stJudeCarou",
+				"stJudeCarouselControls"
+			],
+			[
+				"div",
+				"div	Tag"
+			],
+			[
+				"facebook_thum",
+				"facebook_thumb_large"
+			],
+			[
+				"float",
+				"floatLeft"
+			],
+			[
+				"img",
+				"imgBAMInsights"
+			],
+			[
+				"imgBl",
+				"imgBloombergChart"
+			],
+			[
+				"display",
+				"displayBlock"
+			],
+			[
+				"thisI",
+				"thisIsTeenWrapper"
+			],
+			[
+				"pip",
+				"pipeGradient"
+			],
+			[
+				"btn",
+				"btnWinner"
+			],
+			[
+				"btnWinn",
+				"btnMoreWinners"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sass/mtw.scss",
+			"settings":
+			{
+				"buffer_size": 7667,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "html5-boilerplate/css/main.css",
+			"settings":
+			{
+				"buffer_size": 5750,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/partials/_base.scss",
+			"settings":
+			{
+				"buffer_size": 415,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config.rb",
+			"settings":
+			{
+				"buffer_size": 931,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jchin/Documents/MTW/dev/wp-content/themes/html5-boilerplate-for-wordpress-master/html5-boilerplate/css/main.css",
+		"/Z/FLY_Interactive/scholastic/code/dinosaur13/config.rb",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/config.rb",
+		"/C/Users/jchin/Documents/MTW/dev/wp-content/themes/html5-boilerplate-for-wordpress-master/mtw.css",
+		"/Z/FLY_Interactive/scholastic/code/stjude/stjude.sublime-workspace",
+		"/Z/FLY_Interactive/scholastic/code/stjude/stjude.sublime-project",
+		"/Z/FLY_Interactive/scholastic/code/dinosaur13/_MATS/Dinosaur13_trailercode.txt",
+		"/Z/FLY_Interactive/scholastic/code/dinosaur13/_MATS/Dinosaur13_trailer_iframe.docx",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/live-phase1/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/stjude/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/dinosaur13/index_old.htm",
+		"/Z/FLY_Interactive/scholastic/code/dinosaur13/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/!CODE_TEMPLATE/js/jquery.fly.popify.js",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_ARCHIVE/2014_10_21/sass/usher.scss",
+		"/Z/FLY_Interactive/!CODE_LIBRARY/jquery.fly.popify.brightcove.js",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/live-phase1/usher.css",
+		"/Z/FLY_Interactive/scholastic/code/!CODE_TEMPLATE/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/dinosaur13/sass/partials/_scholastic.scss",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_ARCHIVE/2014_10_21/sass/partials/_scholastic.scss",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/sass/partials/_scholastic.scss",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/sass/usher.scss",
+		"/Z/FLY_Interactive/scholastic/code/unbroken/sass/unbroken.scss",
+		"/Z/FLY_Interactive/scholastic/code/phoenix/css/cottonStyles.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/form.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/index2.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_ARCHIVE/2014_10_21/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/hpread_state18/index.html",
+		"/Z/FLY_Interactive/scholastic/code/!GLOBAL WRAPPER/globalNav.html",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/globalNav.html",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/index2a.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/index-noform.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/vidTest.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/js/schl.js",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_ARCHIVE/2014_10_01/sass/usher.scss",
+		"/Z/FLY_Interactive/scholastic/code/lexus/index.asp",
+		"/Z/FLY_Interactive/scholastic/code/unbroken/_MATS/test.htm",
+		"/Z/FLY_Interactive/scholastic/code/unbroken/_MATS/Unbroken_PlayerCode.html",
+		"/Z/FLY_Interactive/scholastic/code/unbroken/sidebar/preTeamsiteSide.html",
+		"/Z/FLY_Interactive/scholastic/code/unbroken/css/unbroken.css",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/sidebar/sidePreTeamsite.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/parents/sidebar/side.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/parents/sidebar/sidePreTeamsite.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/parents/sidebar/sideLIVE.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/parents/sidebar/sideDEV.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/turfmutt/config.rb",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/unbroken/sass/TEMPLATE.scss",
+		"/Z/FLY_Interactive/scholastic/code/unexpectedmath/sidebar/side.html",
+		"/Z/FLY_Interactive/scholastic/code/unexpectedmath/sidebar/sidePreTeamsite.html",
+		"/Z/FLY_Interactive/scholastic/code/unexpectedmath/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/_MATS/webfontkit-20141008-162314/stylesheet.css",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/_MATS/webfontkit-20141008-162314/agenda-black-demo.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/parents/css/style2.css",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/_ARCHIVE/10_08_2014/js/otc_literacy.js",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/parents/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/IA/communityLeaderTab/index.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/hazards/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/storybook/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/!CODE_TEMPLATE/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/css/colorbox.css",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/js/jquery.ba-hashchange.min.js",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/js/otc_literacy.js",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/otcliteracy/js/script.js",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/_MATS/TurfMuttBrightcove.htm",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/css/turfmutt.css",
+		"/Z/FLY_Interactive/scholastic/code/stjude/storyquest/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/sass/partials/_fonts.scss",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/_MATS/font-awesome-4.2.0/font-awesome-4.2.0/css/font-awesome.css",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/_MATS/webfontkit-20141003-150719/stylesheet.css",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/_MATS/webfontkit-20141003-150719/foo-regular-demo.html",
+		"/Z/FLY_Interactive/scholastic/code/unexpectedmath/styles/actuarial.css",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/sass/turffmutt.scss",
+		"/Z/FLY_Interactive/scholastic/code/teachrock/index.htm",
+		"/Z/FLY_Interactive/scholastic/code/turfmutt/sass/TEMPLATE.scss",
+		"/C/Users/jchin/Documents/ZD/_MATS/lightbox-2.7.1/lightbox/index.html",
+		"/Z/FLY_Interactive/scholastic/code/hpread_state18/js/hpreadSlideshow.js",
+		"/Z/FLY_Interactive/scholastic/code/hpread_state18/css/hpread.css",
+		"/Z/FLY_Interactive/scholastic/code/!CODE_TEMPLATE/sass/TEMPLATE.scss",
+		"/Z/FLY_Interactive/scholastic/code/!CODE_TEMPLATE/sass/partials/_base.scss",
+		"/Z/FLY_Interactive/scholastic/code/!CODE_TEMPLATE/sass/partials/_scholastic.scss",
+		"/Z/FLY_Interactive/scholastic/code/stjude/sass/stjude.scss",
+		"/Z/FLY_Interactive/!CODE_LIBRARY/sass/TEMPLATE.scss",
+		"/Z/FLY_Interactive/scholastic/code/kid-friendly-recipes/easyeats.sublime-project",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/css/usher.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_MATS/UsherBrightcove.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/test.htm",
+		"/Z/FLY_Interactive/scholastic/code/family-health-tips/css/ie.css",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/css/font-awesome.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/css/fonts.css",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_icons.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_variables.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_larger.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_list.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_mixins.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_path.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_stacked.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/font-awesome.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_core.scss",
+		"/C/Users/jchin/Downloads/font-awesome-4.2.0/scss/_bordered-pulled.scss",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_MATS/Fonts/used/webfontkit-20140902-152227/museosans_900-demo.html",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/sass/jquery.jscrollpane.scss",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_MATS/Fonts/MUSEO/MyFontsWebfontsKit/MyFontsWebfontsKit.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_MATS/Fonts/MUSEO/MyFontsWebfontsKit/StartHere.html",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/quiz.htm",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_MATS/Fonts/used/webfontkit-20140902-152227/stylesheet.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/_MATS/Fonts/used/webfontkit-20140902-152227/museosans_100-demo.html",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/css/normalize.min.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/css/normalize.css",
+		"/Z/FLY_Interactive/scholastic/code/usherwebcast/parentTopNav.html",
+		"/Z/FLY_Interactive/scholastic/code/family-health-tips/css/happyHealthy.css",
+		"/Z/FLY_Interactive/scholastic/code/kid-friendly-recipes/css/eats.css",
+		"/Z/FLY_Interactive/scholastic/code/family-health-tips/includes/fhtAds.inc.html",
+		"/Z/FLY_Interactive/scholastic/code/family-health-tips/includes/fhtBrand.inc.html",
+		"/Z/FLY_Interactive/scholastic/code/kid-friendly-recipes/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/kid-friendly-recipes/css/eats.css",
+		"/Z/FLY_Interactive/scholastic/code/family-health-tips/kid-first-aid.htm",
+		"/Z/FLY_Interactive/scholastic/code/kid-friendly-recipes/easyDinners.htm",
+		"/Z/FLY_Interactive/scholastic/code/kid-friendly-recipes/fastBreakfasts.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/kid-first-aid.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/includes/fhtNav.inc.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/includes/fhtHeader.inc.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/kid-friendly-recipes/index.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/kid-friendly-recipes/fastBreakfasts.htm",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/includes/fhtNewsletter.inc.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/includes/fhtAds.inc.html",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/config.rb",
+		"//files.flycommunications.com/FLYshare/FLY_Interactive/scholastic/code/family-health-tips/css/happyHealthy.scss"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#main",
+			"navItemParent",
+			"parentNav",
+			"(../../images",
+			"#container",
+			"flyPopifyHide",
+			"schl3o",
+			"img",
+			"pdf",
+			"schl3",
+			"schl",
+			"li{",
+			"li",
+			"%dis",
+			"#schl",
+			"footer",
+			"bold",
+			"weight",
+			"logoPhoenix",
+			"phase 3",
+			"phase3",
+			"iframe",
+			"fontAwe",
+			"header",
+			"vid",
+			"popup",
+			"message",
+			"castV",
+			"form",
+			"iframe",
+			"form",
+			"moreT",
+			"more",
+			"charity",
+			"btnMore",
+			"submit",
+			"redArrow",
+			"+label",
+			"form",
+			"title",
+			"desc",
+			"white",
+			"#exec",
+			"usherContainer",
+			"desc",
+			"form",
+			">",
+			"nav",
+			"MA_showLogin2()",
+			"RP_show()",
+			"../",
+			"border",
+			"gold",
+			"Resources",
+			"btnGold",
+			"pdf",
+			"parents",
+			"additional",
+			"tabTeacher",
+			"teaching",
+			".tab",
+			"additional resource",
+			"btnPreview",
+			"watch",
+			"quiz",
+			"preview",
+			"storybook",
+			"digita",
+			"agenda",
+			"bookBox2",
+			"bookBox1",
+			"mcNeilMedicineCarousel",
+			"mcNeilMedicineCarouselRight",
+			"mcNeilMedicineCarouselLeft",
+			"mcNeilFlipbook",
+			"text-decoration",
+			"packed ",
+			".newTxtPhotoCredits",
+			"newT",
+			"credi",
+			"head",
+			"logoCon",
+			"hdrConte",
+			"img",
+			";\n",
+			"selectors",
+			"whichTab",
+			"agenda",
+			"btnOTCTeac",
+			"Nurses",
+			"mcNeilLine",
+			"nurses",
+			".tab",
+			"nursesP",
+			"Teachers",
+			"mcNeilArticle3",
+			"#mcNeilArticle3",
+			"flipline",
+			"floatL",
+			"btnDownload",
+			"btnResource",
+			"resource",
+			"preview",
+			"btnReadRules",
+			"Article1_sub",
+			"btnLesson",
+			"list",
+			"styleul",
+			"imgBlock",
+			"mcNeilSubmitPreviewButtonClose",
+			"head",
+			"mcNeilArticle1",
+			"rsrcBtn2",
+			"resourceB",
+			"btnOtc",
+			"carousel",
+			"mcNeilCarouselHeader",
+			"carousel",
+			"\"article1\"",
+			"\"article1",
+			"mcNeilArticle1",
+			"resourceB",
+			"btnSwitchTab",
+			"additiona",
+			"opinio",
+			"feadz",
+			"footer",
+			"mcNeilArticle5move_2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"navItem",
+			"subNav",
+			"(../../../images",
+			".container",
+			"hazards",
+			"flipbook",
+			"",
+			"mcNeilPreview",
+			"img class=",
+			"</div>",
+			"<img",
+			".UNIQUENAMEWrapper",
+			"assets/bootstrap/",
+			"h3",
+			"",
+			".usher",
+			"prevention",
+			"pg",
+			"familyFitness",
+			"ff",
+			"coldFlu",
+			"cf",
+			"cs",
+			"#464748",
+			"#2a2c2d",
+			"#79538f",
+			"#fff",
+			"\"images/shim.gif\"",
+			"<sup>&reg;</sup>",
+			"\"../images/",
+			".stJude",
+			"&ldquo;",
+			"&rdquo;",
+			"&rsquo;",
+			"&rdquo;",
+			"&ldquo;",
+			"schl3o",
+			"&ldquo;",
+			"&rdquo;",
+			"&rsquo;",
+			"&ldquo;",
+			"&rdquo;",
+			"&rsquo;",
+			"pdfs/",
+			".packingLists",
+			"floatLeft",
+			"familyFitnes",
+			"FamilyFitnes",
+			"FamilyFitness",
+			"everdayHealth",
+			"EverdayHealth",
+			"coldFlu",
+			"ColdFlu",
+			".fhtWrapper"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sass/mtw.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2525,
+								2525
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "html5-boilerplate/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5750,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass/partials/_base.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 30.0
+	},
+	"project": "mtw.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

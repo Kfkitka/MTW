@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="class.json-api-jetpack-endpoints.php" server="dev.dance4peace.org" local="130602146457361830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-comment-endpoint.php" server="dev.dance4peace.org" local="130602146464241830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-delete-media-endpoint.php" server="dev.dance4peace.org" local="130602146464291830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-get-comment-endpoint.php" server="dev.dance4peace.org" local="130602146464371830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-get-media-endpoint.php" server="dev.dance4peace.org" local="130602146468571830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-get-post-endpoint.php" server="dev.dance4peace.org" local="130602146468611830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-get-site-endpoint.php" server="dev.dance4peace.org" local="130602146468741830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-get-taxonomies-endpoint.php" server="dev.dance4peace.org" local="130602146473311830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-get-taxonomy-endpoint.php" server="dev.dance4peace.org" local="130602146473351830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-list-comments-endpoint.php" server="dev.dance4peace.org" local="130602146473401830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-list-embeds-endpoint.php" server="dev.dance4peace.org" local="130602146478901830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-list-media-endpoint.php" server="dev.dance4peace.org" local="130602146479021830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-list-posts-endpoint.php" server="dev.dance4peace.org" local="130602146479701830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-list-shortcodes-endpoint.php" server="dev.dance4peace.org" local="130602146483451830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-list-users-endpoint.php" server="dev.dance4peace.org" local="130602146483491830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-post-endpoint.php" server="dev.dance4peace.org" local="130602146483671830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-render-embed-endpoint.php" server="dev.dance4peace.org" local="130602146487911830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-render-endpoint.php" server="dev.dance4peace.org" local="130602146487971830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-render-shortcode-endpoint.php" server="dev.dance4peace.org" local="130602146488671830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-taxonomy-endpoint.php" server="dev.dance4peace.org" local="130602146492641830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-update-comment-endpoint.php" server="dev.dance4peace.org" local="130602146492691830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-update-media-endpoint.php" server="dev.dance4peace.org" local="130602146492731830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-update-taxonomy-endpoint.php" server="dev.dance4peace.org" local="130602146497151830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-update-post-endpoint.php" server="dev.dance4peace.org" local="130602146497231830" remote="130522383000000000" Dst="1" />
+<file name="class.wpcom-json-api-upload-media-endpoint.php" server="dev.dance4peace.org" local="130602146497271830" remote="130522383000000000" Dst="1" />
+</dwsync>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".svnignore" server="dev.dance4peace.org" local="130602146049271830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-admin.php" server="dev.dance4peace.org" local="130602146394646830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-bbpress-json-api-compat.php" server="dev.dance4peace.org" local="130602146399866830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-cli.php" server="dev.dance4peace.org" local="130602146399906830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-client-server.php" server="dev.dance4peace.org" local="130602146399966830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-client.php" server="dev.dance4peace.org" local="130602146405871830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-data.php" server="dev.dance4peace.org" local="130602146405921830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-debugger.php" server="dev.dance4peace.org" local="130602146406421830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-error.php" server="dev.dance4peace.org" local="130602146411221830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-heartbeat.php" server="dev.dance4peace.org" local="130602146411246830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-ixr-client.php" server="dev.dance4peace.org" local="130602146411321830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-modules-list-table.php" server="dev.dance4peace.org" local="130602146416731830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-network-sites-list-table.php" server="dev.dance4peace.org" local="130602146416791830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-network.php" server="dev.dance4peace.org" local="130602146416871830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-options.php" server="dev.dance4peace.org" local="130602146421591830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-post-images.php" server="dev.dance4peace.org" local="130602146421651830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-signature.php" server="dev.dance4peace.org" local="130602146421711830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-sync.php" server="dev.dance4peace.org" local="130602146427361830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-twitter-cards.php" server="dev.dance4peace.org" local="130602146427561830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-xmlrpc-server.php" server="dev.dance4peace.org" local="130602146430761830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack-user-agent.php" server="dev.dance4peace.org" local="130602146431181830" remote="130522383000000000" Dst="1" />
+<file name="class.json-api.php" server="dev.dance4peace.org" local="130602146434311830" remote="130522383000000000" Dst="1" />
+<file name="class.json-api-endpoints.php" server="dev.dance4peace.org" local="130602146437301830" remote="130522383000000000" Dst="1" />
+<file name="class.jetpack.php" server="dev.dance4peace.org" local="130602146438581830" remote="130522383000000000" Dst="1" />
+<file name="class.media-extractor.php" server="dev.dance4peace.org" local="130602146438661830" remote="130522383000000000" Dst="1" />
+<file name="class.media-summary.php" server="dev.dance4peace.org" local="130602146444111830" remote="130522383000000000" Dst="1" />
+<file name="class.photon.php" server="dev.dance4peace.org" local="130602146444171830" remote="130522383000000000" Dst="1" />
+<file name="composer.json" server="dev.dance4peace.org" local="130602146444361830" remote="130522383000000000" Dst="1" />
+<file name="functions.compat.php" server="dev.dance4peace.org" local="130602146450031830" remote="130522383000000000" Dst="1" />
+<file name="functions.gallery.php" server="dev.dance4peace.org" local="130602146450081830" remote="130522383000000000" Dst="1" />
+<file name="functions.opengraph.php" server="dev.dance4peace.org" local="130602146450151830" remote="130522383000000000" Dst="1" />
+<file name="functions.photon.php" server="dev.dance4peace.org" local="130602146457001830" remote="130522383000000000" Dst="1" />
+<file name="jetpack.php" server="dev.dance4peace.org" local="130602146457061830" remote="130522383000000000" Dst="1" />
+<file name="json-endpoints.php" server="dev.dance4peace.org" local="130602146503201830" remote="130522383000000000" Dst="1" />
+<file name="locales.php" server="dev.dance4peace.org" local="130602146768016830" remote="130522383000000000" Dst="1" />
+<file name="require-lib.php" server="dev.dance4peace.org" local="130602147538431830" remote="130522383000000000" Dst="1" />
+<file name="uninstall.php" server="dev.dance4peace.org" local="130602147541681830" remote="130522383000000000" Dst="1" />
+<file name="readme.txt" server="dev.dance4peace.org" local="130602147541731830" remote="130522383000000000" Dst="1" />
+<file name="wpml-config.xml" server="dev.dance4peace.org" local="130602147556036830" remote="130522383000000000" Dst="1" />
+</dwsync>
