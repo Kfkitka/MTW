@@ -1,10 +1,10 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .mainNav li, .navItem:hover .subNav, .subNav a {
+.clearfix:after, .mainNav li, .navItem:hover .subNav, .subNav a, .socialMedia a {
   display: block;
 }
 
 /* line 18, ../sass/partials/_base.scss */
-.floatLeft, .logoMTW, .navItem, .value, .callOutBox, .col {
+.floatLeft, .logoMTW, .navItem, .value, .callOutBox, .col, .socialMedia a {
   float: left;
 }
 
@@ -529,42 +529,46 @@ footer a {
 }
 
 /* line 447, ../sass/mtw.scss */
-.btnSocial {
+.btnFB {
+  background: url(../../../images/btnSocialFB.png) 0 0 no-repeat;
+}
+
+/* line 450, ../sass/mtw.scss */
+.btnTW {
+  background: url(../../../images/btnSocialTW.png) 0 0 no-repeat;
+}
+
+/* line 453, ../sass/mtw.scss */
+.btnIn {
+  background: url(../../../images/btnSocialIn.png) 0 0 no-repeat;
+}
+
+/* line 456, ../sass/mtw.scss */
+.btnIG {
+  background: url(../../../images/btnSocialIG.png) 0 0 no-repeat;
+}
+
+/* line 459, ../sass/mtw.scss */
+.btnYT {
+  background: url(../../../images/btnSocialYT.png) 0 0 no-repeat;
+}
+
+/* line 462, ../sass/mtw.scss */
+.btnPin {
+  background: url(../../../images/btnSocialPin.png) 0 0 no-repeat;
+}
+
+/* line 466, ../sass/mtw.scss */
+.socialMedia a {
   margin: 0 15px 15px 0;
 }
-/* line 449, ../sass/mtw.scss */
-.btnSocial,
-.btnSocial img {
+/* line 470, ../sass/mtw.scss */
+.socialMedia a,
+.socialMedia a img {
   width: 25px;
   height: 25px;
 }
-
-/* line 455, ../sass/mtw.scss */
-.btnFB {
-  background-image: url(../../../images/btnSocialFB.png);
-}
-
-/* line 458, ../sass/mtw.scss */
-.btnTW {
-  background-image: url(../../../images/btnSocialTW.png);
-}
-
-/* line 461, ../sass/mtw.scss */
-.btnIn {
-  background-image: url(../../../images/btnSocialIn.png);
-}
-
-/* line 464, ../sass/mtw.scss */
-.btnIG {
-  background-image: url(../../../images/btnSocialIG.png);
-}
-
-/* line 467, ../sass/mtw.scss */
-.btnYT {
-  background-image: url(../../../images/btnSocialYT.png);
-}
-
-/* line 470, ../sass/mtw.scss */
-.btnPin {
-  background-image: url(../../../images/btnSocialPin.png);
+/* line 475, ../sass/mtw.scss */
+.socialMedia a:hover {
+  background-position: left bottom;
 }

@@ -444,29 +444,36 @@ footer {
 	width:20%;
 }
 
-.btnSocial{
-	margin:0 15px 15px 0;
-	&,
-	img{
-		width:25px;
-		height:25px;
-	}
-}
 .btnFB{
-	background-image:url(../../../images/btnSocialFB.png);
+	@include bkgrdImg("btnSocialFB.png");
 }
 .btnTW{
-	background-image:url(../../../images/btnSocialTW.png);
+	@include bkgrdImg("btnSocialTW.png");
 }
 .btnIn{
-	background-image:url(../../../images/btnSocialIn.png);
+	@include bkgrdImg("btnSocialIn.png");
 }
 .btnIG{
-	background-image:url(../../../images/btnSocialIG.png);
+	@include bkgrdImg("btnSocialIG.png");
 }
 .btnYT{
-	background-image:url(../../../images/btnSocialYT.png);
+	@include bkgrdImg("btnSocialYT.png");
 }
 .btnPin{
-	background-image:url(../../../images/btnSocialPin.png);
+	@include bkgrdImg("btnSocialPin.png");
+}
+.socialMedia{
+	a{
+		@extend %floatLeft;
+		@extend %displayBlock;
+		margin:0 15px 15px 0;
+		&,
+		img{
+			width:25px;
+			height:25px;
+		}
+		&:hover{
+			background-position:left bottom;
+		}
+	}
 }

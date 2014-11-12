@@ -8,22 +8,22 @@
 	<div class="box">
     	<div class="col">
             <section class="socialMedia clearfix">
-                <a href="http://facebook.com/MoveThisWorld" class="btnFB btnSocial spriteLink floatLeft" target="_blank">
+                <a href="http://facebook.com/MoveThisWorld" class="btnFB" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Facebook" />
                 </a>
-                <a href="http://twitter.com/move_thisworld" class="btnTW btnSocial spriteLink floatLeft" target="_blank">
+                <a href="http://twitter.com/move_thisworld" class="btnTW" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Twitter" />
                 </a>
-                <a href="http://linkedin.com/company/move-this-world" class="btnIn btnSocial spriteLink floatLeft" target="_blank">
+                <a href="http://linkedin.com/company/move-this-world" class="btnIn" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="LinkedIn" />
                 </a>
-                <a href="http://instagram.com/move_thisworld" class="btnIG btnSocial spriteLink floatLeft" target="_blank">
+                <a href="http://instagram.com/move_thisworld" class="btnIG" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Instagram" />
                 </a>
-                <a href="http://youtube.com/MoveThisWorld" class="btnYT btnSocial spriteLink floatLeft" target="_blank">
+                <a href="http://youtube.com/MoveThisWorld" class="btnYT" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="YouTube" />
                 </a>
-                <a href="http://pinterest.com/movethisworld" class="btnPin btnSocial spriteLink floatLeft" target="_blank">
+                <a href="http://pinterest.com/movethisworld" class="btnPin" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Pinterest" />
                 </a>
             </section>
