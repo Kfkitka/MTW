@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="main" class="mtwWrapper" role="main">
+<div id="main" class="mtwWrapper homeContent" role="main">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 

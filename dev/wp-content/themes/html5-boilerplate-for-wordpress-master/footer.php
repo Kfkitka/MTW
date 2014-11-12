@@ -7,7 +7,7 @@
 <footer class="clearfix">
 	<div class="box">
     	<div class="col">
-            <section class="socialMedia floatRight">
+            <section class="socialMedia clearfix">
                 <a href="http://facebook.com/MoveThisWorld" class="btnFB btnSocial spriteLink floatLeft" target="_blank">
                     <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Facebook" />
                 </a>

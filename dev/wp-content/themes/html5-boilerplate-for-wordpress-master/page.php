@@ -7,25 +7,25 @@
 
 get_header();
 
-$permalink = get_permalink();
-$homePage = home_url('/');
-$subPage = substr($permalink, 29, 5);
+$currentTitle = get_the_title($post);
+$currentTitleImg = str_replace(' ', '', $currentTitle);
+$parent = $post->post_parent;
+$parentTitle = get_the_title($post->post_parent);
+$grandparent_get = get_post($parent);
+$grandparent = $grandparent_get->post_parent;
 	
-if ($subPage=="about") {
+if ($parentTitle=="about") {
 	$mainTitle = "About Us";
 	$subUrl = "about";
-} else if ($subPage=="progr"){
+} else if ($parentTitle=="program"){
 	$mainTitle = "Our Programs";
 	$subUrl = "programs";
-} else if ($subPage=="movem"){
+} else if ($parentTitle=="partners"){
 	$mainTitle = "Global Movement";
 	$subUrl = "movement";
-} else if ($subPage=="learn"){
+} else if ($parentTitle=="blog"){
 	$mainTitle = "Learn More";
 	$subUrl = "learn-more";
-} else if ($subPage=="join-"){
-	$mainTitle = "Join Us";
-	$subUrl = "join-us";
 }?>
 
 <div id="main" class="mtwWrapper mtwPage clearfix" role="main">
@@ -33,30 +33,24 @@ if ($subPage=="about") {
     <?php while (have_posts()) : the_post(); ?>
 
       <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-      	<article class="subTitleBar">
+      	<?php /*<article class="subTitleBar">
 			<?php
-			$currentTitle = get_the_title($post);
-			$currentTitleImg = str_replace(' ', '', $currentTitle);
-			$parent = $post->post_parent;
-			$parentTitle = get_the_title($post->post_parent);
-			$grandparent_get = get_post($parent);
-			$grandparent = $grandparent_get->post_parent;
 			// if there is a gparent, display the link
 			if($grandparent != 0){
 				echo '<a href="'.get_permalink($grandparent).'" class="gparentLink">'.get_the_title($grandparent).'</a> &raquo;';
 			}
             // if there is a parent, display the link
-			if($currentTitle != $mainTitle){
+			if($parentTitle != "Index"){
 				echo '<a href="'.get_permalink($parent).'" class="parentLink">'.get_the_title($parent).'</a> &raquo;';
 			}
 			// current link
 			?>
 			<a href='<?php the_permalink() ?>' class="currentLink"><?php the_title(); ?></a> &raquo;
         </article>
-        <article class="hdrPageImg"><img src="<?php echo $homePage ?>wp-content/images/<?php echo $subUrl ?>/hdr<?php echo $currentTitleImg ?>.jpg" alt="page header" /></article>
+        <article class="hdrPageImg"><img src="<?php echo $homePage ?>wp-content/images/<?php echo $subUrl ?>/hdr<?php echo $currentTitleImg ?>.jpg" alt="page header" /></article>*/ ?>
         <?php get_sidebar(); ?>
         <section class="pageContent floatLeft">
-        	<?php the_content('Read the rest of this entry &raquo;'); ?>
+        	<?php the_content(); ?>
         </section>
       </div>
 

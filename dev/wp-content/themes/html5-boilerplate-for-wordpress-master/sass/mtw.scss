@@ -23,7 +23,7 @@ body {
 	background:#fff;
 	margin:0 auto;
 	font:400 14px/16px 'Open Sans', Arial, Helvetica, sans-serif;
-	color:#fff;
+	color:#808285;
 }
 .clearfix:after {
 	@extend %displayBlock;
@@ -126,7 +126,7 @@ footer{
 		color:#808285;
 		text-decoration:none;
 		&:hover{
-			color:#23ade4;
+			color:$blue;
 		}
 	}
 }
@@ -169,9 +169,14 @@ footer{
 }
 
 
+//HOMEPAGE
+.homeContent{
+	color:#fff;
+}
+
 //MISSION STATEMENT
 .mtwMission{
-	background:#24ace3;
+	background:$blue;
 	font-size:21px;
 	line-height:23px;
 	text-align:center;
@@ -180,6 +185,7 @@ footer{
 
 //CORE VALUES
 .coreValues{
+	margin:60px auto;
 	>p{
 		color:#76a6d8;
 		font:{
@@ -191,133 +197,77 @@ footer{
 			align:center;
 			transform:uppercase;
 		}
-		margin:60px auto;
+		padding-bottom:65px;
+	}
+}
+.value{
+	@extend %floatLeft;
+	color:#808285;
+	width:25%;
+	.imgValue{
+		background:#808285;
+		width:100%;
+		height:220px;
+		max-width:220px;
+		max-height:220px;
+		margin:0 auto 15px;
+	}
+	p{
+		padding:0 15px;
 	}
 }
 
-
-//LEARN MORE
-.mtwLearnMore{
-	margin:0 50px 0 50px;
+//CALLOUTS
+.callOuts{
+	background:#e6e7e8;
+	padding:60px 0 70px;
 }
-.btnLearnMore{
-	width:180px;
-	height:81px;
-	padding:100px 0 0;
-	text-align:center;
-	margin-right:45px;
-	position:relative;
+.callOutBox{
+	@extend %floatLeft;
+	width:50%;
+	height:280px;
+	max-width:460px;
+	max-height:280px;
 }
-.btnLearnMore .learnMoreTxt,
-.btnLearnMore .learnROTxt{
-	font-size:10px;
-	font-weight:400;
-	margin:0 auto;
-	display:block;
+//SIGN UP CALLOUT
+.coSignUp{
+	background:$blue;
+	margin-right:20px;
 }
-.btnLearnMore .learnMoreTxt{
-	color:#a6a6a6;
-	background:url(../../../images/btnLearnArrow.png) 70px 5px no-repeat;
-	width:76px;
-	text-align:left;
-}
-.btnLearnMore:hover .learnTxt,
-.btnLearnMore .learnRO{
-	display:none;
-}
-.btnLearnMore .learnRO{
-	position:absolute;
-	top:0;
-	z-index:2;
-	padding:43px 15px 0;
-	color:#fff;
-}
-.btnLearnMore:hover .learnRO{
-	display:block;
-}
-.btnLearnMore .learnROTxt{
-	margin-top:5px;
-}
-.btnLMTeachers{
-	background-image:url(../../../images/btnLearnTeachers.png);
-}
-.container a.btnLMTeachers{
-	color:#4c4c4e;
-}
-.btnLMSchools{
-	background-image:url(../../../images/btnLearnSchools.png);
-}
-.container a.btnLMSchools{
-	color:#2aa0d6;
-}
-.btnLMCompanies{
-	background-image:url(../../../images/btnLearnCompanies.png);
-}
-.container a.btnLMCompanies{
-	color:#e3492e;
-}
-.btnLMFamilies{
-	background-image:url(../../../images/btnLearnFamilies.png);
-}
-.container a.btnLMFamilies{
-	color:#b1332e;
-	margin:0;
+//TIPS
+.coTips{
+	background:$blue;
 }
 
 
-//SUBPAGES*/
+//SUBPAGES
 .mtwPage{
 	text-transform:none;
 	font-weight:400;
-}
-.subTitleBar{
-	/*position:fixed;
-	top:181px;*/
-	position:relative;
-	top:13px;
-	z-index:4;
-	width:100%;
-	max-width:940px;
-	height:20px;
-	padding:10px;
-	font-weight:600;
-	font-size:15px;
-}
-.subTitleBar,
-.container .subTitleBar a{
-	color:#fff;
-}
-.container .mtwPage a:hover{
-	text-decoration:underline;
-}
-.subTitleBar a:first-child{
-	margin-left:-640px;
-}
-.hdrPageImg{
-	/*margin-top:194px;*/
-	position:relative;
-	top:-27px;
-	margin-bottom:-27px;
-}
-.hdrPageImg,
-.hdrPageImg img{
-	width:960px;
-	height:250px;
+	line-height:20px;
 }
 .pageContent{
 	width:645px;
 	padding:15px 0;
+	p,
+	ol,
+	ul,
+	.supportBox{
+		margin:0 0 15px;
+	}
+	ol,
+	ul{
+		padding:0 0 0 20px;
+	}
+	a{
+		color:#2aa0d6;
+	}
+	&.noSidebar,
+	&.pageMovers{
+		width:930px;
+		padding:15px;
+	}
 }
-.pageContent,
-.mtwSidebar{
-	line-height:20px;
-}
-.pageContent.noSidebar,
-.pageContent.pageMovers{
-	width:930px;
-	padding:15px;
-}
-.container .pageContent a,
 .pageSubtitle.jobTitle{
 	color:#2aa0d6;
 }
@@ -347,16 +297,8 @@ footer{
 .pageMovers{
 	text-transform:uppercase;
 }
-.pageContent p,
-.pageContent ol,
-.pageContent ul,
-.pageContent .supportBox,
 .mtwSidebar p{
 	margin:0 0 15px;
-}
-.pageContent ol,
-.pageContent ul{
-	padding:0 0 0 20px;
 }
 
 //SUPPORT SPECIFIC
@@ -487,6 +429,7 @@ footer{
 //FOOTER
 footer {
 	background:#808285;
+	color:#fff;
 	padding:20px 0;
 	width:100%;
 	ul{
