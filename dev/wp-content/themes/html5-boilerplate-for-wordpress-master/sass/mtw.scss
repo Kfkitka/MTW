@@ -35,13 +35,14 @@ body {
 }
 
 .container{
-	max-width:980px;
-	min-width:320px;
 	width:100%;
 	margin:0 auto;
 }
 .box{
+	margin:0 auto;
 	padding:0 20px;
+	min-width:320px;
+	max-width:980px;
 }
 // Tablet (Portrait):  Design for a width of 768px */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -81,10 +82,7 @@ ol{
 
 header,
 footer{
-	margin:0 auto;
 	width:100%;
-	max-width:980px;
-	min-width:320px;
 }
 
 
