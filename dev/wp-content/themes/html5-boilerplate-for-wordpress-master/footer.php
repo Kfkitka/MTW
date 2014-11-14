@@ -9,22 +9,22 @@
     	<div class="col">
             <section class="socialMedia clearfix">
                 <a href="http://facebook.com/MoveThisWorld" class="btnFB" target="_blank">
-                    <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Facebook" />
+                    <i class="fa">&#xf09a;</i>
                 </a>
                 <a href="http://twitter.com/move_thisworld" class="btnTW" target="_blank">
-                    <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Twitter" />
+                    <i class="fa">&#xf099;</i>
                 </a>
                 <a href="http://linkedin.com/company/move-this-world" class="btnIn" target="_blank">
-                    <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="LinkedIn" />
+                    <i class="fa">&#xf0e1;</i>
                 </a>
                 <a href="http://instagram.com/move_thisworld" class="btnIG" target="_blank">
-                    <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Instagram" />
+                    <i class="fa">&#xf16d;</i>
                 </a>
                 <a href="http://youtube.com/MoveThisWorld" class="btnYT" target="_blank">
-                    <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="YouTube" />
+                    <i class="fa">&#xf167;</i>
                 </a>
                 <a href="http://pinterest.com/movethisworld" class="btnPin" target="_blank">
-                    <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Pinterest" />
+                    <i class="fa">&#xf0d2;</i>
                 </a>
             </section>
             <p>&copy; <?php echo date('Y'); ?> Move This World</p>

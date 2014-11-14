@@ -1,0 +1,19 @@
+//_fonts.scss
+//FONT AWESOME
+@include font-face("FontAwesome",
+	font-files(
+		"fontawesome-webfont.woff", woff,
+		"fontawesome-webfont.ttf", ttf,
+		"fontawesome-webfont.svg", svg),
+	"fontawesome-webfont.eot");
+
+.fa{
+	display:inline-block;
+	font:{
+		family:FontAwesome, cursive;
+		style:normal;
+	}
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

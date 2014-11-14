@@ -1,0 +1,72 @@
+//_header.scss
+//HEADER
+.hdrMTW{
+	height:55px;
+	padding:10px 0 15px;
+	background:#fff;
+	position:relative;
+	z-index:5;
+	nav{
+		float:right;
+	}
+	&.sticky{
+		position:fixed;
+		top:0;
+	}
+}
+
+.logoMTW{
+	@include bkgrdImg("logoMTW.png");
+	@extend %floatLeft;
+	&,
+	img{
+		width:140px;
+		height:47px;
+	}
+}
+
+//NAV
+.mainNav{
+	font-size:16px;
+	line-height:18px;
+	list-style:none;
+	li{
+		@extend %displayBlock;
+	}
+	a{
+		color:#808285;
+		text-decoration:none;
+		&:hover{
+			color:$blue;
+		}
+	}
+}
+.navItem{
+	@extend %floatLeft;
+	margin-left:55px;
+	padding:20px 0;
+	>a{
+		text-transform:uppercase;
+	}
+	&:hover{
+		.subNav{
+			@extend %displayBlock;
+		}
+	}
+}
+.subNav{
+	background:#fff;
+	display:none;
+	margin-left:-20px;
+	padding-top:31px;
+	position:absolute;
+	li{
+		padding:10px 20px;
+	}
+	a{
+		@extend %displayBlock;
+		color:#808285;
+		width:100%;
+		height:100%;
+	}
+}

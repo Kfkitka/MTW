@@ -1,0 +1,70 @@
+//_homepage.scss
+//HOMEPAGE
+.homeContent{
+	color:#fff;
+}
+
+//MISSION STATEMENT
+.mtwMission{
+	background:$blue;
+	font-size:21px;
+	line-height:23px;
+	text-align:center;
+	padding:25px 125px;
+}
+
+//CORE VALUES
+.coreValues{
+	margin:60px auto;
+	>p{
+		color:#76a6d8;
+		font:{
+			size:30px;
+			weight:700;
+		}
+		line-height:32px;
+		text:{
+			align:center;
+			transform:uppercase;
+		}
+		padding-bottom:65px;
+	}
+}
+.value{
+	@extend %floatLeft;
+	color:#808285;
+	width:25%;
+	.imgValue{
+		background:#808285;
+		width:100%;
+		height:220px;
+		max-width:220px;
+		max-height:220px;
+		margin:0 auto 15px;
+	}
+	p{
+		padding:0 15px;
+	}
+}
+
+//CALLOUTS
+.callOuts{
+	background:#e6e7e8;
+	padding:60px 0 70px;
+}
+.callOutBox{
+	@extend %floatLeft;
+	width:50%;
+	height:280px;
+	max-width:460px;
+	max-height:280px;
+}
+//SIGN UP CALLOUT
+.coSignUp{
+	background:$blue;
+	margin-right:20px;
+}
+//TIPS
+.coTips{
+	background:$blue;
+}

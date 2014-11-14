@@ -1,0 +1,168 @@
+//_general.scss
+//OLD 
+.spriteLink{
+	background-position:top left;
+	display:block;
+}
+.spriteLink:hover{
+	background-position:bottom left;
+}
+.clear {
+    clear: both;
+}
+.floatLeft{
+	@extend %floatLeft;
+}
+.floatRight{
+	float:right;
+}
+
+//GENERAL
+body {
+	background:#fff;
+	margin:0 auto;
+	font:400 14px/16px 'Open Sans', Arial, Helvetica, sans-serif;
+	color:#808285;
+}
+.clearfix:after {
+	@extend %displayBlock;
+    content: "";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+ 	overflow: hidden;
+}
+
+.container{
+	width:100%;
+	margin:0 auto;
+}
+.box{
+	margin:0 auto;
+	padding:0 20px;
+	min-width:320px;
+	max-width:980px;
+}
+// Tablet (Portrait):  Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+    	width: 100%;
+    }
+}
+// Mobile (Portrait): Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container {
+    	width: 92%;
+    }
+}
+// Mobile (Landscape): Design for a width of 480px
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+    	width: 92%;
+    }
+}
+
+a{
+	color:#fff;
+	outline:none;
+	&:hover{
+		color:#2aa0d6;
+	}
+}
+img{
+	border:0 none;
+}
+p,
+ul,
+ol{
+	margin:0;
+	padding:0;
+}
+
+header,
+footer{
+	width:100%;
+}
+
+//CONTENT
+.mtwWrapper{
+	position:relative;
+	width:100%;
+	padding-top:80px;
+}
+
+//FOOTER
+footer {
+	background:#808285;
+	color:#fff;
+	padding:20px 0;
+	width:100%;
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration:none;
+	}
+}
+.col {
+	@extend %floatLeft;
+	width:20%;
+}
+
+.socialMedia{
+	a{
+		@extend %floatLeft;
+		@extend %displayBlock;
+		@include border-radius(50%);
+		background:#404041;
+		color:#808285;
+		line-height:25px;
+		text-align:center;
+		height:25px;
+		margin:0 15px 15px 0;
+		width:25px;
+		&:hover{
+			color:#fff;
+		}
+	}
+	.btnPin{
+		background:#808285;
+		color:#404041;
+		font-size:30px;
+		margin-top:-1px;
+		&:hover{
+			color:#cb2027;
+			i{
+				@include border-radius(50%);
+				background:#fff;
+			}
+		}
+	}
+}
+.btnFB{
+	font-size:17px;
+	&:hover{
+		background:#3b5998;
+	}
+}
+.btnTW{
+	font-size:18px;
+	&:hover{
+		background:#00aced;
+	}
+}
+.btnIn{
+	font-size:13px;
+	&:hover{
+		background:#1180ba;
+	}
+}
+.btnIG{
+	font-size:18px;
+}
+.btnYT{
+	font-size:19px;
+	&:hover{
+		background:#f33;
+	}
+}

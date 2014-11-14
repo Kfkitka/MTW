@@ -159,7 +159,7 @@
 			"file": "sass/mtw.scss",
 			"settings":
 			{
-				"buffer_size": 7667,
+				"buffer_size": 6403,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,7 +175,7 @@
 			"file": "sass/partials/_base.scss",
 			"settings":
 			{
-				"buffer_size": 415,
+				"buffer_size": 441,
 				"line_ending": "Windows"
 			}
 		},
@@ -360,6 +360,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"24ace3",
 			"#main",
 			"navItemParent",
 			"parentNav",
@@ -486,8 +487,7 @@
 			"additiona",
 			"opinio",
 			"feadz",
-			"footer",
-			"mcNeilArticle5move_2"
+			"footer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -568,15 +568,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7667,
+						"buffer_size": 6403,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2525,
-								2525
+								6211,
+								6211
 							]
 						],
 						"settings":
@@ -585,7 +585,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3140.0,
+						"translation.y": 8797.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -618,7 +618,7 @@
 						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -627,15 +627,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 415,
+						"buffer_size": 441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								255,
-								255
+								440,
+								440
 							]
 						],
 						"settings":
@@ -646,7 +646,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{

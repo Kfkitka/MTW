@@ -1,0 +1,84 @@
+//_movers.scss
+//MOVERS & SHAKERS
+.moversShakers,
+.boardMembers{
+	margin-bottom:30px;
+}
+.indivMover{
+	text-align:center;
+	margin-right:30px;
+}
+.indivMover.lastColumn{
+	margin-right:0;
+}
+.moverLink{
+	margin-bottom:10px;
+}
+.moverLink,
+.indivMover img{
+	height:208px;
+}
+.indivMover,
+.indivMover img{
+	width:210px;
+}
+.indivMover span,
+.popupPerson .moverName{
+	display:block;
+}
+.moverLink:hover .imgMover,
+.imgMoverRO{
+	display:none;
+}
+.moverLink:hover .imgMoverRO{
+	display:block;
+}
+.pageTitle.supportTitle,
+.boardMembers .indivMover span,
+.popupPerson.supportPerson .moverName{
+	color:#2aa0d6;
+}
+
+
+//MOVER POPUPS
+.moverPopups{
+	display:none;
+	width:670px;
+	padding:30px 55px;
+	text-transform:none;
+	font-weight:400;
+	background:url(../../../images/bkgrdMTWCarouselDesc.png) repeat;
+	background:rgba(202,219,35,0.85);
+	color:#404041
+}
+.popupPerson{
+	display:none;
+}
+.popupPerson.active{
+	display:block;
+}
+.btnClosePopup{
+	background:url(../../../images/movers/btnClosePopup.png) no-repeat;
+	position:absolute;
+	top:22px;
+	right:22px;
+}
+.btnClosePopup,
+.btnClosePopup img{
+	width:32px;
+	height:32px;
+}
+.popupPerson .imgMoverPopup{
+	margin:0 15px 15px 0;
+	width:210px;
+	height:210px;
+}
+.popupPerson .personTitle{
+	text-transform:uppercase;
+	font-size:18px;
+	line-height:24px;
+	padding-top:150px;
+}
+.popupPerson p{
+	margin:10px 0;
+}
