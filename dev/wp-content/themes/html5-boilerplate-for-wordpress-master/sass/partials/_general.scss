@@ -43,24 +43,6 @@ body {
 	min-width:320px;
 	max-width:980px;
 }
-// Tablet (Portrait):  Design for a width of 768px */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    .container {
-    	width: 100%;
-    }
-}
-// Mobile (Portrait): Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-    .container {
-    	width: 92%;
-    }
-}
-// Mobile (Landscape): Design for a width of 480px
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
-    	width: 92%;
-    }
-}
 
 a{
 	color:#fff;
@@ -86,9 +68,11 @@ footer{
 
 //CONTENT
 .mtwWrapper{
+	margin: 0 auto;
+	padding-top:40px;
 	position:relative;
 	width:100%;
-	padding-top:40px;
+	max-width: 980px;
 }
 
 //FOOTER
@@ -182,4 +166,35 @@ footer {
 	&:hover{
 		background:#f33;
 	}
+}
+
+// Tablet (Portrait):  Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+    	width: 100%;
+    }
+}
+// Mobile (Portrait): Design for a width of 320px */
+@media only screen and (max-width: 979px) {
+	.mtwWrapper {
+		max-width: 95%;
+	}
+}
+// Mobile (Portrait): Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container {
+    	width: 92%;
+    }
+    .col {
+    	display: block;
+    	float: none;
+    	margin: 15px auto;
+    	width: 80%;
+    }
+}
+// Mobile (Landscape): Design for a width of 480px
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+    	width: 92%;
+    }
 }

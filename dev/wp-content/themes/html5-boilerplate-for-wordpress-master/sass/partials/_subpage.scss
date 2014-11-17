@@ -51,10 +51,10 @@
 	font-size: 21px;
 	line-height: 26px;
 }
-.sidebarTitle{
+/* .sidebarTitle{
 	font-size:16px;
 	line-height:22px;
-}
+} */
 /* .pageTitle,
 .pageSubtitle,
 .sidebarTitle,
@@ -92,7 +92,7 @@
 	margin:15px 15px 15px 0;
 	position:relative;
 	z-index:3;
-	background:#2aa0d6;
+	background:$darkBlue;
 	color:#fff;
 }
 .imgSidebar img{
@@ -102,8 +102,11 @@
 	height:244px;
 }
 .sidebarTitle{
+	color: $lightGreen;
+	font-size: 30px;
+	font-weight:bold;
+	line-height: 33px;
 	margin:15px 0;
-	font-weight:600;
 }
 .mtwSidebar ul{
 	margin:0 0 15px 20px;

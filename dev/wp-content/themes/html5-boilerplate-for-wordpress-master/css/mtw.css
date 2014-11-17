@@ -75,40 +75,22 @@ body {
   max-width: 980px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 48, ../sass/partials/_general.scss */
-  .container {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 54, ../sass/partials/_general.scss */
-  .container {
-    width: 92%;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 60, ../sass/partials/_general.scss */
-  .container {
-    width: 92%;
-  }
-}
-/* line 65, ../sass/partials/_general.scss */
+/* line 47, ../sass/partials/_general.scss */
 a {
   color: #fff;
   outline: none;
 }
-/* line 68, ../sass/partials/_general.scss */
+/* line 50, ../sass/partials/_general.scss */
 a:hover {
   color: #2aa0d6;
 }
 
-/* line 72, ../sass/partials/_general.scss */
+/* line 54, ../sass/partials/_general.scss */
 img {
   border: 0 none;
 }
 
-/* line 75, ../sass/partials/_general.scss */
+/* line 57, ../sass/partials/_general.scss */
 p,
 ul,
 ol {
@@ -116,27 +98,29 @@ ol {
   padding: 0;
 }
 
-/* line 82, ../sass/partials/_general.scss */
+/* line 64, ../sass/partials/_general.scss */
 header,
 footer {
   width: 100%;
 }
 
-/* line 88, ../sass/partials/_general.scss */
+/* line 70, ../sass/partials/_general.scss */
 .mtwWrapper {
+  margin: 0 auto;
+  padding-top: 40px;
   position: relative;
   width: 100%;
-  padding-top: 40px;
+  max-width: 980px;
 }
 
-/* line 95, ../sass/partials/_general.scss */
+/* line 79, ../sass/partials/_general.scss */
 footer {
   background: #808285;
   color: #fff;
   padding: 20px 0;
   width: 100%;
 }
-/* line 103, ../sass/partials/_general.scss */
+/* line 87, ../sass/partials/_general.scss */
 footer .colHead {
   border-bottom: 1px dotted;
   font-size: 15px;
@@ -145,26 +129,26 @@ footer .colHead {
   padding-bottom: 5px;
   max-width: 85%;
 }
-/* line 112, ../sass/partials/_general.scss */
+/* line 96, ../sass/partials/_general.scss */
 footer ul {
   list-style: none;
 }
-/* line 115, ../sass/partials/_general.scss */
+/* line 99, ../sass/partials/_general.scss */
 footer ul li {
   font-size: 13px;
   line-height: 16px;
 }
-/* line 120, ../sass/partials/_general.scss */
+/* line 104, ../sass/partials/_general.scss */
 footer a {
   text-decoration: none;
 }
 
-/* line 124, ../sass/partials/_general.scss */
+/* line 108, ../sass/partials/_general.scss */
 .col {
   width: 20%;
 }
 
-/* line 130, ../sass/partials/_general.scss */
+/* line 114, ../sass/partials/_general.scss */
 .socialMedia a {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -177,22 +161,22 @@ footer a {
   margin: 0 15px 15px 0;
   width: 25px;
 }
-/* line 141, ../sass/partials/_general.scss */
+/* line 125, ../sass/partials/_general.scss */
 .socialMedia a:hover {
   color: #fff;
 }
-/* line 145, ../sass/partials/_general.scss */
+/* line 129, ../sass/partials/_general.scss */
 .socialMedia .btnPin {
   background: #808285;
   color: #404041;
   font-size: 30px;
   margin-top: -1px;
 }
-/* line 150, ../sass/partials/_general.scss */
+/* line 134, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover {
   color: #cb2027;
 }
-/* line 152, ../sass/partials/_general.scss */
+/* line 136, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover i {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -200,47 +184,79 @@ footer a {
   background: #fff;
 }
 
-/* line 159, ../sass/partials/_general.scss */
+/* line 143, ../sass/partials/_general.scss */
 .btnFB {
   font-size: 17px;
 }
-/* line 161, ../sass/partials/_general.scss */
+/* line 145, ../sass/partials/_general.scss */
 .btnFB:hover {
   background: #3b5998;
 }
 
-/* line 165, ../sass/partials/_general.scss */
+/* line 149, ../sass/partials/_general.scss */
 .btnTW {
   font-size: 18px;
 }
-/* line 167, ../sass/partials/_general.scss */
+/* line 151, ../sass/partials/_general.scss */
 .btnTW:hover {
   background: #00aced;
 }
 
-/* line 171, ../sass/partials/_general.scss */
+/* line 155, ../sass/partials/_general.scss */
 .btnIn {
   font-size: 13px;
 }
-/* line 173, ../sass/partials/_general.scss */
+/* line 157, ../sass/partials/_general.scss */
 .btnIn:hover {
   background: #1180ba;
 }
 
-/* line 177, ../sass/partials/_general.scss */
+/* line 161, ../sass/partials/_general.scss */
 .btnIG {
   font-size: 18px;
 }
 
-/* line 180, ../sass/partials/_general.scss */
+/* line 164, ../sass/partials/_general.scss */
 .btnYT {
   font-size: 19px;
 }
-/* line 182, ../sass/partials/_general.scss */
+/* line 166, ../sass/partials/_general.scss */
 .btnYT:hover {
   background: #f33;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 173, ../sass/partials/_general.scss */
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 979px) {
+  /* line 179, ../sass/partials/_general.scss */
+  .mtwWrapper {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 185, ../sass/partials/_general.scss */
+  .container {
+    width: 92%;
+  }
+
+  /* line 188, ../sass/partials/_general.scss */
+  .col {
+    display: block;
+    float: none;
+    margin: 15px auto;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 197, ../sass/partials/_general.scss */
+  .container {
+    width: 92%;
+  }
+}
 /* line 3, ../sass/partials/_header.scss */
 .hdrMTW {
   height: 55px;
@@ -549,12 +565,10 @@ footer a {
   line-height: 26px;
 }
 
-/* line 54, ../sass/partials/_subpage.scss */
-.sidebarTitle {
-  font-size: 16px;
-  line-height: 22px;
-}
-
+/* .sidebarTitle{
+	font-size:16px;
+	line-height:22px;
+} */
 /* .pageTitle,
 .pageSubtitle,
 .sidebarTitle,
@@ -596,7 +610,7 @@ footer a {
   margin: 15px 15px 15px 0;
   position: relative;
   z-index: 3;
-  background: #2aa0d6;
+  background: #00749c;
   color: #fff;
 }
 
@@ -610,22 +624,25 @@ footer a {
 
 /* line 104, ../sass/partials/_subpage.scss */
 .sidebarTitle {
+  color: #d7df27;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 33px;
   margin: 15px 0;
-  font-weight: 600;
 }
 
-/* line 108, ../sass/partials/_subpage.scss */
+/* line 111, ../sass/partials/_subpage.scss */
 .mtwSidebar ul {
   margin: 0 0 15px 20px;
 }
 
-/* line 111, ../sass/partials/_subpage.scss */
+/* line 114, ../sass/partials/_subpage.scss */
 .mtwSidebar hr {
   border-top: 1px solid #fff;
   margin: 25px 0;
 }
 
-/* line 115, ../sass/partials/_subpage.scss */
+/* line 118, ../sass/partials/_subpage.scss */
 .container .mtwSidebar a:hover {
   color: #4c4c4e;
   text-decoration: underline;
