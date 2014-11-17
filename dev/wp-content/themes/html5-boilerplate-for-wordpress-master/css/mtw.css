@@ -1,10 +1,10 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .mainNav li, .navItem:hover .subNav, .subNav a {
+.clearfix:after, .socialMedia a, .mainNav li, .navItem:hover .subNav, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .imgCOTip {
   display: block;
 }
 
 /* line 18, ../sass/partials/_base.scss */
-.floatLeft, .col, .socialMedia a, .logoMTW, .navItem, .value, .callOutBox {
+.floatLeft, .col, .socialMedia a, .logoMTW, .navItem, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip {
   float: left;
 }
 
@@ -269,7 +269,7 @@ footer a {
 }
 /* line 39, ../sass/partials/_header.scss */
 .mainNav a:hover {
-  color: #23ade4;
+  color: #00506e;
 }
 
 /* line 44, ../sass/partials/_header.scss */
@@ -305,73 +305,169 @@ footer a {
 .homeContent {
   color: #fff;
 }
+/* line 5, ../sass/partials/_homepage.scss */
+.homeContent h1 {
+  font-size: 45px;
+  line-height: 47px;
+  margin: 0 0 45px;
+}
+/* line 10, ../sass/partials/_homepage.scss */
+.homeContent h3 {
+  font-size: 30px;
+  line-height: 32px;
+}
 
-/* line 8, ../sass/partials/_homepage.scss */
+/* line 15, ../sass/partials/_homepage.scss */
+.heroButtons a, .btnMTW, .coContent .btnCO {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+/* line 25, ../sass/partials/_homepage.scss */
+.btnMTW, .coContent .btnCO {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #d3de25;
+  width: 180px;
+  height: 20px;
+}
+/* line 30, ../sass/partials/_homepage.scss */
+.btnMTW:hover, .coContent .btnCO:hover {
+  background: #fff;
+  color: #d3de25;
+}
+
+/* line 37, ../sass/partials/_homepage.scss */
+.mtwHero {
+  background: #3d3d3f;
+  height: 480px;
+  max-height: 480px;
+}
+
+/* line 42, ../sass/partials/_homepage.scss */
+.heroContent {
+  padding: 90px 0;
+  max-width: 475px;
+}
+
+/* line 46, ../sass/partials/_homepage.scss */
+.heroButtons {
+  margin-top: 40px;
+}
+
+/* line 53, ../sass/partials/_homepage.scss */
+.btnMTW {
+  text-align: center;
+  margin-right: 20px;
+}
+
+/* line 61, ../sass/partials/_homepage.scss */
 .mtwMission {
-  background: #23ade4;
+  background: #00506e;
   font-size: 21px;
   line-height: 23px;
   text-align: center;
   padding: 25px 125px;
 }
 
-/* line 17, ../sass/partials/_homepage.scss */
+/* line 70, ../sass/partials/_homepage.scss */
 .coreValues {
   margin: 60px auto;
-}
-/* line 19, ../sass/partials/_homepage.scss */
-.coreValues > p {
-  color: #76a6d8;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 32px;
   text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 65px;
 }
 
-/* line 33, ../sass/partials/_homepage.scss */
+/* line 74, ../sass/partials/_homepage.scss */
+.hdrValues {
+  color: #00506e;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+/* line 79, ../sass/partials/_homepage.scss */
 .value {
-  color: #808285;
+  color: #3d3d3f;
   width: 25%;
 }
-/* line 37, ../sass/partials/_homepage.scss */
+/* line 83, ../sass/partials/_homepage.scss */
 .value .imgValue {
-  background: #808285;
+  background: #3d3d3f;
   width: 100%;
-  height: 220px;
-  max-width: 220px;
-  max-height: 220px;
+  height: 140px;
+  max-width: 140px;
+  max-height: 140px;
   margin: 0 auto 15px;
 }
-/* line 45, ../sass/partials/_homepage.scss */
+/* line 91, ../sass/partials/_homepage.scss */
 .value p {
   padding: 0 15px;
 }
 
-/* line 51, ../sass/partials/_homepage.scss */
+/* line 97, ../sass/partials/_homepage.scss */
 .callOuts {
   background: #e6e7e8;
   padding: 60px 0 70px;
 }
 
-/* line 55, ../sass/partials/_homepage.scss */
+/* line 101, ../sass/partials/_homepage.scss */
 .callOutBox {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
   width: 50%;
   height: 280px;
   max-width: 460px;
   max-height: 280px;
 }
 
-/* line 63, ../sass/partials/_homepage.scss */
+/* line 110, ../sass/partials/_homepage.scss */
+.coContent {
+  padding: 0 25px;
+}
+/* line 112, ../sass/partials/_homepage.scss */
+.coContent .btnCO {
+  margin: 15px auto;
+}
+
+/* line 119, ../sass/partials/_homepage.scss */
 .coSignUp {
-  background: #23ade4;
+  background: #00506e;
   margin-right: 20px;
 }
 
-/* line 68, ../sass/partials/_homepage.scss */
+/* line 124, ../sass/partials/_homepage.scss */
 .coTips {
-  background: #23ade4;
+  background: #00506e;
+}
+/* line 126, ../sass/partials/_homepage.scss */
+.coTips .hasImg {
+  width: 50%;
+  max-width: 180px;
+}
+/* line 131, ../sass/partials/_homepage.scss */
+.coTips .btnCO {
+  background: #00aee6;
+}
+/* line 133, ../sass/partials/_homepage.scss */
+.coTips .btnCO:hover {
+  color: #00aee6;
+}
+
+/* line 138, ../sass/partials/_homepage.scss */
+.imgCOTip {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50%;
+  max-width: 230px;
+  max-height: 280px;
 }
 
 /* line 3, ../sass/partials/_subpage.scss */
