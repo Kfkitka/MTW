@@ -54,7 +54,7 @@ if ($parentTitle=="about") {
 			<a href='<?php the_permalink() ?>' class="currentLink"><?php the_title(); ?></a> &raquo;
         </article>
         <article class="hdrPageImg"><img src="<?php echo $homePage ?>wp-content/images/<?php echo $subUrl ?>/hdr<?php echo $currentTitleImg ?>.jpg" alt="page header" /></article>*/ ?>
-        <section class="pageContent noSidebar">
+        <section class="pageContent noSidebar box">
         	<?php the_content(); ?>
         </section>
       </div>

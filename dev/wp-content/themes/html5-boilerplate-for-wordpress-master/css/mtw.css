@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1409850401');
-  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1416246136');
+  src: url('../fonts/fontawesome-webfont.eot?&1416246136#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1416246136') format('woff'), url('../fonts/fontawesome-webfont.ttf?1416246136') format('truetype'), url('../fonts/fontawesome-webfont.svg?1416246136') format('svg');
 }
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
@@ -49,7 +49,7 @@ body {
   background: #fff;
   margin: 0 auto;
   font: 400 14px/16px 'Open Sans', Arial, Helvetica, sans-serif;
-  color: #808285;
+  color: #39383b;
 }
 
 /* line 27, ../sass/partials/_general.scss */
@@ -126,7 +126,7 @@ footer {
 .mtwWrapper {
   position: relative;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 /* line 95, ../sass/partials/_general.scss */
@@ -136,21 +136,35 @@ footer {
   padding: 20px 0;
   width: 100%;
 }
-/* line 100, ../sass/partials/_general.scss */
+/* line 103, ../sass/partials/_general.scss */
+footer .colHead {
+  border-bottom: 1px dotted;
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  max-width: 85%;
+}
+/* line 112, ../sass/partials/_general.scss */
 footer ul {
   list-style: none;
 }
-/* line 103, ../sass/partials/_general.scss */
+/* line 115, ../sass/partials/_general.scss */
+footer ul li {
+  font-size: 13px;
+  line-height: 16px;
+}
+/* line 120, ../sass/partials/_general.scss */
 footer a {
   text-decoration: none;
 }
 
-/* line 107, ../sass/partials/_general.scss */
+/* line 124, ../sass/partials/_general.scss */
 .col {
   width: 20%;
 }
 
-/* line 113, ../sass/partials/_general.scss */
+/* line 130, ../sass/partials/_general.scss */
 .socialMedia a {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -163,22 +177,22 @@ footer a {
   margin: 0 15px 15px 0;
   width: 25px;
 }
-/* line 124, ../sass/partials/_general.scss */
+/* line 141, ../sass/partials/_general.scss */
 .socialMedia a:hover {
   color: #fff;
 }
-/* line 128, ../sass/partials/_general.scss */
+/* line 145, ../sass/partials/_general.scss */
 .socialMedia .btnPin {
   background: #808285;
   color: #404041;
   font-size: 30px;
   margin-top: -1px;
 }
-/* line 133, ../sass/partials/_general.scss */
+/* line 150, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover {
   color: #cb2027;
 }
-/* line 135, ../sass/partials/_general.scss */
+/* line 152, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover i {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -186,43 +200,43 @@ footer a {
   background: #fff;
 }
 
-/* line 142, ../sass/partials/_general.scss */
+/* line 159, ../sass/partials/_general.scss */
 .btnFB {
   font-size: 17px;
 }
-/* line 144, ../sass/partials/_general.scss */
+/* line 161, ../sass/partials/_general.scss */
 .btnFB:hover {
   background: #3b5998;
 }
 
-/* line 148, ../sass/partials/_general.scss */
+/* line 165, ../sass/partials/_general.scss */
 .btnTW {
   font-size: 18px;
 }
-/* line 150, ../sass/partials/_general.scss */
+/* line 167, ../sass/partials/_general.scss */
 .btnTW:hover {
   background: #00aced;
 }
 
-/* line 154, ../sass/partials/_general.scss */
+/* line 171, ../sass/partials/_general.scss */
 .btnIn {
   font-size: 13px;
 }
-/* line 156, ../sass/partials/_general.scss */
+/* line 173, ../sass/partials/_general.scss */
 .btnIn:hover {
   background: #1180ba;
 }
 
-/* line 160, ../sass/partials/_general.scss */
+/* line 177, ../sass/partials/_general.scss */
 .btnIG {
   font-size: 18px;
 }
 
-/* line 163, ../sass/partials/_general.scss */
+/* line 180, ../sass/partials/_general.scss */
 .btnYT {
   font-size: 19px;
 }
-/* line 165, ../sass/partials/_general.scss */
+/* line 182, ../sass/partials/_general.scss */
 .btnYT:hover {
   background: #f33;
 }
@@ -472,90 +486,109 @@ footer a {
 
 /* line 3, ../sass/partials/_subpage.scss */
 .mtwPage {
-  text-transform: none;
-  font-weight: 400;
   line-height: 20px;
 }
 
-/* line 8, ../sass/partials/_subpage.scss */
+/* line 6, ../sass/partials/_subpage.scss */
 .pageContent {
-  width: 645px;
   padding: 15px 0;
+  max-width: 645px;
 }
-/* line 11, ../sass/partials/_subpage.scss */
+/* line 9, ../sass/partials/_subpage.scss */
 .pageContent p,
 .pageContent ol,
 .pageContent ul,
 .pageContent .supportBox {
   margin: 0 0 15px;
 }
-/* line 17, ../sass/partials/_subpage.scss */
+/* line 15, ../sass/partials/_subpage.scss */
 .pageContent ol,
 .pageContent ul {
   padding: 0 0 0 20px;
 }
-/* line 21, ../sass/partials/_subpage.scss */
+/* line 19, ../sass/partials/_subpage.scss */
 .pageContent a {
   color: #2aa0d6;
 }
-/* line 24, ../sass/partials/_subpage.scss */
+/* line 22, ../sass/partials/_subpage.scss */
 .pageContent.noSidebar, .pageContent.pageMovers {
-  width: 930px;
-  padding: 15px;
+  padding: 0 20px;
+  max-width: 980px;
 }
 
-/* line 30, ../sass/partials/_subpage.scss */
+/* line 28, ../sass/partials/_subpage.scss */
 .pageSubtitle.jobTitle {
   color: #2aa0d6;
 }
 
-/* line 33, ../sass/partials/_subpage.scss */
+/* line 31, ../sass/partials/_subpage.scss */
 .pageContent .jobTitle {
   margin-top: 35px;
 }
 
-/* line 36, ../sass/partials/_subpage.scss */
-.pageTitle,
+/* .pageTitle,
 .pageSubtitle,
 .indivMover span,
-.popupPerson .moverName {
-  color: #b1332e;
-  font-weight: 600;
-}
-
-/* line 43, ../sass/partials/_subpage.scss */
+.popupPerson .moverName{
+	color:#b1332e;
+	font-weight:600;
+} */
+/* line 42, ../sass/partials/_subpage.scss */
 .pageContent .pageTitle {
-  font-size: 18px;
-  line-height: 24px;
+  color: #00ace6;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 54px;
   margin: 0 0 25px;
 }
 
-/* line 48, ../sass/partials/_subpage.scss */
-.pageSubtitle,
+/* line 49, ../sass/partials/_subpage.scss */
+.pageSubtitle {
+  color: #00506e;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* line 54, ../sass/partials/_subpage.scss */
 .sidebarTitle {
   font-size: 16px;
   line-height: 22px;
 }
 
-/* line 53, ../sass/partials/_subpage.scss */
-.pageTitle,
+/* .pageTitle,
 .pageSubtitle,
 .sidebarTitle,
-.pageMovers {
-  text-transform: uppercase;
+.pageMovers{
+	text-transform:uppercase;
 }
-
-/* line 59, ../sass/partials/_subpage.scss */
+ */
+/* line 65, ../sass/partials/_subpage.scss */
 .mtwSidebar p {
   margin: 0 0 15px;
 }
 
-/* line 64, ../sass/partials/_subpage.scss */
+/* line 69, ../sass/partials/_subpage.scss */
+.bodyImage {
+  height: 288px;
+  width: 460px;
+}
+/* line 72, ../sass/partials/_subpage.scss */
+.bodyImage.leftSide {
+  float: left;
+  margin-right: 22px;
+}
+/* line 76, ../sass/partials/_subpage.scss */
+.bodyImage.rightSide {
+  float: right;
+  margin-left: 22px;
+}
+
+/* line 83, ../sass/partials/_subpage.scss */
 .pageContent .supportBox a {
   margin-right: 20px;
 }
 
-/* line 69, ../sass/partials/_subpage.scss */
+/* line 88, ../sass/partials/_subpage.scss */
 .mtwSidebar {
   width: 250px;
   padding: 25px;
@@ -567,7 +600,7 @@ footer a {
   color: #fff;
 }
 
-/* line 79, ../sass/partials/_subpage.scss */
+/* line 98, ../sass/partials/_subpage.scss */
 .imgSidebar img {
   margin: -140px auto 15px;
   display: block;
@@ -575,24 +608,24 @@ footer a {
   height: 244px;
 }
 
-/* line 85, ../sass/partials/_subpage.scss */
+/* line 104, ../sass/partials/_subpage.scss */
 .sidebarTitle {
   margin: 15px 0;
   font-weight: 600;
 }
 
-/* line 89, ../sass/partials/_subpage.scss */
+/* line 108, ../sass/partials/_subpage.scss */
 .mtwSidebar ul {
   margin: 0 0 15px 20px;
 }
 
-/* line 92, ../sass/partials/_subpage.scss */
+/* line 111, ../sass/partials/_subpage.scss */
 .mtwSidebar hr {
   border-top: 1px solid #fff;
   margin: 25px 0;
 }
 
-/* line 96, ../sass/partials/_subpage.scss */
+/* line 115, ../sass/partials/_subpage.scss */
 .container .mtwSidebar a:hover {
   color: #4c4c4e;
   text-decoration: underline;

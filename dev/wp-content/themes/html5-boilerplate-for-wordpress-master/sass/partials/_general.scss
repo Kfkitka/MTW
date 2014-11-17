@@ -22,7 +22,7 @@ body {
 	background:#fff;
 	margin:0 auto;
 	font:400 14px/16px 'Open Sans', Arial, Helvetica, sans-serif;
-	color:#808285;
+	color:$darkGrey;
 }
 .clearfix:after {
 	@extend %displayBlock;
@@ -88,7 +88,7 @@ footer{
 .mtwWrapper{
 	position:relative;
 	width:100%;
-	padding-top:80px;
+	padding-top:40px;
 }
 
 //FOOTER
@@ -97,8 +97,25 @@ footer {
 	color:#fff;
 	padding:20px 0;
 	width:100%;
+
+	p {
+	}
+	.colHead {		
+		border-bottom: 1px dotted;
+		font-size: 15px;
+		line-height: 17px;
+		margin-bottom: 12px;
+		padding-bottom: 5px;
+		max-width: 85%;
+	}
+
 	ul{
 		list-style: none;
+
+		li {
+			font-size: 13px;
+			line-height: 16px;
+		}
 	}
 	a{
 		text-decoration:none;

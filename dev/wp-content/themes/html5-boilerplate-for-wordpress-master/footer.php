@@ -30,7 +30,7 @@
             <p>&copy; <?php echo date('Y'); ?> Move This World</p>
         </div>
         <div class="who col">
-            <p>Who We Are</p>
+            <p class="colHead">Who We Are</p>
             <ul>
               <li><a href="/about">About Us</a></li>
               <li><a href="/about/values">Values</a></li>
@@ -39,7 +39,7 @@
             </ul>
         </div>
         <div class="what col">
-            <p>What We Are</p>
+            <p class="colHead">What We Are</p>
             <ul>
               <li><a href="/programs">Timeline</a></li>
               <li><a href="/programs/social-impact">Social Impact</a></li>
@@ -47,7 +47,7 @@
             </ul>
         </div>
         <div class="withUs col">
-            <p>Move With Us</p>
+            <p class="colHead">Move With Us</p>
             <ul>
               <li><a href="/join-us/join-mtw">Join Team MTW</a></li>
               <li><a href="/join-us/support">Support Our Work</a></li>
