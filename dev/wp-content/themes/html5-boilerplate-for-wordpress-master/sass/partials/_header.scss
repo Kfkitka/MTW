@@ -16,8 +16,9 @@
 }
 
 .logoMTW{
-	@include bkgrdImg("logoMTW.png");
+	@include bkgrdImg("logoMTW.jpg");
 	@extend %floatLeft;
+	margin-right:20px;
 	&,
 	img{
 		width:140px;
@@ -30,23 +31,23 @@
 	font-size:16px;
 	line-height:18px;
 	list-style:none;
-	li{
-		@extend %displayBlock;
-	}
 	a{
-		color:#808285;
+		color:$darkGrey;
 		text-decoration:none;
 		&:hover{
-			color:$blue;
+			color:$lightBlue;
 		}
 	}
 }
 .navItem{
-	@extend %floatLeft;
+	display:inline-block;
 	margin-left:55px;
 	padding:20px 0;
 	>a{
 		text-transform:uppercase;
+	}
+	&:first-child{
+		margin:0;
 	}
 	&:hover{
 		.subNav{
@@ -55,18 +56,40 @@
 	}
 }
 .subNav{
-	background:#fff;
+	background:$medGrey;
 	display:none;
-	margin-left:-20px;
-	padding-top:31px;
+	text-align:center;
+	margin-top:20px;
 	position:absolute;
+	left:0;
+	width:100%;
 	li{
+		display:inline-block;
 		padding:10px 20px;
 	}
 	a{
 		@extend %displayBlock;
-		color:#808285;
+		color:#fff;
 		width:100%;
 		height:100%;
+		&:hover{
+			color:$blue;
+		}
+	}
+}
+
+//MOBILE
+.btnNav{
+	color:$darkGrey;
+	display:none;
+	font-size:30px;
+	line-height:30px;
+}
+@media only screen and (max-width: 819px){
+	.btnNav{
+		display:block;
+	}
+	.mainNav{
+		display:none;
 	}
 }

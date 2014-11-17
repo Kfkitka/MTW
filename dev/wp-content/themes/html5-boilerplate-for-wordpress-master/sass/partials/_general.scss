@@ -48,7 +48,7 @@ a{
 	color:#fff;
 	outline:none;
 	&:hover{
-		color:#2aa0d6;
+		color:$lightBlue;
 	}
 }
 img{
@@ -68,22 +68,18 @@ footer{
 
 //CONTENT
 .mtwWrapper{
-	margin: 0 auto;
+	margin:0 auto;
 	padding-top:40px;
-	position:relative;
 	width:100%;
-	max-width: 980px;
 }
 
 //FOOTER
 footer {
-	background:#808285;
+	background:$darkGrey;
 	color:#fff;
 	padding:20px 0;
 	width:100%;
 
-	p {
-	}
 	.colHead {		
 		border-bottom: 1px dotted;
 		font-size: 15px;
@@ -115,8 +111,8 @@ footer {
 		@extend %floatLeft;
 		@extend %displayBlock;
 		@include border-radius(50%);
-		background:#404041;
-		color:#808285;
+		background:$medGrey;
+		color:$darkGrey;
 		line-height:25px;
 		text-align:center;
 		height:25px;
@@ -127,8 +123,8 @@ footer {
 		}
 	}
 	.btnPin{
-		background:#808285;
-		color:#404041;
+		background:$darkGrey;
+		color:$medGrey;
 		font-size:30px;
 		margin-top:-1px;
 		&:hover{
@@ -176,14 +172,10 @@ footer {
 }
 // Mobile (Portrait): Design for a width of 320px */
 @media only screen and (max-width: 979px) {
-	.mtwWrapper {
-		max-width: 95%;
-	}
 }
 // Mobile (Portrait): Design for a width of 320px */
 @media only screen and (max-width: 767px) {
     .container {
-    	width: 92%;
     }
     .col {
     	display: block;
@@ -195,6 +187,5 @@ footer {
 // Mobile (Landscape): Design for a width of 480px
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .container {
-    	width: 92%;
     }
 }

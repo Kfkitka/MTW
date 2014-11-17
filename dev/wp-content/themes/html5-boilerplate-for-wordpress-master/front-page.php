@@ -115,14 +115,16 @@ get_header(); ?>
                     if ( has_post_thumbnail() ) {
                         $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
 						echo "<img src=\"$image_url[0]\" alt=\"Tip of the Month featured image\" class=\"imgCOTip\" />";
-						echo "<article class=\"coContent hasImg\">";
+						echo "<div class=\"tipContent hasImg\">";
                     } else {
-						echo "<article class=\"coContent\">";
+						echo "<div class=\"tipContent\">";
 					}?>
-                    	<h3><?php the_title(); ?></h3>
-                    	<?php the_content(); ?>
-                        <a href="<?php the_permalink(); ?>" class="btnCO">Read More</a>
-                    </article><!--.coContent-->
+                        <article class="coContent">
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_content(); ?>
+                            <a href="<?php the_permalink(); ?>" class="btnCO">Read More</a>
+                        </article><!--.coContent-->
+                    </div><!--.tipContent-->
 	            </article><!--.coTips-->
                 <?php endforeach; ?>
                 

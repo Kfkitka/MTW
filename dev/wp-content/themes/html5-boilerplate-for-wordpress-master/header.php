@@ -49,31 +49,31 @@
 	?>
 
 	<style type="text/css">
-	<?php if ($parentTitle=="about"):?>
+	<?php if ($parentTitle=="About"):?>
 	#btnAbout	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 
-	<?php if ($parentTitle=="program"):?>
+	<?php if ($parentTitle=="Program"):?>
 	#btnProgram	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="partners"):?>
+	<?php if ($parentTitle=="Partners"):?>
 	#btnPartners	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="blog"):?>
+	<?php if ($parentTitle=="Blog"):?>
 	#btnBlog	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="donate"):?>
+	<?php if ($parentTitle=="Donate"):?>
 	#btnDonate	{
 		color:#2aa0d6;
 	}
@@ -101,71 +101,80 @@
                 <img src="<?php bloginfo('url'); ?>/wp-content/images/shim.gif" alt="Move This World" />
             </a>
             <nav>
+            	<a href="#" class="btnNav"><i class="fa">&#xf0c9;</i></a>
                 <ul class="mainNav">
                     <li class="navItem">
                         <a href="/about" id="btnAbout">About</a>
                         <ul class="subNav">
-                            <li class="navItemChild">
-                                <a href="/about/values">Values</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/about/our-story">Our Story</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/about/movers-and-shakers">Movers &amp; Shakers</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/about/join-us">Join Us</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/about/join-mtw">Join Team MTW</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/about/connect">Connect With Us</a>
-                            </li>
+                        	<div class="box">
+                                <li class="navItemChild">
+                                    <a href="/about/values">Values</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/about/our-story">Our Story</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/about/movers-and-shakers">Movers &amp; Shakers</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/about/join-us">Join Us</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/about/join-mtw">Join Team MTW</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/about/connect">Connect With Us</a>
+                                </li>
+                            </div><!--.box-->
                         </ul>
                     </li>
                     <li class="navItem">
                         <a href="/programs" id="btnProgram">Program</a>
                         <ul class="subNav">
-                            <li class="navItemChild">
-                                <a href="/programs/employee-wellness">Employee Wellness</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/programs/families">Parents &amp; Families</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/programs/social-impact">Social Impact</a>
-                            </li>
+                        	<div class="box">
+                                <li class="navItemChild">
+                                    <a href="/programs/employee-wellness">Employee Wellness</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/programs/families">Parents &amp; Families</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/programs/social-impact">Social Impact</a>
+                                </li>
+                            </div><!--.box-->
                         </ul>
                     </li>
                     <li class="navItem">
                         <a href="/movement" id="btnPartners">Partners</a>
                         <ul class="subNav">
-                            <li class="navItemChild">
-                                <a href="/movement/latin-america">Latin America</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/movement/the-philippines">The Philippines</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/movememt/europe">Europe</a>
-                            </li>
+                        	<div class="box">
+                                <li class="navItemChild">
+                                    <a href="/movement/latin-america">Latin America</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/movement/the-philippines">The Philippines</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/movememt/europe">Europe</a>
+                                </li>
+                            </div><!--.box-->
                         </ul>
                     </li>
                     <li class="navItem">
                         <a href="/learn-more" id="btnBlog">Think Tank</a>
                         <ul class="subNav">
-                            <li class="navItemChild">
-                                <a href="/learn-more">Learn More</a>
-                            </li>
-                            <li class="navItemChild">
-                                <a href="/learn-more/resources">Resources</a>
-                            </li>
+                        	<div class="box">
+                                <li class="navItemChild">
+                                    <a href="/learn-more">Learn More</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/learn-more/resources">Resources</a>
+                                </li>
+                            </div><!--.box-->
                         </ul>
                     </li>
                     <li class="navItem">
-                        <a href="/support/" id="btnDonate">Donate</a>
+                        <a href="/donate/" id="btnDonate">Donate</a>
                     </li>
                 </ul>
             </nav>

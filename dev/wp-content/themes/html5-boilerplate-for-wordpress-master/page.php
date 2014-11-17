@@ -14,16 +14,16 @@ $parentTitle = get_the_title($post->post_parent);
 $grandparent_get = get_post($parent);
 $grandparent = $grandparent_get->post_parent;
 	
-if ($parentTitle=="about") {
+if ($parentTitle=="About") {
 	$mainTitle = "About Us";
 	$subUrl = "about";
-} else if ($parentTitle=="program"){
+} else if ($parentTitle=="Program"){
 	$mainTitle = "Our Programs";
 	$subUrl = "programs";
-} else if ($parentTitle=="partners"){
+} else if ($parentTitle=="Partners"){
 	$mainTitle = "Global Movement";
 	$subUrl = "movement";
-} else if ($parentTitle=="blog"){
+} else if ($parentTitle=="Blog"){
 	$mainTitle = "Learn More";
 	$subUrl = "learn-more";
 }?>
@@ -33,25 +33,14 @@ if ($parentTitle=="about") {
     <?php while (have_posts()) : the_post(); ?>
 
       <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-      	<?php /*<article class="subTitleBar">
-			<?php
-			// if there is a gparent, display the link
-			if($grandparent != 0){
-				echo '<a href="'.get_permalink($grandparent).'" class="gparentLink">'.get_the_title($grandparent).'</a> &raquo;';
-			}
-            // if there is a parent, display the link
-			if($parentTitle != "Index"){
-				echo '<a href="'.get_permalink($parent).'" class="parentLink">'.get_the_title($parent).'</a> &raquo;';
-			}
-			// current link
-			?>
-			<a href='<?php the_permalink() ?>' class="currentLink"><?php the_title(); ?></a> &raquo;
-        </article>
-        <article class="hdrPageImg"><img src="<?php echo $homePage ?>wp-content/images/<?php echo $subUrl ?>/hdr<?php echo $currentTitleImg ?>.jpg" alt="page header" /></article>*/ ?>
-        <?php get_sidebar(); ?>
-        <section class="pageContent floatLeft">
-        	<?php the_content(); ?>
-        </section>
+        <div class="box">
+			<?php get_sidebar(); ?>
+            <section class="pageContent withSidebar">
+            	<div class="box">
+					<?php the_content(); ?>
+                </div>
+            </section>
+        </div><!--.box-->
       </div>
 
     <?php endwhile; ?>

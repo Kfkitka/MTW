@@ -25,7 +25,8 @@
 %btnBlock{
 	@include border-radius(10px);
 	background:$green;
-	width:180px;
+	width:100%;
+	max-width:180px;
 	height:20px;
 	&:hover{
 		background:#fff;
@@ -63,7 +64,7 @@
 	font-size:21px;
 	line-height:23px;
 	text-align:center;
-	padding:25px 125px;
+	padding:25px 0;
 }
 
 //CORE VALUES
@@ -102,7 +103,7 @@
 	@extend %floatLeft;
 	@include border-radius(10px);
 	text-align:center;
-	width:50%;
+	width:49%;
 	height:280px;
 	max-width:460px;
 	max-height:280px;
@@ -118,7 +119,7 @@
 //SIGN UP CALLOUT
 .coSignUp{
 	background:$blue;
-	margin-right:20px;
+	margin-right:2%;
 }
 //TIPS
 .coTips{
@@ -126,7 +127,7 @@
 	.hasImg{
 		@extend %floatLeft;
 		width:50%;
-		max-width:180px;
+		max-width:230px;
 	}
 	.btnCO{
 		background:$lightBlue;
@@ -139,7 +140,41 @@
 	@extend %displayBlock;
 	@extend %floatLeft;
 	@include border-left-radius(10px);
+	height:280px;
 	width:50%;
 	max-width:230px;
-	max-height:280px;
+}
+
+@media only screen and (max-width: 862px) {
+	.coTips{
+		.hasImg{
+			float:none;
+			width:100%;
+			max-width:100%;
+		}
+	}
+	.imgCOTip{
+		display:none;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.homeContent{
+		h1{
+			font-size:40px;
+			line-height:42px;
+		}
+		h3{
+			font-size:26px;
+			line-height:28px;
+		}
+	}
+	.coContent{
+		padding:0 15px;
+		.btnCO{
+			font-size:16px;
+			line-height:18px;
+			height:18px;
+			padding:10px 0;
+		}
+	}
 }
