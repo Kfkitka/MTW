@@ -2,6 +2,7 @@
 //HOMEPAGE
 .homeContent{
 	color:#fff;
+	padding-top:80px;
 	h1{
 		font-size:45px;
 		line-height:47px;
@@ -157,6 +158,33 @@
 		display:none;
 	}
 }
+@media only screen and (max-width: 700px) {
+	.mtwHero{
+		height:590px;
+		max-height:590px;
+	}
+	.value{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width:85%;
+
+		p{
+			margin-bottom: 20px;
+		}
+	}
+
+	.callOutBox {
+		float: none;
+		margin: 0 auto;
+		width: 85%;
+		max-width: 460px;
+	}
+
+	.coSignUp, .coContent{
+		padding-top: 20px;
+	}
+}
 @media only screen and (max-width: 599px) {
 	.homeContent{
 		h1{
@@ -169,7 +197,7 @@
 		}
 	}
 	.coContent{
-		padding:0 15px;
+		padding:20px 15px 0 15px;
 		.btnCO{
 			font-size:16px;
 			line-height:18px;

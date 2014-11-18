@@ -38,6 +38,7 @@ body {
 	margin:0 auto;
 }
 .box{
+	box-sizing:border-box;
 	margin:0 auto;
 	padding:0 20px;
 	min-width:320px;
@@ -69,7 +70,6 @@ footer{
 //CONTENT
 .mtwWrapper{
 	margin:0 auto;
-	padding-top:40px;
 	width:100%;
 }
 

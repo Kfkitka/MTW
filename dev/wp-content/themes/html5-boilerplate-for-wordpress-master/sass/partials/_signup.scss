@@ -32,13 +32,81 @@
 	}
 }
 
+.signupHero{
+	background:$grey;
+	height:480px;
+	max-height:480px;
+}
+.signupWrapper{
+	padding-top: 18px;
+	
+	.signupBox{
+		height: 445px;
+		background: #fff;
+		max-width:475px;
+	}
+
+	.signupHeader{
+		color:#fff;
+		padding-left: 30px;
+		.signupTitle {
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 34px;
+			margin-bottom: 40px;
+		}
+
+		.signupSubtitle{
+			font-size: 21px;
+			line-height: 25px;
+		}
+	}
+}
+.signupBox, .signupHeader {
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+}
+
+.blueSignupBtn {
+	@extend %btnMTW;
+	@extend %btnBlock;
+	background:$lightBlue;
+	font-size: 21px;
+	margin: 20px auto;
+	text-align: center;
+	max-width: 300px;
+
+	&:hover {
+		color:$lightBlue;
+		background:$lightGrey;
+	}
+}
+
 //Social Section
 .socialSection{
 	background:$blue;
+	color: #fff;
 	font-size:21px;
 	line-height:23px;
 	text-align:center;
 	padding:25px 0;
+
+	.socialContent{
+		padding:0 25px;
+
+		.socialHeader{
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 35px;
+			margin: 40px 0;
+		}
+
+		.socialParticulars{
+			font-size: 21px;
+			font-weight: normal;
+		}
+	}
 }
 
 //BUTTONS
@@ -57,4 +125,35 @@
 	@extend %btnBlock;
 	text-align:center;
 	max-width: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+	.signupHero{
+		height:800px;
+		max-height: 800px;
+	}
+	.signupBox, .signupHeader {
+		box-sizing: border-box;
+		float: none;
+		margin: 0 auto;
+		width: 85%;
+		max-width: 85%;
+	}
+	.signupWrapper {
+		.signupHeader{
+			margin-top: 40px;
+			padding-left: 0;
+		}
+	}
+
+	.workEx{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width:85%;
+
+		p{
+			margin-bottom: 20px;
+		}
+	}
 }
