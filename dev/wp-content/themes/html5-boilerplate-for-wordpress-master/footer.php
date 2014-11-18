@@ -63,16 +63,22 @@
 </div> <!--! end of #container -->
 
 <?php //Grab Google CDN's jQuery. fall back to local if necessary ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo $GLOBALS["TEMPLATE_RELATIVE_URL"] ?>js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
 
 <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/js/plugins.js") ?>
 <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/js/main.js") ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/mtw.js" type="text/javascript"></script>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bpopup.min.js" type="text/javascript" ></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">	
+	$(document).ready(function($){
+		$('.indivMover:nth-child(4n)').addClass('lastColumn');
+	});
+</script>
+<![endif]-->
 
 <script type="text/javascript">	
-
 	$(document).ready(function($){
 		//HEADER SCROLL
 		var homePage = '<?php echo home_url('/'); ?>';
@@ -87,22 +93,7 @@
 		//console.log(pageHeight, sidebarHeight);
 		if (pageHeight > (sidebarHeight + 120)) {
 			$('.mtwSidebar').css('height', (pageHeight-120) + 'px');
-		} else {}
-		
-		//MARGINS
-		$('.indivMover:nth-child(4n)').addClass('lastColumn');
-		
-		//POPUPS
-		$('.moverLink').click(function(e){
-			var popupSelector = $(this).attr('href');
-			$('.popupPerson').removeClass('active');
-			e.preventDefault();
-			$(popupSelector).addClass('active');
-			$('.moverPopups').bPopup({
-				position: ['auto', 'auto'],
-				closeClass: ['btnClosePopup']
-			});
-		});
+		}
 	});// end doc ready
 </script>
 

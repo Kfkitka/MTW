@@ -33,14 +33,12 @@ if ($parentTitle=="About") {
     <?php while (have_posts()) : the_post(); ?>
 
       <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <div class="box clearfix">
-			<?php get_sidebar(); ?>
-            <section class="pageContent withSidebar">
-            	<div class="innerContent">
-					<?php the_content(); ?>
-                </div>
-            </section>
-        </div><!--.box-->
+		<?php get_sidebar(); ?>
+        <section class="pageContent withSidebar">
+          	<div class="box">
+				<?php the_content(); ?>
+            </div>
+        </section><!--.pageContent-->
       </div>
 
     <?php endwhile; ?>

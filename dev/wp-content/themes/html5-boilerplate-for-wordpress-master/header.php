@@ -114,7 +114,10 @@
                                     <a href="/about/our-story">Our Story</a>
                                 </li>
                                 <li class="navItemChild">
-                                    <a href="/about/movers-and-shakers">Movers &amp; Shakers</a>
+                                    <a href="/about/our-team">Our Team</a>
+                                </li>
+                                <li class="navItemChild">
+                                    <a href="/about/board">Board Members</a>
                                 </li>
                                 <li class="navItemChild">
                                     <a href="/about/join-us">Join Us</a>

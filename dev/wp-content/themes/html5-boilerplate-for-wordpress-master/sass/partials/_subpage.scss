@@ -22,9 +22,6 @@
 			color:$blue;
 		}
 	}
-	&.pageMovers{
-		padding:0 20px;
-	}
 	&.withSidebar{
 		@extend %floatLeft;
 		max-width:735px;

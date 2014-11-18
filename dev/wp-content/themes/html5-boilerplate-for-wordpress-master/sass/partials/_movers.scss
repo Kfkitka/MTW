@@ -1,84 +1,127 @@
 //_movers.scss
-//MOVERS & SHAKERS
-.moversShakers,
-.boardMembers{
-	margin-bottom:30px;
+//GENERAL
+.pageMovers{
+	.pageTitle{
+		text:{
+			align:center;
+			transform:uppercase;
+		}
+	}
+	h3{
+		color:$lightGreen;
+		font-size:21px;
+		line-height:23px;
+		text-transform:uppercase;
+		margin:0 0 30px;
+		span{
+			@extend %displayBlock;
+			font-weight:400;
+		}
+	}
+	.movers{
+		list-style:none;
+		margin:0;
+		padding:0;
+		position:relative;
+		li{
+			display:inline-block;
+			vertical-align:top;
+		}
+	}
 }
+
+//TEAM
 .indivMover{
-	text-align:center;
-	margin-right:30px;
+	a{
+		@extend %displayBlock;
+		@include border-radius(50%);
+		text-align:center;
+		width:100%;
+		max-width:210px;
+		margin:0 20px 20px 0;
+		text-decoration:none;
+		position:relative;
+		h3{
+			color:#fff;
+			margin:70px 5px;
+		}
+	}
+	img{
+		@extend %displayBlock;
+		width:100%;
+		max-width:210px;
+		max-height:210px;
+	}
+	.moverRO{
+		@include border-radius(50%);
+		background:$darkBlue;
+		color:#fff;
+		display:none;
+		height:100%;
+		max-height:210px;
+		width:100%;
+		max-width:210px;
+		position:absolute;
+		top:0;
+	}
+	&:nth-child(4n),
+	&.lastColumn{
+		margin-right:0;
+	}
+	&:hover{
+		.moverRO{
+			@extend %displayBlock;
+		}
+	}
+	&.active{
+		.moverRO{
+			@extend %displayBlock;
+			background:none;
+			border-radius:0;
+			height:auto;
+			position:relative;
+			h3{
+				color:$lightGreen;
+				margin:20px 5px 30px;
+			}
+		}
+		.moverContent{
+			@extend %displayBlock;
+		}
+	}
 }
-.indivMover.lastColumn{
-	margin-right:0;
-}
-.moverLink{
-	margin-bottom:10px;
-}
-.moverLink,
-.indivMover img{
-	height:208px;
-}
-.indivMover,
-.indivMover img{
-	width:210px;
-}
-.indivMover span,
-.popupPerson .moverName{
-	display:block;
-}
-.moverLink:hover .imgMover,
-.imgMoverRO{
+//content: attr(data-title)
+.moverContent{
 	display:none;
-}
-.moverLink:hover .imgMoverRO{
-	display:block;
-}
-.pageTitle.supportTitle,
-.boardMembers .indivMover span,
-.popupPerson.supportPerson .moverName{
-	color:#2aa0d6;
+	&:hover{
+		cursor:default;
+	}
+	&.moverDesc{
+		position:absolute;
+		top:auto;
+		left:0;
+	}
 }
 
-
-//MOVER POPUPS
-.moverPopups{
-	display:none;
-	width:670px;
-	padding:30px 55px;
-	text-transform:none;
-	font-weight:400;
-	background:url(../../../images/bkgrdMTWCarouselDesc.png) repeat;
-	background:rgba(202,219,35,0.85);
-	color:#404041
+//BOARD & ADVISORY MEMBERS
+.boardMember{
+	margin-bottom:20px;
 }
-.popupPerson{
-	display:none;
+.imgBoard{
+	@extend %floatLeft;
+	width:24%;
+	max-width:235px;
+	img{
+		@extend %displayBlock;
+		@include border-radius(50%);
+		width:100%;
+		max-width:210px;
+		max-height:210px;
+		padding-left:25px;
+	}
 }
-.popupPerson.active{
-	display:block;
-}
-.btnClosePopup{
-	background:url(../../../images/movers/btnClosePopup.png) no-repeat;
-	position:absolute;
-	top:22px;
-	right:22px;
-}
-.btnClosePopup,
-.btnClosePopup img{
-	width:32px;
-	height:32px;
-}
-.popupPerson .imgMoverPopup{
-	margin:0 15px 15px 0;
-	width:210px;
-	height:210px;
-}
-.popupPerson .personTitle{
-	text-transform:uppercase;
-	font-size:18px;
-	line-height:24px;
-	padding-top:150px;
-}
-.popupPerson p{
-	margin:10px 0;
+.boardContent{
+	@extend %floatLeft;
+	width:76%;
+	max-width:745px;
 }
