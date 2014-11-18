@@ -23,8 +23,12 @@
 	}
 	&.withSidebar{
 		@extend %floatLeft;
-		max-width:645px;
+		max-width:735px;
 		width:75%;
+	}
+
+	.innerContent {
+		padding-left: 20px;
 	}
 
 	.jobTitle{

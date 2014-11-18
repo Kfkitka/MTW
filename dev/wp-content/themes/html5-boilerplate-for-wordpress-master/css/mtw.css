@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1409850401');
-  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1416246136');
+  src: url('../fonts/fontawesome-webfont.eot?&1416246136#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1416246136') format('woff'), url('../fonts/fontawesome-webfont.ttf?1416246136') format('truetype'), url('../fonts/fontawesome-webfont.svg?1416246136') format('svg');
 }
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
@@ -581,14 +581,18 @@ footer a {
 }
 /* line 24, ../sass/partials/_subpage.scss */
 .pageContent.withSidebar {
-  max-width: 645px;
+  max-width: 735px;
   width: 75%;
 }
 /* line 30, ../sass/partials/_subpage.scss */
+.pageContent .innerContent {
+  padding-left: 20px;
+}
+/* line 34, ../sass/partials/_subpage.scss */
 .pageContent .jobTitle {
   margin-top: 35px;
 }
-/* line 34, ../sass/partials/_subpage.scss */
+/* line 38, ../sass/partials/_subpage.scss */
 .pageContent .pageTitle {
   color: #00aee6;
   font-size: 50px;
@@ -596,69 +600,69 @@ footer a {
   line-height: 54px;
   margin: 0 0 25px;
 }
-/* line 43, ../sass/partials/_subpage.scss */
+/* line 47, ../sass/partials/_subpage.scss */
 .pageContent .supportBox a {
   margin-right: 20px;
 }
 
-/* line 48, ../sass/partials/_subpage.scss */
+/* line 52, ../sass/partials/_subpage.scss */
 .pageSubtitle {
   color: #00506e;
   font-size: 21px;
   line-height: 26px;
 }
-/* line 52, ../sass/partials/_subpage.scss */
+/* line 56, ../sass/partials/_subpage.scss */
 .pageSubtitle.jobTitle {
   color: #2aa0d6;
 }
 
-/* line 57, ../sass/partials/_subpage.scss */
+/* line 61, ../sass/partials/_subpage.scss */
 .bodyImage {
   height: 288px;
   width: 460px;
 }
-/* line 60, ../sass/partials/_subpage.scss */
+/* line 64, ../sass/partials/_subpage.scss */
 .bodyImage.leftSide {
   margin-right: 22px;
 }
-/* line 64, ../sass/partials/_subpage.scss */
+/* line 68, ../sass/partials/_subpage.scss */
 .bodyImage.rightSide {
   float: right;
   margin-left: 22px;
 }
 
-/* line 72, ../sass/partials/_subpage.scss */
+/* line 76, ../sass/partials/_subpage.scss */
 .mtwSidebar {
   background: #00749c;
   color: #fff;
   width: 25%;
   max-width: 260px;
 }
-/* line 79, ../sass/partials/_subpage.scss */
+/* line 83, ../sass/partials/_subpage.scss */
 .mtwSidebar p {
   margin: 0 0 15px;
 }
-/* line 82, ../sass/partials/_subpage.scss */
+/* line 86, ../sass/partials/_subpage.scss */
 .mtwSidebar ul {
   margin: 0 0 15px 20px;
 }
-/* line 85, ../sass/partials/_subpage.scss */
+/* line 89, ../sass/partials/_subpage.scss */
 .mtwSidebar hr {
   border-top: 1px solid #fff;
   margin: 25px 0;
 }
-/* line 89, ../sass/partials/_subpage.scss */
+/* line 93, ../sass/partials/_subpage.scss */
 .mtwSidebar a:hover {
   color: #4c4c4e;
   text-decoration: underline;
 }
 
-/* line 94, ../sass/partials/_subpage.scss */
+/* line 98, ../sass/partials/_subpage.scss */
 .sidebarContent {
   padding: 20px;
 }
 
-/* line 97, ../sass/partials/_subpage.scss */
+/* line 101, ../sass/partials/_subpage.scss */
 .sidebarTitle {
   color: #d7df27;
   font-size: 30px;
