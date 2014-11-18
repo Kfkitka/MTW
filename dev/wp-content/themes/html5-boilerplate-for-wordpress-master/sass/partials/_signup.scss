@@ -1,0 +1,60 @@
+.signupContent {
+	h3{
+		font-size:30px;
+		line-height:32px;
+	}
+}
+
+//HOW IT WORKS
+.howWorks{
+	margin:60px auto;
+	text-align:center;
+}
+.hdrWorks{
+	color:$blue;
+	text-transform:uppercase;
+	margin:0 0 40px;
+}
+.workEx{
+	@extend %floatLeft;
+	color:$grey;
+	width:25%;
+	.imgWorks{
+		background:$grey;
+		width:100%;
+		height:140px;
+		max-width:140px;
+		max-height:140px;
+		margin:0 auto 15px;
+	}
+	p{
+		padding:0 15px;
+	}
+}
+
+//Social Section
+.socialSection{
+	background:$blue;
+	font-size:21px;
+	line-height:23px;
+	text-align:center;
+	padding:25px 0;
+}
+
+//BUTTONS
+.greenSignupBtn{
+	@extend %btnBlock;
+	font-size: 21px;
+	height: auto;
+	margin:40px auto;
+	max-width: 300px;
+	a{
+		@extend %btnMTW;
+	}
+}
+.bigBtn{
+	@extend %btnMTW;
+	@extend %btnBlock;
+	text-align:center;
+	max-width: 300px;
+}

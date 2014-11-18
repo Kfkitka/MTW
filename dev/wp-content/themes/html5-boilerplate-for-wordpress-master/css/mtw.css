@@ -1,10 +1,10 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .navItem:hover .subNav, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .imgCOTip {
+.clearfix:after, .socialMedia a, .navItem:hover .subNav, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .greenSignupBtn a, .bigBtn, .imgCOTip {
   display: block;
 }
 
 /* line 18, ../sass/partials/_base.scss */
-.floatLeft, .col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .bodyImage.leftSide, .mtwSidebar {
+.floatLeft, .col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .bodyImage.leftSide, .mtwSidebar, .workEx {
   float: left;
 }
 
@@ -361,7 +361,7 @@ footer a {
 }
 
 /* line 15, ../sass/partials/_homepage.scss */
-.heroButtons a, .btnMTW, .coContent .btnCO {
+.heroButtons a, .btnMTW, .coContent .btnCO, .greenSignupBtn a, .bigBtn {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -370,7 +370,7 @@ footer a {
 }
 
 /* line 25, ../sass/partials/_homepage.scss */
-.btnMTW, .coContent .btnCO {
+.btnMTW, .coContent .btnCO, .greenSignupBtn, .bigBtn {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -380,7 +380,7 @@ footer a {
   height: 20px;
 }
 /* line 31, ../sass/partials/_homepage.scss */
-.btnMTW:hover, .coContent .btnCO:hover {
+.btnMTW:hover, .coContent .btnCO:hover, .greenSignupBtn:hover, .bigBtn:hover {
   background: #fff;
   color: #d3de25;
 }
@@ -784,4 +784,65 @@ footer a {
 /* line 82, ../sass/partials/_movers.scss */
 .popupPerson p {
   margin: 10px 0;
+}
+
+/* line 2, ../sass/partials/_signup.scss */
+.signupContent h3 {
+  font-size: 30px;
+  line-height: 32px;
+}
+
+/* line 9, ../sass/partials/_signup.scss */
+.howWorks {
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* line 13, ../sass/partials/_signup.scss */
+.hdrWorks {
+  color: #00506e;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+/* line 18, ../sass/partials/_signup.scss */
+.workEx {
+  color: #3d3d3f;
+  width: 25%;
+}
+/* line 22, ../sass/partials/_signup.scss */
+.workEx .imgWorks {
+  background: #3d3d3f;
+  width: 100%;
+  height: 140px;
+  max-width: 140px;
+  max-height: 140px;
+  margin: 0 auto 15px;
+}
+/* line 30, ../sass/partials/_signup.scss */
+.workEx p {
+  padding: 0 15px;
+}
+
+/* line 36, ../sass/partials/_signup.scss */
+.socialSection {
+  background: #00506e;
+  font-size: 21px;
+  line-height: 23px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* line 45, ../sass/partials/_signup.scss */
+.greenSignupBtn {
+  font-size: 21px;
+  height: auto;
+  margin: 40px auto;
+  max-width: 300px;
+}
+
+/* line 55, ../sass/partials/_signup.scss */
+.bigBtn {
+  text-align: center;
+  max-width: 300px;
 }
