@@ -20,7 +20,7 @@ get_header(); ?>
 			echo "<section class=\"signupHero\">";
 		}?>
 	        <div class="box">
-	        	<article class="signupWrapper clearfix">
+	        	<article id="signup" class="clearfix">
 	            	<div class="signupBox">
 						<div class="signupForm">
 							<?php $args4 = array(
@@ -39,9 +39,7 @@ get_header(); ?>
 			                    </article>
 			                <?php endforeach; ?>
 						</div>
-	                    <div class="formButton clearfix">
-	                    	<a href="/partners" class="blueSignupBtn">Become a Partner</a>
-	                    </div><!--.clearfix-->
+	                    <!--.clearfix-->
 	                </div>
 	                <div class="signupHeader">
 	                	<?php $args5 = array(
@@ -110,7 +108,7 @@ get_header(); ?>
                     </article>
                 <?php endforeach; ?>
 				<div class="greenSignupBtn">
-                	<a href="/partners" class="bigBtn">Join the Movement</a>
+                	<a href="#signup" class="bigBtn">Join the Movement</a>
                 </div>
             </div>
         </article><!--.socialSection-->
