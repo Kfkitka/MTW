@@ -23,18 +23,42 @@ get_header(); ?>
 	        	<article class="signupWrapper clearfix">
 	            	<div class="signupBox">
 						<div class="signupForm">
+							<?php $args4 = array(
+								'category_name' => 'form-inputs',
+								'post_type' => 'post',
+								'order' => 'ASC',
+								'post_status' => 'publish',
+								'numberposts' => 1
+							);
+							$postslist4 = get_posts($args4);
+							foreach ($postslist4 as $post) :
+								setup_postdata($post);
+							?>
+			                	<article class="formFields">
+			                    	<?php the_content(); ?>
+			                    </article>
+			                <?php endforeach; ?>
 						</div>
 	                    <div class="formButton clearfix">
 	                    	<a href="/partners" class="blueSignupBtn">Become a Partner</a>
 	                    </div><!--.clearfix-->
 	                </div>
 	                <div class="signupHeader">
-	                	<p class="signupTitle">
-	                		Pose a question that frames why they should sign up.
-	                	</p>
-	                	<p class="signupSubtitle">
-							Sentence telling them to sign up.
-	                	</p>
+	                	<?php $args5 = array(
+							'category_name' => 'signup-copy',
+							'post_type' => 'post',
+							'order' => 'ASC',
+							'post_status' => 'publish',
+							'numberposts' => 1
+						);
+						$postslist5 = get_posts($args5);
+						foreach ($postslist5 as $post) :
+							setup_postdata($post);
+						?>
+		                	<article class="signupCopy">
+		                    	<?php the_content(); ?>
+		                    </article>
+		                <?php endforeach; ?>
 	                </div>
 	            </article>
             </div>
