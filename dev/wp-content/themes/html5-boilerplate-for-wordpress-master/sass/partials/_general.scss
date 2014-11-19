@@ -1,22 +1,4 @@
 //_general.scss
-//OLD 
-.spriteLink{
-	background-position:top left;
-	display:block;
-}
-.spriteLink:hover{
-	background-position:bottom left;
-}
-.clear {
-    clear: both;
-}
-.floatLeft{
-	@extend %floatLeft;
-}
-.floatRight{
-	float:right;
-}
-
 //GENERAL
 body {
 	background:#fff;
@@ -51,6 +33,9 @@ a{
 	&:hover{
 		color:$lightBlue;
 	}
+	&:focus {
+		outline:none;
+	}
 }
 img{
 	border:0 none;
@@ -70,6 +55,7 @@ footer{
 //CONTENT
 .mtwWrapper{
 	margin:0 auto;
+	padding-top:80px;
 	width:100%;
 }
 
@@ -178,10 +164,11 @@ footer {
     .container {
     }
     .col {
-    	display: block;
-    	float: none;
-    	margin: 15px auto;
-    	width: 80%;
+    	box-sizing:border-box;
+    	float:none;
+    	margin:15px auto;
+    	padding:0 10px;
+    	width:85%;
     }
 }
 // Mobile (Landscape): Design for a width of 480px

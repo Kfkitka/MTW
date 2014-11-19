@@ -32,13 +32,13 @@
 
 //TEAM
 .indivMover{
+	width:24.5%;
 	a{
 		@extend %displayBlock;
-		@include border-radius(50%);
 		text-align:center;
 		width:100%;
 		max-width:210px;
-		margin:0 20px 20px 0;
+		margin:0 auto 20px;
 		text-decoration:none;
 		position:relative;
 		h3{
@@ -48,6 +48,8 @@
 	}
 	img{
 		@extend %displayBlock;
+		@include border-radius(50%);
+		overflow:hidden;
 		width:100%;
 		max-width:210px;
 		max-height:210px;
@@ -58,15 +60,11 @@
 		color:#fff;
 		display:none;
 		height:100%;
-		max-height:210px;
 		width:100%;
+		max-height:210px;
 		max-width:210px;
 		position:absolute;
 		top:0;
-	}
-	&:nth-child(4n),
-	&.lastColumn{
-		margin-right:0;
 	}
 	&:hover{
 		.moverRO{
@@ -124,4 +122,20 @@
 	@extend %floatLeft;
 	width:76%;
 	max-width:745px;
+}
+@media only screen and (min-width: 735px) and (max-width: 987px) {
+	.indivMover{
+		width:32.5%;
+	}
+}
+@media only screen and (min-width: 501px) and (max-width: 734px) {
+	.indivMover{
+		width:49.5%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.indivMover{
+		float:none;
+		width:100%;
+	}
 }

@@ -68,12 +68,12 @@
 
 <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/js/plugins.js") ?>
 <?php versioned_javascript($GLOBALS["TEMPLATE_RELATIVE_URL"]."html5-boilerplate/js/main.js") ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mobile.custom.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/mtw.js" type="text/javascript"></script>
 
 <!--[if lt IE 9]>
-    <script type="text/javascript">	
+<script type="text/javascript">	
 	$(document).ready(function($){
-		$('.indivMover:nth-child(4n)').addClass('lastColumn');
 	});
 </script>
 <![endif]-->
@@ -82,9 +82,8 @@
 	$(document).ready(function($){
 		//HEADER SCROLL
 		var homePage = '<?php echo home_url('/'); ?>';
-		//console.log(homePage);
 		if (document.location.href === homePage) {
-			$('.hdrMTW').addClass('sticky');
+			//$('.hdrMTW').addClass('sticky');
 		}
 
 		//SIDEBAR HEIGHT

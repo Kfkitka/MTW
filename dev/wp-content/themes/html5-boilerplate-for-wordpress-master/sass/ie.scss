@@ -3,3 +3,32 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+
+.container {
+	min-width:820px;
+}
+
+.hdrMTW{
+	min-width:820px;
+	position:relative;
+}
+
+.homeContent{
+	padding-top:0;
+}
+
+.navItem{
+	&:hover{
+		.subNav{
+			display:block;
+		}
+	}
+}
+.subNav{
+	box-sizing:border-box;
+	text-align:center;
+	padding:0 20px;
+	position:absolute;
+	left:0;
+	width:100%;
+}

@@ -74,7 +74,7 @@ get_header(); ?>
         <section class="callOuts">
         	<div class="box clearfix">
             	<?php $args2 = array(
-					'category_name' => 'Sign-Up',
+					'category_name' => 'Sign-Up-Home',
 					'post_type' => 'post',
 					'order' => 'ASC',
 					'post_status' => 'publish',

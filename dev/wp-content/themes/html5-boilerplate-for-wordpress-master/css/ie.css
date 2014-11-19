@@ -3,3 +3,33 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 7, ../sass/ie.scss */
+.container {
+  min-width: 820px;
+}
+
+/* line 11, ../sass/ie.scss */
+.hdrMTW {
+  min-width: 820px;
+  position: relative;
+}
+
+/* line 16, ../sass/ie.scss */
+.homeContent {
+  padding-top: 0;
+}
+
+/* line 22, ../sass/ie.scss */
+.navItem:hover .subNav {
+  display: block;
+}
+
+/* line 27, ../sass/ie.scss */
+.subNav {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}

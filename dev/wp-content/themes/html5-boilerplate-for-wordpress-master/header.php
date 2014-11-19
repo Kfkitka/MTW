@@ -42,6 +42,10 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
     <link href="<?php echo get_template_directory_uri(); ?>/css/mtw.css" rel='stylesheet' type='text/css'>
     
+    <!--[if lt IE 9]>
+    	<link href="<?php echo get_template_directory_uri(); ?>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ 	<![endif]-->
+    
     <?php
 	//Check for nav ending & add active style
 	$parent = $post->post_parent;
@@ -49,7 +53,7 @@
 	?>
 
 	<style type="text/css">
-	<?php if ($parentTitle=="About"):?>
+	<?php if ($parentTitle=="About Us"):?>
 	#btnAbout	{
 		color:#2aa0d6;
 	}
@@ -67,7 +71,7 @@
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="Blog"):?>
+	<?php if ($parentTitle=="Think Tank"):?>
 	#btnBlog	{
 		color:#2aa0d6;
 	}
@@ -106,75 +110,53 @@
                     <li class="navItem">
                         <a href="/about" id="btnAbout">About</a>
                         <ul class="subNav">
-                        	<div class="box">
-                                <li class="navItemChild">
-                                    <a href="/about/values">Values</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/about/our-story">Our Story</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/about/our-team">Our Team</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/about/board">Board Members</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/about/join-us">Join Us</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/about/join-mtw">Join Team MTW</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/about/connect">Connect With Us</a>
-                                </li>
-                            </div><!--.box-->
+							<?php
+                                $args1 = array(
+                                    'child_of'     => 25, //About ID
+                                    'post_type'    => 'page',
+                                    'post_status'  => 'publish',
+                                    'sort_column'  => 'menu_order, post_title',
+                                    'sort_order'   => 'ASC',
+                                    'title_li'     => ''
+                                );
+                                wp_list_pages($args1);
+                            ?>
                         </ul>
                     </li>
                     <li class="navItem">
-                        <a href="/programs" id="btnProgram">Program</a>
+                        <a href="/program" id="btnProgram">Program</a>
                         <ul class="subNav">
-                        	<div class="box">
-                                <li class="navItemChild">
-                                    <a href="/programs/employee-wellness">Employee Wellness</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/programs/families">Parents &amp; Families</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/programs/social-impact">Social Impact</a>
-                                </li>
-                            </div><!--.box-->
+							<?php
+                                $args2 = array(
+                                    'child_of'     => 33, //Program ID
+                                    'post_type'    => 'page',
+                                    'post_status'  => 'publish',
+                                    'sort_column'  => 'menu_order, post_title',
+                                    'sort_order'   => 'ASC',
+                                    'title_li'     => ''
+                                );
+                                wp_list_pages($args2);
+                            ?>
                         </ul>
                     </li>
                     <li class="navItem">
-                        <a href="/movement" id="btnPartners">Partners</a>
+                        <a href="/partners" id="btnPartners">Partners</a>
                         <ul class="subNav">
-                        	<div class="box">
-                                <li class="navItemChild">
-                                    <a href="/movement/latin-america">Latin America</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/movement/the-philippines">The Philippines</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/movememt/europe">Europe</a>
-                                </li>
-                            </div><!--.box-->
+							<?php
+                                $args3 = array(
+                                    'child_of'     => 448, //Partners ID
+                                    'post_type'    => 'page',
+                                    'post_status'  => 'publish',
+                                    'sort_column'  => 'menu_order, post_title',
+                                    'sort_order'   => 'ASC',
+                                    'title_li'     => ''
+                                );
+                                wp_list_pages($args3);
+                            ?>
                         </ul>
                     </li>
                     <li class="navItem">
-                        <a href="/learn-more" id="btnBlog">Think Tank</a>
-                        <ul class="subNav">
-                        	<div class="box">
-                                <li class="navItemChild">
-                                    <a href="/learn-more">Learn More</a>
-                                </li>
-                                <li class="navItemChild">
-                                    <a href="/learn-more/resources">Resources</a>
-                                </li>
-                            </div><!--.box-->
-                        </ul>
+                        <a href="/think-tank" id="btnBlog">Think Tank</a>
                     </li>
                     <li class="navItem">
                         <a href="/donate/" id="btnDonate">Donate</a>
