@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1416246136');
-  src: url('../fonts/fontawesome-webfont.eot?&1416246136#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1416246136') format('woff'), url('../fonts/fontawesome-webfont.ttf?1416246136') format('truetype'), url('../fonts/fontawesome-webfont.svg?1416246136') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1409850401');
+  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
 }
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
@@ -233,86 +233,91 @@ footer a {
   z-index: 5;
 }
 /* line 10, ../sass/partials/_header.scss */
+.hdrMTW.unsticky {
+  position: relative;
+  margin-bottom: -80px;
+}
+/* line 14, ../sass/partials/_header.scss */
 .hdrMTW nav {
   float: right;
 }
 
-/* line 15, ../sass/partials/_header.scss */
+/* line 19, ../sass/partials/_header.scss */
 .logoMTW {
   background: url(../../../images/logoMTW.jpg) 0 0 no-repeat;
   margin-right: 20px;
 }
-/* line 19, ../sass/partials/_header.scss */
+/* line 23, ../sass/partials/_header.scss */
 .logoMTW,
 .logoMTW img {
   width: 140px;
   height: 47px;
 }
 
-/* line 27, ../sass/partials/_header.scss */
+/* line 31, ../sass/partials/_header.scss */
 .mainNav {
   font-size: 16px;
   line-height: 18px;
   list-style: none;
 }
-/* line 31, ../sass/partials/_header.scss */
+/* line 35, ../sass/partials/_header.scss */
 .mainNav a {
   color: #39383b;
   text-decoration: none;
 }
-/* line 34, ../sass/partials/_header.scss */
+/* line 38, ../sass/partials/_header.scss */
 .mainNav a:hover {
   color: #00aee6;
 }
 
-/* line 39, ../sass/partials/_header.scss */
+/* line 43, ../sass/partials/_header.scss */
 .navItem {
   display: inline-block;
   margin-left: 55px;
   padding: 20px 0;
 }
-/* line 43, ../sass/partials/_header.scss */
+/* line 47, ../sass/partials/_header.scss */
 .navItem > a {
   text-transform: uppercase;
 }
-/* line 46, ../sass/partials/_header.scss */
+/* line 50, ../sass/partials/_header.scss */
 .navItem:first-child {
   margin: 0;
 }
 
-/* line 50, ../sass/partials/_header.scss */
+/* line 54, ../sass/partials/_header.scss */
 .subNav {
   background: #808285;
   display: none;
   margin-top: 20px;
 }
-/* line 54, ../sass/partials/_header.scss */
+/* line 58, ../sass/partials/_header.scss */
 .subNav li {
   display: inline-block;
   padding: 10px 20px;
 }
-/* line 58, ../sass/partials/_header.scss */
+/* line 62, ../sass/partials/_header.scss */
 .subNav li.current_page_item a {
   color: #00506e;
 }
-/* line 63, ../sass/partials/_header.scss */
+/* line 67, ../sass/partials/_header.scss */
 .subNav a {
   color: #fff;
   width: 100%;
   height: 100%;
 }
-/* line 68, ../sass/partials/_header.scss */
+/* line 72, ../sass/partials/_header.scss */
 .subNav a:hover {
   color: #00506e;
 }
 
 @media only screen and (min-width: 820px) {
-  /* line 76, ../sass/partials/_header.scss */
+  /* line 80, ../sass/partials/_header.scss */
   .navItem:hover .subNav {
     display: block;
   }
 
-  /* line 81, ../sass/partials/_header.scss */
+  /* line 85, ../sass/partials/_header.scss */
   .subNav {
     box-sizing: border-box;
     text-align: center;
@@ -322,7 +327,7 @@ footer a {
     width: 100%;
   }
 }
-/* line 92, ../sass/partials/_header.scss */
+/* line 96, ../sass/partials/_header.scss */
 .btnNav {
   color: #39383b;
   display: none;
@@ -331,38 +336,33 @@ footer a {
 }
 
 @media only screen and (max-width: 819px) {
-  /* line 99, ../sass/partials/_header.scss */
+  /* line 103, ../sass/partials/_header.scss */
   .logoMTW {
     position: relative;
     z-index: 3;
   }
 
-  /* line 104, ../sass/partials/_header.scss */
+  /* line 108, ../sass/partials/_header.scss */
   .hdrMTW nav {
     text-align: right;
   }
-  /* line 106, ../sass/partials/_header.scss */
-  .hdrMTW nav.active {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 203px;
-  }
-  /* line 111, ../sass/partials/_header.scss */
-  .hdrMTW nav.active .mainNav {
-    display: block;
-  }
 
-  /* line 117, ../sass/partials/_header.scss */
+  /* line 112, ../sass/partials/_header.scss */
   .btnNav {
     display: block;
   }
 
-  /* line 120, ../sass/partials/_header.scss */
+  /* line 115, ../sass/partials/_header.scss */
   .mainNav {
     background: #fff;
     display: none;
-    padding: 20px 10px 0;
+    padding: 20px 20px 0;
+    position: absolute;
+    right: 0;
+  }
+  /* line 121, ../sass/partials/_header.scss */
+  .mainNav.active {
+    display: block;
   }
 
   /* line 125, ../sass/partials/_header.scss */

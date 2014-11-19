@@ -3,7 +3,8 @@ var windowWidth, moverSelector, thisHeight, descHeight;
 jQuery(document).ready(function($) {
 	//MOBILE NAV
 	$('body').on('tap', '.btnNav', function(){
-		$('.hdrMTW nav').toggleClass('active');
+		$('.mainNav').toggleClass('active');
+		$('.hdrMTW').toggleClass('unsticky');
 		
 		return false;
 	});
