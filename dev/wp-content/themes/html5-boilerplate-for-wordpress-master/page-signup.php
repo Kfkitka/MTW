@@ -21,8 +21,9 @@ get_header(); ?>
 		}?>
 	        <div class="box">
 	        	<article id="signup" class="clearfix">
-	            	<div class="signupBox">
+	                <div class="signupBox">
 						<div class="signupForm">
+							<?php //switch to this and remove this comment the_content(); ?>
 							<?php $args4 = array(
 								'category_name' => 'form-inputs',
 								'post_type' => 'post',
@@ -34,29 +35,26 @@ get_header(); ?>
 							foreach ($postslist4 as $post) :
 								setup_postdata($post);
 							?>
-			                	<article class="formFields">
-			                    	<?php the_content(); ?>
-			                    </article>
+			                    <?php the_content(); ?>
 			                <?php endforeach; ?>
 						</div>
 	                    <!--.clearfix-->
 	                </div>
 	                <div class="signupHeader">
-	                	<?php $args5 = array(
-							'category_name' => 'signup-copy',
-							'post_type' => 'post',
-							'order' => 'ASC',
-							'post_status' => 'publish',
-							'numberposts' => 1
-						);
-						$postslist5 = get_posts($args5);
-						foreach ($postslist5 as $post) :
-							setup_postdata($post);
-						?>
-		                	<article class="signupCopy">
-		                    	<?php the_content(); ?>
-		                    </article>
-		                <?php endforeach; ?>
+	                    <?php $args2 = array(
+								'category_name' => 'signup-copy',
+								'post_type' => 'post',
+								'order' => 'ASC',
+								'post_status' => 'publish',
+								'numberposts' => 1
+							);
+							$postslist2 = get_posts($args2);
+							foreach ($postslist2 as $post) :
+								setup_postdata($post);
+							?>
+								<h3><?php the_title(); ?></h3>
+			                    <?php the_content(); ?>
+			                <?php endforeach; ?>
 	                </div>
 	            </article>
             </div>
@@ -103,13 +101,10 @@ get_header(); ?>
 				foreach ($postslist3 as $post) :
 					setup_postdata($post);
 				?>
-                	<article class="socialContent">
-                    	<?php the_content(); ?>
-                    </article>
-                <?php endforeach; ?>
-				<div class="greenSignupBtn">
+            		<h3><?php the_title(); ?></h3>
+                	<?php the_content(); ?>
                 	<a href="#signup" class="bigBtn">Join the Movement</a>
-                </div>
+                <?php endforeach; ?>
             </div>
         </article><!--.socialSection-->
       </div>

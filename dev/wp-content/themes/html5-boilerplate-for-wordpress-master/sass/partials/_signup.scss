@@ -37,38 +37,33 @@
 	background:$grey;
 	height:480px;
 	max-height:480px;
+	h3{
+		font-size:30px;
+		line-height:32px;
+	}
 }
 #signup{
 	padding-top: 18px;
-	
-	.signupBox{
-		height: 445px;
-		background: #fff;
-	}
-	.signupBox, .signupHeader {
-		max-width:550px;
-	}
-
-	.signupHeader{
-		color:#fff;
-		padding-left: 30px;
-		.signupTitle {
-			font-size: 30px;
-			font-weight: bold;
-			line-height: 34px;
-			margin-bottom: 40px;
-		}
-
-		.signupSubtitle{
-			font-size: 21px;
-			line-height: 25px;
-		}
-	}
+}
+.signupBox{
+	height: 445px;
+	background: #fff;
 }
 .signupBox, .signupHeader {
+	@extend %floatLeft;
 	box-sizing: border-box;
-	float: left;
 	width: 50%;
+	max-width:550px;
+}
+
+.signupHeader{
+	color:#fff;
+	font-size:21px;
+	line-height:25px;
+	padding-left: 30px;
+	h3 {
+		margin-bottom: 40px;
+	}
 }
 
 //FORM STUFF
@@ -127,39 +122,16 @@
 	text-align:center;
 	padding:25px 0;
 
-	.socialContent{
-		padding:0 25px;
-
-		.socialHeader{
-			font-size: 30px;
-			font-weight: bold;
-			line-height: 35px;
-			margin: 40px 0;
-		}
-
-		.socialParticulars{
-			font-size: 21px;
-			font-weight: normal;
-		}
+	h3{
+		margin:40px 0;
 	}
-}
 
-//BUTTONS
-.greenSignupBtn{
-	@extend %btnBlock;
-	font-size: 21px;
-	height: auto;
-	margin:40px auto;
-	max-width: 300px;
 	a{
 		@extend %btnMTW;
+		@extend %btnBlock;
+		margin:40px auto;
+		max-width: 300px;
 	}
-}
-.bigBtn{
-	@extend %btnMTW;
-	@extend %btnBlock;
-	text-align:center;
-	max-width: 300px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -173,18 +145,15 @@
 		margin: 0 auto;
 	}
 	.signupBox{
+		margin-top: 40px;
 		width: 100%;
 	}
 	.signupHeader {
+		padding-left: 0;
 		width: 95%;
 		max-width: 95%;
 	}
-	#signup {
-		.signupHeader{
-			margin-top: 40px;
-			padding-left: 0;
-		}
-	}
+
 	.signupForm {
 		padding: 24px 15px 0 15px;
 	}
