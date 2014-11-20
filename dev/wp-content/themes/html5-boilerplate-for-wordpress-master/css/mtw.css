@@ -1,17 +1,17 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .greenSignupBtn a, .bigBtn, .imgCOTip, .pageMovers h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverContent, .imgBoard img {
+.clearfix:after, .socialMedia a, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .greenSignupBtn a, .bigBtn, .imgCOTip, .pageMovers h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverContent, .imgBoard img, .progChoices a, .programContent.active, .programNav a, .program.active, .progVal h3 span {
   display: block;
 }
 
 /* line 18, ../sass/partials/_base.scss */
-.col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .bodyImage.leftSide, .mtwSidebar, .imgBoard, .boardContent, .workEx {
+.col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .bodyImage.leftSide, .mtwSidebar, .imgBoard, .boardContent, .workEx, .btnProgEducator, .programNav, .program, .programValues {
   float: left;
 }
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1416246136');
-  src: url('../fonts/fontawesome-webfont.eot?&1416246136#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1416246136') format('woff'), url('../fonts/fontawesome-webfont.ttf?1416246136') format('truetype'), url('../fonts/fontawesome-webfont.svg?1416246136') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1409850401');
+  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
 }
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
@@ -846,40 +846,64 @@ footer a {
 
 /* line 108, ../sass/partials/_movers.scss */
 .imgBoard {
+  box-sizing: border-box;
+  padding-left: 25px;
   width: 24%;
   max-width: 235px;
 }
-/* line 112, ../sass/partials/_movers.scss */
+/* line 114, ../sass/partials/_movers.scss */
 .imgBoard img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 100%;
   max-width: 210px;
+  min-width: 100px;
   max-height: 210px;
-  padding-left: 25px;
+  overflow: hidden;
 }
 
-/* line 121, ../sass/partials/_movers.scss */
+/* line 124, ../sass/partials/_movers.scss */
 .boardContent {
+  box-sizing: border-box;
+  padding: 0 20px;
   width: 76%;
   max-width: 745px;
 }
 
 @media only screen and (min-width: 735px) and (max-width: 987px) {
-  /* line 127, ../sass/partials/_movers.scss */
+  /* line 132, ../sass/partials/_movers.scss */
   .indivMover {
     width: 32.5%;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 734px) {
-  /* line 132, ../sass/partials/_movers.scss */
+  /* line 137, ../sass/partials/_movers.scss */
   .indivMover {
     width: 49.5%;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 137, ../sass/partials/_movers.scss */
+  /* line 142, ../sass/partials/_movers.scss */
+  .imgBoard {
+    float: none;
+    width: 100%;
+    max-width: none;
+    padding-right: 25px;
+  }
+  /* line 147, ../sass/partials/_movers.scss */
+  .imgBoard img {
+    margin: 0 auto 20px;
+  }
+
+  /* line 151, ../sass/partials/_movers.scss */
+  .boardContent {
+    float: none;
+    width: 100%;
+    max-width: auto;
+  }
+
+  /* line 156, ../sass/partials/_movers.scss */
   .indivMover {
     float: none;
     width: 100%;
@@ -1104,5 +1128,233 @@ footer a {
   .workEx {
     float: none;
     width: 85%;
+  }
+}
+/* line 3, ../sass/partials/_program.scss */
+.mtwProgram {
+  padding-top: 80px;
+}
+/* line 5, ../sass/partials/_program.scss */
+.mtwProgram h3 {
+  font-size: 30px;
+  line-height: 32px;
+}
+/* line 9, ../sass/partials/_program.scss */
+.mtwProgram .pageContent {
+  padding: 0;
+}
+
+/* line 13, ../sass/partials/_program.scss */
+.progIntro {
+  background: #949698;
+  text-align: center;
+  padding: 20px 0 90px;
+}
+/* line 17, ../sass/partials/_program.scss */
+.progIntro h3 {
+  color: #fff;
+}
+
+/* line 21, ../sass/partials/_program.scss */
+.progChoices {
+  max-width: 780px;
+  margin: 60px auto 0;
+}
+/* line 24, ../sass/partials/_program.scss */
+.progChoices a {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: #d7df27;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  padding: 135px 0;
+  width: 50%;
+  max-width: 300px;
+  min-width: 200px;
+}
+/* line 40, ../sass/partials/_program.scss */
+.progChoices a:hover {
+  background: rgba(0, 0, 0, 0.75);
+  color: #d7df27;
+}
+
+/* line 46, ../sass/partials/_program.scss */
+.btnProgEducator {
+  margin-right: 20px;
+}
+
+/* line 50, ../sass/partials/_program.scss */
+.btnProgCompany {
+  float: right;
+}
+
+/* line 55, ../sass/partials/_program.scss */
+.programContent {
+  display: none;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* line 65, ../sass/partials/_program.scss */
+.programNav {
+  padding-left: 20px;
+  max-width: 60px;
+  width: 6.4%;
+}
+/* line 70, ../sass/partials/_program.scss */
+.programNav a {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #00aee6;
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+}
+
+/* line 79, ../sass/partials/_program.scss */
+.progNavContent {
+  max-width: 60px;
+  width: 100%;
+}
+/* line 82, ../sass/partials/_program.scss */
+.progNavContent.fixed {
+  position: fixed;
+  top: 80px;
+}
+
+/* line 90, ../sass/partials/_program.scss */
+.program {
+  display: none;
+  width: 71%;
+  max-width: 660px;
+}
+
+/* line 99, ../sass/partials/_program.scss */
+.programSection1 {
+  color: #00aee6;
+}
+/* line 101, ../sass/partials/_program.scss */
+.programSection1 h3 {
+  color: #00aee6;
+}
+
+/* line 105, ../sass/partials/_program.scss */
+.programSection2,
+.programSection6 {
+  background: #39383b;
+  color: #fff;
+}
+/* line 109, ../sass/partials/_program.scss */
+.programSection2 h3,
+.programSection6 h3 {
+  color: #fff;
+}
+
+/* line 113, ../sass/partials/_program.scss */
+.programSection3,
+.programSection5 {
+  color: #39383b;
+}
+/* line 116, ../sass/partials/_program.scss */
+.programSection3 h3,
+.programSection5 h3 {
+  color: #39383b;
+}
+
+/* line 120, ../sass/partials/_program.scss */
+.programSection4 {
+  background: #949698;
+  color: #00aee6;
+}
+/* line 123, ../sass/partials/_program.scss */
+.programSection4 h3 {
+  color: #00aee6;
+}
+
+/* line 130, ../sass/partials/_program.scss */
+.programValues {
+  text-align: center;
+  width: 25.5%;
+  max-width: 240px;
+}
+
+/* line 136, ../sass/partials/_program.scss */
+.progVal {
+  background: #00aee6;
+  color: #fff;
+  display: table;
+  padding: 0 20px;
+}
+/* line 141, ../sass/partials/_program.scss */
+.progVal h3 {
+  color: #fff;
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+}
+/* line 146, ../sass/partials/_program.scss */
+.progVal h3 span {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+/* line 155, ../sass/partials/_program.scss */
+.progVal1 {
+  background: #949698;
+  color: #3d3d3f;
+}
+/* line 158, ../sass/partials/_program.scss */
+.progVal1 h3 {
+  color: #3d3d3f;
+}
+
+/* line 162, ../sass/partials/_program.scss */
+.progVal3 {
+  background: #39383b;
+  color: #00aee6;
+}
+/* line 165, ../sass/partials/_program.scss */
+.progVal3 h3 {
+  color: #00aee6;
+}
+
+@media only screen and (max-width: 676px) {
+  /* line 171, ../sass/partials/_program.scss */
+  .progChoices {
+    max-width: 580px;
+  }
+  /* line 173, ../sass/partials/_program.scss */
+  .progChoices a {
+    font-size: 24px;
+    line-height: 26px;
+    padding: 75px 0;
+    max-width: 200px;
+  }
+  /* line 179, ../sass/partials/_program.scss */
+  .progChoices .btnProgEducator {
+    padding: 87px 0;
+  }
+
+  /* line 185, ../sass/partials/_program.scss */
+  .programNav a {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 476px) {
+  /* line 192, ../sass/partials/_program.scss */
+  .progChoices {
+    max-width: 600px;
+  }
+  /* line 194, ../sass/partials/_program.scss */
+  .progChoices a {
+    float: none;
+    margin: 0 auto 20px;
   }
 }

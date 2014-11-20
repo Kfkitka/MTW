@@ -63,19 +63,17 @@ if ($parentTitle=="About") {
                         } ?>
                     </div><!--.imgBoard-->
                     <article class="boardContent">
-                        <div class="box">
-                            <h3><?php echo $moverName ?>
-                                <span><?php
-                                $moverTitle = get_post_custom_values('MTW_Title');
-                                if(is_array($moverTitle)):
-                                    foreach ( $moverTitle as $key=> $value ) {
-                                        echo $value;					
-                                    }
-                                endif;
-                                ?>
-                            </h3>
-                            <?php the_content(); ?>
-                        </div><!--.box-->
+                        <h3><?php the_title(); ?>
+                            <span><?php
+                            $moverTitle = get_post_custom_values('MTW_Title');
+                            if(is_array($moverTitle)):
+                                foreach ( $moverTitle as $key=> $value ) {
+                                    echo $value;					
+                                }
+                            endif;
+                            ?></span>
+                        </h3>
+                        <?php the_content(); ?>
                     </article><!--.boardContent-->
                 </section><!--.boardMember-->
                 <?php endforeach ?>
@@ -109,11 +107,8 @@ if ($parentTitle=="About") {
                         } ?>
                     </div><!--.imgBoard-->
                     <article class="boardContent">
-                    	<div class="box">
-                            <h3><?php echo $moverName ?></h3>
-                            <?php the_content(); ?>
-                        
-                        </div><!--.box-->
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
                     </article><!--.boardContent-->
                 </section><!--.boardMember-->
                 <?php endforeach ?>
