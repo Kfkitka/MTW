@@ -64,24 +64,53 @@
 //NAV
 .programNav{
 	@extend %floatLeft;
-	padding-left:20px;
-	max-width:60px;
-	width:6.4%;
-	a{
-		@extend %displayBlock;
-		@include border-radius(50%);
-		background:$lightBlue;
-		width:100%;
-		max-width:60px;
-		height:60px;
-	}
+	text-align:center;
+	width:25.5%;
+	max-width:240px;
+	min-height:200px;
 }
 .progNavContent{
-	max-width:60px;
+	background:$lightBlue;
+	bottom:0;
+	max-width:240px;
 	width:100%;
 	&.fixed{
 		position:fixed;
 		top:80px;
+	}
+}
+.progVal{
+	display:table;
+	height:25%;
+	padding:0 20px;
+	text-decoration:none;
+	h3{
+		color:#fff;
+		display:table-cell;
+		margin:0;
+		vertical-align:middle;
+		span{
+			@extend %displayBlock;
+			font:{
+				size:18px;
+				weight:400;
+			}
+			line-height:25px;
+		}
+	}
+}
+.progVal1{
+	background:$lightGrey;
+	color:$grey;
+	h3{
+		color:$grey;
+	}
+}
+.progVal3{
+	background:$darkGrey;
+	color:$lightBlue;
+	h3{
+		color:$lightBlue;
 	}
 }
 
@@ -90,8 +119,8 @@
 .program{
 	@extend %floatLeft;
 	display:none;
-	width:71%;
-	max-width:660px;
+	width:74.5%;
+	max-width:730px;
 	&.active{
 		@extend %displayBlock;
 	}
@@ -125,47 +154,6 @@
 	}
 }
 
-
-//VALUES
-.programValues{
-	@extend %floatLeft;
-	text-align:center;
-	width:25.5%;
-	max-width:240px;
-}
-.progVal{
-	background:$lightBlue;
-	color:#fff;
-	display:table;
-	padding:0 20px;
-	h3{
-		color:#fff;
-		display:table-cell;
-		margin:0;
-		vertical-align:middle;
-		span{
-			@extend %displayBlock;
-			font:{
-				size:21px;
-				weight:400;
-			}
-		}
-	}
-}
-.progVal1{
-	background:$lightGrey;
-	color:$grey;
-	h3{
-		color:$grey;
-	}
-}
-.progVal3{
-	background:$darkGrey;
-	color:$lightBlue;
-	h3{
-		color:$lightBlue;
-	}
-}
 
 @media only screen and (max-width: 676px) {
 	.progChoices{

@@ -1,4 +1,4 @@
-var windowWidth, moverSelector, thisHeight, descHeight, programPosition, footerPosition;
+var windowWidth, moverSelector, thisHeight, descHeight, footerHeight, progHeight, viewportHeight, programPosition;
 
 jQuery(document).ready(function($) {
 	//MOBILE NAV
@@ -32,40 +32,30 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 	
-	//PROGRAM PAGE	
+	//PROGRAM PAGE
+	footerHeight = $('footer').outerHeight(true);	
 	$('body').on('tap', '.progChoices a', function(){
 		var programSelector = $(this).attr('href');
 		
 		if($(programSelector).hasClass('active')){
 		} else{
-			$('.program').removeClass('active');
+			$('.program,.prograContent').removeClass('active');
+			$('.progNavContent').removeClass('fixed');
 			
 			$(programSelector).addClass('active');
 			$('.programContent').addClass('active');
 		}
-		
+
 		//set program nav
-		var progHeight = $('.programContent').height();
-		var viewportHeight = $(window).height() - 80;
-		programPosition = $('.program').offset();
-		footerPosition = $('footer').offset();
+		progHeight = $('.programContent').height();
+		viewportHeight = $(window).height() - 80;
+		programPosition = $('.program.active').offset().top - 80;
 		$('.programNav').css('height',progHeight);
-		$('.progNavContent').css('height',viewportHeight);
-		
-		//set value heights
-		var valHeight1 = $('.programSection1').height();
-		var valHeight2 = ($('.programSection2').height()) + ($('.programSection3').height());
-		var valHeight3 = ($('.programSection4').height()) + ($('.programSection5').height());
-		var valHeight4 = $('.programSection6').height();
-		$('.progVal1').css('height',valHeight1);
-		$('.progVal2').css('height',valHeight2);
-		$('.progVal3').css('height',valHeight3);
-		$('.progVal4').css('height',valHeight4);
 		
 		$('html, body').animate({
 			scrollTop: $(programSelector).offset().top - 80
 		},'fast');
-		
+
 		return false;
 	});
 });
@@ -73,11 +63,20 @@ jQuery(document).ready(function($) {
 $(window).scroll(function() {
 	//set nav heights
 	if($('.program').hasClass('active')){
-		if($(window).scrollTop() > programPosition.top){
-			$('.progNavContent').addClass('fixed');
+		if($(window).scrollTop() >= programPosition){
+			$('.progNavContent').addClass('fixed').css('height','');
 		} else{
-			$('.progNavContent').removeClass('fixed');
+			$('.progNavContent').removeClass('fixed').css('height',viewportHeight);
 		}
+
+		var viewport = $(window).scrollTop() + $(window).height()
+		var footerPosition = $('footer').offset().top;
+		if(viewport >= footerPosition){
+			$('.progNavContent').css('bottom',(viewport - footerPosition));
+		} else{
+			$('.progNavContent').css('bottom','');
+		}
+		
 	}
 });
 
@@ -85,5 +84,5 @@ jQuery(window).resize(function(){
 	$('.indivMover').removeClass('active').css('height','');
 	$('.program').removeClass('active');
 	
-	programPosition = $('.program').offset();
+	programPosition = $('.program').offset().top - 80;
 });

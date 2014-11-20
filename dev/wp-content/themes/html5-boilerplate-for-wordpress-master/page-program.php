@@ -46,16 +46,22 @@ if ($parentTitle=="About") {
             </section><!--.progIntro-->
             
             <div class="programContent clearfix">
-                <article class="programNav">
-                	<div class="progNavContent">
-                        <a href="1"></a>
-                        <a href="2"></a>
-                        <a href="3"></a>
-                        <a href="4"></a>
-                        <a href="5"></a>
-                        <a href="6"></a>
+                <aside class="programNav">
+                    <div class="progNavContent">
+                        <a href="1" class="progVal progVal1">
+                            <h3>Self-Capacity Building</h3>
+                        </a><!--.progVal1-->
+                        <a href="2" class="progVal progVal2">
+                            <h3>Community Application<span>addressing the empathy action gap</span></h3>
+                        </a><!--.progVal2-->
+                        <a href="4" class="progVal progVal3">
+                            <h3>Application<span>addressing the empathy action gap</span></h3>
+                        </a><!--.progVal3-->
+                        <a href="6" class="progVal progVal4">
+                            <h3>Network Mobilization<span>sustained networking through application, Global Summit</span></h3>
+                        </a><!--.progVal4-->
                     </div><!--.progNavContent-->
-                </article><!--.programNav-->
+                </aside><!--.programNav-->
                 
                 <section id="educator" class="program">
 					<?php
@@ -126,22 +132,7 @@ if ($parentTitle=="About") {
                     </section><!--.programSection-->
                     <?php endforeach ?>
                 </section><!--#company-->
-                
-                <aside class="programValues">
-                    <section class="progVal progVal1">
-                        <h3>Self-Capacity Building</h3>
-                    </section><!--.progVal1-->
-                    <section class="progVal progVal2">
-                        <h3>Community Application<span>addressing the empathy action gap</span></h3>
-                    </section><!--.progVal1-->
-                    <section class="progVal progVal3">
-                        <h3>Application<span>addressing the empathy action gap</span></h3>
-                    </section><!--.progVal1-->
-                    <section class="progVal progVal4">
-                        <h3>Network Mobilization<span>sustained networking through application, Global Summit</span></h3>
-                    </section><!--.progVal1-->
-                </aside><!--.programValue-->
-            </span><!--.programContent-->
+            </div><!--.programContent-->
             
         </section><!--.pageContent-->
         
