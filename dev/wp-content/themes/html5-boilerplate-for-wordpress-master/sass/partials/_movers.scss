@@ -123,8 +123,6 @@
 }
 .boardContent{
 	@extend %floatLeft;
-	box-sizing:border-box;
-	padding:0 20px;
 	width:76%;
 	max-width:745px;
 }

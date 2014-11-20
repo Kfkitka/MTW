@@ -18,12 +18,12 @@ body {
 .container{
 	width:100%;
 	margin:0 auto;
+	min-width:320px;
 }
 .box{
 	box-sizing:border-box;
 	margin:0 auto;
 	padding:0 20px;
-	min-width:320px;
 	max-width:980px;
 }
 
@@ -37,7 +37,8 @@ a{
 		outline:none;
 	}
 }
-img{
+img,
+iframe{
 	border:0 none;
 }
 p,
@@ -68,20 +69,16 @@ footer {
 
 	.colHead {		
 		border-bottom: 1px dotted;
-		font-size: 15px;
-		line-height: 17px;
-		margin-bottom: 12px;
-		padding-bottom: 5px;
-		max-width: 85%;
+		font-size:15px;
+		line-height:17px;
+		margin-bottom:10px;
+		padding-bottom:5px;
 	}
 
 	ul{
 		list-style: none;
-
-		li {
-			font-size: 13px;
-			line-height: 16px;
-		}
+		font-size: 13px;
+		line-height: 16px;
 	}
 	a{
 		text-decoration:none;
@@ -89,6 +86,8 @@ footer {
 }
 .col {
 	@extend %floatLeft;
+	box-sizing:border-box;
+    padding:0 10px;
 	width:20%;
 }
 
@@ -164,11 +163,10 @@ footer {
     .container {
     }
     .col {
-    	box-sizing:border-box;
     	float:none;
     	margin:15px auto;
-    	padding:0 10px;
-    	width:85%;
+    	padding:0;
+    	width:100%;
     }
 }
 // Mobile (Landscape): Design for a width of 480px

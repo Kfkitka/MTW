@@ -39,22 +39,33 @@ jQuery(document).ready(function($) {
 		
 		if($(programSelector).hasClass('active')){
 		} else{
-			$('.program,.prograContent').removeClass('active');
+			$('.program, .prograContent, .btnProgSignUp').removeClass('active');
 			$('.progNavContent').removeClass('fixed');
 			
 			$(programSelector).addClass('active');
-			$('.programContent').addClass('active');
+			$('.programContent, .btnProgSignUp').addClass('active');
 		}
 
 		//set program nav
 		progHeight = $('.programContent').height();
 		viewportHeight = $(window).height() - 80;
 		programPosition = $('.program.active').offset().top - 80;
-		$('.programNav').css('height',progHeight);
+		//$('.programNav').css('height',progHeight);
 		
 		$('html, body').animate({
 			scrollTop: $(programSelector).offset().top - 80
 		},'fast');
+
+		return false;
+	});
+
+	$('body').on('tap', '.progNavContent a', function(){
+		var activeProgram = $('.program.active').attr('id');
+		var programSection = '#' + activeProgram + $(this).attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(programSection).offset().top - 80
+		},'slow');
 
 		return false;
 	});
@@ -82,7 +93,7 @@ $(window).scroll(function() {
 
 jQuery(window).resize(function(){
 	$('.indivMover').removeClass('active').css('height','');
-	$('.program').removeClass('active');
+	//$('.program').removeClass('active');
 	
 	programPosition = $('.program').offset().top - 80;
 });

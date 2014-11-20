@@ -10,6 +10,20 @@
 		padding:0;
 	}
 }
+.pageContent{
+	.btnProgSignUp{
+		@extend %btnMTW;
+		@extend %btnBlock;
+		background:$lightBlue;
+		color:#fff;
+		margin:20px auto;
+		text-align:center;
+		&:hover{
+			background:$lightGrey;
+			color:$lightBlue;
+		}
+	}
+}
 .progIntro{
 	background:$lightGrey;
 	text-align:center;
@@ -78,14 +92,25 @@
 		position:fixed;
 		top:80px;
 	}
-}
-.progVal{
-	display:table;
-	height:25%;
-	padding:0 20px;
-	text-decoration:none;
-	h3{
+	a{
 		color:#fff;
+		display:table;
+		height:25%;
+		padding:0 20px;
+		text-decoration:none;
+		&:hover{
+			color:#fff;
+		}
+		&.progVal1{
+			background:$lightGrey;
+			color:$grey;
+		}
+		&.progVal3{
+			background:$darkGrey;
+			color:$lightBlue;
+		}
+	}
+	h3{
 		display:table-cell;
 		margin:0;
 		vertical-align:middle;
@@ -99,21 +124,6 @@
 		}
 	}
 }
-.progVal1{
-	background:$lightGrey;
-	color:$grey;
-	h3{
-		color:$grey;
-	}
-}
-.progVal3{
-	background:$darkGrey;
-	color:$lightBlue;
-	h3{
-		color:$lightBlue;
-	}
-}
-
 
 //CONTENT
 .program{
@@ -123,6 +133,9 @@
 	max-width:730px;
 	&.active{
 		@extend %displayBlock;
+	}
+	.box{
+		padding-bottom:20px;
 	}
 }
 .programSection1{
@@ -154,7 +167,73 @@
 	}
 }
 
+//QUESTIONS
+.question{
+	@extend %floatLeft;
+	color:#fff;
+	text-align:center;
+	width:33%;
+	p{
+		display:table-cell;
+		vertical-align:middle;
+	}
+	.box{
+		@include border-radius(10px);
+		background:$lightBlue;
+		display:table;
+		margin:0 auto;
+		height:215px;
+		width:215px;
+		position:relative;
+	}
+	&:hover{
+		.questionRO{
+			display:table;
+		}
+	}
+}
+.questionRO{
+	@include border-radius(10px);
+	background:$darkGrey;
+	box-sizing:border-box;
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	padding:0 20px;
+}
 
+//VIDEO TYPE
+.vidBox{
+	margin:0 auto;
+	position:relative;
+	width:100%;
+	height:100%;
+	max-height:388px;
+	img{
+		@extend %displayBlock;
+		width:100%;
+		height:auto;
+	}
+	iframe{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	.question{
+		.box{
+			height:160px;
+			width:160px;
+		}
+	}
+}
 @media only screen and (max-width: 676px) {
 	.progChoices{
 		max-width:580px;
@@ -168,13 +247,6 @@
 			padding:87px 0;
 		}
 	}
-
-	.programNav{
-		a{
-			width:35px;
-			height:35px;
-		}
-	}
 }
 @media only screen and (max-width: 476px) {
 	.progChoices{
@@ -183,5 +255,9 @@
 			float:none;
 			margin:0 auto 20px;
 		}
+	}
+
+	.question{
+		float:none;
 	}
 }

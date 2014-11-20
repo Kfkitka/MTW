@@ -35,24 +35,23 @@
               <li><a href="/about">About Us</a></li>
               <li><a href="/about/values">Values</a></li>
               <li><a href="/about/our-story">Our Story</a></li>
-              <li><a href="/about/movers-and-shakers">Movers &amp; Shakers</a></li>
+              <li><a href="/about/our-team">Our Team</a></li>
             </ul>
         </div>
         <div class="what col">
             <p class="colHead">What We Are</p>
             <ul>
-              <li><a href="/programs">Timeline</a></li>
-              <li><a href="/programs/social-impact">Social Impact</a></li>
-              <li><a href="/join-us">Our Culture</a></li>
+              <li><a href="/program">Our Program</a></li>
+              <li><a href="/program/social-impact">Social Impact</a></li>
+              <li><a href="/about/join-us">Our Culture</a></li>
             </ul>
         </div>
         <div class="withUs col">
             <p class="colHead">Move With Us</p>
             <ul>
-              <li><a href="/join-us/join-mtw">Join Team MTW</a></li>
-              <li><a href="/join-us/support">Support Our Work</a></li>
-              <li><a href="/join-us/connect">Connect With Us</a></li>
-              <li><a href="/learn-more">Learn More</a></li>
+              <li><a href="/about/join-mtw">Join Team MTW</a></li>
+              <li><a href="/donate">Support Our Work</a></li>
+              <li><a href="/about/connect">Connect With Us</a></li>
             </ul>
         </div>
         <ul class="col">

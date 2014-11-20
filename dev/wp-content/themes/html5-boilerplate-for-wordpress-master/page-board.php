@@ -62,7 +62,7 @@ if ($parentTitle=="About") {
                             echo "<img src=\"$image_url[0]\" alt=\"$moverName\" />";
                         } ?>
                     </div><!--.imgBoard-->
-                    <article class="boardContent">
+                    <article class="boardContent box">
                         <h3><?php the_title(); ?>
                             <span><?php
                             $moverTitle = get_post_custom_values('MTW_Title');
@@ -106,7 +106,7 @@ if ($parentTitle=="About") {
                             echo "<img src=\"$image_url[0]\" alt=\"$moverName\" />";
                         } ?>
                     </div><!--.imgBoard-->
-                    <article class="boardContent">
+                    <article class="boardContent box">
                         <h3><?php the_title(); ?></h3>
                         <?php the_content(); ?>
                     </article><!--.boardContent-->
