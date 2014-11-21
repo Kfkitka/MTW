@@ -3,6 +3,9 @@
 		font-size:30px;
 		line-height:32px;
 	}
+	.pageContent{
+		padding:0;
+	}
 }
 
 //HOW IT WORKS
@@ -37,10 +40,6 @@
 	background:$grey;
 	height:480px;
 	max-height:480px;
-	h3{
-		font-size:30px;
-		line-height:32px;
-	}
 }
 #signup{
 	padding-top: 18px;

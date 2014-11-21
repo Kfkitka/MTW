@@ -11,7 +11,7 @@ get_header(); ?>
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-      <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+  	<section class="pageContent">
       	<?php
 		if ( has_post_thumbnail() ) {
 			$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
@@ -107,7 +107,7 @@ get_header(); ?>
                 <?php endforeach; ?>
             </div>
         </article><!--.socialSection-->
-      </div>
+    </section><!--.pageContent-->
 
     <?php endwhile; ?>
 

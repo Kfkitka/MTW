@@ -28,10 +28,10 @@ body {
 }
 
 a{
-	color:#fff;
+	color:$lightBlue;
 	outline:none;
 	&:hover{
-		color:$lightBlue;
+		color:$blue;
 	}
 	&:focus {
 		outline:none;
@@ -81,6 +81,7 @@ footer {
 		line-height: 16px;
 	}
 	a{
+		color:#fff;
 		text-decoration:none;
 	}
 }

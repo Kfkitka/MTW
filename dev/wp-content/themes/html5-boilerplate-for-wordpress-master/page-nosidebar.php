@@ -28,17 +28,16 @@ if ($parentTitle=="About") {
 	$subUrl = "learn-more";
 }?>
 
-<div id="main" class="mtwWrapper mtwPage clearfix" role="main">
+<div id="main" class="mtwWrapper mtwPage" role="main">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-      <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <section class="pageContent noSidebar">
-        	<div class="box">
-	        	<?php the_content(); ?>
-            </div><!--.box-->
-        </section>
-      </div>
+    <section class="pageContent noSidebar">
+    	<div class="box clearfix">
+    		<h1><?php the_title(); ?></h1>
+        	<?php the_content(); ?>
+        </div><!--.box-->
+    </section>
 
     <?php endwhile; ?>
 

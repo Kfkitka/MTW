@@ -46,24 +46,355 @@ if ($parentTitle=="About") {
             </section><!--.progIntro-->
             
             <div class="programContent clearfix">
-                <aside class="programNav">
-                    <div class="progNavContent">
-                        <a href="1" class="box progVal1">
-                            <h3>Self-Capacity Building</h3>
-                        </a><!--.progVal1-->
-                        <a href="2" class="box progVal2">
-                            <h3>Community Application<span>addressing the empathy action gap</span></h3>
-                        </a><!--.progVal2-->
-                        <a href="4" class="box progVal3">
-                            <h3>Application<span>addressing the empathy action gap</span></h3>
-                        </a><!--.progVal3-->
-                        <a href="6" class="box progVal4">
-                            <h3>Network Mobilization<span>sustained networking through application, Global Summit</span></h3>
-                        </a><!--.progVal4-->
-                    </div><!--.progNavContent-->
-                </aside><!--.programNav-->
-                
                 <section id="educator" class="program">
+
+                    <div id="val1" class="progVal val1">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Self-Capacity Building</h3>
+                            </div>
+                        </article><!--.hdrProgVal-->
+
+                        <section id="educator1" class="programSection">
+                            <div class="box">
+                                <h3>Learn skills for yourself to manage stress, develop emotional resiliency.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <section class="progQuestions">
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #1?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #1 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #2?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #2 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #3?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #3 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                </section><!--.progQuestions-->
+
+                            </div><!--.box-->
+                        </section><!--#educator1-->
+                    </div><!--.progVal-->
+
+                    <div id="val2" class="progVal val2">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Community Application</h3>
+                                <p>addressing the empathy action gap</p>
+                            </div><!--.box-->
+                        </article><!--.hdrProgVal-->
+
+                        <section id="educator2" class="programSection">
+                            <div class="box">
+                                <h3>Build a community with your educators and share best practices.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <div class="progImages">
+                                    <img class="imgSingle" src="http://placehold.it/16x9"/>
+                                </div><!--.progImages-->
+                            </div><!--.box-->
+                        </section>
+
+                        <section id="educator3" class="programSection">
+                            <div class="box">
+                                <h3>Form Transformation Team to brainstorm.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <section class="progQuestions">
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #1?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #1 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #2?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #2 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #3?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #3 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                </section><!--.progQuestions-->
+                            </div><!--.box-->
+                        </section>
+                    </div><!--.progVal-->
+
+                    <div id="val3" class="progVal val3">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Application</h3>
+                                <p>addressing the empathy action gap</p>
+                            </div><!--.box-->
+                        </article><!--.hdrProgVal-->
+
+                        <section id="educator4" class="programSection">
+                            <div class="box">
+                                <h3>Develop a personalized action plan.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <section class="progExamples">
+                                    <a href="#" class="example box">
+                                        <p>This is example title #1</p>
+                                        <article class="exampleContent">
+                                            <p>Here is a short description on why example #1 is important. More words on why it’s important.</p>
+                                        </article><!--.example-->
+                                    </a>
+                                    <a href="#" class="example box">
+                                        <p>This is example title #2</p>
+                                        <article class="exampleContent">
+                                            <p>Here is a short description on why example #2 is important. More words on why it’s important.</p>
+                                        </article><!--.example-->
+                                    </a>
+                                    <a href="#" class="example box">
+                                        <p>This is example title #3</p>
+                                        <article class="exampleContent">
+                                            <p>Here is a short description on why example #3 is important. More words on why it’s important.</p>
+                                        </article><!--.example-->
+                                    </a>
+                                </section><!--.progQuestions-->
+                            </div><!--.box-->
+                        </section>
+
+                        <section id="educator5" class="programSection">
+                            <div class="box">
+                                <h3>Utilize MTW tools in your classroom with the help of our Online Hub to refresh concepts.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <div class="vidBox">
+                                    <img class="imgVidBox" src="http://placehold.it/16x9"/>
+                                    <iframe src="http://www.youtube.com/embed/lrjz_lMNQqA?showinfo=0" allowfullscreen></iframe>
+                                </div><!--.vidBox-->
+                            </div><!--.box-->
+                        </section><!--#educator5-->
+                    </div><!--.progVal-->
+
+                    <div id="val4" class="progVal val4">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Network Mobilization</h3>
+                                <p>sustained networking through application, Global Summit</p>
+                            </div><!--.box-->
+                        </article><!--.hdrProgVal-->
+
+                        <section id="educator6" class="programSection">
+                            <div class="box">
+                                <h3>Results — increase in self-confidence, ability to manage conflict, increased classroom management.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <div class="progImages progImgGrid clearfix">
+                                    <img src="http://placehold.it/16x9"/>
+                                    <img src="http://placehold.it/16x9"/>
+                                    <img src="http://placehold.it/16x9"/>
+                                    <img src="http://placehold.it/16x9"/>
+                                </div><!--.progImages-->
+                            </div><!--.box-->
+                        </section><!--#educator6-->
+                    </div><!--.progVal-->
+
+                </section><!--#educator-->
+
+                 <section id="company" class="program">
+
+                    <div id="val1" class="progVal val1">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Self-Capacity Building</h3>
+                            </div>
+                        </article><!--.hdrProgVal-->
+
+                        <section id="company1" class="programSection">
+                            <div class="box">
+                                <h3>Learn skills for yourself to manage stress, develop emotional resiliency.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <section class="progQuestions">
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #1?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #1 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #2?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #2 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #3?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #3 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                </section><!--.progQuestions-->
+
+                            </div><!--.box-->
+                        </section><!--#company1-->
+                    </div><!--.progVal-->
+
+                    <div id="val2" class="progVal val2">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Community Application</h3>
+                                <p>addressing the empathy action gap</p>
+                            </div><!--.box-->
+                        </article><!--.hdrProgVal-->
+
+                        <section id="company2" class="programSection">
+                            <div class="box">
+                                <h3>Build a community with your educators and share best practices.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <div class="progImages">
+                                    <img class="imgSingle" src="http://placehold.it/16x9"/>
+                                </div><!--.progImages-->
+                            </div><!--.box-->
+                        </section>
+
+                        <section id="company3" class="programSection">
+                            <div class="box">
+                                <h3>Form Transformation Team to brainstorm.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <section class="progQuestions">
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #1?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #1 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #2?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #2 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                    <div class="question">
+                                        <article class="questionContent box">
+                                            <p>This is sample question #3?</p>
+                                            <div class="questionRO box">
+                                                <p>Here is a short description on why question #3 is important. More words on why it’s important.</p>
+                                            </div>
+                                        </article><!--.question-->
+                                    </div>
+                                </section><!--.progQuestions-->
+                            </div><!--.box-->
+                        </section>
+                    </div><!--.progVal-->
+
+                    <div id="val3" class="progVal val3">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Application</h3>
+                                <p>addressing the empathy action gap</p>
+                            </div><!--.box-->
+                        </article><!--.hdrProgVal-->
+
+                        <section id="company4" class="programSection">
+                            <div class="box">
+                                <h3>Develop a personalized action plan.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <section class="progExamples">
+                                    <a href="#" class="example box">
+                                        <p>This is example title #1</p>
+                                        <article class="exampleContent">
+                                            <p>Here is a short description on why example #1 is important. More words on why it’s important.</p>
+                                        </article><!--.example-->
+                                    </a>
+                                    <a href="#" class="example box">
+                                        <p>This is example title #2</p>
+                                        <article class="exampleContent">
+                                            <p>Here is a short description on why example #2 is important. More words on why it’s important.</p>
+                                        </article><!--.example-->
+                                    </a>
+                                    <a href="#" class="example box">
+                                        <p>This is example title #3</p>
+                                        <article class="exampleContent">
+                                            <p>Here is a short description on why example #3 is important. More words on why it’s important.</p>
+                                        </article><!--.example-->
+                                    </a>
+                                </section><!--.progQuestions-->
+                            </div><!--.box-->
+                        </section>
+
+                        <section id="company5" class="programSection">
+                            <div class="box">
+                                <h3>Utilize MTW tools in your classroom with the help of our Online Hub to refresh concepts.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <div class="vidBox">
+                                    <img class="imgVidBox" src="http://placehold.it/16x9"/>
+                                    <iframe src="http://www.youtube.com/embed/lrjz_lMNQqA?showinfo=0" allowfullscreen></iframe>
+                                </div><!--.vidBox-->
+                            </div><!--.box-->
+                        </section><!--#company5-->
+                    </div><!--.progVal-->
+
+                    <div id="val4" class="progVal val4">
+                        <article class="hdrProgVal">
+                            <div class="box">
+                                <h3>Network Mobilization</h3>
+                                <p>sustained networking through application, Global Summit</p>
+                            </div><!--.box-->
+                        </article><!--.hdrProgVal-->
+
+                        <section id="company6" class="programSection">
+                            <div class="box">
+                                <h3>Results — increase in self-confidence, ability to manage conflict, increased classroom management.</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                                <div class="progImages progImgGrid clearfix">
+                                    <img src="http://placehold.it/16x9"/>
+                                    <img src="http://placehold.it/16x9"/>
+                                    <img src="http://placehold.it/16x9"/>
+                                    <img src="http://placehold.it/16x9"/>
+                                </div><!--.progImages-->
+                            </div><!--.box-->
+                        </section><!--#company6-->
+                    </div><!--.progVal-->
+
+                </section><!--#company-->
+
+                <a href="/partners" class="btnProgSignUp">Sign Up Now</a>
+                
+                <?php /*<section id="educator" class="program">
 					<?php
                     $args1 = array(
                         'category_name' => 'Program+Educator',
@@ -107,32 +438,7 @@ if ($parentTitle=="About") {
                                 }
                             endif;
                         ?>
-                        <section class="progQuestions clearfix">
-                            <article class="question">
-                                <div class="box">
-                                    <p><?php echo $question1 ?></p>
-                                    <div class="questionRO">
-                                        <p><?php echo $answer1 ?></p>
-                                    </div>
-                                </div>
-                            </article><!--.question-->
-                            <article class="question">
-                                <div class="box">
-                                    <p><?php echo $question2 ?></p>
-                                    <div class="questionRO">
-                                        <p><?php echo $answer2 ?></p>
-                                    </div>
-                                </div>
-                            </article><!--.question-->
-                            <article class="question">
-                                <div class="box">
-                                    <p><?php echo $question3 ?></p>
-                                    <div class="questionRO">
-                                        <p><?php echo $answer3 ?></p>
-                                    </div>
-                                </div>
-                            </article><!--.question-->
-                        </section><!--.progQuestions-->
+                        
                         <?php } elseif(has_category('type-2')){
                             echo 'program type 2';
                         } elseif(has_category('type-3')){
@@ -184,7 +490,7 @@ if ($parentTitle=="About") {
                     <?php endforeach ?>
 
                     <a href="/partners" class="btnProgSignUp">Sign Up Now</a>
-                </section><!--#company-->
+                </section><!--#company--> */ ?>
             </div><!--.programContent-->
 
         </section><!--.pageContent-->

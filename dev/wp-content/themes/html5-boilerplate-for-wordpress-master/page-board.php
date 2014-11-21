@@ -33,90 +33,88 @@ if ($parentTitle=="About") {
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-      <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <section class="pageContent pageMovers"> 
-            <h1 class="pageTitle">Board Members</h1>
-            <section class="boardMembers clearfix">
-                <?php
-                $args = array(
-                    'category_name' => 'Board',
-                    'post_type' => 'post',
-                    'meta_key' => 'Board_Order',  // order by Board_Order custom field
-                    'orderby' =>  'meta_value_num',
-                    'order' => 'ASC',
-                    'post_status' => 'publish',
-                    'numberposts' => -1
-                );
-                $postslist = get_posts($args);
-                foreach ($postslist as $post) :
-                    setup_postdata($post);
-                    $moverName = get_the_title();
-                    $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u");
-                    $noSpaceName = strtr($moverName,$trans);
-                ?>
-                <section id="<?php echo $noSpaceName ?>" class="boardMember clearfix">
-                    <div class="imgBoard">
-                        <?php
-                        if ( has_post_thumbnail() ) {
-                            $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
-                            echo "<img src=\"$image_url[0]\" alt=\"$moverName\" />";
-                        } ?>
-                    </div><!--.imgBoard-->
-                    <article class="boardContent box">
-                        <h3><?php the_title(); ?>
-                            <span><?php
-                            $moverTitle = get_post_custom_values('MTW_Title');
-                            if(is_array($moverTitle)):
-                                foreach ( $moverTitle as $key=> $value ) {
-                                    echo $value;					
-                                }
-                            endif;
-                            ?></span>
-                        </h3>
-                        <?php the_content(); ?>
-                    </article><!--.boardContent-->
-                </section><!--.boardMember-->
-                <?php endforeach ?>
-            </section><!--boardMembers-->
-                
-            <p class="pageTitle">Advisory Board Members</p>
-            <section class="advisoryMembers clearfix">
-                <?php
-                $args = array(
-                    'category_name' => 'Advisory',
-                    'post_type' => 'post',
-                    'meta_key' => 'Advisory_Order',  // order by Advisory_Order custom field
-                    'orderby' =>  'meta_value_num',
-                    'order' => 'ASC',
-                    'post_status' => 'publish',
-                    'numberposts' => -1
-                );
-                $postslist = get_posts($args);
-                foreach ($postslist as $post) :
-                    setup_postdata($post);
-                    $moverName = get_the_title();
-                    $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u", "," => "");
-                    $noSpaceName = strtr($moverName,$trans);
-                ?>
-                <section id="<?php echo $noSpaceName ?>" class="boardMember clearfix">
-                	<div class="imgBoard">
-						<?php
-                        if ( has_post_thumbnail() ) {
-                            $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
-                            echo "<img src=\"$image_url[0]\" alt=\"$moverName\" />";
-                        } ?>
-                    </div><!--.imgBoard-->
-                    <article class="boardContent box">
-                        <h3><?php the_title(); ?></h3>
-                        <?php the_content(); ?>
-                    </article><!--.boardContent-->
-                </section><!--.boardMember-->
-                <?php endforeach ?>
-            </section><!--advisoryBoard-->
+    <section class="pageContent pageMovers"> 
+        <h1>Board Members</h1>
+        <section class="boardMembers clearfix">
+            <?php
+            $args = array(
+                'category_name' => 'Board',
+                'post_type' => 'post',
+                'meta_key' => 'Board_Order',  // order by Board_Order custom field
+                'orderby' =>  'meta_value_num',
+                'order' => 'ASC',
+                'post_status' => 'publish',
+                'numberposts' => -1
+            );
+            $postslist = get_posts($args);
+            foreach ($postslist as $post) :
+                setup_postdata($post);
+                $moverName = get_the_title();
+                $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u");
+                $noSpaceName = strtr($moverName,$trans);
+            ?>
+            <section id="<?php echo $noSpaceName ?>" class="boardMember clearfix">
+                <div class="imgBoard">
+                    <?php
+                    if ( has_post_thumbnail() ) {
+                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
+                        echo "<img src=\"$image_url[0]\" alt=\"$moverName\" />";
+                    } ?>
+                </div><!--.imgBoard-->
+                <article class="boardContent box">
+                    <h3><?php the_title(); ?>
+                        <span><?php
+                        $moverTitle = get_post_custom_values('MTW_Title');
+                        if(is_array($moverTitle)):
+                            foreach ( $moverTitle as $key=> $value ) {
+                                echo $value;					
+                            }
+                        endif;
+                        ?></span>
+                    </h3>
+                    <?php the_content(); ?>
+                </article><!--.boardContent-->
+            </section><!--.boardMember-->
+            <?php endforeach ?>
+        </section><!--boardMembers-->
             
-        </section><!--.pageContent .pageMovers-->
+        <h1>Advisory Board Members</h1>
+        <section class="advisoryMembers clearfix">
+            <?php
+            $args = array(
+                'category_name' => 'Advisory',
+                'post_type' => 'post',
+                'meta_key' => 'Advisory_Order',  // order by Advisory_Order custom field
+                'orderby' =>  'meta_value_num',
+                'order' => 'ASC',
+                'post_status' => 'publish',
+                'numberposts' => -1
+            );
+            $postslist = get_posts($args);
+            foreach ($postslist as $post) :
+                setup_postdata($post);
+                $moverName = get_the_title();
+                $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u", "," => "");
+                $noSpaceName = strtr($moverName,$trans);
+            ?>
+            <section id="<?php echo $noSpaceName ?>" class="boardMember clearfix">
+            	<div class="imgBoard">
+					<?php
+                    if ( has_post_thumbnail() ) {
+                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
+                        echo "<img src=\"$image_url[0]\" alt=\"$moverName\" />";
+                    } ?>
+                </div><!--.imgBoard-->
+                <article class="boardContent box">
+                    <h3><?php the_title(); ?></h3>
+                    <?php the_content(); ?>
+                </article><!--.boardContent-->
+            </section><!--.boardMember-->
+            <?php endforeach ?>
+        </section><!--advisoryBoard-->
         
-     </div>
+    </section><!--.pageContent .pageMovers-->
+    
     <?php endwhile; ?>
   <?php endif; ?>
 </div><!--.mtwPage-->

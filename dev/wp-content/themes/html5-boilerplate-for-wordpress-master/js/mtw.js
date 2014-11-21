@@ -1,4 +1,24 @@
-var windowWidth, moverSelector, thisHeight, descHeight, footerHeight, progHeight, viewportHeight, programPosition;
+//MOVER VARIABLES
+var windowWidth, moverSelector, thisHeight, descHeight;
+//PROGRAM VARIABLES
+var viewportHeight, hdrPosition, hdrHeight;
+var values = [];
+
+//DEBOUNCE
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
 
 jQuery(document).ready(function($) {
 	//MOBILE NAV
@@ -15,7 +35,6 @@ jQuery(document).ready(function($) {
 		moverSelector = $(this).children('a').attr('href');
 		
 		$('.indivMover').css('height','');
-		$('.moverContent').css('width',windowWidth);
 		
 		if($(this).hasClass('active')){
 			$(this).removeClass('active');
@@ -33,67 +52,94 @@ jQuery(document).ready(function($) {
 	});
 	
 	//PROGRAM PAGE
-	footerHeight = $('footer').outerHeight(true);	
 	$('body').on('tap', '.progChoices a', function(){
 		var programSelector = $(this).attr('href');
 		
 		if($(programSelector).hasClass('active')){
 		} else{
-			$('.program, .prograContent, .btnProgSignUp').removeClass('active');
+			$('.programContent, .program').removeClass('active');
 			$('.progNavContent').removeClass('fixed');
 			
 			$(programSelector).addClass('active');
-			$('.programContent, .btnProgSignUp').addClass('active');
+			$('.programContent').addClass('active');
 		}
 
-		//set program nav
-		progHeight = $('.programContent').height();
+		//set section height
 		viewportHeight = $(window).height() - 80;
-		programPosition = $('.program.active').offset().top - 80;
-		//$('.programNav').css('height',progHeight);
+		$('.progVal').css('min-height', viewportHeight);
 		
 		$('html, body').animate({
 			scrollTop: $(programSelector).offset().top - 80
 		},'fast');
 
+		//set hdr as fixed
+		$(programSelector + ' .hdrProgVal').each(function(){
+			values.push($(this).offset().top - 80);
+		});
+		hdrHeight = $('#val1 .hdrProgVal').outerHeight(true);
+
 		return false;
 	});
 
-	$('body').on('tap', '.progNavContent a', function(){
-		var activeProgram = $('.program.active').attr('id');
-		var programSection = '#' + activeProgram + $(this).attr('href');
-
-		$('html, body').animate({
-			scrollTop: $(programSection).offset().top - 80
-		},'slow');
+	$('body').on('tap', '.example', function(){
+		$(this).toggleClass('active');
 
 		return false;
 	});
 });
 
 $(window).scroll(function() {
-	//set nav heights
+	var scrollY = $(window).scrollTop();
+
+	//PROGRAM PAGE
 	if($('.program').hasClass('active')){
-		if($(window).scrollTop() >= programPosition){
-			$('.progNavContent').addClass('fixed').css('height','');
-		} else{
-			$('.progNavContent').removeClass('fixed').css('height',viewportHeight);
+		//scroll up
+		if(scrollY < values[0]){
+			$('.progVal').removeClass('active');
+		} else if(scrollY < values[1]){
+			$('.progVal').removeClass('active');
+			$('.val1').addClass('active');
+		} else if(scrollY < values[2]){
+			$('.progVal').removeClass('active');
+			$('.val2').addClass('active');	
+		} else if(scrollY < values[3]){
+			$('.progVal').removeClass('active');
+			$('.val3').addClass('active');	
 		}
 
-		var viewport = $(window).scrollTop() + $(window).height()
-		var footerPosition = $('footer').offset().top;
-		if(viewport >= footerPosition){
-			$('.progNavContent').css('bottom',(viewport - footerPosition));
-		} else{
-			$('.progNavContent').css('bottom','');
+		//scroll down
+		if(scrollY >= values[3]){
+			$('.progVal').removeClass('active');
+			$('.val4').addClass('active');	
+		} else if(scrollY >= values[2]){
+			$('.progVal').removeClass('active');
+			$('.val3').addClass('active');	
+		} else if(scrollY >= values[1]){
+			$('.progVal').removeClass('active');
+			$('.val2').addClass('active');
+		} else if(scrollY >= values[0]){
+			$('.progVal').removeClass('active');
+			$('.val1').addClass('active');
 		}
 		
 	}
 });
 
-jQuery(window).resize(function(){
-	$('.indivMover').removeClass('active').css('height','');
-	//$('.program').removeClass('active');
-	
-	programPosition = $('.program').offset().top - 80;
-});
+var onWindowResize = debounce(function(){
+	//MOVER FUNCTIONS
+	if($('.indivMover').hasClass('active')){
+		thisHeight = $('.indivMover.active a').height();
+		descHeight = $(moverSelector).height();
+			
+		$('.indivMover.active').css('height',descHeight + 30 + thisHeight);
+	}
+}, 250);
+window.addEventListener('resize', onWindowResize);
+
+/*jQuery(window).resize(function(){
+	//PROGRAM FUNCTIONS
+	if($('.program').hasClass('active')){
+		//$('.program').removeClass('active');
+		//programPosition = $('.program').offset().top - 80;
+	}
+});*/
