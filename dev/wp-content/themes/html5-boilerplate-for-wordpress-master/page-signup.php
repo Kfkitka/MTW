@@ -23,20 +23,7 @@ get_header(); ?>
 	        	<article id="signup" class="clearfix">
 	                <div class="signupBox">
 						<div class="signupForm">
-							<?php //switch to this and remove this comment the_content(); ?>
-							<?php $args4 = array(
-								'category_name' => 'form-inputs',
-								'post_type' => 'post',
-								'order' => 'ASC',
-								'post_status' => 'publish',
-								'numberposts' => 1
-							);
-							$postslist4 = get_posts($args4);
-							foreach ($postslist4 as $post) :
-								setup_postdata($post);
-							?>
-			                    <?php the_content(); ?>
-			                <?php endforeach; ?>
+							<?php the_content(); ?>
 						</div>
 	                    <!--.clearfix-->
 	                </div>

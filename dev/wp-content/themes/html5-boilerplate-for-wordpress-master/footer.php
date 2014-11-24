@@ -33,25 +33,26 @@
             <p class="colHead">Who We Are</p>
             <ul>
               <li><a href="/about">About Us</a></li>
-              <li><a href="/about/values">Values</a></li>
               <li><a href="/about/our-story">Our Story</a></li>
               <li><a href="/about/our-team">Our Team</a></li>
             </ul>
         </div>
         <div class="what col">
-            <p class="colHead">What We Are</p>
+            <p class="colHead">What We Do</p>
             <ul>
-              <li><a href="/program">Our Program</a></li>
-              <li><a href="/program/social-impact">Social Impact</a></li>
-              <li><a href="/about/join-us">Our Culture</a></li>
+              <li><a href="/program">Program</a></li>
+              <li><a href="/think-tank/global-movement">Global Movement</a></li>
+              <li><a href="/partners/case-studies">Social Impact</a></li>
+              <li><a href="/think-tank">Think Tank</a></li>
             </ul>
         </div>
         <div class="withUs col">
             <p class="colHead">Move With Us</p>
             <ul>
-              <li><a href="/about/join-mtw">Join Team MTW</a></li>
-              <li><a href="/donate">Support Our Work</a></li>
-              <li><a href="/about/connect">Connect With Us</a></li>
+              <li><a href="/partners">Become A Partner</a></li>
+              <li><a href="/about/careers">Careers</a></li>
+              <li><a href="/about/connect">Contact Us</a></li>
+              <li><a href="/donate">Donate</a></li>
             </ul>
         </div>
         <ul class="col">
@@ -79,18 +80,11 @@
 
 <script type="text/javascript">	
 	$(document).ready(function($){
-		//HEADER SCROLL
-		var homePage = '<?php echo home_url('/'); ?>';
-		if (document.location.href === homePage) {
-			//$('.hdrMTW').addClass('sticky');
-		}
-
 		//SIDEBAR HEIGHT
-		var pageHeight = $(window).height();
+		var pageHeight = $('.pageContent').height();
 		var sidebarHeight = $('.mtwSidebar').height();
-		//console.log(pageHeight, sidebarHeight);
-		if (pageHeight > (sidebarHeight + 120)) {
-			$('.mtwSidebar').css('height', (pageHeight-120) + 'px');
+		if (pageHeight > (sidebarHeight - 20)) {
+			$('.mtwSidebar').css('height', pageHeight + 20);
 		}
 	});// end doc ready
 </script>

@@ -157,6 +157,19 @@
                     </li>
                     <li class="navItem">
                         <a href="/think-tank" id="btnBlog">Think Tank</a>
+                        <ul class="subNav">
+                            <?php
+                                $args4 = array(
+                                    'child_of'     => 450, //Think Tank ID
+                                    'post_type'    => 'page',
+                                    'post_status'  => 'publish',
+                                    'sort_column'  => 'menu_order, post_title',
+                                    'sort_order'   => 'ASC',
+                                    'title_li'     => ''
+                                );
+                                wp_list_pages($args4);
+                            ?>
+                        </ul>
                     </li>
                     <li class="navItem">
                         <a href="/donate/" id="btnDonate">Donate</a>

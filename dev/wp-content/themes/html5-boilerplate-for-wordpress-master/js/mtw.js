@@ -26,6 +26,8 @@ jQuery(document).ready(function($) {
 		$('.mainNav').toggleClass('active');
 		$('.hdrMTW').toggleClass('unsticky');
 		
+		$('html, body').animate({ scrollTop: 0 },'fast');
+
 		return false;
 	});
 	
@@ -53,14 +55,16 @@ jQuery(document).ready(function($) {
 	
 	//PROGRAM PAGE
 	$('body').on('tap', '.progChoices a', function(){
-		var programSelector = $(this).attr('href');
+		var programType = $(this).attr('href');
 		
-		if($(programSelector).hasClass('active')){
-		} else{
-			$('.programContent, .program').removeClass('active');
-			$('.progNavContent').removeClass('fixed');
-			
-			$(programSelector).addClass('active');
+		$(programType).removeClass('inactive');
+		if(programType == '.educator'){
+			$('.company').addClass('inactive');
+		} else if(programType == '.company'){
+			$('.educator').addClass('inactive');
+		}
+
+		if(!($('.programContent').hasClass('active'))){	
 			$('.programContent').addClass('active');
 		}
 
@@ -69,11 +73,12 @@ jQuery(document).ready(function($) {
 		$('.progVal').css('min-height', viewportHeight);
 		
 		$('html, body').animate({
-			scrollTop: $(programSelector).offset().top - 80
+			scrollTop: $('#val1').offset().top - 80
 		},'fast');
 
 		//set hdr as fixed
-		$(programSelector + ' .hdrProgVal').each(function(){
+		var i=0;
+		$('.hdrProgVal').each(function(){
 			values.push($(this).offset().top - 80);
 		});
 		hdrHeight = $('#val1 .hdrProgVal').outerHeight(true);
@@ -92,7 +97,7 @@ $(window).scroll(function() {
 	var scrollY = $(window).scrollTop();
 
 	//PROGRAM PAGE
-	if($('.program').hasClass('active')){
+	if($('.programContent').hasClass('active')){
 		//scroll up
 		if(scrollY < values[0]){
 			$('.progVal').removeClass('active');
@@ -135,11 +140,4 @@ var onWindowResize = debounce(function(){
 	}
 }, 250);
 window.addEventListener('resize', onWindowResize);
-
-/*jQuery(window).resize(function(){
-	//PROGRAM FUNCTIONS
-	if($('.program').hasClass('active')){
-		//$('.program').removeClass('active');
-		//programPosition = $('.program').offset().top - 80;
-	}
-});*/
+//jQuery(window).resize(function(){});

@@ -83,6 +83,9 @@ footer {
 	a{
 		color:#fff;
 		text-decoration:none;
+		&:hover{
+			color:$lightBlue;
+		}
 	}
 }
 .col {

@@ -1,5 +1,5 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .pageContent .btnProgSignUp, .imgCOTip, .pageMovers h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverContent, .imgBoard img, .progChoices a, .programContent.active, .program.active, .progImages img, .example, .example.active .exampleContent, .vidBox img {
+.clearfix:after, .socialMedia a, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .btnProgSignUp, .imgCOTip, .pageMovers h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverContent, .imgBoard img, .progChoices a, .programContent.active, .progImages img, .example, .example.active .exampleContent, .vidBox img {
   display: block;
 }
 
@@ -10,10 +10,9 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1409850401');
+  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
 }
-
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
   display: inline-block;
@@ -70,13 +69,13 @@ a:focus {
   outline: none;
 }
 
-/* line 41, ../sass/partials/_general.scss */
+/* line 40, ../sass/partials/_general.scss */
 img,
 iframe {
   border: 0 none;
 }
 
-/* line 46, ../sass/partials/_general.scss */
+/* line 44, ../sass/partials/_general.scss */
 p,
 ul,
 ol {
@@ -84,7 +83,7 @@ ol {
   padding: 0;
 }
 
-/* line 52, ../sass/partials/_general.scss */
+/* line 51, ../sass/partials/_general.scss */
 header,
 footer {
   width: 100%;
@@ -123,20 +122,22 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
+/* line 86, ../sass/partials/_general.scss */
+footer a:hover {
+  color: #00aee6;
+}
 
-/* line 88, ../sass/partials/_general.scss */
+/* line 91, ../sass/partials/_general.scss */
 .col {
   box-sizing: border-box;
   padding: 0 10px;
   width: 20%;
 }
 
-/* line 96, ../sass/partials/_general.scss */
+/* line 99, ../sass/partials/_general.scss */
 .socialMedia a {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #808285;
   color: #39383b;
@@ -146,80 +147,78 @@ footer a {
   margin: 0 15px 15px 0;
   width: 25px;
 }
-/* line 107, ../sass/partials/_general.scss */
+/* line 110, ../sass/partials/_general.scss */
 .socialMedia a:hover {
   color: #fff;
 }
-/* line 111, ../sass/partials/_general.scss */
+/* line 114, ../sass/partials/_general.scss */
 .socialMedia .btnPin {
   background: #39383b;
   color: #808285;
   font-size: 30px;
   margin-top: -1px;
 }
-/* line 116, ../sass/partials/_general.scss */
+/* line 119, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover {
   color: #cb2027;
 }
-/* line 118, ../sass/partials/_general.scss */
+/* line 121, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover i {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #fff;
 }
 
-/* line 125, ../sass/partials/_general.scss */
+/* line 128, ../sass/partials/_general.scss */
 .btnFB {
   font-size: 17px;
 }
-/* line 127, ../sass/partials/_general.scss */
+/* line 130, ../sass/partials/_general.scss */
 .btnFB:hover {
   background: #3b5998;
 }
 
-/* line 131, ../sass/partials/_general.scss */
+/* line 134, ../sass/partials/_general.scss */
 .btnTW {
   font-size: 18px;
 }
-/* line 133, ../sass/partials/_general.scss */
+/* line 136, ../sass/partials/_general.scss */
 .btnTW:hover {
   background: #00aced;
 }
 
-/* line 137, ../sass/partials/_general.scss */
+/* line 140, ../sass/partials/_general.scss */
 .btnIn {
   font-size: 13px;
 }
-/* line 139, ../sass/partials/_general.scss */
+/* line 142, ../sass/partials/_general.scss */
 .btnIn:hover {
   background: #1180ba;
 }
 
-/* line 143, ../sass/partials/_general.scss */
+/* line 146, ../sass/partials/_general.scss */
 .btnIG {
   font-size: 18px;
 }
 
-/* line 146, ../sass/partials/_general.scss */
+/* line 149, ../sass/partials/_general.scss */
 .btnYT {
   font-size: 19px;
 }
-/* line 148, ../sass/partials/_general.scss */
+/* line 151, ../sass/partials/_general.scss */
 .btnYT:hover {
   background: #f33;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 155, ../sass/partials/_general.scss */
+  /* line 158, ../sass/partials/_general.scss */
   .container {
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 166, ../sass/partials/_general.scss */
+  /* line 169, ../sass/partials/_general.scss */
   .col {
     float: none;
     margin: 15px auto;
@@ -251,7 +250,7 @@ footer a {
   background: url(../../../images/logoMTW.jpg) 0 0 no-repeat;
   margin-right: 20px;
 }
-/* line 24, ../sass/partials/_header.scss */
+/* line 23, ../sass/partials/_header.scss */
 .logoMTW,
 .logoMTW img {
   width: 140px;
@@ -402,7 +401,7 @@ footer a {
 }
 
 /* line 15, ../sass/partials/_homepage.scss */
-.heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .pageContent .btnProgSignUp {
+.heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .btnProgSignUp {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -411,16 +410,14 @@ footer a {
   padding: 15px 0;
 }
 /* line 25, ../sass/partials/_homepage.scss */
-.heroButtons a:hover, .btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .socialSection a:hover, .pageContent .btnProgSignUp:hover {
+.heroButtons a:hover, .btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .socialSection a:hover, .btnProgSignUp:hover {
   color: #00aee6;
 }
 
 /* line 29, ../sass/partials/_homepage.scss */
-.btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .pageContent .btnProgSignUp {
-  -webkit-border-radius: 10px;
+.btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .btnProgSignUp {
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #d3de25;
   width: 100%;
@@ -428,7 +425,7 @@ footer a {
   height: 20px;
 }
 /* line 35, ../sass/partials/_homepage.scss */
-.btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .socialSection a:hover, .pageContent .btnProgSignUp:hover {
+.btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .socialSection a:hover, .btnProgSignUp:hover {
   background: #fff;
   color: #d3de25;
 }
@@ -506,10 +503,8 @@ footer a {
 
 /* line 106, ../sass/partials/_homepage.scss */
 .callOutBox {
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   text-align: center;
   width: 49%;
@@ -651,13 +646,13 @@ footer a {
   line-height: 54px;
   margin: 0 0 25px;
 }
-/* line 21, ../sass/partials/_subpage.scss */
+/* line 19, ../sass/partials/_subpage.scss */
 .pageContent p,
 .pageContent ol,
 .pageContent ul {
   margin: 0 0 15px;
 }
-/* line 25, ../sass/partials/_subpage.scss */
+/* line 24, ../sass/partials/_subpage.scss */
 .pageContent ol,
 .pageContent ul {
   padding: 0 0 0 20px;
@@ -705,38 +700,43 @@ footer a {
   margin-left: 22px;
 }
 
-/* line 69, ../sass/partials/_subpage.scss */
+/* line 66, ../sass/partials/_subpage.scss */
+.imgPageContent {
+  width: 100%;
+}
+
+/* line 72, ../sass/partials/_subpage.scss */
 .mtwSidebar {
   background: #00749c;
   color: #fff;
   width: 27%;
   max-width: 260px;
 }
-/* line 76, ../sass/partials/_subpage.scss */
+/* line 79, ../sass/partials/_subpage.scss */
 .mtwSidebar p {
   margin: 0 0 15px;
 }
-/* line 79, ../sass/partials/_subpage.scss */
+/* line 82, ../sass/partials/_subpage.scss */
 .mtwSidebar ul {
   margin: 0 0 15px 20px;
 }
-/* line 82, ../sass/partials/_subpage.scss */
+/* line 85, ../sass/partials/_subpage.scss */
 .mtwSidebar hr {
   border-top: 1px solid #fff;
   margin: 25px 0;
 }
-/* line 86, ../sass/partials/_subpage.scss */
+/* line 89, ../sass/partials/_subpage.scss */
 .mtwSidebar a:hover {
   color: #4c4c4e;
   text-decoration: underline;
 }
 
-/* line 91, ../sass/partials/_subpage.scss */
+/* line 94, ../sass/partials/_subpage.scss */
 .sidebarContent {
   padding: 20px;
 }
 
-/* line 94, ../sass/partials/_subpage.scss */
+/* line 97, ../sass/partials/_subpage.scss */
 .sidebarTitle {
   color: #d7df27;
   font-size: 30px;
@@ -795,10 +795,8 @@ footer a {
 }
 /* line 49, ../sass/partials/_movers.scss */
 .indivMover img {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
@@ -807,10 +805,8 @@ footer a {
 }
 /* line 57, ../sass/partials/_movers.scss */
 .indivMover .moverRO {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #00749c;
   color: #fff;
@@ -864,10 +860,8 @@ footer a {
 }
 /* line 114, ../sass/partials/_movers.scss */
 .imgBoard img {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   width: 100%;
   max-width: 210px;
@@ -1112,370 +1106,99 @@ footer a {
     width: 85%;
   }
 }
-/* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .pageContent .btnProgSignUp, .imgCOTip, .pageMovers h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverContent, .imgBoard img, .progChoices a, .programContent.active, .program.active, .progImages img, .example, .example.active .exampleContent, .vidBox img {
-  display: block;
-}
-
-/* line 18, ../sass/partials/_base.scss */
-.col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .bodyImage.leftSide, .mtwSidebar, .imgBoard, .boardContent, .workEx, .signupBox, .signupHeader, .btnProgEducator, .progImgGrid img {
-  float: left;
-}
-
-/* line 3, ../sass/partials/_homepage.scss */
-.homeContent {
-  color: #fff;
-}
-/* line 5, ../sass/partials/_homepage.scss */
-.homeContent h1 {
-  font-size: 45px;
-  line-height: 47px;
-  margin: 0 0 45px;
-}
-/* line 10, ../sass/partials/_homepage.scss */
-.homeContent h3 {
-  font-size: 30px;
-  line-height: 32px;
-}
-
-/* line 15, ../sass/partials/_homepage.scss */
-.heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .pageContent .btnProgSignUp {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-  text-decoration: none;
-  padding: 15px 0;
-}
-/* line 25, ../sass/partials/_homepage.scss */
-.heroButtons a:hover, .btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .socialSection a:hover, .pageContent .btnProgSignUp:hover {
-  color: #00aee6;
-}
-
-/* line 29, ../sass/partials/_homepage.scss */
-.btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .socialSection a, .pageContent .btnProgSignUp {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  background: #d3de25;
-  width: 100%;
-  max-width: 180px;
-  height: 20px;
-}
-/* line 35, ../sass/partials/_homepage.scss */
-.btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .socialSection a:hover, .pageContent .btnProgSignUp:hover {
-  background: #fff;
-  color: #d3de25;
-}
-
-/* line 42, ../sass/partials/_homepage.scss */
-.mtwHero {
-  background: #3d3d3f;
-  height: 480px;
-  max-height: 480px;
-}
-
-/* line 47, ../sass/partials/_homepage.scss */
-.heroContent {
-  padding: 90px 0;
-  max-width: 475px;
-}
-
-/* line 51, ../sass/partials/_homepage.scss */
-.heroButtons {
-  margin-top: 40px;
-}
-
-/* line 58, ../sass/partials/_homepage.scss */
-.btnMTW {
-  text-align: center;
-  margin-right: 20px;
-}
-
-/* line 66, ../sass/partials/_homepage.scss */
-.mtwMission {
-  background: #00506e;
-  font-size: 21px;
-  line-height: 23px;
-  text-align: center;
-  padding: 25px 0;
-}
-
-/* line 75, ../sass/partials/_homepage.scss */
-.coreValues {
-  margin: 60px auto;
-  text-align: center;
-}
-
-/* line 79, ../sass/partials/_homepage.scss */
-.hdrValues {
-  color: #00506e;
-  text-transform: uppercase;
-  margin: 0 0 40px;
-}
-
-/* line 84, ../sass/partials/_homepage.scss */
-.value {
-  color: #3d3d3f;
-  width: 25%;
-}
-/* line 88, ../sass/partials/_homepage.scss */
-.value .imgValue {
-  background: #3d3d3f;
-  width: 100%;
-  height: 140px;
-  max-width: 140px;
-  max-height: 140px;
-  margin: 0 auto 15px;
-}
-/* line 96, ../sass/partials/_homepage.scss */
-.value p {
-  padding: 0 15px;
-}
-
-/* line 102, ../sass/partials/_homepage.scss */
-.callOuts {
-  background: #e6e7e8;
-  padding: 60px 0 70px;
-}
-
-/* line 106, ../sass/partials/_homepage.scss */
-.callOutBox {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  text-align: center;
-  width: 49%;
-  height: 280px;
-  max-width: 460px;
-  max-height: 280px;
-}
-
-/* line 115, ../sass/partials/_homepage.scss */
-.coContent {
-  padding: 0 25px;
-}
-/* line 117, ../sass/partials/_homepage.scss */
-.coContent .btnCO {
-  margin: 15px auto;
-}
-
-/* line 124, ../sass/partials/_homepage.scss */
-.coSignUp {
-  background: #00506e;
-  margin-right: 2%;
-}
-
-/* line 129, ../sass/partials/_homepage.scss */
-.coTips {
-  background: #00506e;
-}
-/* line 131, ../sass/partials/_homepage.scss */
-.coTips .hasImg {
-  width: 50%;
-  max-width: 230px;
-}
-/* line 136, ../sass/partials/_homepage.scss */
-.coTips .btnCO {
-  background: #00aee6;
-}
-/* line 138, ../sass/partials/_homepage.scss */
-.coTips .btnCO:hover {
-  color: #00aee6;
-}
-
-/* line 143, ../sass/partials/_homepage.scss */
-.imgCOTip {
-  -moz-border-radius-topleft: 10px;
-  -webkit-border-top-left-radius: 10px;
-  border-top-left-radius: 10px;
-  -moz-border-radius-bottomleft: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  height: 280px;
-  width: 50%;
-  max-width: 230px;
-}
-
-@media only screen and (max-width: 862px) {
-  /* line 154, ../sass/partials/_homepage.scss */
-  .coTips .hasImg {
-    float: none;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* line 160, ../sass/partials/_homepage.scss */
-  .imgCOTip {
-    display: none;
-  }
-}
-@media only screen and (max-width: 700px) {
-  /* line 165, ../sass/partials/_homepage.scss */
-  .mtwHero {
-    height: 590px;
-    max-height: 590px;
-  }
-
-  /* line 170, ../sass/partials/_homepage.scss */
-  .value {
-    margin: 0 auto 20px;
-    width: 50%;
-  }
-
-  /* line 175, ../sass/partials/_homepage.scss */
-  .callOutBox {
-    float: none;
-    margin: 0 auto;
-    width: 85%;
-  }
-  /* line 179, ../sass/partials/_homepage.scss */
-  .callOutBox:first-child {
-    margin-bottom: 20px;
-  }
-
-  /* line 184, ../sass/partials/_homepage.scss */
-  .coContent {
-    padding-top: 20px;
-  }
-}
-@media only screen and (max-width: 599px) {
-  /* line 190, ../sass/partials/_homepage.scss */
-  .homeContent h1 {
-    font-size: 40px;
-    line-height: 42px;
-  }
-  /* line 194, ../sass/partials/_homepage.scss */
-  .homeContent h3 {
-    font-size: 26px;
-    line-height: 28px;
-  }
-
-  /* line 200, ../sass/partials/_homepage.scss */
-  .coContent .btnCO {
-    font-size: 16px;
-    line-height: 18px;
-    height: 18px;
-    padding: 10px 0;
-  }
-}
-@media only screen and (max-width: 482px) {
-  /* line 209, ../sass/partials/_homepage.scss */
-  .value {
-    float: none;
-    width: 85%;
-  }
-}
-/* line 6, ../sass/partials/_program.scss */
+/* line 3, ../sass/partials/_program.scss */
 .mtwProgram {
   padding-top: 80px;
 }
-/* line 8, ../sass/partials/_program.scss */
+/* line 5, ../sass/partials/_program.scss */
 .mtwProgram h3 {
   font-size: 30px;
   line-height: 32px;
 }
-/* line 12, ../sass/partials/_program.scss */
+/* line 9, ../sass/partials/_program.scss */
 .mtwProgram .pageContent {
   padding: 0;
 }
 
-/* line 17, ../sass/partials/_program.scss */
-.pageContent .btnProgSignUp {
-  background: #00aee6;
-  color: #fff;
-  margin: 20px auto;
-  text-align: center;
-}
-/* line 24, ../sass/partials/_program.scss */
-.pageContent .btnProgSignUp:hover {
-  background: #949698;
-  color: #00aee6;
-}
-
-/* line 30, ../sass/partials/_program.scss */
+/* line 13, ../sass/partials/_program.scss */
 .progIntro {
   background: #00aee6;
   text-align: center;
   padding: 20px 0 90px;
 }
-/* line 34, ../sass/partials/_program.scss */
+/* line 17, ../sass/partials/_program.scss */
 .progIntro h3 {
   color: #fff;
 }
 
-/* line 38, ../sass/partials/_program.scss */
+/* line 21, ../sass/partials/_program.scss */
 .progChoices {
   max-width: 780px;
   margin: 60px auto 0;
 }
-/* line 41, ../sass/partials/_program.scss */
+/* line 24, ../sass/partials/_program.scss */
 .progChoices a {
-  -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: black;
   background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   color: #d7df27;
   font-size: 30px;
   font-weight: 700;
   line-height: 32px;
   text-decoration: none;
-  padding: 135px 0;
+  padding: 135px 20px;
   width: 50%;
   max-width: 300px;
   min-width: 200px;
 }
-/* line 57, ../sass/partials/_program.scss */
+/* line 41, ../sass/partials/_program.scss */
 .progChoices a:hover {
   background: rgba(0, 0, 0, 0.75);
   color: #d7df27;
 }
 
-/* line 63, ../sass/partials/_program.scss */
+/* line 48, ../sass/partials/_program.scss */
 .btnProgEducator {
   margin-right: 20px;
 }
 
-/* line 67, ../sass/partials/_program.scss */
+/* line 52, ../sass/partials/_program.scss */
 .btnProgCompany {
   float: right;
 }
 
-/* line 72, ../sass/partials/_program.scss */
+/* line 57, ../sass/partials/_program.scss */
 .programContent {
   display: none;
   margin: 0 auto;
 }
 
-/* line 81, ../sass/partials/_program.scss */
-.program {
-  display: none;
-}
-
-/* line 87, ../sass/partials/_program.scss */
+/* line 66, ../sass/partials/_program.scss */
 .programSection {
   padding-bottom: 20px;
 }
 
-/* line 91, ../sass/partials/_program.scss */
+/* line 72, ../sass/partials/_program.scss */
+.educator.inactive,
+.company.inactive {
+  display: none;
+}
+
+/* line 77, ../sass/partials/_program.scss */
 .progVal {
   padding-top: 88px;
   position: relative;
 }
-/* line 95, ../sass/partials/_program.scss */
+/* line 81, ../sass/partials/_program.scss */
 .progVal.active .hdrProgVal {
   position: fixed;
   top: 80px;
 }
 
-/* line 101, ../sass/partials/_program.scss */
+/* line 87, ../sass/partials/_program.scss */
 .hdrProgVal {
   text-align: center;
   top: 0;
@@ -1484,75 +1207,72 @@ footer a {
   width: 100%;
   z-index: 4;
 }
-/* line 109, ../sass/partials/_program.scss */
-.hdrProgVal h3,
-.hdrProgVal p {
+/* line 94, ../sass/partials/_program.scss */
+.hdrProgVal h3 {
   margin: 0;
 }
 
-/* line 114, ../sass/partials/_program.scss */
+/* line 99, ../sass/partials/_program.scss */
 .val1 {
   background: rgba(148, 150, 152, 0.4);
 }
-/* line 116, ../sass/partials/_program.scss */
+/* line 101, ../sass/partials/_program.scss */
 .val1 .hdrProgVal {
   background: #949698;
   color: #39383b;
 }
 
-/* line 122, ../sass/partials/_program.scss */
+/* line 107, ../sass/partials/_program.scss */
 .val2 {
   background: rgba(0, 174, 230, 0.4);
 }
-/* line 124, ../sass/partials/_program.scss */
+/* line 109, ../sass/partials/_program.scss */
 .val2 .hdrProgVal {
   background: #00aee6;
   color: #fff;
 }
 
-/* line 130, ../sass/partials/_program.scss */
+/* line 115, ../sass/partials/_program.scss */
 .val3 {
   background: rgba(57, 56, 59, 0.4);
 }
-/* line 132, ../sass/partials/_program.scss */
+/* line 117, ../sass/partials/_program.scss */
 .val3 .hdrProgVal {
   background: #39383b;
   color: #fff;
 }
 
-/* line 138, ../sass/partials/_program.scss */
+/* line 123, ../sass/partials/_program.scss */
 .val4 {
   background: rgba(215, 223, 39, 0.4);
 }
-/* line 140, ../sass/partials/_program.scss */
+/* line 125, ../sass/partials/_program.scss */
 .val4 .hdrProgVal {
   background: #d7df27;
   color: #39383b;
 }
 
-/* line 147, ../sass/partials/_program.scss */
+/* line 132, ../sass/partials/_program.scss */
 .progQuestions {
   color: #fff;
   text-align: center;
 }
-/* line 150, ../sass/partials/_program.scss */
+/* line 135, ../sass/partials/_program.scss */
 .progQuestions p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 155, ../sass/partials/_program.scss */
+/* line 140, ../sass/partials/_program.scss */
 .question {
   display: inline-block;
   width: 33%;
 }
 
-/* line 159, ../sass/partials/_program.scss */
+/* line 144, ../sass/partials/_program.scss */
 .questionContent {
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #00aee6;
   display: table;
@@ -1561,17 +1281,15 @@ footer a {
   width: 215px;
   position: relative;
 }
-/* line 168, ../sass/partials/_program.scss */
+/* line 153, ../sass/partials/_program.scss */
 .questionContent:hover .questionRO {
   display: table;
 }
 
-/* line 173, ../sass/partials/_program.scss */
+/* line 158, ../sass/partials/_program.scss */
 .questionRO {
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #39383b;
   display: none;
@@ -1582,24 +1300,24 @@ footer a {
   width: 100%;
 }
 
-/* line 190, ../sass/partials/_program.scss */
-.imgSingle {
+/* line 171, ../sass/partials/_program.scss */
+.progImages img {
   height: auto;
   width: 100%;
 }
 
-/* line 195, ../sass/partials/_program.scss */
+/* line 178, ../sass/partials/_program.scss */
 .progImgGrid img {
   margin-bottom: 20px;
   margin-right: 2%;
   width: 49%;
 }
-/* line 202, ../sass/partials/_program.scss */
+/* line 185, ../sass/partials/_program.scss */
 .progImgGrid img:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 209, ../sass/partials/_program.scss */
+/* line 192, ../sass/partials/_program.scss */
 .example {
   background: #39383b;
   text-align: center;
@@ -1607,35 +1325,35 @@ footer a {
   margin-bottom: 20px;
   width: 100%;
 }
-/* line 218, ../sass/partials/_program.scss */
+/* line 201, ../sass/partials/_program.scss */
 .example > p {
   padding: 20px 0;
 }
-/* line 221, ../sass/partials/_program.scss */
+/* line 204, ../sass/partials/_program.scss */
 .example p {
   margin: 0;
 }
 
-/* line 230, ../sass/partials/_program.scss */
+/* line 213, ../sass/partials/_program.scss */
 .exampleContent {
   display: none;
   padding-bottom: 20px;
   text-align: left;
 }
 
-/* line 237, ../sass/partials/_program.scss */
+/* line 220, ../sass/partials/_program.scss */
 .vidBox {
   margin: 0 auto;
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 242, ../sass/partials/_program.scss */
+/* line 225, ../sass/partials/_program.scss */
 .vidBox img {
   width: 100%;
   height: auto;
 }
-/* line 247, ../sass/partials/_program.scss */
+/* line 230, ../sass/partials/_program.scss */
 .vidBox iframe {
   position: absolute;
   top: 0;
@@ -1644,43 +1362,58 @@ footer a {
   height: 100%;
 }
 
+/* line 240, ../sass/partials/_program.scss */
+.progSignUp {
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* line 244, ../sass/partials/_program.scss */
+.btnProgSignUp {
+  background: #00aee6;
+  color: #fff;
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: center;
+}
+/* line 252, ../sass/partials/_program.scss */
+.btnProgSignUp:hover {
+  background: #949698;
+  color: #00aee6;
+}
+
 @media only screen and (max-width: 990px) {
-  /* line 258, ../sass/partials/_program.scss */
+  /* line 260, ../sass/partials/_program.scss */
   .question .box {
     height: 160px;
     width: 160px;
   }
 }
 @media only screen and (max-width: 676px) {
-  /* line 265, ../sass/partials/_program.scss */
+  /* line 267, ../sass/partials/_program.scss */
   .progChoices {
     max-width: 580px;
   }
-  /* line 267, ../sass/partials/_program.scss */
+  /* line 269, ../sass/partials/_program.scss */
   .progChoices a {
     font-size: 24px;
     line-height: 26px;
     padding: 75px 0;
     max-width: 200px;
   }
-  /* line 273, ../sass/partials/_program.scss */
+  /* line 275, ../sass/partials/_program.scss */
   .progChoices .btnProgEducator {
     padding: 87px 0;
   }
 }
 @media only screen and (max-width: 476px) {
-  /* line 279, ../sass/partials/_program.scss */
+  /* line 281, ../sass/partials/_program.scss */
   .progChoices {
     max-width: 600px;
   }
-  /* line 281, ../sass/partials/_program.scss */
+  /* line 283, ../sass/partials/_program.scss */
   .progChoices a {
     float: none;
     margin: 0 auto 20px;
-  }
-
-  /* line 287, ../sass/partials/_program.scss */
-  .question {
-    float: none;
   }
 }

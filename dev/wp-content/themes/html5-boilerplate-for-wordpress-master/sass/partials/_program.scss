@@ -1,6 +1,3 @@
-@import "partials/base";
-@import "partials/homepage";
-
 //_program.scss
 //INTRO SECTION
 .mtwProgram{
@@ -11,20 +8,6 @@
 	}
 	.pageContent{
 		padding:0;
-	}
-}
-.pageContent{
-	.btnProgSignUp{
-		@extend %btnMTW;
-		@extend %btnBlock;
-		background:$lightBlue;
-		color:#fff;
-		margin:20px auto;
-		text-align:center;
-		&:hover{
-			background:$lightGrey;
-			color:$lightBlue;
-		}
 	}
 }
 .progIntro{
@@ -43,6 +26,7 @@
 		@include border-radius(50%);
 		background:rgb(0,0,0);
 		background:rgba(0,0,0,.5);
+		box-sizing:border-box;
 		color:$lightGreen;
 		font:{
 			size:30px;
@@ -50,7 +34,7 @@
 		}
 		line-height:32px;
 		text-decoration:none;
-		padding:135px 0;
+		padding:135px 20px;
 		width:50%;
 		max-width:300px;
 		min-width:200px;
@@ -60,6 +44,7 @@
 		}
 	}
 }
+
 .btnProgEducator{
 	@extend %floatLeft;
 	margin-right:20px;
@@ -78,14 +63,15 @@
 }
 
 //CONTENT
-.program{
-	display:none;
-	&.active{
-		@extend %displayBlock;
-	}
-}
 .programSection{
 	padding-bottom:20px;
+}
+
+.educator,
+.company{
+	&.inactive{
+		display:none;
+	}
 }
 
 .progVal{
@@ -105,8 +91,7 @@
 	position:absolute;
 	width:100%;
 	z-index:4;
-	h3,
-	p{
+	h3{
 		margin:0;
 	}
 }
@@ -185,11 +170,9 @@
 .progImages{
 	img{
 		@extend %displayBlock;
+		height:auto;
+		width:100%;
 	}
-}
-.imgSingle{
-	height:auto;
-	width:100%;
 }
 .progImgGrid{
 	img{
@@ -253,6 +236,25 @@
 	}
 }
 
+//SIGN UP
+.progSignUp{
+	padding-top:40px;
+	text-align:center;
+}
+.btnProgSignUp{
+	@extend %btnMTW;
+	@extend %btnBlock;
+	background:$lightBlue;
+	color:#fff;
+	margin:20px auto;
+	max-width:300px;
+	text-align:center;
+	&:hover{
+		background:$lightGrey;
+		color:$lightBlue;
+	}
+}
+
 @media only screen and (max-width: 990px) {
 	.question{
 		.box{
@@ -282,9 +284,5 @@
 			float:none;
 			margin:0 auto 20px;
 		}
-	}
-
-	.question{
-		float:none;
 	}
 }
