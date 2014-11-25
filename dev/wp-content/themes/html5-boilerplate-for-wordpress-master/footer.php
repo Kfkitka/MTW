@@ -78,17 +78,6 @@
 </script>
 <![endif]-->
 
-<script type="text/javascript">	
-	$(document).ready(function($){
-		//SIDEBAR HEIGHT
-		var pageHeight = $('.pageContent').height();
-		var sidebarHeight = $('.mtwSidebar').height();
-		if (pageHeight > (sidebarHeight - 20)) {
-			$('.mtwSidebar').css('height', pageHeight + 20);
-		}
-	});// end doc ready
-</script>
-
 <?php //Google Analytics ?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

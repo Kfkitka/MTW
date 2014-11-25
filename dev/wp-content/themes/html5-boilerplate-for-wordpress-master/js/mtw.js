@@ -3,6 +3,7 @@ var windowWidth, moverSelector, thisHeight, descHeight;
 //PROGRAM VARIABLES
 var viewportHeight, hdrPosition, hdrHeight;
 var values = [];
+var heights = [];
 
 //DEBOUNCE
 function debounce(func, wait, immediate) {
@@ -25,11 +26,20 @@ jQuery(document).ready(function($) {
 	$('body').on('tap', '.btnNav', function(){
 		$('.mainNav').toggleClass('active');
 		$('.hdrMTW').toggleClass('unsticky');
+
+		$('html, body').animate({ scrollTop: 0 },'fast');
 		
 		$('html, body').animate({ scrollTop: 0 },'fast');
 
 		return false;
 	});
+
+	//SIDEBAR HEIGHT
+	var pageHeight = $(window).height();
+	var sidebarHeight = $('.mtwSidebar').height();
+	if (pageHeight > (sidebarHeight + 120)) {
+		$('.mtwSidebar').css('height', (pageHeight-120) + 'px');
+	}
 	
 	//MOVERS PAGE	
 	$('body').on('tap', '.indivMover', function(){
@@ -45,7 +55,7 @@ jQuery(document).ready(function($) {
 			
 			$(this).addClass('active');
 			thisHeight = $(this).children('a').height();
-			descHeight = $(moverSelector).height();
+			descHeight = $(moverSelector).outerHeight(true);
 			
 			$(this).css('height',descHeight + 30 + thisHeight);
 			
@@ -77,9 +87,9 @@ jQuery(document).ready(function($) {
 		},'fast');
 
 		//set hdr as fixed
-		var i=0;
 		$('.hdrProgVal').each(function(){
 			values.push($(this).offset().top - 80);
+			heights.push($(this).outerHeight(true));
 		});
 		hdrHeight = $('#val1 .hdrProgVal').outerHeight(true);
 
@@ -100,31 +110,28 @@ $(window).scroll(function() {
 	if($('.programContent').hasClass('active')){
 		//scroll up
 		if(scrollY < values[0]){
-			$('.progVal').removeClass('active');
+			$('.progVal').removeClass('active bottom');
 		} else if(scrollY < values[1]){
-			$('.progVal').removeClass('active');
+			$('.progVal').removeClass('active bottom');
 			$('.val1').addClass('active');
 		} else if(scrollY < values[2]){
-			$('.progVal').removeClass('active');
+			$('.progVal').removeClass('active bottom');
 			$('.val2').addClass('active');	
 		} else if(scrollY < values[3]){
-			$('.progVal').removeClass('active');
+			$('.progVal').removeClass('active bottom');
 			$('.val3').addClass('active');	
 		}
-
+		
 		//scroll down
+		if(scrollY >= (values[3] - heights[2])){
+			$('.val3').removeClass('active').addClass('bottom');
+		} else if(scrollY >= (values[2] - heights[1])){
+			$('.val2').removeClass('active').addClass('bottom');
+		} else if(scrollY >= (values[1] - heights[0])){
+			$('.val1').removeClass('active').addClass('bottom');
+		}
 		if(scrollY >= values[3]){
-			$('.progVal').removeClass('active');
 			$('.val4').addClass('active');	
-		} else if(scrollY >= values[2]){
-			$('.progVal').removeClass('active');
-			$('.val3').addClass('active');	
-		} else if(scrollY >= values[1]){
-			$('.progVal').removeClass('active');
-			$('.val2').addClass('active');
-		} else if(scrollY >= values[0]){
-			$('.progVal').removeClass('active');
-			$('.val1').addClass('active');
 		}
 		
 	}

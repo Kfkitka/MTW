@@ -24,6 +24,7 @@
 	a{
 		@extend %displayBlock;
 		@include border-radius(50%);
+		box-sizing:border-box;
 		background:rgb(0,0,0);
 		background:rgba(0,0,0,.5);
 		box-sizing:border-box;
@@ -34,7 +35,7 @@
 		}
 		line-height:32px;
 		text-decoration:none;
-		padding:135px 20px;
+		padding:118px 20px;
 		width:50%;
 		max-width:300px;
 		min-width:200px;
@@ -81,6 +82,12 @@
 		.hdrProgVal{
 			position:fixed;
 			top:80px;
+		}
+	}
+	&.bottom{
+		.hdrProgVal{
+			top:auto;
+			bottom:0;
 		}
 	}
 }

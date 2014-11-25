@@ -1,11 +1,9 @@
 <?php
-
 /**
  * @package WordPress
  * @subpackage HTML5_Boilerplate
  Template Name:  Program
  */
-
 get_header();
 ?>
 
@@ -15,10 +13,10 @@ get_header();
 
     <section class="pageContent"> 
         <section class="progIntro">
-        	<div class="box">
-            	<h3>Are you interested in&hellip;</h3>
+            <div class="box">
+                <h3>Are you interested in&hellip;</h3>
                 <section class="progChoices clearfix">
-                	<a href=".educator" class="btnProgEducator">Educator Leadership</a>
+                    <a href=".educator" class="btnProgEducator">Educator Leadership</a>
                     <a href=".company" class="btnProgCompany">Employee Wellness</a>
                 </section><!--.progChoices-->
             </div><!--.box-->
@@ -187,6 +185,7 @@ get_header();
                         <section class="<?php echo $type; ?>">
                             <h3><?php the_title(); ?></h3>
                             <?php the_content(); ?>
+
                         </section>
                     <?php endforeach ?>
 
@@ -266,10 +265,10 @@ get_header();
                         'post_status' => 'publish',
                         'numberposts' => 2
                     );
+
                     $postslist6 = get_posts($args6);
                     foreach ($postslist6 as $post) :
                         setup_postdata($post);
-
                         if(has_category('Educator')){
                             $type = "educator";
                         }elseif(has_category('Company')){
@@ -309,6 +308,7 @@ get_header();
 
                             <div class="company">
                             <?php
+
                             $args7b = array(
                                 'category_name' => 'Questions+Program-4+Company',
                                 'post_type' => 'post',
@@ -340,11 +340,13 @@ get_header();
                     <?php
                     $args8 = array(
                         'category_name' => 'Program-5',
+                        'category__not_in' => 'Questions',
                         'post_type' => 'post',
                         'order' => 'ASC',
                         'post_status' => 'publish',
                         'numberposts' => 2
                     );
+
                     $postslist8 = get_posts($args8);
                     foreach ($postslist8 as $post) :
                         setup_postdata($post);
@@ -389,6 +391,7 @@ get_header();
                     <?php
                     $args9 = array(
                         'category_name' => 'Program-6',
+                        'category__not_in' => 'Questions',
                         'post_type' => 'post',
                         'order' => 'ASC',
                         'post_status' => 'publish',
@@ -452,7 +455,7 @@ get_header();
 
                 <?php endforeach ?>
                 </div><!--.box-->
-            </div><!--.programSection-->
+            </div><!--.progSignUp-->
                 
         </div><!--.programContent-->
 
