@@ -66,13 +66,15 @@
 }
 
 //FORM STUFF
-.blueSignupBtn, .pushbutton-wide {
+.blueSignupBtn, .pushbutton-wide, .w2linput.submit {
 	@extend %btnMTW;
 	@extend %btnBlock;
 	background:$lightBlue;
 	border: none;
 	color:#fff;
 	font-size: 21px;
+	height: 50px;
+	line-height: 25px;
 	margin: 20px auto;
 	outline: none;
 	text-align: center;
@@ -92,7 +94,7 @@
 	padding: 25px 0;
 }
 
-.contact-form{
+.salesforce_w2l_lead {
 	font-size: 16px;
 
 	label{
@@ -110,6 +112,14 @@
 		width: 100%!important;
 		max-width: 100%!important;
 	}
+
+	.sf_field {
+		margin-bottom: 13px;
+	}
+}
+
+.w2llabel {
+	display: block;
 }
 
 //Social Section
