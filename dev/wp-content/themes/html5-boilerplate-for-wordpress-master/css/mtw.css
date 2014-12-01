@@ -1049,11 +1049,20 @@ footer a:hover {
 }
 
 /* line 121, ../sass/partials/_signup.scss */
+.success_message {
+  color: #00749c;
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center !important;
+}
+
+/* line 129, ../sass/partials/_signup.scss */
 .w2llabel {
   display: block;
 }
 
-/* line 126, ../sass/partials/_signup.scss */
+/* line 134, ../sass/partials/_signup.scss */
 .socialSection {
   background: #00506e;
   color: #fff;
@@ -1062,56 +1071,56 @@ footer a:hover {
   text-align: center;
   padding: 25px 0;
 }
-/* line 134, ../sass/partials/_signup.scss */
+/* line 142, ../sass/partials/_signup.scss */
 .socialSection h3 {
   margin: 40px 0;
 }
-/* line 138, ../sass/partials/_signup.scss */
+/* line 146, ../sass/partials/_signup.scss */
 .socialSection a {
   margin: 40px auto;
   max-width: 300px;
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 147, ../sass/partials/_signup.scss */
+  /* line 155, ../sass/partials/_signup.scss */
   .signupHero {
     height: 800px;
     max-height: 800px;
   }
 
-  /* line 151, ../sass/partials/_signup.scss */
+  /* line 159, ../sass/partials/_signup.scss */
   .signupBox, .signupHeader {
     box-sizing: border-box;
     float: none;
     margin: 0 auto;
   }
 
-  /* line 156, ../sass/partials/_signup.scss */
+  /* line 164, ../sass/partials/_signup.scss */
   .signupBox {
     margin-top: 40px;
     width: 100%;
   }
 
-  /* line 160, ../sass/partials/_signup.scss */
+  /* line 168, ../sass/partials/_signup.scss */
   .signupHeader {
     padding-left: 0;
     width: 95%;
     max-width: 95%;
   }
 
-  /* line 166, ../sass/partials/_signup.scss */
+  /* line 174, ../sass/partials/_signup.scss */
   .signupForm {
     padding: 24px 15px 0 15px;
   }
 
-  /* line 170, ../sass/partials/_signup.scss */
+  /* line 178, ../sass/partials/_signup.scss */
   .workEx {
     margin: 0 auto 20px;
     width: 50%;
   }
 }
 @media only screen and (max-width: 482px) {
-  /* line 176, ../sass/partials/_signup.scss */
+  /* line 184, ../sass/partials/_signup.scss */
   .workEx {
     float: none;
     width: 85%;
