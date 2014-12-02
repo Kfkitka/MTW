@@ -1,7 +1,7 @@
 //MOVER VARIABLES
 var windowWidth, moverSelector, thisHeight, descHeight;
 //PROGRAM VARIABLES
-var viewportHeight, hdrPosition, hdrHeight;
+var viewportHeight, hdrPosition, hdrHeight, signUp;
 var values = [];
 var heights = [];
 
@@ -27,8 +27,6 @@ jQuery(document).ready(function($) {
 		$('.mainNav').toggleClass('active');
 		$('.hdrMTW').toggleClass('unsticky');
 
-		$('html, body').animate({ scrollTop: 0 },'fast');
-		
 		$('html, body').animate({ scrollTop: 0 },'fast');
 
 		return false;
@@ -86,22 +84,88 @@ jQuery(document).ready(function($) {
 			scrollTop: $('#val1').offset().top - 80
 		},'fast');
 
-		//set hdr as fixed
+		//set hdr as fixed & fix padding
+		var i = 0;
 		$('.hdrProgVal').each(function(){
 			values.push($(this).offset().top - 80);
 			heights.push($(this).outerHeight(true));
+
+			if(heights[i] > 72){
+				$(this).parent('.progVal').css('padding-top', heights[i]);
+			}
+
+			i++;
 		});
-		hdrHeight = $('#val1 .hdrProgVal').outerHeight(true);
 
-		return false;
-	});
-
-	$('body').on('tap', '.example', function(){
-		$(this).toggleClass('active');
+		//find end of scrolling
+		signUp = $('.progSignUp').offset().top - 80;
 
 		return false;
 	});
 });
+
+var onWindowResize = debounce(function(){
+	//MOVER FUNCTIONS
+	if($('.indivMover').hasClass('active')){
+		thisHeight = $('.indivMover.active a').height();
+		descHeight = $(moverSelector).height();
+			
+		$('.indivMover.active').css('height',descHeight + 30 + thisHeight);
+	}
+
+	//PROGRAM FUNCTIOSN
+	if($('.programContent').hasClass('active')){
+		//set section height
+		viewportHeight = $(window).height() - 80;
+		$('.progVal').css('min-height', viewportHeight);
+
+		//set hdr as fixed
+		$('.progVal').removeClass('active bottom');
+		var i = 0;
+		$('.hdrProgVal').each(function(){
+			values[i] = $(this).offset().top - 80;
+			heights[i] = $(this).outerHeight(true);
+
+			if(heights[i] > 72){
+				$(this).parent('.progVal').css('padding-top', heights[i])
+			}
+
+			i++;
+		});
+
+		//find end of scrolling
+		signUp = $('.progSignUp').offset().top - 80;
+
+		//readjust headers
+		if(scrollY < values[0]){
+			$('.progVal').removeClass('active bottom');
+		} else if(scrollY < values[1]){
+			$('.progVal').removeClass('active bottom');
+			$('.val1').addClass('active');
+		} else if(scrollY < values[2]){
+			$('.progVal').removeClass('active bottom');
+			$('.val2').addClass('active');	
+		} else if(scrollY < values[3]){
+			$('.progVal').removeClass('active bottom');
+			$('.val3').addClass('active');	
+		} else if(scrollY < signUp){
+			$('.progVal').removeClass('active bottom');
+			$('.val4').addClass('active');	
+		}
+		
+		if(scrollY >= (signUp - heights[3])){
+			$('.val4').removeClass('active').addClass('bottom');
+		} else if(scrollY >= (values[3] - heights[2])){
+			$('.val3').removeClass('active').addClass('bottom');
+		} else if(scrollY >= (values[2] - heights[1])){
+			$('.val2').removeClass('active').addClass('bottom');
+		} else if(scrollY >= (values[1] - heights[0])){
+			$('.val1').removeClass('active').addClass('bottom');
+		}
+	}
+}, 250);
+window.addEventListener('resize', onWindowResize);
+//jQuery(window).resize(function(){});
 
 $(window).scroll(function() {
 	var scrollY = $(window).scrollTop();
@@ -120,31 +184,21 @@ $(window).scroll(function() {
 		} else if(scrollY < values[3]){
 			$('.progVal').removeClass('active bottom');
 			$('.val3').addClass('active');	
+		} else if(scrollY < signUp){
+			$('.progVal').removeClass('active bottom');
+			$('.val4').addClass('active');	
 		}
 		
 		//scroll down
-		if(scrollY >= (values[3] - heights[2])){
+		if(scrollY >= (signUp - heights[3])){
+			$('.val4').removeClass('active').addClass('bottom');
+		} else if(scrollY >= (values[3] - heights[2])){
 			$('.val3').removeClass('active').addClass('bottom');
 		} else if(scrollY >= (values[2] - heights[1])){
 			$('.val2').removeClass('active').addClass('bottom');
 		} else if(scrollY >= (values[1] - heights[0])){
 			$('.val1').removeClass('active').addClass('bottom');
 		}
-		if(scrollY >= values[3]){
-			$('.val4').addClass('active');	
-		}
 		
 	}
 });
-
-var onWindowResize = debounce(function(){
-	//MOVER FUNCTIONS
-	if($('.indivMover').hasClass('active')){
-		thisHeight = $('.indivMover.active a').height();
-		descHeight = $(moverSelector).height();
-			
-		$('.indivMover.active').css('height',descHeight + 30 + thisHeight);
-	}
-}, 250);
-window.addEventListener('resize', onWindowResize);
-//jQuery(window).resize(function(){});

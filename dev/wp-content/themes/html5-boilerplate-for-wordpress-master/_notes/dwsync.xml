@@ -6,7 +6,7 @@
 <file name="archives.php" server="dev.dance4peace.org" local="130602147928381830" remote="130175604000000000" Dst="1" />
 <file name="comments.php" server="dev.dance4peace.org" local="130602147928756830" remote="130175604000000000" Dst="1" />
 <file name="favicon.ico" server="dev.dance4peace.org" local="130602147928781830" remote="130212756000000000" Dst="1" />
-<file name="footer.php" server="dev.dance4peace.org" local="130613438230773722" remote="130613365800000000" Dst="1" />
+<file name="footer.php" server="dev.dance4peace.org" local="130620101773436622" remote="130620029400000000" Dst="1" />
 <file name="front-page.php" server="dev.dance4peace.org" local="130608965339886557" remote="130608892800000000" Dst="1" />
 <file name="functions.php" server="dev.dance4peace.org" local="130602147934601830" remote="130340628000000000" Dst="1" />
 <file name="header.php" server="dev.dance4peace.org" local="130613153246317139" remote="130613080800000000" Dst="1" />
@@ -22,6 +22,6 @@
 <file name="single.php" server="dev.dance4peace.org" local="130602147980486830" remote="130175604000000000" Dst="1" />
 <file name="style.css" server="dev.dance4peace.org" local="130602147985056830" remote="130206708000000000" Dst="1" />
 <file name="page-board.php" server="dev.dance4peace.org" local="130609839869094915" remote="130609767600000000" Dst="1" />
-<file name="page-program.php" server="dev.dance4peace.org" local="130613442439323885" remote="130613370000000000" Dst="1" />
+<file name="page-program.php" server="dev.dance4peace.org" local="130620344727425510" remote="130620272400000000" Dst="1" />
 <file name="page-signup.php" server="dev.dance4peace.org" local="130613435852245893" remote="130613363400000000" Dst="1" />
 </dwsync>

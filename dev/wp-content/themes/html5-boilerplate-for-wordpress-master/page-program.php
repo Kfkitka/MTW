@@ -58,7 +58,7 @@ get_header();
                         </section>
                     <?php endforeach ?>
 
-                        <section class="progQuestions">
+                        <section class="progQuestions clearfix">
                             <div class="educator">
                             <?php
                             $args2a = array(
@@ -189,7 +189,7 @@ get_header();
                         </section>
                     <?php endforeach ?>
 
-                        <section class="progQuestions">
+                        <section class="progQuestions clearfix">
                             <div class="educator">
                             <?php
                             $args5a = array(
@@ -297,12 +297,12 @@ get_header();
                             foreach ($postslist7a as $post) :
                                 setup_postdata($post);
                             ?>
-                                <a href="#" class="example box <?php echo $type; ?>">
+                                <div class="example box">
                                     <p><?php the_title(); ?></p>
                                     <article class="exampleContent">
                                         <?php the_content(); ?>
                                     </article><!--.example-->
-                                </a>
+                                </div>
                             <?php endforeach ?>
                             </div><!--.educator-->
 
@@ -322,7 +322,7 @@ get_header();
                             foreach ($postslist7b as $post) :
                                 setup_postdata($post);
                             ?>
-                                <a href="#" class="example box <?php echo $type; ?>">
+                                <a href="#" class="example box">
                                     <p><?php the_title(); ?></p>
                                     <article class="exampleContent">
                                         <?php the_content(); ?>

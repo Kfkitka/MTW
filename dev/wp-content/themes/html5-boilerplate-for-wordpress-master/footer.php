@@ -41,8 +41,7 @@
             <p class="colHead">What We Do</p>
             <ul>
               <li><a href="/program">Program</a></li>
-              <li><a href="/think-tank/global-movement">Global Movement</a></li>
-              <li><a href="/partners/case-studies">Social Impact</a></li>
+              <li><a href="/partners/case-studies">Case Studies</a></li>
               <li><a href="/think-tank">Think Tank</a></li>
             </ul>
         </div>
