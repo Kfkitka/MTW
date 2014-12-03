@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1409850401');
-  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1416246136');
+  src: url('../fonts/fontawesome-webfont.eot?&1416246136#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1416246136') format('woff'), url('../fonts/fontawesome-webfont.ttf?1416246136') format('truetype'), url('../fonts/fontawesome-webfont.svg?1416246136') format('svg');
 }
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
@@ -1023,32 +1023,36 @@ footer a:hover {
   padding: 25px 0;
 }
 
-/* line 97, ../sass/partials/_signup.scss */
+/* line 98, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead {
   font-size: 16px;
 }
-/* line 100, ../sass/partials/_signup.scss */
+/* line 101, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead label {
   color: #00749c;
   margin-bottom: 8px !important;
 }
-/* line 104, ../sass/partials/_signup.scss */
+/* line 105, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead label span {
   display: none;
 }
-/* line 109, ../sass/partials/_signup.scss */
+/* line 110, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead input[type=email], .salesforce_w2l_lead input[type=text] {
+  -webkit-appearance: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 0;
   box-sizing: border-box;
-  height: 33px;
+  height: 30px;
+  outline: 0;
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 116, ../sass/partials/_signup.scss */
+/* line 121, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead .sf_field {
   margin-bottom: 13px;
 }
 
-/* line 121, ../sass/partials/_signup.scss */
+/* line 127, ../sass/partials/_signup.scss */
 .success_message {
   color: #00749c;
   display: block;
@@ -1057,12 +1061,57 @@ footer a:hover {
   text-align: center !important;
 }
 
-/* line 129, ../sass/partials/_signup.scss */
+/* line 135, ../sass/partials/_signup.scss */
 .w2llabel {
   display: block;
 }
 
-/* line 134, ../sass/partials/_signup.scss */
+/* line 140, ../sass/partials/_signup.scss */
+.w2linput.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  background: url("../../../images/dropdown_select.jpg") no-repeat;
+  /*Adds background-image*/
+  background-position: 188px 0;
+  border: #CFCFCF 1px solid;
+  border-radius: 0;
+  height: 30px;
+  padding: 5px 0 0 7px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  width: 220px;
+}
+
+/* line 156, ../sass/partials/_signup.scss */
+select::-ms-expand {
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  /* line 162, ../sass/partials/_signup.scss */
+  .sf_type_select {
+    overflow: hidden;
+    width: 220px;
+  }
+
+  /* line 166, ../sass/partials/_signup.scss */
+  .sf_type_select select {
+    width: 110% !important;
+  }
+}
+/* line 172, ../sass/partials/_signup.scss */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 177, ../sass/partials/_signup.scss */
+input::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 182, ../sass/partials/_signup.scss */
 .socialSection {
   background: #00506e;
   color: #fff;
@@ -1071,56 +1120,56 @@ footer a:hover {
   text-align: center;
   padding: 25px 0;
 }
-/* line 142, ../sass/partials/_signup.scss */
+/* line 190, ../sass/partials/_signup.scss */
 .socialSection h3 {
   margin: 40px 0;
 }
-/* line 146, ../sass/partials/_signup.scss */
+/* line 194, ../sass/partials/_signup.scss */
 .socialSection a {
   margin: 40px auto;
   max-width: 300px;
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 155, ../sass/partials/_signup.scss */
+  /* line 203, ../sass/partials/_signup.scss */
   .signupHero {
     height: 800px;
     max-height: 800px;
   }
 
-  /* line 159, ../sass/partials/_signup.scss */
+  /* line 207, ../sass/partials/_signup.scss */
   .signupBox, .signupHeader {
     box-sizing: border-box;
     float: none;
     margin: 0 auto;
   }
 
-  /* line 164, ../sass/partials/_signup.scss */
+  /* line 212, ../sass/partials/_signup.scss */
   .signupBox {
     margin-top: 40px;
     width: 100%;
   }
 
-  /* line 168, ../sass/partials/_signup.scss */
+  /* line 216, ../sass/partials/_signup.scss */
   .signupHeader {
     padding-left: 0;
     width: 95%;
     max-width: 95%;
   }
 
-  /* line 174, ../sass/partials/_signup.scss */
+  /* line 222, ../sass/partials/_signup.scss */
   .signupForm {
     padding: 24px 15px 0 15px;
   }
 
-  /* line 178, ../sass/partials/_signup.scss */
+  /* line 226, ../sass/partials/_signup.scss */
   .workEx {
     margin: 0 auto 20px;
     width: 50%;
   }
 }
 @media only screen and (max-width: 482px) {
-  /* line 184, ../sass/partials/_signup.scss */
+  /* line 232, ../sass/partials/_signup.scss */
   .workEx {
     float: none;
     width: 85%;

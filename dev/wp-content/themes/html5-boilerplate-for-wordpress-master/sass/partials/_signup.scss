@@ -94,6 +94,7 @@
 	padding: 25px 0;
 }
 
+//Specific styles for the Salesforce form
 .salesforce_w2l_lead {
 	font-size: 16px;
 
@@ -107,8 +108,12 @@
 	}
 
 	input[type=email], input[type=text]{
+		-webkit-appearance: none;
+		border: 1px solid #cfcfcf;
+		border-radius: 0;
 		box-sizing: border-box;
-		height: 33px;
+		height: 30px;
+		outline: 0;
 		width: 100%!important;
 		max-width: 100%!important;
 	}
@@ -118,6 +123,7 @@
 	}
 }
 
+//Displays on successful form submission
 .success_message {
 	color:$darkBlue;
 	display: block;
@@ -128,6 +134,48 @@
 
 .w2llabel {
 	display: block;
+}
+
+//Styling drown down input and adding custom arrow
+.w2linput.select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-color: #fff;
+	background: url('../../../images/dropdown_select.jpg') no-repeat;          /*Adds background-image*/
+    background-position: 188px 0; 
+	border: #CFCFCF 1px solid;
+	border-radius: 0;
+	height: 30px;
+	padding: 5px 0 0 7px;
+	text-indent: 0.01px;
+ 	text-overflow: "";
+ 	width: 220px;
+}
+
+//Remove default drop down arrow on IE
+select::-ms-expand {
+	display: none;
+}
+
+//Remove default drop down arrow on FF
+@-moz-document url-prefix(){
+	.sf_type_select{
+	  overflow: hidden;
+	  width: 220px;
+	}
+	.sf_type_select select{
+	  width: 110% !important;
+	}
+}
+
+//Removing dotted outline in FF on select field
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+input::-moz-focus-inner { 
+	border: 0; 
 }
 
 //Social Section
