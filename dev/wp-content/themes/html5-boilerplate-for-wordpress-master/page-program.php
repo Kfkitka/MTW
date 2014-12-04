@@ -17,7 +17,7 @@ get_header();
                 <h3>Are you interested in&hellip;</h3>
                 <section class="progChoices clearfix">
                     <a href=".educator" class="btnProgEducator">Educator Leadership</a>
-                    <a href=".company" class="btnProgCompany">Employee Wellness</a>
+                    <a href=".company" class="btnProgCompany">Workplace Wellness</a>
                 </section><!--.progChoices-->
             </div><!--.box-->
         </section><!--.progIntro-->
@@ -34,7 +34,7 @@ get_header();
                 <section id="section1" class="programSection">
                     <div class="box">
                         <h3>Give yourself the gift of space and time to learn skills to handle anything life throws at you</h3>
-                        <p>Take a step back to reflect on your own well-being and reflect on what you need through Move This World&rsquo;s interactive and dynamic curriculum.</p>
+                        <p>Take a step back to reflect on your own well-being and what you need to be your best through Move This World&rsquo;s interactive and dynamic curriculum.</p>
 
                         <section class="progQuestions clearfix">
                             <div class="educator">
@@ -108,8 +108,8 @@ get_header();
                 <section id="section2" class="programSection">
                     <div class="box">
                         <section class="educator">
-                            <h3>Collaborate and deliberate to define your community&rsquo;s ideal school environment</h3>
-                            <p>Connect with your fellow teachers and discover how you can empower each other to strengthen your classroom and school.</p>
+                            <h3>Collaborate and deliberate to define your community&rsquo;s ideal learning environment.</h3>
+                            <p>Connect with your fellow teachers and school leaders and discover how you can empower each other to strengthen your classroom and school.</p>
 
                             <?php
                             $args2a = array(
@@ -135,7 +135,7 @@ get_header();
 
                         <section class="company">
                             <h3>Collaborate and deliberate to define your company&rsquo;s ideal environment</h3>
-                            <p>Connect with your fellow colleagues and discover how you can empower each other to support employee wellness and emotional intelligence within your company.</p>
+                            <p>Connect with your fellow colleagues and discover how you can empower each other to support productivity, wellness and empathetic leadership within your company.</p>
 
                             <?php
                             $args2b = array(
@@ -165,7 +165,7 @@ get_header();
                     <div class="box">
                         <section class="educator">
                             <h3>Lead your school with a Transformation Team</h3>
-                            <p>With Move This World&rsquo;s support, you and your Transformation Team will identify challenges and solutions you can implement to bring about positive change.</p>
+                            <p>With Move This World&rsquo;s support, you and your Transformation Team identify challenges and solutions you can implement to bring about positive change.</p>
 
                             <section class="progQuestions clearfix">
                             <?php
@@ -198,7 +198,7 @@ get_header();
 
                         <section class="company">
                             <h3>Lead your company with a Transformation Team</h3>
-                            <p>With Move This World’s support, you and your Transformation Team will identify challenges and solutions you can implement to bring employee wellness to the forefront of your company.</p>
+                            <p>With Move This World&rsquo;s support, you and your Transformation Team identify challenges and solutions you can implement to bring employee wellness to the forefront of your company culture.</p>
 
                             <section class="progQuestions clearfix">
                             <?php
@@ -243,7 +243,7 @@ get_header();
                 <section id="section4" class="programSection">
                     <div class="box">
                         <h3>Transformation Team action plan</h3>
-                        <p>Here is a sample action plan that we will guide your Transformation Team to create.</p>
+                        <p>Here is a sample action plan that we guide your Transformation Team to create.</p>
 
                         <section class="progExamples">
                             <div class="educator">
@@ -302,8 +302,8 @@ get_header();
                 <section id="section5" class="programSection">
                     <div class="box">
                         <section class="educator">
-                            <h3>Use Move This World&rsquo;s toolbox to sustain the program at your school</h3>
-                            <p>After the training, you will have access to many resources including our Online Hub which includes multimedia and consultation from Move This World staff to trouble shoot any challenges you may encounter when enacting your action plan.</p>
+                            <h3>Use Move This World&rsquo;s toolbox to sustain a safe and supportive school culture</h3>
+                            <p>After the training, educators have access to many resources, including our Online Hub which includes multimedia and consultation from Move This World staff to trouble shoot any challenges you may encounter when enacting your action plan.</p>
 
                             <?php
                             $args5a = array(
@@ -334,8 +334,8 @@ get_header();
                         </section><!--.educator-->
 
                         <section class="company">
-                            <h3>Use Move This World&rsquo;s toolbox to strengthen employee wellness and emotional intelligence</h3>
-                            <p>After the training, you will have access to many resources including our Online Hub which includes multimedia and consultation from Move This World staff to trouble shoot any challenges you may encounter when carrying out your action plan.</p>
+                            <h3>Use Move This World&rsquo;s toolbox to strengthen employee wellness and empathetic leadership</h3>
+                            <p>After the training, you have access to many resources, including consultation from Move This World staff to trouble shoot any challenges you may encounter when carrying out your action plan.</p>
 
                             <?php
                             $args5b = array(
@@ -380,7 +380,7 @@ get_header();
                     <div class="box">
                         <section class="educator">
                             <h3>See the results and share best practices with our global network of educators</h3>
-                            <p>Using pre and post-test evaluations for students and teachers in addition to community-level climate reports, Move This World evaluates whether a school and Transformation Team has met its goals. At the one year mark, we will celebrate the accomplishments and offer recommendations for years two and three. Throughout our partnership, you can share tips, solutions and challenges with educators from around the world.</p>
+                            <p>Using pre and post-test evaluations for students and teachers in addition to community-level school climate reports, Move This World evaluates whether a school and Transformation Team has met its goals. At the one year mark, we celebrate the accomplishments and offer recommendations for years two and three. Throughout our partnership, you share tips, challenges, and solutions with educators from around the world.</p>
 
                             <?php
                             $args6a = array(
@@ -419,7 +419,7 @@ get_header();
 
                         <section class="company">
                             <h3>See the results and share best practices with our global network of leaders</h3>
-                            <p>Using pre and post-test evaluations for your employees, Move This World evaluates whether your company has met its goals. At the one year mark, we will celebrate the accomplishments and offer recommendations for years two and three. Throughout our partnership, you can share tips, solutions and challenges with other corporate leaders from around the world.</p>
+                            <p>Using pre and post-test evaluations for your employees, Move This World evaluates whether your company has met its goals. At the one year mark, we will celebrate the accomplishments and offer recommendations for subsequent programming. Throughout our partnership, you can share tips, challenges, and solutions with other corporate leaders from around the world.</p>
 
                             <?php
                             $args6b = array(
@@ -464,11 +464,11 @@ get_header();
                 <div class="box">
                     <h3>What&rsquo;s next?</h3>
 
-                    <p class="educator">Our trainings and programmatic support provide a safe environment for healthy self-expression, allowing students to re-direct their energy into creativity instead of violence and teachers to actively shape their school culture. By partnering with Move This World, schools decrease suspensions and incident reports, increase attendance, improve educator morale and retention, and provide students with the necessary skills to succeed in college and the workplace.</p>
+                    <p class="educator">Our trainings and programmatic support create a safe environment for healthy self-expression, allowing students to re-direct their energy into creativity instead of violence and teachers to actively shape their school culture. By partnering with Move This World, schools decrease suspensions and incident reports, increase attendance, improve educator morale and retention, and provide students with the necessary skills to succeed in college and the workplace.</p>
 
-                    <p class="company">By partnering with Move This World, companies address and help employees manage their emotional wellness, stress management and inter-office conflicts. All of our programs are rooted in the process of self-reflection and self-care using a process that does not embarrass employees but instead provides a safe space for them to explore difficult emotional issues as a collective.</p>
+                    <p class="company">By partnering with Move This World, companies address and help employees manage their emotional wellness, stress management and inter-office conflicts. All training programs are rooted in the process of self-reflection and self-care using a process that does not embarrass employees but instead provides a safe space for them to explore difficult emotional issues as a collective.</p>
 
-                    <a href="/partners" class="btnProgSignUp">My <span class="educator">school</span><span class="company">company</span> is ready.</a>
+                    <a href="/partners" class="btnProgSignUp">My <span class="educator">school</span><span class="company">company</span> is ready</a>
                 </div><!--.box-->
             </div><!--.progSignUp-->
                 

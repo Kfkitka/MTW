@@ -29,7 +29,8 @@ get_header(); ?>
 	                </div>
 	                <div class="signupHeader">
 	                    <?php $args2 = array(
-								'category_name' => 'signup-copy',
+								'category_name' => 'Partners',
+								'category__not_in' => array(10,11),
 								'post_type' => 'post',
 								'order' => 'ASC',
 								'post_status' => 'publish',
@@ -49,7 +50,7 @@ get_header(); ?>
         
         <section class="howWorks">
         	<div class="box clearfix">
-          		<h3 class="hdrWorks">How it Works:</h3>
+          		<h3 class="hdrWorks">How It Works</h3>
                 <?php $args = array(
 					'category_name' => 'how-it-works',
 					'post_type' => 'post',
@@ -69,6 +70,7 @@ get_header(); ?>
                     } else {
 						echo "<div class=\"imgWorks\"></div>";
 					}?>
+					<h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
                 </article>
                 <?php endforeach; ?>

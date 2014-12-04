@@ -33,7 +33,7 @@
             <p class="colHead">Who We Are</p>
             <ul>
               <li><a href="/about">About Us</a></li>
-              <li><a href="/about/our-story">Our Story</a></li>
+              <li><a href="/about/our-history">Our History</a></li>
               <li><a href="/about/our-team">Our Team</a></li>
             </ul>
         </div>
@@ -50,7 +50,7 @@
             <ul>
               <li><a href="/partners">Become A Partner</a></li>
               <li><a href="/about/careers">Careers</a></li>
-              <li><a href="/about/connect">Contact Us</a></li>
+              <li><a href="/about/contact">Contact Us</a></li>
               <li><a href="/donate">Donate</a></li>
             </ul>
         </div>
