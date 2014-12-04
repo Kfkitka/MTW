@@ -168,14 +168,19 @@
 .questionRO{
 	@include border-radius(10px);
 	@include single-transition(all, .3s, ease);
+	@extend %displayBlock;
 	background:$darkGrey;
-	display:table;
 	opacity:0;
 	position:absolute;
 	top:0;
 	left:0;
 	height:100%;
 	width:100%;
+}
+
+.innerRO{
+	display:table;
+	height:100%;
 }
 
 //IMAGES
@@ -202,7 +207,6 @@
 
 //EXAMPLE EXPANDERS
 .example{
-	@include single-transition(height, .3s, ease);
 	@extend %displayBlock;
 	background:$darkGrey;
 	color:#fff;
@@ -217,17 +221,23 @@
 		margin:0;
 	}
 	&:hover{
-		height:auto;
 		color:#fff;
 		.exampleContent{
-			@extend %displayBlock;
+			height:auto;
+			padding-bottom:20px;
+			p{
+				opacity:1;
+			}
 		}
 	}
 }
 .exampleContent{
-	@include single-transition(height, .3s, ease);
-	display:none;
-	padding-bottom:20px;
+	@include single-transition(all, .3s, ease);
+	@extend %displayBlock;
+	height:0;
+	p{
+		opacity:0;
+	}
 }
 
 //VIDEO TYPE
@@ -287,6 +297,20 @@
 	}
 }
 @media only screen and (max-width: 569px) {
+	.mtwProgram{
+		h3{
+			font-size:24px;
+			line-height:26px;
+		}
+	}
+
+	.progVal{
+		padding-top:56px;
+	}
+	.hdrProgVal{
+		padding:15px 0;
+	}
+
 	.question{
 		float:none;
 		width:100%;

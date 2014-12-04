@@ -78,7 +78,9 @@ get_header();
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
                                         <div class="questionRO box">
-                                            <?php the_content(); ?>
+                                            <div class="innerRO">
+                                                <?php the_content(); ?>
+                                            </div>
                                         </div>
                                     </article>
                                 </div><!--.question-->
@@ -104,7 +106,9 @@ get_header();
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
                                         <div class="questionRO box">
-                                            <?php the_content(); ?>
+                                            <div class="innerRO">
+                                                <?php the_content(); ?>
+                                            </div>
                                         </div>
                                     </article>
                                 </div><!--.question-->
@@ -209,7 +213,9 @@ get_header();
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
                                         <div class="questionRO box">
-                                            <?php the_content(); ?>
+                                            <div class="innerRO">
+                                                <?php the_content(); ?>
+                                            </div>
                                         </div>
                                     </article>
                                 </div><!--.question-->
@@ -219,7 +225,7 @@ get_header();
                             <div class="company">
                             <?php
                             $args5b = array(
-                                'category_name' => 'Questions+Program-5+Company',
+                                'category_name' => 'Questions+Program-3+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -235,7 +241,9 @@ get_header();
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
                                         <div class="questionRO box">
-                                            <?php the_content(); ?>
+                                            <div class="innerRO">
+                                                <?php the_content(); ?>
+                                            </div>
                                         </div>
                                     </article>
                                 </div><!--.question-->

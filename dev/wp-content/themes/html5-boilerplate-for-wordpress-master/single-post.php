@@ -5,12 +5,12 @@
 
 get_header(); ?>
 
-<div id="main" class="mtwWrapper mtwPage clearfix" role="main">
+<div id="main" class="mtwWrapper mtwPage" role="main">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
       <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <section class="pageContent noSidebar">
+        <section class="pageContent">
         	<div class="box">
             	<?php the_title(); ?>
 	        	<?php the_content(); ?>

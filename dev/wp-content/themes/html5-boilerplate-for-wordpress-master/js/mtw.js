@@ -1,7 +1,7 @@
 //MOVER VARIABLES
 var windowWidth, moverSelector, thisHeight, descHeight;
 //PROGRAM VARIABLES
-var viewportHeight, hdrPosition, hdrHeight, signUp;
+var viewportHeight, viewportWidth, hdrPosition, hdrHeight, signUp;
 var values = [];
 var heights = [];
 
@@ -78,7 +78,8 @@ jQuery(document).ready(function($) {
 
 		//set section height
 		viewportHeight = $(window).height() - 80;
-		$('.progVal').css('min-height', viewportHeight);
+		viewportWidth= $(window).width();
+		//$('.progVal').css('min-height', viewportHeight);
 		
 		$('html, body').animate({
 			scrollTop: $('#val1').offset().top - 80
@@ -90,8 +91,14 @@ jQuery(document).ready(function($) {
 			values.push($(this).offset().top - 80);
 			heights.push($(this).outerHeight(true));
 
-			if(heights[i] > 72){
-				$(this).parent('.progVal').css('padding-top', heights[i]);
+			if(viewportWidth > 569){
+				if(heights[i] > 72){
+					$(this).parent('.progVal').css('padding-top', heights[i]);
+				}
+			} else {
+				if(heights[i] > 56){
+					$(this).parent('.progVal').css('padding-top', heights[i]);
+				}
 			}
 
 			i++;
@@ -113,11 +120,12 @@ var onWindowResize = debounce(function(){
 		$('.indivMover.active').css('height',descHeight + 30 + thisHeight);
 	}
 
-	//PROGRAM FUNCTIOSN
+	//PROGRAM FUNCTIONS
 	if($('.programContent').hasClass('active')){
 		//set section height
 		viewportHeight = $(window).height() - 80;
-		$('.progVal').css('min-height', viewportHeight);
+		viewportWidth = $(window).width();
+		//$('.progVal').css('min-height', viewportHeight);
 
 		//set hdr as fixed
 		$('.progVal').removeClass('active bottom');
@@ -126,8 +134,14 @@ var onWindowResize = debounce(function(){
 			values[i] = $(this).offset().top - 80;
 			heights[i] = $(this).outerHeight(true);
 
-			if(heights[i] > 72){
-				$(this).parent('.progVal').css('padding-top', heights[i])
+			if(viewportWidth > 569){
+				if(heights[i] > 72){
+					$(this).parent('.progVal').css('padding-top', heights[i]);
+				}
+			} else {
+				if(heights[i] > 56){
+					$(this).parent('.progVal').css('padding-top', heights[i]);
+				}
 			}
 
 			i++;
