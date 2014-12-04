@@ -1,7 +1,7 @@
 //MOVER VARIABLES
 var windowWidth, moverSelector, thisHeight, descHeight;
 //PROGRAM VARIABLES
-var viewportHeight, viewportWidth, hdrPosition, hdrHeight, signUp;
+var viewportWidth, hdrPosition, hdrHeight, signUp;
 var values = [];
 var heights = [];
 
@@ -64,6 +64,7 @@ jQuery(document).ready(function($) {
 	//PROGRAM PAGE
 	$('body').on('tap', '.progChoices a', function(){
 		var programType = $(this).attr('href');
+		viewportWidth= $(window).width();
 		
 		$(programType).removeClass('inactive');
 		if(programType == '.educator'){
@@ -75,11 +76,6 @@ jQuery(document).ready(function($) {
 		if(!($('.programContent').hasClass('active'))){	
 			$('.programContent').addClass('active');
 		}
-
-		//set section height
-		viewportHeight = $(window).height() - 80;
-		viewportWidth= $(window).width();
-		//$('.progVal').css('min-height', viewportHeight);
 		
 		$('html, body').animate({
 			scrollTop: $('#val1').offset().top - 80
@@ -122,10 +118,7 @@ var onWindowResize = debounce(function(){
 
 	//PROGRAM FUNCTIONS
 	if($('.programContent').hasClass('active')){
-		//set section height
-		viewportHeight = $(window).height() - 80;
 		viewportWidth = $(window).width();
-		//$('.progVal').css('min-height', viewportHeight);
 
 		//set hdr as fixed
 		$('.progVal').removeClass('active bottom');

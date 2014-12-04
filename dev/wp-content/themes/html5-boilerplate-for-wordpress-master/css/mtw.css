@@ -10,9 +10,10 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1409850401');
-  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
 }
+
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
   display: inline-block;
@@ -69,13 +70,13 @@ a:focus {
   outline: none;
 }
 
-/* line 40, ../sass/partials/_general.scss */
+/* line 41, ../sass/partials/_general.scss */
 img,
 iframe {
   border: 0 none;
 }
 
-/* line 44, ../sass/partials/_general.scss */
+/* line 46, ../sass/partials/_general.scss */
 p,
 ul,
 ol {
@@ -83,7 +84,7 @@ ol {
   padding: 0;
 }
 
-/* line 51, ../sass/partials/_general.scss */
+/* line 52, ../sass/partials/_general.scss */
 header,
 footer {
   width: 100%;
@@ -136,8 +137,10 @@ footer a:hover {
 
 /* line 99, ../sass/partials/_general.scss */
 .socialMedia a {
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   background: #808285;
   color: #39383b;
@@ -164,8 +167,10 @@ footer a:hover {
 }
 /* line 121, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover i {
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   background: #fff;
 }
@@ -250,7 +255,7 @@ footer a:hover {
   background: url(../../../images/logoMTW.jpg) 0 0 no-repeat;
   margin-right: 20px;
 }
-/* line 23, ../sass/partials/_header.scss */
+/* line 24, ../sass/partials/_header.scss */
 .logoMTW,
 .logoMTW img {
   width: 140px;
@@ -416,8 +421,10 @@ footer a:hover {
 
 /* line 29, ../sass/partials/_homepage.scss */
 .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
   background: #d3de25;
   width: 100%;
@@ -503,8 +510,10 @@ footer a:hover {
 
 /* line 106, ../sass/partials/_homepage.scss */
 .callOutBox {
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
   text-align: center;
   width: 49%;
@@ -646,13 +655,13 @@ footer a:hover {
   line-height: 54px;
   margin: 0 0 25px;
 }
-/* line 19, ../sass/partials/_subpage.scss */
+/* line 21, ../sass/partials/_subpage.scss */
 .pageContent p,
 .pageContent ol,
 .pageContent ul {
   margin: 0 0 15px;
 }
-/* line 24, ../sass/partials/_subpage.scss */
+/* line 25, ../sass/partials/_subpage.scss */
 .pageContent ol,
 .pageContent ul {
   padding: 0 0 0 20px;
@@ -795,8 +804,10 @@ footer a:hover {
 }
 /* line 49, ../sass/partials/_movers.scss */
 .indivMover img {
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
@@ -805,8 +816,10 @@ footer a:hover {
 }
 /* line 57, ../sass/partials/_movers.scss */
 .indivMover .moverRO {
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   background: #00749c;
   color: #fff;
@@ -860,8 +873,10 @@ footer a:hover {
 }
 /* line 114, ../sass/partials/_movers.scss */
 .imgBoard img {
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   width: 100%;
   max-width: 210px;
@@ -1100,6 +1115,7 @@ select::-ms-expand {
     width: 110% !important;
   }
 }
+
 /* line 172, ../sass/partials/_signup.scss */
 select:-moz-focusring {
   color: transparent;
@@ -1207,8 +1223,10 @@ input::-moz-focus-inner {
 }
 /* line 24, ../sass/partials/_program.scss */
 .progChoices a {
-  -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   box-sizing: border-box;
   background: black;
@@ -1248,7 +1266,7 @@ input::-moz-focus-inner {
 
 /* line 67, ../sass/partials/_program.scss */
 .programSection {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /* line 73, ../sass/partials/_program.scss */
@@ -1342,13 +1360,15 @@ input::-moz-focus-inner {
 /* line 148, ../sass/partials/_program.scss */
 .question {
   width: 33%;
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
 /* line 154, ../sass/partials/_program.scss */
 .questionContent {
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
   background: #00aee6;
   display: table;
@@ -1364,12 +1384,14 @@ input::-moz-focus-inner {
 
 /* line 168, ../sass/partials/_program.scss */
 .questionRO {
-  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #39383b;
   opacity: 0;
@@ -1436,9 +1458,9 @@ input::-moz-focus-inner {
 
 /* line 234, ../sass/partials/_program.scss */
 .exampleContent {
+  -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 0;
 }
@@ -1470,37 +1492,45 @@ input::-moz-focus-inner {
 
 /* line 264, ../sass/partials/_program.scss */
 .progSignUp {
-  padding-top: 40px;
+  font-size: 16px;
+  line-height: 26px;
   text-align: center;
+  padding: 40px 0;
+}
+/* line 269, ../sass/partials/_program.scss */
+.progSignUp h3 {
+  color: #00aee6;
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 0;
 }
 
-/* line 268, ../sass/partials/_program.scss */
+/* line 276, ../sass/partials/_program.scss */
 .btnProgSignUp {
   background: #00aee6;
   color: #fff;
-  margin: 20px auto;
+  margin: 40px auto 0;
   max-width: 300px;
-  text-align: center;
 }
-/* line 276, ../sass/partials/_program.scss */
+/* line 283, ../sass/partials/_program.scss */
 .btnProgSignUp:hover {
   background: #949698;
   color: #00aee6;
 }
 
 @media only screen and (max-width: 749px) {
-  /* line 283, ../sass/partials/_program.scss */
+  /* line 290, ../sass/partials/_program.scss */
   .questionContent {
     height: 160px;
     width: 160px;
   }
 }
 @media only screen and (max-width: 676px) {
-  /* line 289, ../sass/partials/_program.scss */
+  /* line 296, ../sass/partials/_program.scss */
   .progChoices {
     max-width: 580px;
   }
-  /* line 291, ../sass/partials/_program.scss */
+  /* line 298, ../sass/partials/_program.scss */
   .progChoices a {
     font-size: 24px;
     line-height: 26px;
@@ -1509,34 +1539,49 @@ input::-moz-focus-inner {
   }
 }
 @media only screen and (max-width: 569px) {
-  /* line 301, ../sass/partials/_program.scss */
+  /* line 308, ../sass/partials/_program.scss */
   .mtwProgram h3 {
     font-size: 24px;
     line-height: 26px;
   }
 
-  /* line 307, ../sass/partials/_program.scss */
+  /* line 314, ../sass/partials/_program.scss */
   .progVal {
     padding-top: 56px;
   }
 
-  /* line 310, ../sass/partials/_program.scss */
+  /* line 317, ../sass/partials/_program.scss */
   .hdrProgVal {
     padding: 15px 0;
   }
 
-  /* line 314, ../sass/partials/_program.scss */
+  /* line 321, ../sass/partials/_program.scss */
   .question {
     float: none;
     width: 100%;
   }
+
+  /* line 326, ../sass/partials/_program.scss */
+  .progSignUp {
+    padding: 20px 0;
+  }
+  /* line 328, ../sass/partials/_program.scss */
+  .progSignUp h3 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  /* line 333, ../sass/partials/_program.scss */
+  .btnProgSignUp {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 476px) {
-  /* line 320, ../sass/partials/_program.scss */
+  /* line 338, ../sass/partials/_program.scss */
   .progChoices {
     max-width: 600px;
   }
-  /* line 322, ../sass/partials/_program.scss */
+  /* line 340, ../sass/partials/_program.scss */
   .progChoices a {
     float: none;
     margin: 0 auto 20px;

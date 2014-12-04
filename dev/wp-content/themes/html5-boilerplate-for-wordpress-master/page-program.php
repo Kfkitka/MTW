@@ -33,35 +33,13 @@ get_header();
 
                 <section id="section1" class="programSection">
                     <div class="box">
-                    <?php
-                    $args1 = array(
-                        'category_name' => 'Program-1',
-                        'category__not_in' => 'Questions',
-                        'post_type' => 'post',
-                        'order' => 'ASC',
-                        'post_status' => 'publish',
-                        'numberposts' => 2
-                    );
-                    $postslist1 = get_posts($args1);
-                    foreach ($postslist1 as $post) :
-                        setup_postdata($post);
-
-                        if(has_category('Educator')){
-                            $type = "educator";
-                        }elseif(has_category('Company')){
-                            $type = "company";
-                        }
-                    ?>
-                        <section class="<?php echo $type; ?>">
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
-                        </section>
-                    <?php endforeach ?>
+                        <h3>Give yourself the gift of space and time to learn skills to handle anything life throws at you</h3>
+                        <p>Take a step back to reflect on your own well-being and reflect on what you need through Move This World&rsquo;s interactive and dynamic curriculum.</p>
 
                         <section class="progQuestions clearfix">
                             <div class="educator">
                             <?php
-                            $args2a = array(
+                            $args1a = array(
                                 'category_name' => 'Questions+Program-1+Educator',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
@@ -70,8 +48,8 @@ get_header();
                                 'post_status' => 'publish',
                                 'numberposts' => -1
                             );
-                            $postslist2a = get_posts($args2a);
-                            foreach ($postslist2a as $post) :
+                            $postslist1a = get_posts($args1a);
+                            foreach ($postslist1a as $post) :
                                 setup_postdata($post);
                             ?>
                                 <div class="question">
@@ -89,7 +67,7 @@ get_header();
 
                             <div class="company">
                             <?php
-                            $args2b = array(
+                            $args1b = array(
                                 'category_name' => 'Questions+Program-1+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
@@ -98,8 +76,8 @@ get_header();
                                 'post_status' => 'publish',
                                 'numberposts' => -1
                             );
-                            $postslist2b = get_posts($args2b);
-                            foreach ($postslist2b as $post) :
+                            $postslist1b = get_posts($args1b);
+                            foreach ($postslist1b as $post) :
                                 setup_postdata($post);
                             ?>
                                 <div class="question">
@@ -123,80 +101,75 @@ get_header();
             <div id="val2" class="progVal val2">
                 <article class="hdrProgVal">
                     <div class="box">
-                        <h3 class="educator">Strengthen your community</h3>
-                        <h3 class="company">Strengthen your company</h3>
+                        <h3>Strengthen your <span class="educator">community</span><span class="company">company</span></h3>
                     </div><!--.box-->
                 </article><!--.hdrProgVal-->
 
                 <section id="section2" class="programSection">
                     <div class="box">
-                    <?php
-                    $args3 = array(
-                        'category_name' => 'Program-2',
-                        'post_type' => 'post',
-                        'order' => 'ASC',
-                        'post_status' => 'publish',
-                        'numberposts' => 2
-                    );
-                    $postslist3 = get_posts($args3);
-                    foreach ($postslist3 as $post) :
-                        setup_postdata($post);
+                        <section class="educator">
+                            <h3>Collaborate and deliberate to define your community&rsquo;s ideal school environment</h3>
+                            <p>Connect with your fellow teachers and discover how you can empower each other to strengthen your classroom and school.</p>
 
-                        if(has_category('Educator')){
-                            $type = "educator";
-                        }elseif(has_category('Company')){
-                            $type = "company";
-                        }
-                    ?>
-                        <section class="<?php echo $type; ?>">
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
+                            <?php
+                            $args2a = array(
+                                'category_name' => 'Program-General+Educator',
+                                'post_type' => 'post',
+                                'order' => 'ASC',
+                                'post_status' => 'publish',
+                                'numberposts' => 1
+                            );
+                            $postslist2a = get_posts($args2a);
+                            foreach ($postslist2a as $post) :
+                                setup_postdata($post);
+                            ?>
+                                <div class="progImages">
+                                    <?php
+                                    if ( has_post_thumbnail() ) {
+                                        $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
+                                        echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
+                                    } ?>
+                                </div><!--.progImages-->
+                            <?php endforeach ?>
+                        </section><!--.educator-->
 
-                            <div class="progImages">
-                                <?php
-                                if ( has_post_thumbnail() ) {
-                                    $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
-                                    echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
-                                } ?>
-                            </div><!--.progImages-->
-                        </section>
-                    <?php endforeach ?>
+                        <section class="company">
+                            <h3>Collaborate and deliberate to define your company&rsquo;s ideal environment</h3>
+                            <p>Connect with your fellow colleagues and discover how you can empower each other to support employee wellness and emotional intelligence within your company.</p>
 
+                            <?php
+                            $args2b = array(
+                                'category_name' => 'Program-General+Company',
+                                'post_type' => 'post',
+                                'order' => 'ASC',
+                                'post_status' => 'publish',
+                                'numberposts' => 1
+                            );
+                            $postslist2b = get_posts($args2b);
+                            foreach ($postslist2b as $post) :
+                                setup_postdata($post);
+                            ?>
+                                <div class="progImages">
+                                    <?php
+                                    if ( has_post_thumbnail() ) {
+                                        $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
+                                        echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
+                                    } ?>
+                                </div><!--.progImages-->
+                            <?php endforeach ?>
+                        </section><!--.company-->
                     </div><!--.box-->
                 </section><!--#section2-->
 
                 <section id="section3" class="programSection">
                     <div class="box">
-                    <?php
-                    $args4 = array(
-                        'category_name' => 'Program-3',
-                        'category__not_in' => 'Questions',
-                        'post_type' => 'post',
-                        'order' => 'ASC',
-                        'post_status' => 'publish',
-                        'numberposts' => 2
-                    );
-                    $postslist4 = get_posts($args4);
-                    foreach ($postslist4 as $post) :
-                        setup_postdata($post);
+                        <section class="educator">
+                            <h3>Lead your school with a Transformation Team</h3>
+                            <p>With Move This World&rsquo;s support, you and your Transformation Team will identify challenges and solutions you can implement to bring about positive change.</p>
 
-                        if(has_category('Educator')){
-                            $type = "educator";
-                        }elseif(has_category('Company')){
-                            $type = "company";
-                        }
-                    ?>
-                        <section class="<?php echo $type; ?>">
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
-
-                        </section>
-                    <?php endforeach ?>
-
-                        <section class="progQuestions clearfix">
-                            <div class="educator">
+                            <section class="progQuestions clearfix">
                             <?php
-                            $args5a = array(
+                            $args3a = array(
                                 'category_name' => 'Questions+Program-3+Educator',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
@@ -205,8 +178,8 @@ get_header();
                                 'post_status' => 'publish',
                                 'numberposts' => -1
                             );
-                            $postslist5a = get_posts($args5a);
-                            foreach ($postslist5a as $post) :
+                            $postslist3a = get_posts($args3a);
+                            foreach ($postslist3a as $post) :
                                 setup_postdata($post);
                             ?>
                                 <div class="question">
@@ -220,11 +193,16 @@ get_header();
                                     </article>
                                 </div><!--.question-->
                             <?php endforeach ?>
-                            </div><!--.educator-->
+                            </section><!--.progQuestions-->
+                        </section><!--.educator-->
 
-                            <div class="company">
+                        <section class="company">
+                            <h3>Lead your company with a Transformation Team</h3>
+                            <p>With Move This World’s support, you and your Transformation Team will identify challenges and solutions you can implement to bring employee wellness to the forefront of your company.</p>
+
+                            <section class="progQuestions clearfix">
                             <?php
-                            $args5b = array(
+                            $args3b = array(
                                 'category_name' => 'Questions+Program-3+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
@@ -233,8 +211,8 @@ get_header();
                                 'post_status' => 'publish',
                                 'numberposts' => -1
                             );
-                            $postslist5b = get_posts($args5b);
-                            foreach ($postslist5b as $post) :
+                            $postslist3b = get_posts($args3b);
+                            foreach ($postslist3b as $post) :
                                 setup_postdata($post);
                             ?>
                                 <div class="question">
@@ -248,8 +226,8 @@ get_header();
                                     </article>
                                 </div><!--.question-->
                             <?php endforeach ?>
-                            </div><!--.company-->
-                        </section><!--.progQuestions-->
+                            </section><!--.progQuestions-->
+                        </section><!--.company-->
 
                     </div><!--.box-->
                 </section><!--#section3-->
@@ -264,35 +242,13 @@ get_header();
 
                 <section id="section4" class="programSection">
                     <div class="box">
-                    <?php
-                    $args6 = array(
-                        'category_name' => 'Program-4',
-                        'category__not_in' => 'Questions',
-                        'post_type' => 'post',
-                        'order' => 'ASC',
-                        'post_status' => 'publish',
-                        'numberposts' => 2
-                    );
-
-                    $postslist6 = get_posts($args6);
-                    foreach ($postslist6 as $post) :
-                        setup_postdata($post);
-                        if(has_category('Educator')){
-                            $type = "educator";
-                        }elseif(has_category('Company')){
-                            $type = "company";
-                        }
-                    ?>
-                        <section class="<?php echo $type; ?>">
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
-                        </section>
-                    <?php endforeach ?>
+                        <h3>Transformation Team action plan</h3>
+                        <p>Here is a sample action plan that we will guide your Transformation Team to create.</p>
 
                         <section class="progExamples">
                             <div class="educator">
                             <?php
-                            $args7a = array(
+                            $args4a = array(
                                 'category_name' => 'Questions+Program-4+Educator',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
@@ -301,8 +257,8 @@ get_header();
                                 'post_status' => 'publish',
                                 'numberposts' => -1
                             );
-                            $postslist7a = get_posts($args7a);
-                            foreach ($postslist7a as $post) :
+                            $postslist4a = get_posts($args4a);
+                            foreach ($postslist4a as $post) :
                                 setup_postdata($post);
                             ?>
                                 <div class="example box">
@@ -317,7 +273,7 @@ get_header();
                             <div class="company">
                             <?php
 
-                            $args7b = array(
+                            $args4b = array(
                                 'category_name' => 'Questions+Program-4+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
@@ -326,8 +282,8 @@ get_header();
                                 'post_status' => 'publish',
                                 'numberposts' => -1
                             );
-                            $postslist7b = get_posts($args7b);
-                            foreach ($postslist7b as $post) :
+                            $postslist4b = get_posts($args4b);
+                            foreach ($postslist4b as $post) :
                                 setup_postdata($post);
                             ?>
                                 <a href="#" class="example box">
@@ -345,43 +301,70 @@ get_header();
 
                 <section id="section5" class="programSection">
                     <div class="box">
-                    <?php
-                    $args8 = array(
-                        'category_name' => 'Program-5',
-                        'category__not_in' => 'Questions',
-                        'post_type' => 'post',
-                        'order' => 'ASC',
-                        'post_status' => 'publish',
-                        'numberposts' => 2
-                    );
+                        <section class="educator">
+                            <h3>Use Move This World&rsquo;s toolbox to sustain the program at your school</h3>
+                            <p>After the training, you will have access to many resources including our Online Hub which includes multimedia and consultation from Move This World staff to trouble shoot any challenges you may encounter when enacting your action plan.</p>
 
-                    $postslist8 = get_posts($args8);
-                    foreach ($postslist8 as $post) :
-                        setup_postdata($post);
+                            <?php
+                            $args5a = array(
+                                'category_name' => 'Program-General+Educator',
+                                'category__not_in' => 'Questions',
+                                'post_type' => 'post',
+                                'order' => 'ASC',
+                                'post_status' => 'publish',
+                                'numberposts' => 1
+                            );
 
-                        if(has_category('Educator')){
-                            $type = "educator";
-                        }elseif(has_category('Company')){
-                            $type = "company";
-                        }
+                            $postslist5a = get_posts($args5a);
+                            foreach ($postslist5a as $post) :
+                                setup_postdata($post);
 
-                        $vidCode = get_post_custom_values('Video');
-                        if(is_array($vidCode)):
-                            foreach ( $vidCode as $key=> $value ) {
-                                $video = $value;
-                            }
-                        endif;
-                    ?>
-                        <section class="<?php echo $type; ?>">
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
+                                $vidCode = get_post_custom_values('Video');
+                                if(is_array($vidCode)):
+                                    foreach ( $vidCode as $key=> $value ) {
+                                        $video = $value;
+                                    }
+                                endif;
+                            ?>
+                                <div class="vidBox">
+                                    <img class="imgVidBox" src="http://placehold.it/16x9"/>
+                                    <iframe src="http://www.youtube.com/embed/<?php echo $video ?>?showinfo=0" allowfullscreen></iframe>
+                                </div><!--.vidBox-->
+                            <?php endforeach ?>
+                        </section><!--.educator-->
 
-                            <div class="vidBox">
-                                <img class="imgVidBox" src="http://placehold.it/16x9"/>
-                                <iframe src="http://www.youtube.com/embed/<?php echo $video ?>?showinfo=0" allowfullscreen></iframe>
-                            </div><!--.vidBox-->
-                        </section>
-                    <?php endforeach ?>
+                        <section class="company">
+                            <h3>Use Move This World&rsquo;s toolbox to strengthen employee wellness and emotional intelligence</h3>
+                            <p>After the training, you will have access to many resources including our Online Hub which includes multimedia and consultation from Move This World staff to trouble shoot any challenges you may encounter when carrying out your action plan.</p>
+
+                            <?php
+                            $args5b = array(
+                                'category_name' => 'Program-General+Company',
+                                'category__not_in' => 'Questions',
+                                'post_type' => 'post',
+                                'order' => 'ASC',
+                                'post_status' => 'publish',
+                                'numberposts' => 1
+                            );
+
+                            $postslist5b = get_posts($args5b);
+                            foreach ($postslist5b as $post) :
+                                setup_postdata($post);
+
+                                $vidCode = get_post_custom_values('Video');
+                                if(is_array($vidCode)):
+                                    foreach ( $vidCode as $key=> $value ) {
+                                        $video = $value;
+                                    }
+                                endif;
+                            ?>
+                                <div class="vidBox">
+                                    <img class="imgVidBox" src="http://placehold.it/16x9"/>
+                                    <iframe src="http://www.youtube.com/embed/<?php echo $video ?>?showinfo=0" allowfullscreen></iframe>
+                                </div><!--.vidBox-->
+                            <?php endforeach ?>
+                        </section><!--.company-->
+
                     </div><!--.box-->
                 </section><!--#section5-->
             </div><!--.progVal-->
@@ -389,48 +372,89 @@ get_header();
             <div id="val4" class="progVal val4">
                 <article class="hdrProgVal">
                     <div class="box">
-                        <h3 class="educator">Join the global movement of educators</h3>
-                        <h3 class="company">Join the global movement of change agents</h3>
+                        <h3>Join the global movement of <span class="educator">educators</span><span class="company">change agents</span></h3>
                     </div><!--.box-->
                 </article><!--.hdrProgVal-->
 
                 <section id="section6" class="programSection">
                     <div class="box">
-                    <?php
-                    $args9 = array(
-                        'category_name' => 'Program-6',
-                        'category__not_in' => 'Questions',
-                        'post_type' => 'post',
-                        'order' => 'ASC',
-                        'post_status' => 'publish',
-                        'numberposts' => 2
-                    );
-                    $postslist9 = get_posts($args9);
-                    foreach ($postslist9 as $post) :
-                        setup_postdata($post);
+                        <section class="educator">
+                            <h3>See the results and share best practices with our global network of educators</h3>
+                            <p>Using pre and post-test evaluations for students and teachers in addition to community-level climate reports, Move This World evaluates whether a school and Transformation Team has met its goals. At the one year mark, we will celebrate the accomplishments and offer recommendations for years two and three. Throughout our partnership, you can share tips, solutions and challenges with educators from around the world.</p>
 
-                        if(has_category('Educator')){
-                            $type = "educator";
-                        }elseif(has_category('Company')){
-                            $type = "company";
-                        }
-                    ?>
-                        <section class="<?php echo $type; ?>">
-                            <h3><?php the_title(); ?></h3>
-                            <?php the_content(); ?>
+                            <?php
+                            $args6a = array(
+                                'category_name' => 'Program-General+Educator',
+                                'category__not_in' => 'Questions',
+                                'post_type' => 'post',
+                                'order' => 'ASC',
+                                'post_status' => 'publish',
+                                'numberposts' => 1
+                            );
+                            $postslist6a = get_posts($args6a);
+                            foreach ($postslist6a as $post) :
+                                setup_postdata($post);
 
-                            <div class="progImages progImgGrid clearfix">
-                                <?php
-                                if ( has_post_thumbnail() ) {
-                                    $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
-                                    echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
-                                    echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
-                                    echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
-                                    echo "<img src=\"$image_url[0]\" alt=\"program image\" />";
-                                } ?>
-                            </div><!--.progImages-->
-                        </section>
-                    <?php endforeach ?>
+                                if(has_category('Educator')){
+                                    $type = "educator";
+                                }elseif(has_category('Company')){
+                                    $type = "company";
+                                }
+                            ?>
+                                <div class="progImages">
+                                    <?php
+                                    if (class_exists('MultiPostThumbnails')) {
+                                        $multiPostId = "secondary-image";
+                                        if (MultiPostThumbnails::has_post_thumbnail('post', $multiPostId)) {
+                                            $img_url = MultiPostThumbnails::get_post_thumbnail_id( 'post', $multiPostId, $post->ID );
+                                            //$attr = array('alt' => trim(strip_tags( $post->post_title )), 'class' => "imgMover");
+                                            //$image = wp_get_attachment_image( $img_url, $multiPostId, false, $attr );
+                                            $image = wp_get_attachment_image( $img_url, $multiPostId, false );
+                                            echo $image;
+                                        }
+                                    } ?>
+                                </div><!--.progImages-->
+                            <?php endforeach ?>
+                        </section><!--.educator-->
+
+                        <section class="company">
+                            <h3>See the results and share best practices with our global network of leaders</h3>
+                            <p>Using pre and post-test evaluations for your employees, Move This World evaluates whether your company has met its goals. At the one year mark, we will celebrate the accomplishments and offer recommendations for years two and three. Throughout our partnership, you can share tips, solutions and challenges with other corporate leaders from around the world.</p>
+
+                            <?php
+                            $args6b = array(
+                                'category_name' => 'Program-General+Company',
+                                'category__not_in' => 'Questions',
+                                'post_type' => 'post',
+                                'order' => 'ASC',
+                                'post_status' => 'publish',
+                                'numberposts' => 1
+                            );
+                            $postslist6b = get_posts($args6b);
+                            foreach ($postslist6b as $post) :
+                                setup_postdata($post);
+
+                                if(has_category('Educator')){
+                                    $type = "educator";
+                                }elseif(has_category('Company')){
+                                    $type = "company";
+                                }
+                            ?>
+                                <div class="progImages">
+                                    <?php
+                                    if (class_exists('MultiPostThumbnails')) {
+                                        $multiPostId = "secondary-image";
+                                        if (MultiPostThumbnails::has_post_thumbnail('post', $multiPostId)) {
+                                            $img_url = MultiPostThumbnails::get_post_thumbnail_id( 'post', $multiPostId, $post->ID );
+                                            //$attr = array('alt' => trim(strip_tags( $post->post_title )), 'class' => "imgMover");
+                                            //$image = wp_get_attachment_image( $img_url, $multiPostId, false, $attr );
+                                            $image = wp_get_attachment_image( $img_url, $multiPostId, false );
+                                            echo $image;
+                                        }
+                                    } ?>
+                                </div><!--.progImages-->
+                            <?php endforeach ?>
+                        </section><!--.company-->
 
                     </div><!--.box-->
                 </section><!--#section6-->
@@ -438,30 +462,13 @@ get_header();
 
             <div class="programSection progSignUp">
                 <div class="box">
-                <?php
-                $args10 = array(
-                    'category_name' => 'Program-7',
-                    'post_type' => 'post',
-                    'order' => 'ASC',
-                    'post_status' => 'publish',
-                    'numberposts' => 2
-                );
-                $postslist10 = get_posts($args10);
-                foreach ($postslist10 as $post) :
-                    setup_postdata($post);
+                    <h3>What&rsquo;s next?</h3>
 
-                    if(has_category('Educator')){
-                        $type = "educator";
-                    }elseif(has_category('Company')){
-                        $type = "company";
-                    }
-                ?>
-                    <section class="<?php echo $type; ?>">
-                        <?php the_content(); ?>
-                        <a href="/partners" class="btnProgSignUp"><?php the_title(); ?></a>
-                    </section>
+                    <p class="educator">Our trainings and programmatic support provide a safe environment for healthy self-expression, allowing students to re-direct their energy into creativity instead of violence and teachers to actively shape their school culture. By partnering with Move This World, schools decrease suspensions and incident reports, increase attendance, improve educator morale and retention, and provide students with the necessary skills to succeed in college and the workplace.</p>
 
-                <?php endforeach ?>
+                    <p class="company">By partnering with Move This World, companies address and help employees manage their emotional wellness, stress management and inter-office conflicts. All of our programs are rooted in the process of self-reflection and self-care using a process that does not embarrass employees but instead provides a safe space for them to explore difficult emotional issues as a collective.</p>
+
+                    <a href="/partners" class="btnProgSignUp">My <span class="educator">school</span><span class="company">company</span> is ready.</a>
                 </div><!--.box-->
             </div><!--.progSignUp-->
                 

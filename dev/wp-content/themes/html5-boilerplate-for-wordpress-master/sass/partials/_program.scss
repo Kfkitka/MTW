@@ -65,7 +65,7 @@
 
 //CONTENT
 .programSection{
-	padding-bottom:20px;
+	padding-bottom:30px;
 }
 
 .educator,
@@ -149,7 +149,7 @@
 	@extend %displayBlock;
 	@extend %floatLeft;
 	width:33%;
-	margin:20px auto;
+	margin:20px auto 0;
 }
 .questionContent{
 	@include border-radius(10px);
@@ -262,17 +262,24 @@
 
 //SIGN UP
 .progSignUp{
-	padding-top:40px;
+	font-size:16px;
+	line-height:26px;
 	text-align:center;
+	padding:40px 0;
+	h3{
+		color:$lightBlue;
+		font-size:40px;
+		line-height:42px;
+		margin-top:0;
+	}
 }
 .btnProgSignUp{
 	@extend %btnMTW;
 	@extend %btnBlock;
 	background:$lightBlue;
 	color:#fff;
-	margin:20px auto;
+	margin:40px auto 0;
 	max-width:300px;
-	text-align:center;
 	&:hover{
 		background:$lightGrey;
 		color:$lightBlue;
@@ -314,6 +321,17 @@
 	.question{
 		float:none;
 		width:100%;
+	}
+
+	.progSignUp{
+		padding:20px 0;
+		h3{
+			font-size:30px;
+			line-height:32px;
+		}
+	}
+	.btnProgSignUp{
+		margin-top:20px;
 	}
 }
 @media only screen and (max-width: 476px) {
