@@ -121,6 +121,15 @@
 	.sf_field {
 		margin-bottom: 13px;
 	}
+
+	.sf_field_first_name, .sf_field_last_name {
+		float: left;
+		width: 47%;
+	}
+
+	.sf_field_last_name {
+		margin-left: 6%;
+	}
 }
 
 //Displays on successful form submission
