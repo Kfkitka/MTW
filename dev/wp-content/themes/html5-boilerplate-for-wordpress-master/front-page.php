@@ -23,7 +23,7 @@ get_header(); ?>
             	<article class="heroContent">
 					<?php the_content(); ?>
                     <div class="heroButtons clearfix">
-                    	<a href="/partners" class="btnMTW">Sign Up Now</a>
+                    	<a href="/program" class="btnMTW">Learn More</a>
                         <a href="/donate" class="btnDonate">or donate</a>
                     </div><!--.clearfix-->
                 </article><!--.heroContent-->
@@ -45,7 +45,7 @@ get_header(); ?>
         
         <section class="coreValues">
         	<div class="box clearfix">
-          		<h3 class="hdrValues">Our Core Values Include:</h3>
+          		<h3 class="hdrValues">Pick your toolbox of strategies</h3>
                 <?php $args = array(
 					'category_name' => 'Values',
 					'post_type' => 'post',
@@ -94,7 +94,7 @@ get_header(); ?>
                 	<article class="coContent">
                         <h3><?php the_title(); ?></h3>
                     	<?php the_content(); ?>
-                        <a href="/partners" class="btnCO">Sign Up Now</a>
+                        <a href="/program" class="btnCO">Learn More</a>
                     </article><!--.coContent-->
 	            </article><!--.coSignUp-->
                 <?php endforeach; ?>
@@ -122,7 +122,7 @@ get_header(); ?>
                         <article class="coContent">
                             <h3><?php the_title(); ?></h3>
                             <?php the_content(); ?>
-                            <a href="<?php the_permalink(); ?>" class="btnCO">Read More</a>
+                            <a href="<?php the_permalink(); ?>" class="btnCO">Take the Challenge</a>
                         </article><!--.coContent-->
                     </div><!--.tipContent-->
 	            </article><!--.coTips-->

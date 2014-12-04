@@ -123,7 +123,9 @@
 //SIGN UP CALLOUT
 .coSignUp{
 	background:$blue;
+	box-sizing:border-box;
 	margin-right:2%;
+	padding:35px 0;
 }
 //TIPS
 .coTips{
@@ -132,6 +134,11 @@
 		@extend %floatLeft;
 		width:50%;
 		max-width:230px;
+		h3{
+			font-size:26px;
+			line-height:28px;
+			margin-bottom:.65em;
+		}
 	}
 	.btnCO{
 		background:$lightBlue;
