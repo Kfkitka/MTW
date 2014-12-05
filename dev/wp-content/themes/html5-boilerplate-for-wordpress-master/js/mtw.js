@@ -43,6 +43,7 @@ jQuery(document).ready(function($) {
 	$('body').on('tap', '.indivMover', function(){
 		windowWidth = $('.pageContent>.box').width();
 		moverSelector = $(this).children('a').attr('href');
+		viewportWidth= $(window).width();
 		
 		$('.indivMover').css('height','');
 		
@@ -58,6 +59,13 @@ jQuery(document).ready(function($) {
 			$(this).css('height',descHeight + 30 + thisHeight);
 			
 		}
+
+		if(viewportWidth < 501){
+			$('html, body').animate({
+				scrollTop: $(this).offset().top - 80
+			},'fast');	
+		}
+		
 		return false;
 	});
 	

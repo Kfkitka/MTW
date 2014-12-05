@@ -33,3 +33,33 @@
   left: 0;
   width: 100%;
 }
+
+/* line 37, ../sass/ie.scss */
+.val1 {
+  background: #97b4c3;
+}
+
+/* line 41, ../sass/ie.scss */
+.val2 {
+  background: #5cbee2;
+}
+
+/* line 45, ../sass/ie.scss */
+.val3 {
+  background: #738e9e;
+}
+
+/* line 49, ../sass/ie.scss */
+.val4 {
+  background: #b2d196;
+}
+
+/* line 55, ../sass/ie.scss */
+.example:hover .exampleContent p {
+  display: block;
+}
+
+/* line 62, ../sass/ie.scss */
+.exampleContent p {
+  display: none;
+}

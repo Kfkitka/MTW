@@ -32,3 +32,34 @@
 	left:0;
 	width:100%;
 }
+
+//PROGRAM PAGE
+.val1{
+	background:rgb(151, 180, 195);
+}
+
+.val2{
+	background:rgb(92, 190, 226);
+}
+
+.val3{
+	background:rgb(115, 142, 158);
+}
+
+.val4{
+	background:rgb(178, 209, 150);
+}
+.example{
+	&:hover{
+		.exampleContent{
+			p{
+				display:block;
+			}
+		}
+	}
+}
+.exampleContent{
+	p{
+		display:none;
+	}
+}

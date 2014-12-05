@@ -20,8 +20,8 @@ get_header();
             $args = array(
                 'category_name' => 'Board',
                 'post_type' => 'post',
-                'meta_key' => 'Board_Order',  // order by Board_Order custom field
-                'orderby' =>  'meta_value_num',
+                'meta_key' => 'Board_Order',
+                'orderby' =>  'meta_value_num title',
                 'order' => 'ASC',
                 'post_status' => 'publish',
                 'numberposts' => -1
@@ -32,6 +32,11 @@ get_header();
                 $moverName = get_the_title();
                 $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u");
                 $noSpaceName = strtr($moverName,$trans);
+
+                $names = explode(" ", $moverName);
+
+                $honorific = get_post_custom_values('Honorific');
+                $moverTitle = get_post_custom_values('MTW_Title');
             ?>
             <section id="<?php echo $noSpaceName ?>" class="boardMember clearfix">
                 <div class="imgBoard">
@@ -42,12 +47,18 @@ get_header();
                     } ?>
                 </div><!--.imgBoard-->
                 <article class="boardContent box">
-                    <h3><?php the_title(); ?>
+                    <h3><?php 
+                        echo $names[1]." ".$names[2]." ".$names[0];
+                        if(is_array($honorific)):
+                            foreach ( $honorific as $key=> $value ) {
+                                echo ", ".$value;
+                            }
+                        endif;
+                        ?>
                         <span><?php
-                        $moverTitle = get_post_custom_values('MTW_Title');
                         if(is_array($moverTitle)):
                             foreach ( $moverTitle as $key=> $value ) {
-                                echo $value;					
+                                echo $value;
                             }
                         endif;
                         ?></span>
@@ -64,8 +75,7 @@ get_header();
             $args = array(
                 'category_name' => 'Advisory',
                 'post_type' => 'post',
-                'meta_key' => 'Advisory_Order',  // order by Advisory_Order custom field
-                'orderby' =>  'meta_value_num',
+                'orderby' =>  'title',
                 'order' => 'ASC',
                 'post_status' => 'publish',
                 'numberposts' => -1
@@ -74,8 +84,11 @@ get_header();
             foreach ($postslist as $post) :
                 setup_postdata($post);
                 $moverName = get_the_title();
-                $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u", "," => "");
+                $trans = array(" " => "", "." => "", "ü" => "u", "&uuml;" => "u");
                 $noSpaceName = strtr($moverName,$trans);
+                $names = explode(" ", $moverName);
+
+                $honorific = get_post_custom_values('Honorific');
             ?>
             <section id="<?php echo $noSpaceName ?>" class="boardMember clearfix">
             	<div class="imgBoard">
@@ -86,7 +99,14 @@ get_header();
                     } ?>
                 </div><!--.imgBoard-->
                 <article class="boardContent box">
-                    <h3><?php the_title(); ?></h3>
+                    <h3><?php 
+                        echo $names[1]." ".$names[2]." ".$names[0];
+                        if(is_array($honorific)):
+                            foreach ( $honorific as $key=> $value ) {
+                                echo ", ".$value;
+                            }
+                        endif;
+                    ?></h3>
                     <?php the_content(); ?>
                 </article><!--.boardContent-->
             </section><!--.boardMember-->
