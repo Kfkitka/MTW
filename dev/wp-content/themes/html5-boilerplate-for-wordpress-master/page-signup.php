@@ -92,7 +92,7 @@ get_header(); ?>
 				?>
             		<h3><?php the_title(); ?></h3>
                 	<?php the_content(); ?>
-                	<a href="#signup" class="bigBtn">Join the Movement</a>
+                	<a href="#" class="bigBtn">Join the Movement</a>
                 <?php endforeach; ?>
             </div>
         </article><!--.socialSection-->

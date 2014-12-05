@@ -105,6 +105,15 @@ jQuery(document).ready(function($) {
 
 		return false;
 	});
+
+	//SIGN UP PAGE
+	$('body').on('tap', '.bigBtn', function(){
+		$('html, body').animate({
+			scrollTop: $('#signup').offset().top - 80
+		},'fast');
+
+		return false;
+	});
 });
 
 var onWindowResize = debounce(function(){

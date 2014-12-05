@@ -468,7 +468,7 @@ get_header();
 
                     <p class="company">By partnering with Move This World, companies address and help employees manage their emotional wellness, stress management and inter-office conflicts. All training programs are rooted in the process of self-reflection and self-care using a process that does not embarrass employees but instead provides a safe space for them to explore difficult emotional issues as a collective.</p>
 
-                    <a href="/partners" class="btnProgSignUp">My <span class="educator">school</span><span class="company">company</span> is ready</a>
+                    <a href="/partners" class="btnProgSignUp">My <span class="educator">School</span><span class="company">Company</span> Is Ready</a>
                 </div><!--.box-->
             </div><!--.progSignUp-->
                 
