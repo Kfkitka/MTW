@@ -1,0 +1,42 @@
+//_board.scss
+//BOARD & ADVISORY MEMBERS
+.boardMember{
+	margin-bottom:20px;
+}
+.imgBoard{
+	@extend %floatLeft;
+	box-sizing:border-box;
+	padding-left:25px;
+	width:24%;
+	max-width:235px;
+	img{
+		@extend %displayBlock;
+		@include border-radius(50%);
+		width:100%;
+		max-width:210px;
+		min-width:100px;
+		max-height:210px;
+		overflow:hidden;
+	}
+}
+.boardContent{
+	@extend %floatLeft;
+	width:76%;
+	max-width:745px;
+}
+@media only screen and (max-width: 500px) {
+	.imgBoard{
+		float:none;
+		width:100%;
+		max-width:none;
+		padding-right:25px;
+		img{
+			margin:0 auto 20px;
+		}
+	}
+	.boardContent{
+		float:none;
+		width:100%;
+		max-width:auto;
+	}
+}

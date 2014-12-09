@@ -3,26 +3,35 @@
 /**
  * @package WordPress
  * @subpackage HTML5_Boilerplate
- Template Name:  Our Team
+ Template Name:  Grid Style
  */
 
 get_header();
+
 ?>
 
 <div id="main" class="mtwWrapper mtwPage" role="main">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="pageContent pageMovers">
+    <section class="pageContent pageGrid">
     	<div class="box clearfix">
     	
             <h1><?php the_title(); ?></h1>
-            <ul class="movers clearfix">
+            <ul class="gridList clearfix">
                 <?php
+                $currentTitle = get_the_title();
+                if($currentTitle == 'Our Team'){
+                    $postType = 'Movers';
+                    $display = 'People_Order';
+                }elseif($currentTitle = 'Case Studies'){
+                    $postType = 'Case_Studies';
+                    $display = 'Case_Order';
+                }
                 $args = array(
-                    'category__name' => 'Movers',
+                    'category__name' => $postType,
                     'post_type' => 'post',
-                    'meta_key' => 'People_Order',
+                    'meta_key' => $display,
                     'orderby' =>  'meta_value_num title',
                     'order' => 'ASC',
                     'post_status' => 'publish',

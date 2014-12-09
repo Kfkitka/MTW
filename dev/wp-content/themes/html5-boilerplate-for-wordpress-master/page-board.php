@@ -73,7 +73,7 @@ get_header();
         <section class="advisoryMembers clearfix">
             <?php
             $args = array(
-                'category_name' => 'Advisory',
+                'category_name' => 'Jobs',
                 'post_type' => 'post',
                 'orderby' =>  'title',
                 'order' => 'ASC',

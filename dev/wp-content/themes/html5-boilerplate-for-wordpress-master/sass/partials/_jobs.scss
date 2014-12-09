@@ -1,0 +1,12 @@
+//_job.scss
+//GENERAL
+.pageContent{
+	.jobTitle{
+		margin-top:35px;
+	}
+}
+
+.jobTitle{
+	@extend .pageSubtitle;
+	color:$lightBlue;
+}
