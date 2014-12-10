@@ -11,7 +11,11 @@
 	}
 }
 .progIntro{
-	background:$lightBlue;
+	background:{
+		color:$lightBlue;
+		repeat:no-repeat;
+		position:top center;
+	}
 	text-align:center;
 	padding:20px 0 90px;
 	h3{
@@ -191,14 +195,15 @@
 		width:100%;
 	}
 }
-.progImgGrid{
+.gridImages{
 	img{
 		@extend %floatLeft;
 		margin:{
 			bottom:20px;
 			right:2%;
 		}
-		width:49%;
+		width:48%;
+		max-width:451px;
 		&:nth-child(2n){
 			margin-right:0;
 		}
@@ -286,6 +291,13 @@
 	}
 }
 
+@media only screen and (max-width: 850px){
+	.gridImages{
+		img{
+			margin-bottom:15px;
+		}
+	}
+}
 @media only screen and (max-width: 749px) {
 	.questionContent{
 		height:160px;
@@ -300,6 +312,13 @@
 			line-height:26px;
 			padding:74px 0;
 			max-width:200px;
+		}
+	}
+}
+@media only screen and (max-width: 625px){
+	.gridImages{
+		img{
+			margin-bottom:10px;
 		}
 	}
 }

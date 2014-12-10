@@ -15,7 +15,7 @@ get_header(); ?>
       	<?php
 		if ( has_post_thumbnail() ) {
 			$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
-			echo "<section class=\"mtwHero\" style=\"background:url('$image_url[0]') no-repeat;\">";
+			echo "<section class=\"mtwHero\" style=\"background-image:url('$image_url[0]');\">";
 		} else {
 			echo "<section class=\"mtwHero\">";
 		}?>

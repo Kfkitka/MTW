@@ -12,8 +12,8 @@ get_header(); ?>
       <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
         <section class="pageContent">
         	<div class="box">
-            	<?php the_title(); ?>
-	        	<?php the_content(); ?>
+            	<h1><?php the_title(); ?></h1>
+	        	  <?php the_content(); ?>
             </div><!--.box-->
         </section>
       </div>

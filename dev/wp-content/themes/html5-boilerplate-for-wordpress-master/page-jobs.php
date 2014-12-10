@@ -38,7 +38,7 @@ get_header();
                 $noSpaceName = strtr($jobName,$trans);
             ?>
 
-            <a href="<?php the_permalink(); ?>" id="<?php echo $noSpaceName; ?>" class="jobTitle"><?php the_title(); ?></a>
+            <a href="<?php the_permalink(); ?>" id="<?php echo $noSpaceName; ?>" class="jobTitle" target="_blank"><?php the_title(); ?></a>
 
             <?php endforeach ?>
 

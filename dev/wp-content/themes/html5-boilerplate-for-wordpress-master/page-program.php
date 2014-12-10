@@ -11,8 +11,14 @@ get_header();
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="pageContent"> 
-        <section class="progIntro">
+    <section class="pageContent">
+        <?php
+        if ( has_post_thumbnail() ) {
+            $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
+            echo "<section class=\"progIntro\" style=\"background-image:url('$image_url[0]');\">";
+        } else {
+            echo "<section class=\"progIntro\">";
+        }?>
             <div class="box">
                 <h3>Are you interested in&hellip;</h3>
                 <section class="progChoices clearfix">
@@ -359,7 +365,7 @@ get_header();
                                 endif;
                             ?>
                                 <div class="vidBox">
-                                    <img class="imgVidBox" src="http://placehold.it/16x9"/>
+                                    <img class="imgVidBox" src="/wp-content/uploads/16x9.gif"/>
                                     <iframe src="http://www.youtube.com/embed/<?php echo $video ?>?showinfo=0" allowfullscreen></iframe>
                                 </div><!--.vidBox-->
                             <?php endforeach ?>
@@ -394,25 +400,9 @@ get_header();
                             $postslist6a = get_posts($args6a);
                             foreach ($postslist6a as $post) :
                                 setup_postdata($post);
-
-                                if(has_category('Educator')){
-                                    $type = "educator";
-                                }elseif(has_category('Company')){
-                                    $type = "company";
-                                }
                             ?>
-                                <div class="progImages">
-                                    <?php
-                                    if (class_exists('MultiPostThumbnails')) {
-                                        $multiPostId = "secondary-image";
-                                        if (MultiPostThumbnails::has_post_thumbnail('post', $multiPostId)) {
-                                            $img_url = MultiPostThumbnails::get_post_thumbnail_id( 'post', $multiPostId, $post->ID );
-                                            //$attr = array('alt' => trim(strip_tags( $post->post_title )), 'class' => "imgMover");
-                                            //$image = wp_get_attachment_image( $img_url, $multiPostId, false, $attr );
-                                            $image = wp_get_attachment_image( $img_url, $multiPostId, false );
-                                            echo $image;
-                                        }
-                                    } ?>
+                                <div class="progImages gridImages">
+                                    <?php the_content(); ?>
                                 </div><!--.progImages-->
                             <?php endforeach ?>
                         </section><!--.educator-->
@@ -433,25 +423,9 @@ get_header();
                             $postslist6b = get_posts($args6b);
                             foreach ($postslist6b as $post) :
                                 setup_postdata($post);
-
-                                if(has_category('Educator')){
-                                    $type = "educator";
-                                }elseif(has_category('Company')){
-                                    $type = "company";
-                                }
                             ?>
-                                <div class="progImages">
-                                    <?php
-                                    if (class_exists('MultiPostThumbnails')) {
-                                        $multiPostId = "secondary-image";
-                                        if (MultiPostThumbnails::has_post_thumbnail('post', $multiPostId)) {
-                                            $img_url = MultiPostThumbnails::get_post_thumbnail_id( 'post', $multiPostId, $post->ID );
-                                            //$attr = array('alt' => trim(strip_tags( $post->post_title )), 'class' => "imgMover");
-                                            //$image = wp_get_attachment_image( $img_url, $multiPostId, false, $attr );
-                                            $image = wp_get_attachment_image( $img_url, $multiPostId, false );
-                                            echo $image;
-                                        }
-                                    } ?>
+                                <div class="progImages gridImages">
+                                    <?php the_content(); ?>
                                 </div><!--.progImages-->
                             <?php endforeach ?>
                         </section><!--.company-->

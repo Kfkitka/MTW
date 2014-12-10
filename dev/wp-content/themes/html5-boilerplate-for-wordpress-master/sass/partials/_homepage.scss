@@ -40,7 +40,11 @@
 
 //HERO
 .mtwHero{
-	background:$grey;
+	background:{
+		color:$grey;
+		repeat:no-repeat;
+		position:top center;
+	}
 	height:480px;
 	max-height:480px;
 }
