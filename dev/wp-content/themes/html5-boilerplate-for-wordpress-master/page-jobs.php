@@ -14,33 +14,36 @@ get_header();
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="pageContent pageGrid">
+    <section class="pageContent">
     	<div class="box clearfix">
     	
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
 
-            <?php
-            $args = array(
-                'category_name' => 'Jobs',
-                'post_type' => 'post',
-                'orderby' =>  'title',
-                'order' => 'ASC',
-                'post_status' => 'publish',
-                'numberposts' => -1
-            );
-            $postslist = get_posts($args);
-                
-            foreach ($postslist as $post) :
-                setup_postdata($post);
-                $jobName = get_the_title();
-                $trans = array(" " => "", "." => "", "," => "");
-                $noSpaceName = strtr($jobName,$trans);
-            ?>
+            <p class="subtitle">Current Open Positions:</p>
+            <div class="openJobs">
+                <?php
+                $args = array(
+                    'category_name' => 'Jobs',
+                    'post_type' => 'post',
+                    'orderby' =>  'title',
+                    'order' => 'ASC',
+                    'post_status' => 'publish',
+                    'numberposts' => -1
+                );
+                $postslist = get_posts($args);
+                    
+                foreach ($postslist as $post) :
+                    setup_postdata($post);
+                    $jobName = get_the_title();
+                    $trans = array(" " => "", "." => "", "," => "");
+                    $noSpaceName = strtr($jobName,$trans);
+                ?>
 
-            <a href="<?php the_permalink(); ?>" id="<?php echo $noSpaceName; ?>" class="jobTitle" target="_blank"><?php the_title(); ?></a>
+                <a href="<?php the_permalink(); ?>" id="<?php echo $noSpaceName; ?>" target="_blank"><?php the_title(); ?></a>
 
-            <?php endforeach ?>
+                <?php endforeach ?>
+            </div><!--.openJobs-->
 
         </div><!--.box-->
         

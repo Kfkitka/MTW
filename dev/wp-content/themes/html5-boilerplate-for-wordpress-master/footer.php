@@ -27,7 +27,8 @@
                     <i class="fa">&#xf0d2;</i>
                 </a>
             </section>
-            <p>&copy; <?php echo date('Y'); ?> Move This World</p>
+            <p class="grey">&copy; <?php echo date('Y'); ?> Move This World</p>
+            <p class="grey">424 Broadway, Suite 405, New York, NY 10013</p>
         </div>
         <div class="who col">
             <p class="colHead">Who We Are</p>
@@ -54,9 +55,13 @@
               <li><a href="/donate">Donate</a></li>
             </ul>
         </div>
-        <ul class="col">
-        	<li><a target="_blank">Access to Portal</a></li>
-        </ul>
+        <div class="col">
+            <ul>
+          	   <li><a href="http://movethisworldonlinehub.kajabi.com" target="_blank">Access to Portal</a></li>
+            </ul>
+            <a href="http://cfp-dc.org/nonprofits/Move-This-World" target="_blank" class="logoCFP"><img src="/wp-content/uploads/logoCFP.png" /></a>
+            <p><i>Move This World is recognized by the Catalogue for Philanthropy</i></p>
+        </div>
   </div><!--.box-->
 </footer>
 </div> <!--! end of #container -->

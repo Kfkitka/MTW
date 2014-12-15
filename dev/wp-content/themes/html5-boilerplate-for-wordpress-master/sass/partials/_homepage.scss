@@ -23,18 +23,18 @@
 	text-decoration:none;
 	padding:15px 0;
 	&:hover{
-		color:$lightBlue;
+		color:#fff;
 	}
 }
 %btnBlock{
 	@include border-radius(10px);
-	background:$green;
+	background:darken($green,3%);
 	width:100%;
 	max-width:180px;
 	height:20px;
 	&:hover{
-		background:#fff;
-		color:$green;
+		background:$lightGrey;
+		color:#fff;;
 	}
 }
 
@@ -44,11 +44,14 @@
 		color:$grey;
 		repeat:no-repeat;
 		position:top center;
+		size:cover;
 	}
 	height:480px;
 	max-height:480px;
 }
 .heroContent{
+	font-size:17px;
+	line-height:22px;
 	padding:90px 0;
 	max-width:475px;
 }
@@ -56,7 +59,6 @@
 	margin-top:40px;
 	a{
 		@extend %floatLeft;
-		@extend %btnMTW;
 	}
 }
 .btnMTW{
@@ -64,6 +66,12 @@
 	@extend %btnBlock;
 	text-align:center;
 	margin-right:20px;
+}
+.btnDonate{
+	@extend %btnMTW;
+	&:hover{
+		color:$green;
+	}
 }
 
 //MISSION STATEMENT
@@ -73,12 +81,18 @@
 	line-height:23px;
 	text-align:center;
 	padding:25px 0;
+	p{
+		padding:0 140px;
+	}
 }
 
 //CORE VALUES
 .coreValues{
 	margin:60px auto;
 	text-align:center;
+	.btnMTW{
+		margin:40px auto 0;
+	}
 }
 .hdrValues{
 	color:$blue;
@@ -141,14 +155,11 @@
 		h3{
 			font-size:26px;
 			line-height:28px;
-			margin-bottom:.65em;
+			margin:.65em 0;
 		}
 	}
 	.btnCO{
 		background:$lightBlue;
-		&:hover{
-			color:$lightBlue;
-		}
 	}
 }
 .imgCOTip{
@@ -160,6 +171,13 @@
 	max-width:230px;
 }
 
+@media only screen and (min-width: 723px) and (max-width: 912px){
+	.mtwMission{
+		p{
+			padding:0 40px;
+		}
+	}
+}
 @media only screen and (max-width: 862px) {
 	.coTips{
 		.hasImg{
@@ -170,6 +188,13 @@
 	}
 	.imgCOTip{
 		display:none;
+	}
+}
+@media only screen and (max-width: 722px){
+	.mtwMission{
+		p{
+			padding:0;
+		}
 	}
 }
 @media only screen and (max-width: 700px) {

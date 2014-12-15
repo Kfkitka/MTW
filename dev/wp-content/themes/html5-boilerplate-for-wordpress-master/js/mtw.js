@@ -1,5 +1,5 @@
 //MOVER VARIABLES
-var windowWidth, moverSelector, thisHeight, descHeight;
+var windowWidth, parent, moverSelector, thisHeight, descHeight;
 //PROGRAM VARIABLES
 var viewportWidth, hdrPosition, hdrHeight, signUp;
 var values = [];
@@ -31,32 +31,26 @@ jQuery(document).ready(function($) {
 
 		return false;
 	});
-
-	//SIDEBAR HEIGHT
-	var pageHeight = $(window).height();
-	var sidebarHeight = $('.mtwSidebar').height();
-	if (pageHeight > (sidebarHeight + 120)) {
-		$('.mtwSidebar').css('height', (pageHeight-120) + 'px');
-	}
 	
 	//MOVERS PAGE	
-	$('body').on('tap', '.indivMover', function(){
+	$('body').on('tap', '.indivMover>a', function(){
 		windowWidth = $('.pageContent>.box').width();
-		moverSelector = $(this).children('a').attr('href');
+		parent = $(this).parent('.indivMover');
+		moverSelector = $(this).attr('href');
 		viewportWidth= $(window).width();
 		
 		$('.indivMover').css('height','');
 		
-		if($(this).hasClass('active')){
-			$(this).removeClass('active');
+		if($(parent).hasClass('active')){
+			$(parent).removeClass('active');
 		} else{
 			$('.indivMover').removeClass('active');
 			
-			$(this).addClass('active');
-			thisHeight = $(this).children('a').height();
+			$(parent).addClass('active');
+			thisHeight = $(this).height();
 			descHeight = $(moverSelector).outerHeight(true);
 			
-			$(this).css('height',descHeight + 30 + thisHeight);
+			$(parent).css('height',descHeight + 30 + thisHeight);
 			
 		}
 

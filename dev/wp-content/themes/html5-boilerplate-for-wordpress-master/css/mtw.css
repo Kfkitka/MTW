@@ -1,10 +1,10 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .subNav a, .heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp, .imgCOTip, .pageGrid h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverRO h3, .indivMover.active .moverContent, .imgBoard img, .progChoices a, .programContent.active, .question, .questionRO, .progImages img, .example, .exampleContent, .vidBox img {
+.clearfix:after, .socialMedia a, .logoCFP, .subNav a, .btnMTW, .btnDonate, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp, .imgCOTip, .pageGrid h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverRO h3, .indivMover.active .moverDesc, .imgBoard img, .progChoices a, .programContent.active, .question, .questionRO, .progImages img, .example, .exampleContent, .vidBox img, .openJobs a {
   display: block;
 }
 
 /* line 18, ../sass/partials/_base.scss */
-.col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .bodyImage.leftSide, .mtwSidebar, .imgBoard, .boardContent, .workEx, .signupBox, .signupHeader, .btnProgEducator, .question, .gridImages img {
+.col, .socialMedia a, .logoMTW, .heroButtons a, .value, .callOutBox, .coTips .hasImg, .imgCOTip, .pageContent.withSidebar, .leftSide, .imgBoard, .boardContent, .workEx, .signupBox, .signupHeader, .btnProgEducator, .question, .gridImages img {
   float: left;
 }
 
@@ -28,7 +28,7 @@
 body {
   background: #fff;
   margin: 0 auto;
-  font: 400 14px/16px 'Open Sans', Arial, Helvetica, sans-serif;
+  font: 400 16px/19px 'Open Sans', Arial, Helvetica, sans-serif;
   color: #39383b;
 }
 
@@ -101,10 +101,16 @@ footer {
 footer {
   background: #39383b;
   color: #fff;
+  font-size: 12px;
+  line-height: 16px;
   padding: 20px 0;
   width: 100%;
 }
-/* line 70, ../sass/partials/_general.scss */
+/* line 72, ../sass/partials/_general.scss */
+footer .grey {
+  color: #949698;
+}
+/* line 76, ../sass/partials/_general.scss */
 footer .colHead {
   border-bottom: 1px dotted;
   font-size: 15px;
@@ -112,30 +118,29 @@ footer .colHead {
   margin-bottom: 10px;
   padding-bottom: 5px;
 }
-/* line 78, ../sass/partials/_general.scss */
+/* line 84, ../sass/partials/_general.scss */
 footer ul {
-  list-style: none;
   font-size: 13px;
-  line-height: 16px;
+  list-style: none;
 }
-/* line 83, ../sass/partials/_general.scss */
+/* line 88, ../sass/partials/_general.scss */
 footer a {
   color: #fff;
   text-decoration: none;
 }
-/* line 86, ../sass/partials/_general.scss */
+/* line 91, ../sass/partials/_general.scss */
 footer a:hover {
   color: #00aee6;
 }
 
-/* line 91, ../sass/partials/_general.scss */
+/* line 96, ../sass/partials/_general.scss */
 .col {
   box-sizing: border-box;
   padding: 0 10px;
   width: 20%;
 }
 
-/* line 99, ../sass/partials/_general.scss */
+/* line 104, ../sass/partials/_general.scss */
 .socialMedia a {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -150,22 +155,22 @@ footer a:hover {
   margin: 0 15px 15px 0;
   width: 25px;
 }
-/* line 110, ../sass/partials/_general.scss */
+/* line 115, ../sass/partials/_general.scss */
 .socialMedia a:hover {
   color: #fff;
 }
-/* line 114, ../sass/partials/_general.scss */
+/* line 119, ../sass/partials/_general.scss */
 .socialMedia .btnPin {
   background: #39383b;
   color: #808285;
   font-size: 30px;
   margin-top: -1px;
 }
-/* line 119, ../sass/partials/_general.scss */
+/* line 124, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover {
   color: #cb2027;
 }
-/* line 121, ../sass/partials/_general.scss */
+/* line 126, ../sass/partials/_general.scss */
 .socialMedia .btnPin:hover i {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -175,55 +180,65 @@ footer a:hover {
   background: #fff;
 }
 
-/* line 128, ../sass/partials/_general.scss */
+/* line 133, ../sass/partials/_general.scss */
 .btnFB {
   font-size: 17px;
 }
-/* line 130, ../sass/partials/_general.scss */
+/* line 135, ../sass/partials/_general.scss */
 .btnFB:hover {
   background: #3b5998;
 }
 
-/* line 134, ../sass/partials/_general.scss */
+/* line 139, ../sass/partials/_general.scss */
 .btnTW {
   font-size: 18px;
 }
-/* line 136, ../sass/partials/_general.scss */
+/* line 141, ../sass/partials/_general.scss */
 .btnTW:hover {
   background: #00aced;
 }
 
-/* line 140, ../sass/partials/_general.scss */
+/* line 145, ../sass/partials/_general.scss */
 .btnIn {
   font-size: 13px;
 }
-/* line 142, ../sass/partials/_general.scss */
+/* line 147, ../sass/partials/_general.scss */
 .btnIn:hover {
   background: #1180ba;
 }
 
-/* line 146, ../sass/partials/_general.scss */
+/* line 151, ../sass/partials/_general.scss */
 .btnIG {
   font-size: 18px;
 }
 
-/* line 149, ../sass/partials/_general.scss */
+/* line 154, ../sass/partials/_general.scss */
 .btnYT {
   font-size: 19px;
 }
-/* line 151, ../sass/partials/_general.scss */
+/* line 156, ../sass/partials/_general.scss */
 .btnYT:hover {
   background: #f33;
 }
 
+/* line 161, ../sass/partials/_general.scss */
+.logoCFP {
+  margin: 15px 0 5px;
+}
+/* line 164, ../sass/partials/_general.scss */
+.logoCFP img {
+  width: 45px;
+  height: 45px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 158, ../sass/partials/_general.scss */
+  /* line 172, ../sass/partials/_general.scss */
   .container {
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 169, ../sass/partials/_general.scss */
+  /* line 183, ../sass/partials/_general.scss */
   .col {
     float: none;
     margin: 15px auto;
@@ -302,7 +317,7 @@ footer a:hover {
 /* line 58, ../sass/partials/_header.scss */
 .subNav li {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 /* line 62, ../sass/partials/_header.scss */
 .subNav li.current_page_item a {
@@ -406,7 +421,7 @@ footer a:hover {
 }
 
 /* line 15, ../sass/partials/_homepage.scss */
-.heroButtons a, .btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
+.btnMTW, .btnDonate, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -415,8 +430,8 @@ footer a:hover {
   padding: 15px 0;
 }
 /* line 25, ../sass/partials/_homepage.scss */
-.heroButtons a:hover, .btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
-  color: #00aee6;
+.btnMTW:hover, .btnDonate:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
+  color: #fff;
 }
 
 /* line 29, ../sass/partials/_homepage.scss */
@@ -426,15 +441,15 @@ footer a:hover {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  background: #d3de25;
+  background: #c9d420;
   width: 100%;
   max-width: 180px;
   height: 20px;
 }
 /* line 35, ../sass/partials/_homepage.scss */
 .btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
-  background: #fff;
-  color: #d3de25;
+  background: #949698;
+  color: #fff;
 }
 
 /* line 42, ../sass/partials/_homepage.scss */
@@ -442,28 +457,36 @@ footer a:hover {
   background-color: #3d3d3f;
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   height: 480px;
   max-height: 480px;
 }
 
-/* line 51, ../sass/partials/_homepage.scss */
+/* line 52, ../sass/partials/_homepage.scss */
 .heroContent {
+  font-size: 17px;
+  line-height: 22px;
   padding: 90px 0;
   max-width: 475px;
 }
 
-/* line 55, ../sass/partials/_homepage.scss */
+/* line 58, ../sass/partials/_homepage.scss */
 .heroButtons {
   margin-top: 40px;
 }
 
-/* line 62, ../sass/partials/_homepage.scss */
+/* line 64, ../sass/partials/_homepage.scss */
 .btnMTW {
   text-align: center;
   margin-right: 20px;
 }
 
-/* line 70, ../sass/partials/_homepage.scss */
+/* line 72, ../sass/partials/_homepage.scss */
+.btnDonate:hover {
+  color: #d3de25;
+}
+
+/* line 78, ../sass/partials/_homepage.scss */
 .mtwMission {
   background: #00506e;
   font-size: 21px;
@@ -471,26 +494,34 @@ footer a:hover {
   text-align: center;
   padding: 25px 0;
 }
+/* line 84, ../sass/partials/_homepage.scss */
+.mtwMission p {
+  padding: 0 140px;
+}
 
-/* line 79, ../sass/partials/_homepage.scss */
+/* line 90, ../sass/partials/_homepage.scss */
 .coreValues {
   margin: 60px auto;
   text-align: center;
 }
+/* line 93, ../sass/partials/_homepage.scss */
+.coreValues .btnMTW {
+  margin: 40px auto 0;
+}
 
-/* line 83, ../sass/partials/_homepage.scss */
+/* line 97, ../sass/partials/_homepage.scss */
 .hdrValues {
   color: #00506e;
   text-transform: uppercase;
   margin: 0 0 40px;
 }
 
-/* line 88, ../sass/partials/_homepage.scss */
+/* line 102, ../sass/partials/_homepage.scss */
 .value {
   color: #3d3d3f;
   width: 25%;
 }
-/* line 92, ../sass/partials/_homepage.scss */
+/* line 106, ../sass/partials/_homepage.scss */
 .value .imgValue {
   background: #3d3d3f;
   width: 100%;
@@ -499,18 +530,18 @@ footer a:hover {
   max-height: 140px;
   margin: 0 auto 15px;
 }
-/* line 100, ../sass/partials/_homepage.scss */
+/* line 114, ../sass/partials/_homepage.scss */
 .value p {
   padding: 0 15px;
 }
 
-/* line 106, ../sass/partials/_homepage.scss */
+/* line 120, ../sass/partials/_homepage.scss */
 .callOuts {
   background: #e6e7e8;
   padding: 60px 0 70px;
 }
 
-/* line 110, ../sass/partials/_homepage.scss */
+/* line 124, ../sass/partials/_homepage.scss */
 .callOutBox {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -524,16 +555,16 @@ footer a:hover {
   max-height: 280px;
 }
 
-/* line 119, ../sass/partials/_homepage.scss */
+/* line 133, ../sass/partials/_homepage.scss */
 .coContent {
   padding: 0 25px;
 }
-/* line 121, ../sass/partials/_homepage.scss */
+/* line 135, ../sass/partials/_homepage.scss */
 .coContent .btnCO {
   margin: 15px auto;
 }
 
-/* line 128, ../sass/partials/_homepage.scss */
+/* line 142, ../sass/partials/_homepage.scss */
 .coSignUp {
   background: #00506e;
   box-sizing: border-box;
@@ -541,31 +572,27 @@ footer a:hover {
   padding: 35px 0;
 }
 
-/* line 135, ../sass/partials/_homepage.scss */
+/* line 149, ../sass/partials/_homepage.scss */
 .coTips {
   background: #00506e;
 }
-/* line 137, ../sass/partials/_homepage.scss */
+/* line 151, ../sass/partials/_homepage.scss */
 .coTips .hasImg {
   width: 50%;
   max-width: 230px;
 }
-/* line 141, ../sass/partials/_homepage.scss */
+/* line 155, ../sass/partials/_homepage.scss */
 .coTips .hasImg h3 {
   font-size: 26px;
   line-height: 28px;
-  margin-bottom: .65em;
+  margin: .65em 0;
 }
-/* line 147, ../sass/partials/_homepage.scss */
+/* line 161, ../sass/partials/_homepage.scss */
 .coTips .btnCO {
   background: #00aee6;
 }
-/* line 149, ../sass/partials/_homepage.scss */
-.coTips .btnCO:hover {
-  color: #00aee6;
-}
 
-/* line 154, ../sass/partials/_homepage.scss */
+/* line 165, ../sass/partials/_homepage.scss */
 .imgCOTip {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -578,61 +605,73 @@ footer a:hover {
   max-width: 230px;
 }
 
+@media only screen and (min-width: 723px) and (max-width: 912px) {
+  /* line 176, ../sass/partials/_homepage.scss */
+  .mtwMission p {
+    padding: 0 40px;
+  }
+}
 @media only screen and (max-width: 862px) {
-  /* line 165, ../sass/partials/_homepage.scss */
+  /* line 183, ../sass/partials/_homepage.scss */
   .coTips .hasImg {
     float: none;
     width: 100%;
     max-width: 100%;
   }
 
-  /* line 171, ../sass/partials/_homepage.scss */
+  /* line 189, ../sass/partials/_homepage.scss */
   .imgCOTip {
     display: none;
   }
 }
+@media only screen and (max-width: 722px) {
+  /* line 195, ../sass/partials/_homepage.scss */
+  .mtwMission p {
+    padding: 0;
+  }
+}
 @media only screen and (max-width: 700px) {
-  /* line 176, ../sass/partials/_homepage.scss */
+  /* line 201, ../sass/partials/_homepage.scss */
   .mtwHero {
     height: 590px;
     max-height: 590px;
   }
 
-  /* line 181, ../sass/partials/_homepage.scss */
+  /* line 206, ../sass/partials/_homepage.scss */
   .value {
     margin: 0 auto 20px;
     width: 50%;
   }
 
-  /* line 186, ../sass/partials/_homepage.scss */
+  /* line 211, ../sass/partials/_homepage.scss */
   .callOutBox {
     float: none;
     margin: 0 auto;
     width: 85%;
   }
-  /* line 190, ../sass/partials/_homepage.scss */
+  /* line 215, ../sass/partials/_homepage.scss */
   .callOutBox:first-child {
     margin-bottom: 20px;
   }
 
-  /* line 195, ../sass/partials/_homepage.scss */
+  /* line 220, ../sass/partials/_homepage.scss */
   .coContent {
     padding-top: 20px;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 201, ../sass/partials/_homepage.scss */
+  /* line 226, ../sass/partials/_homepage.scss */
   .homeContent h1 {
     font-size: 40px;
     line-height: 42px;
   }
-  /* line 205, ../sass/partials/_homepage.scss */
+  /* line 230, ../sass/partials/_homepage.scss */
   .homeContent h3 {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 211, ../sass/partials/_homepage.scss */
+  /* line 236, ../sass/partials/_homepage.scss */
   .coContent .btnCO {
     font-size: 16px;
     line-height: 18px;
@@ -641,7 +680,7 @@ footer a:hover {
   }
 }
 @media only screen and (max-width: 482px) {
-  /* line 220, ../sass/partials/_homepage.scss */
+  /* line 245, ../sass/partials/_homepage.scss */
   .value {
     float: none;
     width: 85%;
@@ -655,7 +694,7 @@ footer a:hover {
 
 /* line 8, ../sass/partials/_subpage.scss */
 .pageContent {
-  padding: 0 0 15px;
+  padding: 0 0 40px;
 }
 /* line 10, ../sass/partials/_subpage.scss */
 .pageContent h1 {
@@ -683,14 +722,14 @@ footer a:hover {
 }
 
 /* line 35, ../sass/partials/_subpage.scss */
-.pageTitle {
+.title {
   color: #00506e;
   font-size: 30px;
   line-height: 32px;
 }
 
 /* line 41, ../sass/partials/_subpage.scss */
-.pageSubtitle, .jobTitle {
+.subtitle {
   color: #00506e;
   font-size: 21px;
   line-height: 25px;
@@ -698,62 +737,34 @@ footer a:hover {
 
 /* line 47, ../sass/partials/_subpage.scss */
 .bodyImage {
-  height: 288px;
-  width: 460px;
+  margin-bottom: 15px;
 }
-/* line 50, ../sass/partials/_subpage.scss */
-.bodyImage.leftSide {
+/* line 49, ../sass/partials/_subpage.scss */
+.bodyImage p {
+  display: inline-block;
+  max-width: 74%;
+}
+/* line 53, ../sass/partials/_subpage.scss */
+.bodyImage .imgBox {
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 22px;
 }
-/* line 54, ../sass/partials/_subpage.scss */
-.bodyImage.rightSide {
+
+/* line 59, ../sass/partials/_subpage.scss */
+.leftSide {
+  margin-right: 22px;
+}
+
+/* line 63, ../sass/partials/_subpage.scss */
+.rightSide {
   float: right;
   margin-left: 22px;
 }
 
-/* line 59, ../sass/partials/_subpage.scss */
+/* line 67, ../sass/partials/_subpage.scss */
 .imgPageContent {
   width: 100%;
-}
-
-/* line 65, ../sass/partials/_subpage.scss */
-.mtwSidebar {
-  background: #00749c;
-  color: #fff;
-  width: 27%;
-  max-width: 260px;
-}
-/* line 72, ../sass/partials/_subpage.scss */
-.mtwSidebar p {
-  margin: 0 0 15px;
-}
-/* line 75, ../sass/partials/_subpage.scss */
-.mtwSidebar ul {
-  margin: 0 0 15px 20px;
-}
-/* line 78, ../sass/partials/_subpage.scss */
-.mtwSidebar hr {
-  border-top: 1px solid #fff;
-  margin: 25px 0;
-}
-/* line 82, ../sass/partials/_subpage.scss */
-.mtwSidebar a:hover {
-  color: #4c4c4e;
-  text-decoration: underline;
-}
-
-/* line 87, ../sass/partials/_subpage.scss */
-.sidebarContent {
-  padding: 20px;
-}
-
-/* line 90, ../sass/partials/_subpage.scss */
-.sidebarTitle {
-  color: #d7df27;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 32px;
-  margin: 15px 0;
 }
 
 /* line 4, ../sass/partials/_grid.scss */
@@ -773,25 +784,23 @@ footer a:hover {
 .pageGrid h3 span {
   font-weight: 400;
 }
-
-/* line 22, ../sass/partials/_grid.scss */
-.gridList {
+/* line 21, ../sass/partials/_grid.scss */
+.pageGrid .gridList {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
 }
-/* line 27, ../sass/partials/_grid.scss */
-.gridList li {
+/* line 25, ../sass/partials/_grid.scss */
+.pageGrid .gridList li {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 34, ../sass/partials/_grid.scss */
+/* line 33, ../sass/partials/_grid.scss */
 .indivMover {
   width: 24.5%;
 }
-/* line 36, ../sass/partials/_grid.scss */
+/* line 35, ../sass/partials/_grid.scss */
 .indivMover a {
   text-align: center;
   width: 100%;
@@ -800,12 +809,12 @@ footer a:hover {
   text-decoration: none;
   position: relative;
 }
-/* line 44, ../sass/partials/_grid.scss */
+/* line 43, ../sass/partials/_grid.scss */
 .indivMover a h3 {
   color: #fff;
   padding: 0 10px;
 }
-/* line 49, ../sass/partials/_grid.scss */
+/* line 48, ../sass/partials/_grid.scss */
 .indivMover img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -817,25 +826,30 @@ footer a:hover {
   max-width: 210px;
   max-height: 210px;
 }
-/* line 63, ../sass/partials/_grid.scss */
+/* line 62, ../sass/partials/_grid.scss */
 .indivMover.active .moverRO {
   background: none;
   border-radius: 0;
   height: auto;
   position: relative;
 }
-/* line 69, ../sass/partials/_grid.scss */
+/* line 68, ../sass/partials/_grid.scss */
 .indivMover.active .moverRO h3 {
-  color: #d7df27;
-  margin: 20px 0 30px;
+  color: #00aee6;
+  margin: 20px 0 0;
+}
+/* line 74, ../sass/partials/_grid.scss */
+.indivMover.active .moverDesc {
+  background: #00aee6;
+  color: #fff;
 }
 
-/* line 80, ../sass/partials/_grid.scss */
+/* line 81, ../sass/partials/_grid.scss */
 .imgPlaceholder {
   background: #3d3d3f;
 }
 
-/* line 83, ../sass/partials/_grid.scss */
+/* line 84, ../sass/partials/_grid.scss */
 .moverRO {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -852,48 +866,55 @@ footer a:hover {
   position: absolute;
   top: 0;
 }
-/* line 94, ../sass/partials/_grid.scss */
+/* line 95, ../sass/partials/_grid.scss */
 .moverRO h3 {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 99, ../sass/partials/_grid.scss */
+/* line 100, ../sass/partials/_grid.scss */
 .spacerRO {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 105, ../sass/partials/_grid.scss */
-.moverContent {
+/* line 106, ../sass/partials/_grid.scss */
+.moverDesc {
   display: none;
-}
-/* line 107, ../sass/partials/_grid.scss */
-.moverContent:hover {
-  cursor: default;
-}
-/* line 110, ../sass/partials/_grid.scss */
-.moverContent.moverDesc {
+  padding: 20px 0 0;
   position: absolute;
   top: auto;
   left: 0;
+  width: 100%;
+}
+/* line 113, ../sass/partials/_grid.scss */
+.moverDesc:hover {
+  cursor: default;
+}
+/* line 116, ../sass/partials/_grid.scss */
+.moverDesc a {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  text-decoration: underline;
+  width: auto;
 }
 
 @media only screen and (min-width: 735px) and (max-width: 987px) {
-  /* line 118, ../sass/partials/_grid.scss */
+  /* line 126, ../sass/partials/_grid.scss */
   .indivMover {
     width: 32.5%;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 734px) {
-  /* line 123, ../sass/partials/_grid.scss */
+  /* line 131, ../sass/partials/_grid.scss */
   .indivMover {
     width: 49.5%;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 128, ../sass/partials/_grid.scss */
+  /* line 136, ../sass/partials/_grid.scss */
   .indivMover {
     float: none;
     width: 100%;
@@ -954,7 +975,7 @@ footer a:hover {
 /* line 2, ../sass/partials/_signup.scss */
 .signupContent h3 {
   font-size: 30px;
-  line-height: 32px;
+  line-height: 36px;
 }
 /* line 6, ../sass/partials/_signup.scss */
 .signupContent .pageContent {
@@ -1004,25 +1025,25 @@ footer a:hover {
   background-color: #3d3d3f;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 480px;
-  max-height: 480px;
+  background-size: cover;
+  height: 600px;
+  max-height: 600px;
 }
 
-/* line 53, ../sass/partials/_signup.scss */
+/* line 54, ../sass/partials/_signup.scss */
 #signup {
-  padding-top: 18px;
+  padding-top: 55px;
 }
 
-/* line 56, ../sass/partials/_signup.scss */
+/* line 57, ../sass/partials/_signup.scss */
 .signupBox {
-  height: 445px;
   background: #fff;
+  width: 48%;
 }
 
-/* line 60, ../sass/partials/_signup.scss */
+/* line 61, ../sass/partials/_signup.scss */
 .signupBox, .signupHeader {
   box-sizing: border-box;
-  width: 50%;
   max-width: 550px;
 }
 
@@ -1032,13 +1053,14 @@ footer a:hover {
   font-size: 21px;
   line-height: 25px;
   padding-left: 30px;
+  width: 52%;
 }
-/* line 72, ../sass/partials/_signup.scss */
+/* line 73, ../sass/partials/_signup.scss */
 .signupHeader h3 {
   margin-bottom: 40px;
 }
 
-/* line 78, ../sass/partials/_signup.scss */
+/* line 79, ../sass/partials/_signup.scss */
 .blueSignupBtn, .pushbutton-wide, .w2linput.submit {
   background: #00aee6;
   border: none;
@@ -1051,37 +1073,37 @@ footer a:hover {
   text-align: center;
   max-width: 300px;
 }
-/* line 92, ../sass/partials/_signup.scss */
-.blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover {
-  color: #00aee6;
-  background: #949698;
+
+/* line 93, ../sass/partials/_signup.scss */
+.w2linput.submit {
+  margin: 40px auto 0 auto;
 }
 
-/* line 97, ../sass/partials/_signup.scss */
+/* line 96, ../sass/partials/_signup.scss */
 .signupForm {
-  padding: 24px 30px 0 30px;
+  padding: 30px;
 }
 
-/* line 101, ../sass/partials/_signup.scss */
+/* line 100, ../sass/partials/_signup.scss */
 .pushbutton-wide {
   line-height: 0;
   padding: 25px 0;
 }
 
-/* line 107, ../sass/partials/_signup.scss */
+/* line 106, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead {
   font-size: 16px;
 }
-/* line 110, ../sass/partials/_signup.scss */
+/* line 109, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead label {
   color: #00749c;
   margin-bottom: 8px !important;
 }
-/* line 114, ../sass/partials/_signup.scss */
+/* line 113, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead label span {
   display: none;
 }
-/* line 119, ../sass/partials/_signup.scss */
+/* line 118, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead input[type=email], .salesforce_w2l_lead input[type=text] {
   -webkit-appearance: none;
   border: 1px solid #cfcfcf;
@@ -1092,21 +1114,21 @@ footer a:hover {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 130, ../sass/partials/_signup.scss */
+/* line 129, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead .sf_field {
   margin-bottom: 13px;
 }
-/* line 134, ../sass/partials/_signup.scss */
+/* line 133, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead .sf_field_first_name, .salesforce_w2l_lead .sf_field_last_name {
   float: left;
   width: 47%;
 }
-/* line 139, ../sass/partials/_signup.scss */
+/* line 138, ../sass/partials/_signup.scss */
 .salesforce_w2l_lead .sf_field_last_name {
   margin-left: 6%;
 }
 
-/* line 145, ../sass/partials/_signup.scss */
+/* line 144, ../sass/partials/_signup.scss */
 .success_message {
   color: #00749c;
   display: block;
@@ -1115,16 +1137,16 @@ footer a:hover {
   text-align: center !important;
 }
 
-/* line 153, ../sass/partials/_signup.scss */
+/* line 152, ../sass/partials/_signup.scss */
 .w2llabel {
   display: block;
 }
 
-/* line 158, ../sass/partials/_signup.scss */
+/* line 157, ../sass/partials/_signup.scss */
 .w2linput.select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #fff;
+  background-color: #fff !important;
   background: url("../../../images/dropdown_select.jpg") no-repeat;
   /*Adds background-image*/
   background-position: 188px 0;
@@ -1137,36 +1159,36 @@ footer a:hover {
   width: 220px;
 }
 
-/* line 174, ../sass/partials/_signup.scss */
+/* line 173, ../sass/partials/_signup.scss */
 select::-ms-expand {
   display: none;
 }
 
 @-moz-document url-prefix() {
-  /* line 180, ../sass/partials/_signup.scss */
+  /* line 179, ../sass/partials/_signup.scss */
   .sf_type_select {
     overflow: hidden;
     width: 220px;
   }
 
-  /* line 184, ../sass/partials/_signup.scss */
+  /* line 183, ../sass/partials/_signup.scss */
   .sf_type_select select {
     width: 110% !important;
   }
 }
 
-/* line 190, ../sass/partials/_signup.scss */
+/* line 189, ../sass/partials/_signup.scss */
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
-/* line 195, ../sass/partials/_signup.scss */
+/* line 194, ../sass/partials/_signup.scss */
 input::-moz-focus-inner {
   border: 0;
 }
 
-/* line 200, ../sass/partials/_signup.scss */
+/* line 199, ../sass/partials/_signup.scss */
 .socialSection {
   background: #00506e;
   color: #fff;
@@ -1175,9 +1197,10 @@ input::-moz-focus-inner {
   text-align: center;
   padding: 25px 0;
 }
-/* line 208, ../sass/partials/_signup.scss */
+/* line 207, ../sass/partials/_signup.scss */
 .socialSection h3 {
   margin: 40px 0;
+  padding: 0 140px;
 }
 /* line 212, ../sass/partials/_signup.scss */
 .socialSection a {
@@ -1185,49 +1208,82 @@ input::-moz-focus-inner {
   max-width: 300px;
 }
 
+@media only screen and (min-width: 723px) and (max-width: 912px) {
+  /* line 222, ../sass/partials/_signup.scss */
+  .socialSection h3 {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 722px) {
+  /* line 229, ../sass/partials/_signup.scss */
+  .socialSection h3 {
+    padding: 0;
+  }
+}
 @media only screen and (max-width: 700px) {
-  /* line 221, ../sass/partials/_signup.scss */
+  /* line 235, ../sass/partials/_signup.scss */
   .signupHero {
     height: 800px;
-    max-height: 800px;
+    max-height: 820px;
   }
 
-  /* line 225, ../sass/partials/_signup.scss */
+  /* line 239, ../sass/partials/_signup.scss */
   .signupBox, .signupHeader {
     box-sizing: border-box;
     float: none;
     margin: 0 auto;
   }
 
-  /* line 230, ../sass/partials/_signup.scss */
+  /* line 244, ../sass/partials/_signup.scss */
   .signupBox {
-    margin-top: 40px;
     width: 100%;
   }
 
-  /* line 234, ../sass/partials/_signup.scss */
+  /* line 247, ../sass/partials/_signup.scss */
   .signupHeader {
     padding-left: 0;
     width: 95%;
     max-width: 95%;
   }
 
-  /* line 240, ../sass/partials/_signup.scss */
-  .signupForm {
-    padding: 24px 15px 0 15px;
-  }
-
-  /* line 244, ../sass/partials/_signup.scss */
+  /* line 253, ../sass/partials/_signup.scss */
   .workEx {
     margin: 0 auto 20px;
     width: 50%;
   }
 }
 @media only screen and (max-width: 482px) {
-  /* line 250, ../sass/partials/_signup.scss */
+  /* line 259, ../sass/partials/_signup.scss */
   .workEx {
     float: none;
     width: 85%;
+  }
+}
+@media only screen and (max-width: 482px) {
+  /* line 266, ../sass/partials/_signup.scss */
+  #signup {
+    padding-top: 0;
+  }
+
+  /* line 270, ../sass/partials/_signup.scss */
+  .signupHero {
+    background-image: none !important;
+  }
+
+  /* line 274, ../sass/partials/_signup.scss */
+  .signupHero > .box {
+    padding: 0 !important;
+  }
+
+  /* line 278, ../sass/partials/_signup.scss */
+  .signupBox {
+    background-color: #e2e3e3;
+  }
+
+  /* line 282, ../sass/partials/_signup.scss */
+  .signupHeader {
+    width: 85%;
+    max-width: 85%;
   }
 }
 /* line 3, ../sass/partials/_program.scss */
@@ -1249,20 +1305,21 @@ input::-moz-focus-inner {
   background-color: #00aee6;
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   text-align: center;
   padding: 20px 0 90px;
 }
-/* line 21, ../sass/partials/_program.scss */
+/* line 22, ../sass/partials/_program.scss */
 .progIntro h3 {
   color: #fff;
 }
 
-/* line 25, ../sass/partials/_program.scss */
+/* line 26, ../sass/partials/_program.scss */
 .progChoices {
   max-width: 780px;
   margin: 60px auto 0;
 }
-/* line 28, ../sass/partials/_program.scss */
+/* line 29, ../sass/partials/_program.scss */
 .progChoices a {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1283,56 +1340,56 @@ input::-moz-focus-inner {
   max-width: 300px;
   min-width: 200px;
 }
-/* line 46, ../sass/partials/_program.scss */
+/* line 47, ../sass/partials/_program.scss */
 .progChoices a:hover {
   background: rgba(0, 0, 0, 0.75);
   color: #d7df27;
 }
 
-/* line 53, ../sass/partials/_program.scss */
+/* line 54, ../sass/partials/_program.scss */
 .btnProgEducator {
   margin-right: 20px;
 }
 
-/* line 57, ../sass/partials/_program.scss */
+/* line 58, ../sass/partials/_program.scss */
 .btnProgCompany {
   float: right;
 }
 
-/* line 62, ../sass/partials/_program.scss */
+/* line 63, ../sass/partials/_program.scss */
 .programContent {
   display: none;
   margin: 0 auto;
 }
 
-/* line 71, ../sass/partials/_program.scss */
+/* line 72, ../sass/partials/_program.scss */
 .programSection {
   padding-bottom: 30px;
 }
 
-/* line 77, ../sass/partials/_program.scss */
+/* line 78, ../sass/partials/_program.scss */
 .educator.inactive,
 .company.inactive {
   display: none;
 }
 
-/* line 82, ../sass/partials/_program.scss */
+/* line 83, ../sass/partials/_program.scss */
 .progVal {
   padding-top: 72px;
   position: relative;
 }
-/* line 86, ../sass/partials/_program.scss */
+/* line 87, ../sass/partials/_program.scss */
 .progVal.active .hdrProgVal {
   position: fixed;
   top: 80px;
 }
-/* line 92, ../sass/partials/_program.scss */
+/* line 93, ../sass/partials/_program.scss */
 .progVal.bottom .hdrProgVal {
   top: auto;
   bottom: 0;
 }
 
-/* line 98, ../sass/partials/_program.scss */
+/* line 99, ../sass/partials/_program.scss */
 .hdrProgVal {
   text-align: center;
   top: 0;
@@ -1342,69 +1399,71 @@ input::-moz-focus-inner {
   min-width: 320px;
   z-index: 4;
 }
-/* line 106, ../sass/partials/_program.scss */
+/* line 107, ../sass/partials/_program.scss */
 .hdrProgVal h3 {
   margin: 0;
 }
 
-/* line 111, ../sass/partials/_program.scss */
+/* line 112, ../sass/partials/_program.scss */
 .val1 {
   background: rgba(148, 150, 152, 0.4);
 }
-/* line 113, ../sass/partials/_program.scss */
+/* line 114, ../sass/partials/_program.scss */
 .val1 .hdrProgVal {
   background: #949698;
   color: #39383b;
 }
 
-/* line 119, ../sass/partials/_program.scss */
+/* line 120, ../sass/partials/_program.scss */
 .val2 {
   background: rgba(0, 174, 230, 0.4);
 }
-/* line 121, ../sass/partials/_program.scss */
+/* line 122, ../sass/partials/_program.scss */
 .val2 .hdrProgVal {
   background: #00aee6;
   color: #fff;
 }
 
-/* line 127, ../sass/partials/_program.scss */
+/* line 128, ../sass/partials/_program.scss */
 .val3 {
   background: rgba(57, 56, 59, 0.4);
 }
-/* line 129, ../sass/partials/_program.scss */
+/* line 130, ../sass/partials/_program.scss */
 .val3 .hdrProgVal {
   background: #39383b;
   color: #fff;
 }
 
-/* line 135, ../sass/partials/_program.scss */
+/* line 136, ../sass/partials/_program.scss */
 .val4 {
   background: rgba(215, 223, 39, 0.4);
 }
-/* line 137, ../sass/partials/_program.scss */
+/* line 138, ../sass/partials/_program.scss */
 .val4 .hdrProgVal {
   background: #d7df27;
   color: #39383b;
 }
 
-/* line 144, ../sass/partials/_program.scss */
+/* line 145, ../sass/partials/_program.scss */
 .progQuestions {
   color: #fff;
   text-align: center;
 }
-/* line 147, ../sass/partials/_program.scss */
+/* line 148, ../sass/partials/_program.scss */
 .progQuestions p {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 152, ../sass/partials/_program.scss */
+/* line 153, ../sass/partials/_program.scss */
 .question {
+  font-size: 18px;
+  line-height: 22px;
   width: 33%;
   margin: 20px auto 0;
 }
 
-/* line 158, ../sass/partials/_program.scss */
+/* line 161, ../sass/partials/_program.scss */
 .questionContent {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1418,12 +1477,12 @@ input::-moz-focus-inner {
   width: 215px;
   position: relative;
 }
-/* line 167, ../sass/partials/_program.scss */
+/* line 170, ../sass/partials/_program.scss */
 .questionContent:hover .questionRO {
   opacity: 1;
 }
 
-/* line 172, ../sass/partials/_program.scss */
+/* line 175, ../sass/partials/_program.scss */
 .questionRO {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1443,31 +1502,31 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
-/* line 185, ../sass/partials/_program.scss */
+/* line 188, ../sass/partials/_program.scss */
 .innerRO {
   display: table;
   height: 100%;
 }
 
-/* line 192, ../sass/partials/_program.scss */
+/* line 195, ../sass/partials/_program.scss */
 .progImages img {
   height: auto;
   width: 100%;
 }
 
-/* line 199, ../sass/partials/_program.scss */
+/* line 202, ../sass/partials/_program.scss */
 .gridImages img {
-  margin-bottom: 20px;
-  margin-right: 2%;
-  width: 48%;
+  margin-bottom: 80px;
+  margin-right: 10%;
+  width: 45%;
   max-width: 451px;
 }
-/* line 207, ../sass/partials/_program.scss */
+/* line 210, ../sass/partials/_program.scss */
 .gridImages img:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 214, ../sass/partials/_program.scss */
+/* line 217, ../sass/partials/_program.scss */
 .example {
   background: #39383b;
   color: #fff;
@@ -1475,30 +1534,30 @@ input::-moz-focus-inner {
   text-decoration: none;
   width: 100%;
 }
-/* line 221, ../sass/partials/_program.scss */
+/* line 224, ../sass/partials/_program.scss */
 .example > p {
   padding: 20px 0;
   text-align: center;
 }
-/* line 225, ../sass/partials/_program.scss */
+/* line 228, ../sass/partials/_program.scss */
 .example p {
   margin: 0;
 }
-/* line 228, ../sass/partials/_program.scss */
+/* line 231, ../sass/partials/_program.scss */
 .example:hover {
   color: #fff;
 }
-/* line 230, ../sass/partials/_program.scss */
+/* line 233, ../sass/partials/_program.scss */
 .example:hover .exampleContent {
   height: auto;
   padding-bottom: 20px;
 }
-/* line 233, ../sass/partials/_program.scss */
+/* line 236, ../sass/partials/_program.scss */
 .example:hover .exampleContent p {
   opacity: 1;
 }
 
-/* line 239, ../sass/partials/_program.scss */
+/* line 242, ../sass/partials/_program.scss */
 .exampleContent {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1506,24 +1565,24 @@ input::-moz-focus-inner {
   transition: all 0.3s ease;
   height: 0;
 }
-/* line 243, ../sass/partials/_program.scss */
+/* line 246, ../sass/partials/_program.scss */
 .exampleContent p {
   opacity: 0;
 }
 
-/* line 249, ../sass/partials/_program.scss */
+/* line 252, ../sass/partials/_program.scss */
 .vidBox {
   margin: 0 auto;
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 254, ../sass/partials/_program.scss */
+/* line 257, ../sass/partials/_program.scss */
 .vidBox img {
   width: 100%;
   height: auto;
 }
-/* line 259, ../sass/partials/_program.scss */
+/* line 262, ../sass/partials/_program.scss */
 .vidBox iframe {
   position: absolute;
   top: 0;
@@ -1532,14 +1591,14 @@ input::-moz-focus-inner {
   height: 100%;
 }
 
-/* line 269, ../sass/partials/_program.scss */
+/* line 272, ../sass/partials/_program.scss */
 .progSignUp {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   padding: 40px 0;
 }
-/* line 274, ../sass/partials/_program.scss */
+/* line 277, ../sass/partials/_program.scss */
 .progSignUp h3 {
   color: #00aee6;
   font-size: 40px;
@@ -1547,38 +1606,35 @@ input::-moz-focus-inner {
   margin-top: 0;
 }
 
-/* line 281, ../sass/partials/_program.scss */
+/* line 284, ../sass/partials/_program.scss */
 .btnProgSignUp {
   background: #00aee6;
   color: #fff;
   margin: 40px auto 0;
   max-width: 300px;
 }
-/* line 288, ../sass/partials/_program.scss */
-.btnProgSignUp:hover {
-  background: #949698;
-  color: #00aee6;
-}
 
 @media only screen and (max-width: 850px) {
-  /* line 296, ../sass/partials/_program.scss */
+  /* line 295, ../sass/partials/_program.scss */
   .gridImages img {
-    margin-bottom: 15px;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 25px;
   }
 }
 @media only screen and (max-width: 749px) {
-  /* line 302, ../sass/partials/_program.scss */
+  /* line 305, ../sass/partials/_program.scss */
   .questionContent {
     height: 160px;
     width: 160px;
   }
 }
 @media only screen and (max-width: 676px) {
-  /* line 308, ../sass/partials/_program.scss */
+  /* line 311, ../sass/partials/_program.scss */
   .progChoices {
     max-width: 580px;
   }
-  /* line 310, ../sass/partials/_program.scss */
+  /* line 313, ../sass/partials/_program.scss */
   .progChoices a {
     font-size: 24px;
     line-height: 26px;
@@ -1587,68 +1643,64 @@ input::-moz-focus-inner {
   }
 }
 @media only screen and (max-width: 625px) {
-  /* line 320, ../sass/partials/_program.scss */
+  /* line 323, ../sass/partials/_program.scss */
   .gridImages img {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 569px) {
-  /* line 327, ../sass/partials/_program.scss */
+  /* line 330, ../sass/partials/_program.scss */
   .mtwProgram h3 {
     font-size: 24px;
     line-height: 26px;
   }
 
-  /* line 333, ../sass/partials/_program.scss */
+  /* line 336, ../sass/partials/_program.scss */
   .progVal {
     padding-top: 56px;
   }
 
-  /* line 336, ../sass/partials/_program.scss */
+  /* line 339, ../sass/partials/_program.scss */
   .hdrProgVal {
     padding: 15px 0;
   }
 
-  /* line 340, ../sass/partials/_program.scss */
+  /* line 343, ../sass/partials/_program.scss */
   .question {
     float: none;
     width: 100%;
   }
 
-  /* line 345, ../sass/partials/_program.scss */
+  /* line 348, ../sass/partials/_program.scss */
   .progSignUp {
     padding: 20px 0;
   }
-  /* line 347, ../sass/partials/_program.scss */
+  /* line 350, ../sass/partials/_program.scss */
   .progSignUp h3 {
     font-size: 30px;
     line-height: 32px;
   }
 
-  /* line 352, ../sass/partials/_program.scss */
+  /* line 355, ../sass/partials/_program.scss */
   .btnProgSignUp {
     margin-top: 20px;
   }
 }
 @media only screen and (max-width: 476px) {
-  /* line 357, ../sass/partials/_program.scss */
+  /* line 360, ../sass/partials/_program.scss */
   .progChoices {
     max-width: 600px;
   }
-  /* line 359, ../sass/partials/_program.scss */
+  /* line 362, ../sass/partials/_program.scss */
   .progChoices a {
     float: none;
     margin: 0 auto 20px;
   }
 }
 /* line 4, ../sass/partials/_jobs.scss */
-.pageContent .jobTitle {
-  margin-top: 35px;
-}
-
-/* line 9, ../sass/partials/_jobs.scss */
-.jobTitle {
+.openJobs a {
   color: #00aee6;
+  margin-top: 10px;
 }
 
 /* line 4, ../sass/partials/_blog.scss */

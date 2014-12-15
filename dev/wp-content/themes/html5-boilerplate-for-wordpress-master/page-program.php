@@ -334,7 +334,7 @@ get_header();
                             ?>
                                 <div class="vidBox">
                                     <img class="imgVidBox" src="http://placehold.it/16x9"/>
-                                    <iframe src="http://www.youtube.com/embed/<?php echo $video ?>?showinfo=0" allowfullscreen></iframe>
+                                    <iframe src="//player.vimeo.com/video/<?php echo $video ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=00aee6" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                                 </div><!--.vidBox-->
                             <?php endforeach ?>
                         </section><!--.educator-->
@@ -357,17 +357,16 @@ get_header();
                             foreach ($postslist5b as $post) :
                                 setup_postdata($post);
 
-                                $vidCode = get_post_custom_values('Video');
-                                if(is_array($vidCode)):
-                                    foreach ( $vidCode as $key=> $value ) {
-                                        $video = $value;
+                                $vidAlt = get_post_custom_values('Video');
+                                if(is_array($vidAlt)):
+                                    foreach ( $vidAlt as $key=> $value ) {
+                                        $image = $value;
                                     }
                                 endif;
                             ?>
-                                <div class="vidBox">
-                                    <img class="imgVidBox" src="/wp-content/uploads/16x9.gif"/>
-                                    <iframe src="http://www.youtube.com/embed/<?php echo $video ?>?showinfo=0" allowfullscreen></iframe>
-                                </div><!--.vidBox-->
+                                <div class="progImages">
+                                    <img src="/wp-content/uploads/<?php echo $image ?>" alt="program image" />
+                                </div><!--.progImages-->
                             <?php endforeach ?>
                         </section><!--.company-->
 

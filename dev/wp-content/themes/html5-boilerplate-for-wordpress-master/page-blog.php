@@ -15,6 +15,9 @@ get_header(); ?>
     <div class="box clearfix">
       <h1><?php the_title(); ?></h1>
 
+      <p>Coming Soon!</p>
+
+      <?php /*
       <?php
       $args = array(
         'category_name' => 'blog,tips',
@@ -45,7 +48,7 @@ get_header(); ?>
         <div class="blogOlder">
           <?php next_posts_link('Older Posts &raquo;') ?>
         </div>
-      </nav><!--.blogNav-->
+      </nav><!--.blogNav--> */ ?>
 
     </div><!--.box-->
   </section><!--.pageContent-->

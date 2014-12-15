@@ -65,7 +65,7 @@
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="Partners"):?>
+	<?php if ($parentTitle=="Become A Partner"):?>
 	#btnPartners	{
 		color:#2aa0d6;
 	}

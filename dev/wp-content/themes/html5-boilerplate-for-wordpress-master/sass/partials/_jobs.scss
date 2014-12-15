@@ -1,12 +1,9 @@
 //_job.scss
 //GENERAL
-.pageContent{
-	.jobTitle{
-		margin-top:35px;
+.openJobs{
+	a{
+		@extend %displayBlock;
+		color:$lightBlue;
+		margin-top:10px;
 	}
-}
-
-.jobTitle{
-	@extend .pageSubtitle;
-	color:$lightBlue;
 }

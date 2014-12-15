@@ -32,49 +32,55 @@ get_header(); ?>
       
       	<article class="mtwMission">
 	        <div class="box">
-                <?php
+                <p><?php
 				$mission = get_post_custom_values('Mission');
 				if(is_array($mission)):
 					foreach ( $mission as $key=> $value ) {
 					  echo $value;					
 					}
 				endif;
-				?>
+				?></p>
             </div>
         </article><!--.mtwMission-->
         
         <section class="coreValues">
         	<div class="box clearfix">
           		<h3 class="hdrValues">Pick your toolbox of strategies</h3>
-                <?php $args = array(
-					'category_name' => 'Values',
-					'post_type' => 'post',
-					'order' => 'ASC',
-					'post_status' => 'publish',
-					'numberposts' => 4
-				);
-				$postslist = get_posts($args);
-				foreach ($postslist as $post) :
-					setup_postdata($post);
-				?>
-                <article class="value">
-                	<?php
-                    if ( has_post_thumbnail() ) {
-                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
-						echo "<img src=\"$image_url[0]\" alt=\"value icon\" class=\"imgValue\" />";
-                    } else {
-						echo "<div class=\"imgValue\"></div>";
-					}?>
-                    <?php the_content(); ?>
-                </article>
-                <?php endforeach; ?>
+
+          		<div class="clearfix">
+	                <?php $args = array(
+						'category_name' => 'Values',
+						'post_type' => 'post',
+						'order' => 'ASC',
+						'post_status' => 'publish',
+						'numberposts' => 4
+					);
+					$postslist = get_posts($args);
+					foreach ($postslist as $post) :
+						setup_postdata($post);
+					?>
+	                <article class="value">
+	                	<?php
+	                    if ( has_post_thumbnail() ) {
+	                        $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
+							echo "<img src=\"$image_url[0]\" alt=\"value icon\" class=\"imgValue\" />";
+	                    } else {
+							echo "<div class=\"imgValue\"></div>";
+						}?>
+	                    <?php the_content(); ?>
+	                </article>
+
+	                <?php endforeach; ?>
+                </div><!--.clearfix-->
+
+                <a href="/program" class="btnMTW">Learn More</a>
         	</div><!--.box-->
         </section><!--.coreValues-->
         
         <section class="callOuts">
         	<div class="box clearfix">
             	<?php $args2 = array(
-					'category_name' => 'Sign-Up-Home',
+					'category_name' => 'Sign-Up',
 					'post_type' => 'post',
 					'order' => 'ASC',
 					'post_status' => 'publish',
@@ -122,7 +128,7 @@ get_header(); ?>
                         <article class="coContent">
                             <h3><?php the_title(); ?></h3>
                             <?php the_content(); ?>
-                            <a href="<?php the_permalink(); ?>" class="btnCO">Take the Challenge</a>
+                            <a href="/about#video" class="btnCO">Take the Challenge</a>
                         </article><!--.coContent-->
                     </div><!--.tipContent-->
 	            </article><!--.coTips-->

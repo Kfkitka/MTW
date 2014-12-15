@@ -6,7 +6,7 @@
 }
 
 .pageContent{
-	padding:0 0 15px;
+	padding:0 0 40px;
 	h1{
 		color:$lightBlue;
 		font:{
@@ -32,67 +32,38 @@
 	}
 }
 
-.pageTitle{
+.title{
 	color:$blue;
 	font-size:30px;
 	line-height:32px;
 }
 
-.pageSubtitle {
+.subtitle {
 	color:$blue;
 	font-size:21px;
 	line-height:25px;
 }
 
-.bodyImage {
-	height: 288px;
-	width: 460px;
-	&.leftSide {
-		@extend %floatLeft;
-		margin-right: 22px;
+.bodyImage{
+	margin-bottom:15px;
+	p{
+		display:inline-block;
+		max-width:74%;
 	}
-	&.rightSide {
-		float: right;
-		margin-left: 22px;
+	.imgBox{
+		display:inline-block;
+		vertical-align:middle;
+		margin-right:22px;
 	}
+}
+.leftSide {
+	@extend %floatLeft;
+	margin-right: 22px;
+}
+.rightSide {
+	float: right;
+	margin-left: 22px;
 }
 .imgPageContent{
 	width:100%;
-}
-	
-
-//SIDEBAR
-.mtwSidebar {
-	@extend %floatLeft;
-	background:$darkBlue;
-	color:#fff;
-	width:27%;
-	max-width:260px;
-	//position:fixed;
-	p{
-		margin:0 0 15px;
-	}
-	ul{
-		margin:0 0 15px 20px;
-	}
-	hr{
-		border-top:1px solid #fff;
-		margin:25px 0;
-	}
-	a:hover{
-		color:#4c4c4e;
-		text-decoration:underline;
-	}
-}
-.sidebarContent{
-	padding:20px;
-}
-.sidebarTitle{
-	color: $lightGreen;
-	font:{
-		size:30px;
-		weight:700;
-	}
-	line-height:32px;
-	margin:15px 0;
 }

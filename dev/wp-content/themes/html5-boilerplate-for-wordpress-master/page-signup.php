@@ -11,6 +11,15 @@ get_header(); ?>
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
+	<?php
+	$proof = get_post_custom_values('Social_Proof');
+    if(is_array($proof)):
+        foreach ( $proof as $key=> $value ) {
+            $social = $value;
+        }
+    endif;
+    ?>
+
   	<section class="pageContent">
       	<?php
 		if ( has_post_thumbnail() ) {
@@ -79,21 +88,8 @@ get_header(); ?>
 
         <article class="socialSection">
 	        <div class="box">
-                <?php $args3 = array(
-					'category_name' => 'social-proof',
-					'post_type' => 'post',
-					'order' => 'ASC',
-					'post_status' => 'publish',
-					'numberposts' => 1
-				);
-				$postslist3 = get_posts($args3);
-				foreach ($postslist3 as $post) :
-					setup_postdata($post);
-				?>
-            		<h3><?php the_title(); ?></h3>
-                	<?php the_content(); ?>
-                	<a href="#" class="bigBtn">Join the Movement</a>
-                <?php endforeach; ?>
+        		<h3><?php echo $social; ?></h3>
+            	<a href="#" class="bigBtn">Become a Partner</a>
             </div>
         </article><!--.socialSection-->
     </section><!--.pageContent-->

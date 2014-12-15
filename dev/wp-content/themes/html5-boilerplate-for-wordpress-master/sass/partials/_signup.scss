@@ -1,7 +1,7 @@
 .signupContent {
 	h3{
 		font-size:30px;
-		line-height:32px;
+		line-height:36px;
 	}
 	.pageContent{
 		padding:0;
@@ -46,21 +46,21 @@
 		color:$grey;
 		repeat:no-repeat;
 		position:top center;
+		size:cover;
 	}
-	height:480px;
-	max-height:480px;
+	height:600px;
+	max-height:600px;
 }
 #signup{
-	padding-top: 18px;
+	padding-top: 55px;
 }
 .signupBox{
-	height: 445px;
 	background: #fff;
+	width:48%;
 }
 .signupBox, .signupHeader {
 	@extend %floatLeft;
 	box-sizing: border-box;
-	width: 50%;
 	max-width:550px;
 }
 
@@ -69,6 +69,7 @@
 	font-size:21px;
 	line-height:25px;
 	padding-left: 30px;
+	width:52%;
 	h3 {
 		margin-bottom: 40px;
 	}
@@ -88,14 +89,12 @@
 	outline: none;
 	text-align: center;
 	max-width: 300px;
-
-	&:hover {
-		color:$lightBlue;
-		background:$lightGrey;
-	}
+}
+.w2linput.submit {
+	margin: 40px auto 0 auto;
 }
 .signupForm {
-	padding: 24px 30px 0 30px;
+	padding: 30px;
 }
 
 .pushbutton-wide {
@@ -109,7 +108,7 @@
 
 	label{
 		color:$darkBlue;
-		margin-bottom: 8px!important;
+		margin-bottom: 8px !important;
 
 		span{
 			display: none;
@@ -123,8 +122,8 @@
 		box-sizing: border-box;
 		height: 30px;
 		outline: 0;
-		width: 100%!important;
-		max-width: 100%!important;
+		width: 100% !important;
+		max-width: 100% !important;
 	}
 
 	.sf_field {
@@ -147,7 +146,7 @@
 	display: block;
 	font-size: 20px;
 	line-height: 28px;
-	text-align: center!important;
+	text-align: center !important;
 }
 
 .w2llabel {
@@ -158,7 +157,7 @@
 .w2linput.select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background-color: #fff;
+	background-color: #fff !important;
 	background: url('../../../images/dropdown_select.jpg') no-repeat;          /*Adds background-image*/
     background-position: 188px 0; 
 	border: #CFCFCF 1px solid;
@@ -207,6 +206,7 @@ input::-moz-focus-inner {
 
 	h3{
 		margin:40px 0;
+		padding:0 140px;
 	}
 
 	a{
@@ -217,10 +217,24 @@ input::-moz-focus-inner {
 	}
 }
 
+@media only screen and (min-width: 723px) and (max-width: 912px){
+	.socialSection{
+		h3{
+			padding:0 40px;
+		}
+	}
+}
+@media only screen and (max-width: 722px){
+	.socialSection{
+		h3{
+			padding:0;
+		}
+	}
+}
 @media only screen and (max-width: 700px) {
 	.signupHero{
 		height:800px;
-		max-height: 800px;
+		max-height: 820px;
 	}
 	.signupBox, .signupHeader {
 		box-sizing: border-box;
@@ -228,17 +242,12 @@ input::-moz-focus-inner {
 		margin: 0 auto;
 	}
 	.signupBox{
-		margin-top: 40px;
 		width: 100%;
 	}
 	.signupHeader {
 		padding-left: 0;
 		width: 95%;
 		max-width: 95%;
-	}
-
-	.signupForm {
-		padding: 24px 15px 0 15px;
 	}
 
 	.workEx{
@@ -250,5 +259,28 @@ input::-moz-focus-inner {
 	.workEx{
 		float:none;
 		width:85%;
+	}
+}
+
+@media only screen and (max-width: 482px) {
+	#signup {
+		padding-top:0;
+	}
+
+	.signupHero {
+		background-image: none !important;
+	}
+
+	.signupHero > .box {
+		padding: 0 !important;
+	}
+
+	.signupBox {
+		background-color: lighten($lightGrey,30%);;
+	}
+
+	.signupHeader {
+		width:85%;
+		max-width: 85%;
 	}
 }
