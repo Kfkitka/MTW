@@ -1,5 +1,5 @@
 /* line 15, ../sass/partials/_base.scss */
-.clearfix:after, .socialMedia a, .logoCFP, .subNav a, .btnMTW, .btnDonate, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp, .imgCOTip, .pageGrid h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverRO h3, .indivMover.active .moverDesc, .imgBoard img, .progChoices a, .programContent.active, .question, .questionRO, .progImages img, .example, .exampleContent, .vidBox img, .openJobs a {
+.clearfix:after, .socialMedia a, .logoCFP, .subNav a, .btnMTW, .btnDonate, .coContent .btnCO, .btnDonateLrg, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp, .imgCOTip, .pageGrid h3 span, .indivMover a, .indivMover img, .indivMover:hover .moverRO, .indivMover.active .moverRO, .indivMover.active .moverRO h3, .indivMover.active .moverDesc, .imgBoard img, .progChoices a, .programContent.active, .question, .questionRO, .progImages img, .example, .exampleContent, .vidBox img, .openJobs a {
   display: block;
 }
 
@@ -421,7 +421,7 @@ footer a:hover {
 }
 
 /* line 15, ../sass/partials/_homepage.scss */
-.btnMTW, .btnDonate, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
+.btnMTW, .btnDonate, .coContent .btnCO, .btnDonateLrg, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -430,12 +430,12 @@ footer a:hover {
   padding: 15px 0;
 }
 /* line 25, ../sass/partials/_homepage.scss */
-.btnMTW:hover, .btnDonate:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
+.btnMTW:hover, .btnDonate:hover, .coContent .btnCO:hover, .btnDonateLrg:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
   color: #fff;
 }
 
 /* line 29, ../sass/partials/_homepage.scss */
-.btnMTW, .coContent .btnCO, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
+.btnMTW, .coContent .btnCO, .btnDonateLrg, .blueSignupBtn, .pushbutton-wide, .w2linput.submit, .socialSection a, .btnProgSignUp {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -447,7 +447,7 @@ footer a:hover {
   height: 20px;
 }
 /* line 35, ../sass/partials/_homepage.scss */
-.btnMTW:hover, .coContent .btnCO:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
+.btnMTW:hover, .coContent .btnCO:hover, .btnDonateLrg:hover, .blueSignupBtn:hover, .pushbutton-wide:hover, .w2linput.submit:hover, .socialSection a:hover, .btnProgSignUp:hover {
   background: #949698;
   color: #fff;
 }
@@ -765,6 +765,13 @@ footer a:hover {
 /* line 67, ../sass/partials/_subpage.scss */
 .imgPageContent {
   width: 100%;
+}
+
+/* line 72, ../sass/partials/_subpage.scss */
+.btnDonateLrg {
+  background: #00aee6;
+  border: 0 none;
+  text-align: center;
 }
 
 /* line 4, ../sass/partials/_grid.scss */

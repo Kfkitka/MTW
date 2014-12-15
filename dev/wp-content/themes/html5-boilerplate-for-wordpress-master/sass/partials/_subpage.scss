@@ -67,3 +67,12 @@
 .imgPageContent{
 	width:100%;
 }
+
+//DONATE
+.btnDonateLrg{
+	@extend %btnMTW;
+	@extend %btnBlock;
+	background:$lightBlue;
+	border:0 none;
+	text-align:center;
+}
