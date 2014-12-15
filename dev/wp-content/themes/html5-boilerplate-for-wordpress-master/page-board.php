@@ -9,11 +9,11 @@
 get_header();
 ?>
 
-<div id="main" class="mtwWrapper mtwPage" role="main">
+<div id="main" class="mtwWrapper pageBoard" role="main">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="pageContent pageMovers"> 
+    <section class="pageContent"> 
         <h1>Board Members</h1>
         <section class="boardMembers clearfix">
             <?php

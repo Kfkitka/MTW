@@ -2,7 +2,9 @@
 //SUBPAGES
 .mtwPage{
 	max-width:980px;
-	margin:0 auto;
+	img{
+		@extend %displayBlock;
+	}
 }
 
 .pageContent{
@@ -44,29 +46,34 @@
 	line-height:25px;
 }
 
-.bodyImage{
-	margin-bottom:15px;
-	p{
-		display:inline-block;
-		max-width:74%;
-	}
-	.imgBox{
-		display:inline-block;
-		vertical-align:middle;
-		margin-right:22px;
-	}
+//IMAGES
+.fullWidth{
+	width:100%;
 }
 .leftSide {
 	@extend %floatLeft;
-	margin-right: 22px;
+	margin-right:20px;
 }
 .rightSide {
-	float: right;
-	margin-left: 22px;
+	float:right;
+	margin-left:20px;
 }
-.imgPageContent{
-	width:100%;
+.bodyImage{
+	margin-bottom:15px;
 }
+.imgBox{
+	display:table;
+	.leftSide,
+	.rightSide{
+		float:none;
+	}
+	p{
+		display:table-cell;
+		margin-bottom:0;
+		vertical-align:middle;
+	}
+}
+
 
 //DONATE
 .btnDonateLrg{

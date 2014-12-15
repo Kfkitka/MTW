@@ -10,11 +10,11 @@ get_header();
 
 ?>
 
-<div id="main" class="mtwWrapper mtwPage" role="main">
+<div id="main" class="mtwWrapper pageGrid" role="main">
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="pageContent pageGrid clearfix">
+    <section class="pageContent clearfix">
     	
         <h1><?php the_title(); ?></h1>
         <ul class="gridList clearfix">
