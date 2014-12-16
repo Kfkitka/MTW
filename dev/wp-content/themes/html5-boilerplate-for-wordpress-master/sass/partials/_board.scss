@@ -2,6 +2,17 @@
 //BOARD & ADVISORY MEMBERS
 .pageBoard{
 	max-width:980px;
+	h3{
+		color:$lightGreen;
+		font-size:21px;
+		line-height:23px;
+		text-transform:uppercase;
+		margin:0 0 30px;
+		span{
+			@extend %displayBlock;
+			font-weight:400;
+		}
+	}
 }
 .boardMember{
 	margin-bottom:20px;

@@ -47,6 +47,17 @@ get_header();
                     } ?>
                 </div><!--.imgBoard-->
                 <article class="boardContent box">
+                    <?php if($names[1] == "Potler"){ ?>
+                        <h3><?php the_title(); ?>
+                        <span><?php
+                        if(is_array($moverTitle)):
+                            foreach ( $moverTitle as $key=> $value ) {
+                                echo $value;
+                            }
+                        endif;
+                        ?></span>
+                    </h3>
+                    <?php } else { ?>
                     <h3><?php 
                         echo $names[1]." ".$names[2]." ".$names[0];
                         if(is_array($honorific)):
@@ -63,6 +74,7 @@ get_header();
                         endif;
                         ?></span>
                     </h3>
+                    <?php } ?>
                     <?php the_content(); ?>
                 </article><!--.boardContent-->
             </section><!--.boardMember-->
@@ -73,7 +85,7 @@ get_header();
         <section class="advisoryMembers clearfix">
             <?php
             $args = array(
-                'category_name' => 'Jobs',
+                'category_name' => 'Advisory',
                 'post_type' => 'post',
                 'orderby' =>  'title',
                 'order' => 'ASC',

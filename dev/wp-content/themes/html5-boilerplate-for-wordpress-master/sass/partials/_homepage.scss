@@ -131,7 +131,7 @@
 	max-height:280px;
 }
 .coContent{
-	padding:0 25px;
+	padding:0 15px;
 	.btnCO{
 		@extend %btnMTW;
 		@extend %btnBlock;
@@ -142,8 +142,10 @@
 .coSignUp{
 	background:$blue;
 	box-sizing:border-box;
+	font-size:18px;
+	line-height:22px;
 	margin-right:2%;
-	padding:35px 0;
+	padding:25px 0;
 }
 //TIPS
 .coTips{
@@ -152,14 +154,10 @@
 		@extend %floatLeft;
 		width:50%;
 		max-width:230px;
-		h3{
-			font-size:26px;
-			line-height:28px;
-			margin:.65em 0;
-		}
 	}
 	.btnCO{
 		background:$lightBlue;
+		font-size:17px;
 	}
 }
 .imgCOTip{
@@ -178,10 +176,28 @@
 		}
 	}
 }
+@media only screen and (min-width: 863px) {
+	.coTips{
+		.hasImg{
+			h3{
+				font-size:26px;
+				line-height:28px;
+				margin:.65em 0;
+			}
+		}
+	}
+}
 @media only screen and (max-width: 862px) {
+	.coContent{
+		h3{
+			margin-top:.65em;
+		}
+	}
+
 	.coTips{
 		.hasImg{
 			float:none;
+			padding:25px 0;
 			width:100%;
 			max-width:100%;
 		}
@@ -189,6 +205,9 @@
 	.imgCOTip{
 		display:none;
 	}
+}
+@media only screen and (max-width: 760px){
+
 }
 @media only screen and (max-width: 722px){
 	.mtwMission{
@@ -216,10 +235,6 @@
 			margin-bottom:20px;
 		}
 	}
-
-	.coContent{
-		padding-top:20px;
-	}
 }
 @media only screen and (max-width: 599px) {
 	.homeContent{
@@ -231,6 +246,9 @@
 			font-size:26px;
 			line-height:28px;
 		}
+	}
+	.callOutBox{
+		height:220px;
 	}
 	.coContent{
 		.btnCO{
