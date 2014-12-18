@@ -27,7 +27,7 @@
 body {
   background: #fff;
   margin: 0 auto;
-  font: 400 16px/19px 'Open Sans', Arial, Helvetica, sans-serif;
+  font: 400 16px/24px 'Open Sans', Arial, Helvetica, sans-serif;
   color: #39383b;
 }
 
@@ -567,11 +567,19 @@ footer a:hover {
   padding: 0 15px;
 }
 /* line 135, ../sass/partials/_homepage.scss */
+.coContent .leftCoContent {
+  font-weight: bold;
+}
+/* line 138, ../sass/partials/_homepage.scss */
+.coContent p {
+  line-height: 20px;
+}
+/* line 141, ../sass/partials/_homepage.scss */
 .coContent .btnCO {
   margin: 15px auto;
 }
 
-/* line 142, ../sass/partials/_homepage.scss */
+/* line 148, ../sass/partials/_homepage.scss */
 .coSignUp {
   background: #00506e;
   box-sizing: border-box;
@@ -581,22 +589,22 @@ footer a:hover {
   padding: 25px 0;
 }
 
-/* line 151, ../sass/partials/_homepage.scss */
+/* line 157, ../sass/partials/_homepage.scss */
 .coTips {
   background: #00506e;
 }
-/* line 153, ../sass/partials/_homepage.scss */
+/* line 159, ../sass/partials/_homepage.scss */
 .coTips .hasImg {
   width: 50%;
   max-width: 230px;
 }
-/* line 158, ../sass/partials/_homepage.scss */
+/* line 164, ../sass/partials/_homepage.scss */
 .coTips .btnCO {
   background: #00aee6;
   font-size: 17px;
 }
 
-/* line 163, ../sass/partials/_homepage.scss */
+/* line 169, ../sass/partials/_homepage.scss */
 .imgCOTip {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -610,13 +618,13 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 723px) and (max-width: 912px) {
-  /* line 174, ../sass/partials/_homepage.scss */
+  /* line 180, ../sass/partials/_homepage.scss */
   .mtwMission p {
     padding: 0 40px;
   }
 }
 @media only screen and (min-width: 863px) {
-  /* line 182, ../sass/partials/_homepage.scss */
+  /* line 188, ../sass/partials/_homepage.scss */
   .coTips .hasImg h3 {
     font-size: 26px;
     line-height: 28px;
@@ -624,12 +632,12 @@ footer a:hover {
   }
 }
 @media only screen and (max-width: 862px) {
-  /* line 192, ../sass/partials/_homepage.scss */
+  /* line 198, ../sass/partials/_homepage.scss */
   .coContent h3 {
     margin-top: .65em;
   }
 
-  /* line 198, ../sass/partials/_homepage.scss */
+  /* line 204, ../sass/partials/_homepage.scss */
   .coTips .hasImg {
     float: none;
     padding: 25px 0;
@@ -637,59 +645,59 @@ footer a:hover {
     max-width: 100%;
   }
 
-  /* line 205, ../sass/partials/_homepage.scss */
+  /* line 211, ../sass/partials/_homepage.scss */
   .imgCOTip {
     display: none;
   }
 }
 @media only screen and (max-width: 722px) {
-  /* line 214, ../sass/partials/_homepage.scss */
+  /* line 220, ../sass/partials/_homepage.scss */
   .mtwMission p {
     padding: 0;
   }
 }
 @media only screen and (max-width: 700px) {
-  /* line 220, ../sass/partials/_homepage.scss */
+  /* line 226, ../sass/partials/_homepage.scss */
   .mtwHero {
     height: 590px;
     max-height: 590px;
   }
 
-  /* line 225, ../sass/partials/_homepage.scss */
+  /* line 231, ../sass/partials/_homepage.scss */
   .value {
     margin: 0 auto 20px;
     width: 50%;
   }
 
-  /* line 230, ../sass/partials/_homepage.scss */
+  /* line 236, ../sass/partials/_homepage.scss */
   .callOutBox {
     float: none;
     margin: 0 auto;
     width: 85%;
   }
-  /* line 234, ../sass/partials/_homepage.scss */
+  /* line 240, ../sass/partials/_homepage.scss */
   .callOutBox:first-child {
     margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 241, ../sass/partials/_homepage.scss */
+  /* line 247, ../sass/partials/_homepage.scss */
   .homeContent h1 {
     font-size: 40px;
     line-height: 42px;
   }
-  /* line 245, ../sass/partials/_homepage.scss */
+  /* line 251, ../sass/partials/_homepage.scss */
   .homeContent h3 {
     font-size: 26px;
     line-height: 28px;
   }
 
-  /* line 250, ../sass/partials/_homepage.scss */
+  /* line 256, ../sass/partials/_homepage.scss */
   .callOutBox {
     height: 220px;
   }
 
-  /* line 254, ../sass/partials/_homepage.scss */
+  /* line 260, ../sass/partials/_homepage.scss */
   .coContent .btnCO {
     font-size: 16px;
     line-height: 18px;
@@ -698,7 +706,7 @@ footer a:hover {
   }
 }
 @media only screen and (max-width: 482px) {
-  /* line 263, ../sass/partials/_homepage.scss */
+  /* line 269, ../sass/partials/_homepage.scss */
   .value {
     float: none;
     width: 85%;
@@ -740,9 +748,9 @@ footer a:hover {
 
 /* line 37, ../sass/partials/_subpage.scss */
 .title {
-  color: #00506e;
+  color: #949698;
   font-size: 30px;
-  line-height: 32px;
+  line-height: 36px;
 }
 
 /* line 43, ../sass/partials/_subpage.scss */
@@ -809,7 +817,7 @@ footer a:hover {
 .pageGrid h3 {
   color: #d7df27;
   font-size: 21px;
-  line-height: 23px;
+  line-height: 26px;
   text-transform: uppercase;
   margin: 0 0 30px;
 }
@@ -1095,7 +1103,7 @@ footer a:hover {
 .signupHeader {
   color: #fff;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 27px;
   padding-left: 30px;
   width: 52%;
 }
@@ -1336,7 +1344,7 @@ input::-moz-focus-inner {
 /* line 5, ../sass/partials/_program.scss */
 .mtwProgram h3 {
   font-size: 30px;
-  line-height: 32px;
+  line-height: 36px;
 }
 /* line 9, ../sass/partials/_program.scss */
 .mtwProgram .pageContent {
@@ -1499,7 +1507,7 @@ input::-moz-focus-inner {
 /* line 153, ../sass/partials/_program.scss */
 .question {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
   width: 33%;
   margin: 20px auto 0;
 }
@@ -1689,7 +1697,7 @@ input::-moz-focus-inner {
   /* line 330, ../sass/partials/_program.scss */
   .mtwProgram h3 {
     font-size: 24px;
-    line-height: 26px;
+    line-height: 28px;
   }
 
   /* line 336, ../sass/partials/_program.scss */

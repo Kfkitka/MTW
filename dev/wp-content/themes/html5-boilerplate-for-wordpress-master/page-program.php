@@ -22,7 +22,7 @@ get_header();
             <div class="box">
                 <h3>Are you interested in&hellip;</h3>
                 <section class="progChoices clearfix">
-                    <a href=".educator" class="btnProgEducator">Educator Leadership</a>
+                    <a href=".educator" class="btnProgEducator">School Culture</a>
                     <a href=".company" class="btnProgCompany">Workplace Wellness</a>
                 </section><!--.progChoices-->
             </div><!--.box-->

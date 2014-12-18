@@ -132,6 +132,12 @@
 }
 .coContent{
 	padding:0 15px;
+	.leftCoContent {
+		font-weight: bold;
+	}
+	p {
+		line-height: 20px;
+	}
 	.btnCO{
 		@extend %btnMTW;
 		@extend %btnBlock;
