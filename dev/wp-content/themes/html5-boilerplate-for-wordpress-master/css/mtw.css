@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: "FontAwesome";
-  src: url('../fonts/fontawesome-webfont.eot?1409850401');
-  src: url('../fonts/fontawesome-webfont.eot?&1409850401#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1409850402') format('woff'), url('../fonts/fontawesome-webfont.ttf?1409850401') format('truetype'), url('../fonts/fontawesome-webfont.svg?1409850401') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?1416246136');
+  src: url('../fonts/fontawesome-webfont.eot?&1416246136#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?1416246136') format('woff'), url('../fonts/fontawesome-webfont.ttf?1416246136') format('truetype'), url('../fonts/fontawesome-webfont.svg?1416246136') format('svg');
 }
 /* line 10, ../sass/partials/_fonts.scss */
 .fa {
@@ -505,7 +505,7 @@ footer a:hover {
 }
 /* line 84, ../sass/partials/_homepage.scss */
 .mtwMission p {
-  padding: 0 140px;
+  padding: 0;
 }
 
 /* line 90, ../sass/partials/_homepage.scss */
