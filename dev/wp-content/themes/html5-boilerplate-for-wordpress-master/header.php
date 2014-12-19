@@ -49,35 +49,36 @@
     <?php
 	//Check for nav ending & add active style
 	$parent = $post->post_parent;
-	$parentTitle = get_the_title($post->post_parent);
+	//$parentTitle = get_the_title($post->post_parent);
+    $parentTitle = get_post($parent)->post_name;
 	?>
 
 	<style type="text/css">
-	<?php if ($parentTitle=="About Us"):?>
+	<?php if ($parentTitle=="about"):?>
 	#btnAbout	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 
-	<?php if ($parentTitle=="Program"):?>
+	<?php if ($parentTitle=="program"):?>
 	#btnProgram	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="Become A Partner"):?>
+	<?php if ($parentTitle=="partners"):?>
 	#btnPartners	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="Think Tank"):?>
+	<?php if ($parentTitle=="think-tank"):?>
 	#btnBlog	{
 		color:#2aa0d6;
 	}
 	<?php endif;?>
 	
-	<?php if ($parentTitle=="Donate"):?>
+	<?php if ($parentTitle=="donate"):?>
 	#btnDonate	{
 		color:#2aa0d6;
 	}
@@ -125,8 +126,7 @@
                     </li>
                     <li class="navItem">
                         <a href="/program" id="btnProgram">Program</a>
-                        <ul class="subNav">
-							<?php
+							<?php /*
                                 $args2 = array(
                                     'child_of'     => 33, //Program ID
                                     'post_type'    => 'page',
@@ -136,8 +136,7 @@
                                     'title_li'     => ''
                                 );
                                 wp_list_pages($args2);
-                            ?>
-                        </ul>
+                            */ ?>
                     </li>
                     <li class="navItem">
                         <a href="/partners" id="btnPartners">Partners</a>

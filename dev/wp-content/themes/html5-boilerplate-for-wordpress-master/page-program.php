@@ -12,6 +12,12 @@ get_header();
     <?php while (have_posts()) : the_post(); ?>
 
     <section class="pageContent">
+        <article class="hdrProgram">
+            <div class="box">
+                <?php the_content(); ?>
+            </div>
+        </article><!--.hdrProgram-->
+
         <?php
         if ( has_post_thumbnail() ) {
             $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID));
@@ -22,7 +28,7 @@ get_header();
             <div class="box">
                 <h3>Are you interested in&hellip;</h3>
                 <section class="progChoices clearfix">
-                    <a href=".educator" class="btnProgEducator">School Culture</a>
+                    <a href=".educator" class="btnProgEducator">School<br />Culture</a>
                     <a href=".company" class="btnProgCompany">Workplace Wellness</a>
                 </section><!--.progChoices-->
             </div><!--.box-->
@@ -267,12 +273,12 @@ get_header();
                             foreach ($postslist4a as $post) :
                                 setup_postdata($post);
                             ?>
-                                <div class="example box">
-                                    <p><?php the_title(); ?></p>
+                                <a href="" class="example box">
+                                    <p><?php the_title(); ?> &raquo;</p>
                                     <article class="exampleContent">
                                         <?php the_content(); ?>
                                     </article><!--.example-->
-                                </div>
+                                </a>
                             <?php endforeach ?>
                             </div><!--.educator-->
 
@@ -292,8 +298,8 @@ get_header();
                             foreach ($postslist4b as $post) :
                                 setup_postdata($post);
                             ?>
-                                <a href="#" class="example box">
-                                    <p><?php the_title(); ?></p>
+                                <a href="" class="example box">
+                                    <p><?php the_title(); ?> &raquo;</p>
                                     <article class="exampleContent">
                                         <?php the_content(); ?>
                                     </article><!--.example-->
@@ -439,7 +445,7 @@ get_header();
 
                     <p class="educator">Our trainings and programmatic support create a safe environment for healthy self-expression, allowing students to re-direct their energy into creativity instead of violence and teachers to actively shape their school culture. By partnering with Move This World, schools decrease suspensions and incident reports, increase attendance, improve educator morale and retention, and provide students with the necessary skills to succeed in college and the workplace.</p>
 
-                    <p class="company">By partnering with Move This World, companies address and help employees manage their emotional wellness, stress management and inter-office conflicts. All training programs are rooted in the process of self-reflection and self-care using a process that does not embarrass employees but instead provides a safe space for them to explore difficult emotional issues as a collective.</p>
+                    <p class="company">By partnering with Move This World, companies address and help employees manage their emotional wellness, stress management and inter-office conflicts. All training programs are rooted in the process of self-reflection and self-care using a process that does not embarrass employees but instead provides a safe space for them to explore difficult issues as a collective.</p>
 
                     <a href="/partners" class="btnProgSignUp">My <span class="educator">School</span><span class="company">Company</span> Is Ready</a>
                 </div><!--.box-->

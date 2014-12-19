@@ -28,7 +28,7 @@
                 </a>
             </section>
             <p class="grey">&copy; <?php echo date('Y'); ?> Move This World</p>
-            <p class="grey">424 Broadway, Suite 405 New York, NY 10013</p>
+            <p class="grey">424 Broadway, Suite 405<br />New York, NY 10013</p>
         </div>
         <div class="who col">
             <p class="colHead">Who We Are</p>
@@ -42,7 +42,7 @@
             <ul>
               <li><a href="/program">Program</a></li>
               <li><a href="/partners/case-studies">Case Studies</a></li>
-              <li><a href="/think-tank/best-practices">Think Tank</a></li>
+              <li><a href="/think-tank/best-practices">Best Practices</a></li>
             </ul>
         </div>
         <div class="withUs col">

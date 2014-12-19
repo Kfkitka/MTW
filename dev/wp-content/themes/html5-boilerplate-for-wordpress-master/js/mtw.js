@@ -31,6 +31,17 @@ jQuery(document).ready(function($) {
 
 		return false;
 	});
+
+	//NAV WITH SUBNAV
+	$('.navItem').on('mouseenter', function(e) {
+		if($(this).children('.subNav').length){
+			$('.mtwWrapper').addClass('extend');
+		}
+	}).on('mouseleave', function(e) {
+		if($(this).children('.subNav').length){
+			$('.mtwWrapper').removeClass('extend');
+		}
+	});
 	
 	//MOVERS PAGE	
 	$('body').on('tap', '.indivMover>a', function(){
@@ -104,6 +115,12 @@ jQuery(document).ready(function($) {
 
 		//find end of scrolling
 		signUp = $('.progSignUp').offset().top - 80;
+
+		return false;
+	});
+
+	$('body').on('tap', '.example', function(){
+		$(this).toggleClass('active');
 
 		return false;
 	});

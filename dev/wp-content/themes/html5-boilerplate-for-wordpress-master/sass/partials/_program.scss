@@ -1,6 +1,7 @@
 //_program.scss
 //INTRO SECTION
 .mtwProgram{
+	font-size:18px;
 	padding-top:80px;
 	h3{
 		font-size:30px;
@@ -10,6 +11,14 @@
 		padding:0;
 	}
 }
+
+.hdrProgram{
+	.title,
+	.subtitle{
+		padding:20px 0;
+	}
+}
+
 .progIntro{
 	background:{
 		color:$lightBlue;
@@ -70,7 +79,7 @@
 
 //CONTENT
 .programSection{
-	padding-bottom:30px;
+	padding-bottom:40px;
 }
 
 .educator,
@@ -87,6 +96,9 @@
 		.hdrProgVal{
 			position:fixed;
 			top:80px;
+			.extend &{
+				top:116px;
+			}
 		}
 	}
 	&.bottom{
@@ -110,7 +122,7 @@
 }
 
 .val1{
-	background:rgba($lightGrey,.4);
+	background:rgba($lightGrey,.3);
 	.hdrProgVal{
 		background:$lightGrey;
 		color:$darkGrey;
@@ -126,7 +138,7 @@
 }
 
 .val3{
-	background:rgba($darkGrey,.4);
+	background:rgba($darkGrey,.3);
 	.hdrProgVal{
 		background:$darkGrey;
 		color:#fff;
@@ -230,6 +242,8 @@
 	}
 	&:hover{
 		color:#fff;
+	}
+	&.active{
 		.exampleContent{
 			height:auto;
 			padding-bottom:20px;
@@ -240,7 +254,7 @@
 	}
 }
 .exampleContent{
-	@include single-transition(all, .3s, ease);
+	@include single-transition(all, .5s, ease);
 	@extend %displayBlock;
 	height:0;
 	p{
