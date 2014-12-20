@@ -30,7 +30,7 @@ get_header(); ?>
 	                <div class="signupHeader">
 	                    <?php $args2 = array(
 								'category_name' => 'Partners',
-								'category__not_in' => 10,
+								'category__not_in' => 12,
 								'post_type' => 'post',
 								'order' => 'ASC',
 								'post_status' => 'publish',

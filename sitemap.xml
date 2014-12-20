@@ -15,87 +15,59 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/about/what-we-do/</loc>
+  <loc>http://movethisworld.org/about/our-team/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/about/values/</loc>
+  <loc>http://movethisworld.org/about/our-advisors/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/about/our-story/</loc>
+  <loc>http://movethisworld.org/about/join-mtw/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/about/movers-and-shakers/</loc>
+  <loc>http://movethisworld.org/about/contact/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/programs/</loc>
+  <loc>http://movethisworld.org/program/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/programs/schools/</loc>
+  <loc>http://movethisworld.org/partners/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/programs/executive-education/</loc>
+  <loc>http://movethisworld.org/partners/case-studies/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/programs/educators/</loc>
+  <loc>http://movethisworld.org/think-tank/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/programs/families/</loc>
+  <loc>http://movethisworld.org/think-tank/movement/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/programs/social-impact/</loc>
+  <loc>http://movethisworld.org/think-tank/press-media/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/movement/</loc>
+  <loc>http://movethisworld.org/donate/</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/movement/us/</loc>
-  <priority>0.80</priority>
+  <loc>http://movethisworld.org/marketing-manager/</loc>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/movement/latin-america/</loc>
-  <priority>0.80</priority>
+  <loc>http://movethisworld.org/operations-manager/</loc>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://movethisworld.org/movement/the-philippines/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/movement/europe/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/learn-more/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/learn-more/resources/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/join-us/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/join-us/join-mtw/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/join-us/support/</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://movethisworld.org/join-us/connect/</loc>
-  <priority>0.80</priority>
+  <loc>http://movethisworld.org/spring-2015-internships/</loc>
+  <priority>0.64</priority>
 </url>
 </urlset>
