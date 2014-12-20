@@ -188,7 +188,10 @@
 	@include border-radius(10px);
 	@include single-transition(all, .3s, ease);
 	@extend %displayBlock;
-	background:$darkGrey;
+	background:{
+		color:$darkGrey;
+		size:cover;
+	}
 	opacity:0;
 	position:absolute;
 	top:0;

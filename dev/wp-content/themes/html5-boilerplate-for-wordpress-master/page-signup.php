@@ -11,15 +11,6 @@ get_header(); ?>
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
 
-	<?php
-	$proof = get_post_custom_values('Social_Proof');
-    if(is_array($proof)):
-        foreach ( $proof as $key=> $value ) {
-            $social = $value;
-        }
-    endif;
-    ?>
-
   	<section class="pageContent">
       	<?php
 		if ( has_post_thumbnail() ) {
@@ -85,10 +76,18 @@ get_header(); ?>
                 <?php endforeach; ?>
         	</div><!--.box-->
         </section><!--.coreValues-->
+        <?php wp_reset_query(); ?>
 
         <article class="socialSection">
 	        <div class="box">
-        		<h3><?php echo $social; ?></h3>
+        		<h3><?php
+					$proof = get_post_custom_values('Social_Proof');
+				    if(is_array($proof)):
+				        foreach ( $proof as $key=> $value ) {
+				            echo $value;
+				        }
+				    endif;
+				?></h3>
             	<a href="#" class="bigBtn">Become a Partner</a>
             </div>
         </article><!--.socialSection-->

@@ -67,11 +67,18 @@ get_header();
                                 <div class="question">
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
-                                        <div class="questionRO box">
-                                            <div class="innerRO">
-                                                <?php the_content(); ?>
+                                        <?php
+                                        if ( has_post_thumbnail() ) {
+                                            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
+                                        ?>
+                                            <div class="questionRO box" style="background-image:url(<?php echo $image_url[0]; ?>);"></div>
+                                        <?php } else{ ?>
+                                            <div class="questionRO box">
+                                                <div class="innerRO">
+                                                    <?php the_content(); ?>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php } ?>
                                     </article>
                                 </div><!--.question-->
                             <?php endforeach ?>
@@ -95,11 +102,18 @@ get_header();
                                 <div class="question">
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
-                                        <div class="questionRO box">
-                                            <div class="innerRO">
-                                                <?php the_content(); ?>
+                                        <?php
+                                        if ( has_post_thumbnail() ) {
+                                            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
+                                        ?>
+                                            <div class="questionRO box" style="background-image:url(<?php echo $image_url[0]; ?>);"></div>
+                                        <?php } else{ ?>
+                                            <div class="questionRO box">
+                                                <div class="innerRO">
+                                                    <?php the_content(); ?>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php } ?>
                                     </article>
                                 </div><!--.question-->
                             <?php endforeach ?>
@@ -197,11 +211,18 @@ get_header();
                                 <div class="question">
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
-                                        <div class="questionRO box">
-                                            <div class="innerRO">
-                                                <?php the_content(); ?>
+                                        <?php
+                                        if ( has_post_thumbnail() ) {
+                                            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
+                                        ?>
+                                            <div class="questionRO box" style="background-image:url(<?php echo $image_url[0]; ?>);"></div>
+                                        <?php } else{ ?>
+                                            <div class="questionRO box">
+                                                <div class="innerRO">
+                                                    <?php the_content(); ?>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php } ?>
                                     </article>
                                 </div><!--.question-->
                             <?php endforeach ?>
@@ -230,11 +251,18 @@ get_header();
                                 <div class="question">
                                     <article class="questionContent box">
                                         <p><?php the_title(); ?></p>
-                                        <div class="questionRO box">
-                                            <div class="innerRO">
-                                                <?php the_content(); ?>
+                                        <?php
+                                        if ( has_post_thumbnail() ) {
+                                            $image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID));
+                                        ?>
+                                            <div class="questionRO box" style="background-image:url(<?php echo $image_url[0]; ?>);"></div>
+                                        <?php } else{ ?>
+                                            <div class="questionRO box">
+                                                <div class="innerRO">
+                                                    <?php the_content(); ?>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php } ?>
                                     </article>
                                 </div><!--.question-->
                             <?php endforeach ?>
@@ -315,7 +343,7 @@ get_header();
                     <div class="box">
                         <section class="educator">
                             <h3>Use Move This World&rsquo;s toolbox to sustain a safe and supportive school culture</h3>
-                            <p>After the training, educators have access to many resources, including our Online Hub which includes multimedia and consultation from Move This World staff to trouble shoot any challenges you may encounter when enacting your action plan.</p>
+                            <p>After the training, educators have access to many resources, including our Online Hub and consultation to trouble shoot any challenges you may encounter when enacting your action plan.</p>
 
                             <?php
                             $args5a = array(

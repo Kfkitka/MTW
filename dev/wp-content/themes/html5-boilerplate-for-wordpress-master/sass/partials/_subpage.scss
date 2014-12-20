@@ -82,6 +82,13 @@
 	}
 }
 
+.imgRow{
+	@extend .coreValues;
+}
+.hdrRow{
+	@extend .hdrValues;
+}
+
 
 //DONATE
 .btnDonateLrg{

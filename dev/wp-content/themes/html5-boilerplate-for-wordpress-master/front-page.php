@@ -106,7 +106,7 @@ get_header(); ?>
                 <?php endforeach; ?>
                 
                 <?php $args3 = array(
-					'category_name' => 'Tips+Featured',
+					'category_name' => 'Challenge',
 					'post_type' => 'post',
 					'order' => 'ASC',
 					'post_status' => 'publish',
