@@ -14,6 +14,7 @@ get_header();
     <section class="pageContent">
         <article class="hdrProgram">
             <div class="box">
+                <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
             </div>
         </article><!--.hdrProgram-->

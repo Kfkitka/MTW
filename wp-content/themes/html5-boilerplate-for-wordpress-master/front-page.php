@@ -21,6 +21,7 @@ get_header(); ?>
 		}?>
 	        <div class="box">
             	<article class="heroContent">
+            		<h1><?php the_title(); ?></h1>
 					<?php the_content(); ?>
                     <div class="heroButtons clearfix">
                     	<a href="/program" class="btnMTW">Learn More</a>
@@ -45,7 +46,14 @@ get_header(); ?>
         
         <section class="coreValues">
         	<div class="box clearfix">
-          		<h3 class="hdrValues">Pick your toolbox of strategies</h3>
+          		<h3 class="hdrValues"><?php
+          		$imgTitle = get_post_custom_values('Image_Title');
+				if(is_array($imgTitle)):
+					foreach ( $imgTitle as $key=> $value ) {
+					  echo $value;					
+					}
+				endif;
+				?></h3>
 
           		<div class="clearfix">
 	                <?php $args = array(
