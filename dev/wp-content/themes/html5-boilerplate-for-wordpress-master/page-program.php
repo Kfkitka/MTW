@@ -53,7 +53,7 @@ get_header();
                             <div class="educator">
                             <?php
                             $args1a = array(
-                                'category_name' => 'Questions+Program-1+Educator',
+                                'category_name' => 'Program-1+Educator',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -88,7 +88,7 @@ get_header();
                             <div class="company">
                             <?php
                             $args1b = array(
-                                'category_name' => 'Questions+Program-1+Company',
+                                'category_name' => 'Program-1+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -197,7 +197,7 @@ get_header();
                             <section class="progQuestions clearfix">
                             <?php
                             $args3a = array(
-                                'category_name' => 'Questions+Program-3+Educator',
+                                'category_name' => 'Program-3+Educator',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -237,7 +237,7 @@ get_header();
                             <section class="progQuestions clearfix">
                             <?php
                             $args3b = array(
-                                'category_name' => 'Questions+Program-3+Company',
+                                'category_name' => 'Program-3+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -290,7 +290,7 @@ get_header();
                             <div class="educator">
                             <?php
                             $args4a = array(
-                                'category_name' => 'Questions+Program-4+Educator',
+                                'category_name' => 'Program-4+Educator',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -315,7 +315,7 @@ get_header();
                             <?php
 
                             $args4b = array(
-                                'category_name' => 'Questions+Program-4+Company',
+                                'category_name' => 'Program-4+Company',
                                 'post_type' => 'post',
                                 'meta_key' => 'Question_Order',  // order by
                                 'orderby' =>  'meta_value_num',
@@ -349,7 +349,7 @@ get_header();
                             <?php
                             $args5a = array(
                                 'category_name' => 'Program-General+Educator',
-                                'category__not_in' => 'Questions',
+                                //'category__not_in' => 'Questions',
                                 'post_type' => 'post',
                                 'order' => 'ASC',
                                 'post_status' => 'publish',
@@ -381,7 +381,6 @@ get_header();
                             <?php
                             $args5b = array(
                                 'category_name' => 'Program-General+Company',
-                                'category__not_in' => 'Questions',
                                 'post_type' => 'post',
                                 'order' => 'ASC',
                                 'post_status' => 'publish',
@@ -425,7 +424,6 @@ get_header();
                             <?php
                             $args6a = array(
                                 'category_name' => 'Program-General+Educator',
-                                'category__not_in' => 'Questions',
                                 'post_type' => 'post',
                                 'order' => 'ASC',
                                 'post_status' => 'publish',
@@ -448,7 +446,6 @@ get_header();
                             <?php
                             $args6b = array(
                                 'category_name' => 'Program-General+Company',
-                                'category__not_in' => 'Questions',
                                 'post_type' => 'post',
                                 'order' => 'ASC',
                                 'post_status' => 'publish',
