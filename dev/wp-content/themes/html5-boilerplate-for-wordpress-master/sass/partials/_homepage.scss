@@ -131,13 +131,8 @@
 	max-height:280px;
 }
 .coContent{
+	line-height: 20px;
 	padding:0 15px;
-	.leftCoContent {
-		font-weight: bold;
-	}
-	p {
-		line-height: 20px;
-	}
 	.btnCO{
 		@extend %btnMTW;
 		@extend %btnBlock;
@@ -265,9 +260,47 @@
 		}
 	}
 }
-@media only screen and (max-width: 482px) {
+@media only screen and (min-width: 485px) and (max-width: 536px){
+	.coTips{
+		h3{
+			margin-top:0;
+		}
+	}
+}
+@media only screen and (max-width: 484px) {
 	.value{
 		float:none;
 		width:85%;
+	}
+
+	.coContent{
+		h3{
+			margin:.25em 0 .65em;
+		}
+	}
+	.coSignUp{
+		padding:15px 0;
+	}
+	.coTips{
+		.hasImg{
+			padding:15px 0;
+		}
+	}
+}
+@media only screen and (max-width: 346px) {
+	.coSignUp{
+		padding:5px 0;
+	}
+	.coTips{
+		.hasImg{
+			padding:5px 0;
+		}
+		h3{
+			font-size:24px;
+			margin:.25em 0;
+		}
+		.btnCO{
+			margin-top:10px;
+		}
 	}
 }
