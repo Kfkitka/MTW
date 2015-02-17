@@ -48,11 +48,11 @@
 		position:top center;
 		size:cover;
 	}
-	height:600px;
-	max-height:600px;
+	height:680px;
+	max-height:680px;
 }
 #signup{
-	padding-top: 55px;
+	padding-top: 40px;
 }
 .signupBox{
 	background: #fff;
@@ -88,6 +88,11 @@ select:-moz-focusring {
 
 input::-moz-focus-inner { 
 	border: 0; 
+}
+
+//Specific styles for the Podio form
+.podio-webform-frame {
+  height: 553px !important;
 }
 
 //Specific styles for the Salesforce form
@@ -170,8 +175,8 @@ input::-moz-focus-inner {
 }
 @media only screen and (max-width: 700px) {
 	.signupHero{
-		height:800px;
-		max-height: 820px;
+		height:1000px;
+		max-height: 1000px;
 	}
 	.signupBox, .signupHeader {
 		box-sizing: border-box;
@@ -213,7 +218,8 @@ input::-moz-focus-inner {
 	}
 
 	.signupBox {
-		background-color: lighten($lightGrey,30%);;
+		//background-color: lighten($lightGrey,30%);
+		background-color: #fff;
 	}
 
 	.signupHeader {
