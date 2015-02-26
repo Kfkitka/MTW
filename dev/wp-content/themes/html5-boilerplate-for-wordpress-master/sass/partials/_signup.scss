@@ -78,6 +78,11 @@
 //FORM STUFF
 .signupForm {
 	padding: 30px;
+
+	//Specific styles for the Podio form, only on signup page
+	.podio-webform-frame {
+	  height: 553px !important;
+	}
 }
 
 //Removing dotted outline in FF on select field
@@ -88,11 +93,6 @@ select:-moz-focusring {
 
 input::-moz-focus-inner { 
 	border: 0; 
-}
-
-//Specific styles for the Podio form
-.podio-webform-frame {
-  height: 553px !important;
 }
 
 //Specific styles for the Salesforce form
