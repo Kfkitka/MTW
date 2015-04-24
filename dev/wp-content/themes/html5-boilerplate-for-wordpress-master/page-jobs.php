@@ -26,8 +26,8 @@ get_header();
                 $args = array(
                     'category_name' => 'Jobs',
                     'post_type' => 'post',
-                    'orderby' =>  'title',
-                    'order' => 'ASC',
+                    //'orderby' =>  'title',
+                    //'order' => 'ASC',
                     'post_status' => 'publish',
                     'numberposts' => -1
                 );
