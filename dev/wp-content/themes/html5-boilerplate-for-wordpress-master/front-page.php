@@ -25,7 +25,7 @@ get_header(); ?>
 					<?php the_content(); ?>
                     <div class="heroButtons clearfix">
                     	<a href="/program" class="btnMTW">Learn More</a>
-                        <a href="/donate" class="btnDonate">or donate</a>
+                        <a href="https://donatenow.networkforgood.org/movethisworld" class="btnDonate" target="_blank">or donate</a>
                     </div><!--.clearfix-->
                 </article><!--.heroContent-->
             </div>

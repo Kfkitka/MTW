@@ -171,7 +171,7 @@
                         </ul>
                     </li>
                     <li class="navItem">
-                        <a href="/donate/" id="btnDonate">Donate</a>
+                        <a href="https://donatenow.networkforgood.org/movethisworld" id="btnDonate" target="_blank">Donate</a>
                     </li>
                 </ul>
             </nav>
