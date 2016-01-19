@@ -5,6 +5,10 @@
  */
 ?>
 <footer class="clearfix">
+    <div class="box partner-logos">
+    <img src="/wp-content/uploads/2015_04_10_Partner_logos.png" width="100%">
+    </div>
+    <hr/>
 	<div class="box">
     	<div class="col">
             <section class="socialMedia clearfix">
@@ -56,7 +60,7 @@
         </div>
         <div class="col">
             <ul>
-          	   <li><a href="http://movethisworldonlinehub.kajabi.com" target="_blank">Access to Portal</a></li>
+          	   <li><a href="http://movethisworld.org/portal" target="_blank">Access to Portal</a></li>
             </ul>
             <a href="http://cfp-dc.org/nonprofits/Move-This-World" target="_blank" class="logoCFP"><img src="/wp-content/uploads/logoCFP.png" /></a>
             <p><i>Move This World is recognized by the Catalogue for Philanthropy</i></p>

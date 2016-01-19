@@ -48,8 +48,8 @@
 		position:top center;
 		size:cover;
 	}
-	height:680px;
-	max-height:680px;
+	height:790px;
+	max-height:790px;
 }
 #signup{
 	padding-top: 40px;
@@ -81,7 +81,7 @@
 
 	//Specific styles for the Podio form, only on signup page
 	.podio-webform-frame {
-	  height: 553px !important;
+	  height: 643px !important;
 	}
 }
 
@@ -175,8 +175,8 @@ input::-moz-focus-inner {
 }
 @media only screen and (max-width: 700px) {
 	.signupHero{
-		height:1000px;
-		max-height: 1000px;
+		height:1045px;
+		max-height: 1045px;
 	}
 	.signupBox, .signupHeader {
 		box-sizing: border-box;

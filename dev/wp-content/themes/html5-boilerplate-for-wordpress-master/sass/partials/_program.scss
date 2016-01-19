@@ -17,6 +17,51 @@
 	.subtitle{
 		padding:20px 0;
 	}
+
+	.subtitle{
+		text-align:center;
+	}
+}
+
+//BOXES
+.program-wrapper{
+	@extend .press-wrapper;
+}
+.program{
+	&.graphic,
+	&.text{
+		@include border-radius(10px);
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+
+	&.text{
+		background:$lightBlue;
+		box-sizing:border-box;
+		display:none;
+		padding:20px;
+	}
+
+	ul {
+		text-align: center;
+		list-style-type: none;
+		font-size: 16px;
+		line-height: 18px;
+		padding: 0px;
+		li{
+			padding-bottom:15px;
+		}
+	}
+}
+.first .graphic {
+	background-image: url('http://movethisworld.org/wp-content/uploads/intro-needs1.jpg');
+}
+.second .graphic {
+	background-image: url('http://movethisworld.org/wp-content/uploads/training-coaching-support.jpg');
+}
+.third .graphic {
+	background-image: url('http://movethisworld.org/wp-content/uploads/eval-sustainability.jpg');
 }
 
 .progIntro{
