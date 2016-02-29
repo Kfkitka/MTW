@@ -32,6 +32,10 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
+	//DONATE
+	$(':input[name="_dgx_donate_amount"]').removeAttr('checked'); 
+	$('input#dgx-donate-other-radio').attr('checked','true');
+
 	//NAV WITH SUBNAV
 	$('.navItem').on('mouseenter', function(e) {
 		if($(this).children('.subNav').length){
@@ -132,6 +136,14 @@ jQuery(document).ready(function($) {
 		},'fast');
 
 		return false;
+	});
+
+	// PRESS & MEDIA + PROGRAMS
+	$('.program-wrapper').mouseenter(function() {
+	    $('.program.text',this).fadeIn();
+	});
+	$('.program-wrapper').mouseleave(function() {
+	    $('.program.text',this).fadeOut();
 	});
 });
 

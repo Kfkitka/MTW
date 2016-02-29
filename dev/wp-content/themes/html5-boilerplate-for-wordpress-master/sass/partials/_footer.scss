@@ -1,0 +1,133 @@
+//_footer.scss
+//FOOTER
+//FOOTER
+footer {
+	background:$darkGrey;
+	color:#fff;
+	font-size:12px;
+	line-height:16px;
+	padding:20px 0;
+	width:100%;
+
+	.grey{
+		color:$lightGrey;
+	}
+
+	.colHead {		
+		border-bottom: 1px dotted;
+		font-size:15px;
+		line-height:17px;
+		margin-bottom:10px;
+		padding-bottom:5px;
+	}
+
+	ul{
+		font-size:13px;
+		list-style: none;
+	}
+	a{
+		color:#fff;
+		text-decoration:none;
+		&:hover{
+			color:$lightBlue;
+		}
+	}
+
+	hr{
+		border-top:1px dotted #fff;
+		opacity:.1;
+		padding-bottom:40px;
+	}
+}
+.col {
+	@extend %floatLeft;
+	box-sizing:border-box;
+    padding:0 10px;
+	width:20%;
+}
+
+.socialMedia{
+	a{
+		@extend %floatLeft;
+		@extend %displayBlock;
+		@include border-radius(50%);
+		background:$medGrey;
+		color:$darkGrey;
+		line-height:25px;
+		text-align:center;
+		height:25px;
+		margin:0 15px 15px 0;
+		width:25px;
+		&:hover{
+			color:#fff;
+		}
+	}
+	.btnPin{
+		background:$darkGrey;
+		color:$medGrey;
+		font-size:30px;
+		margin-top:-1px;
+		&:hover{
+			color:#cb2027;
+			i{
+				@include border-radius(50%);
+				background:#fff;
+			}
+		}
+	}
+}
+.btnFB{
+	font-size:17px;
+	&:hover{
+		background:#3b5998;
+	}
+}
+.btnTW{
+	font-size:18px;
+	&:hover{
+		background:#00aced;
+	}
+}
+.btnIn{
+	font-size:13px;
+	&:hover{
+		background:#1180ba;
+	}
+}
+.btnIG{
+	font-size:18px;
+}
+.btnYT{
+	font-size:19px;
+	&:hover{
+		background:#f33;
+	}
+}
+
+.logoCFP{
+	@extend %displayBlock;
+	margin:15px 0 5px;
+	img{
+		width:45px;
+		height:45px;
+	}
+}
+
+// Tablet (Portrait):  Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+// Mobile (Portrait): Design for a width of 320px */
+@media only screen and (max-width: 979px) {
+}
+// Mobile (Portrait): Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .col {
+    	float:none;
+    	margin:15px auto;
+    	padding:0;
+    	width:100%;
+    }
+}
+// Mobile (Landscape): Design for a width of 480px
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

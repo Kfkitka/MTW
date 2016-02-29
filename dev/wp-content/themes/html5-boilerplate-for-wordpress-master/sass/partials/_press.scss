@@ -1,0 +1,76 @@
+//_press.scss
+//PRESS
+.press{
+	@include border-radius(10px);
+	@extend %floatLeft;
+	background:$grey;
+	height:300px;
+	margin:20px 0 0 20px;
+	width:300px;
+	&:nth-child(3n){
+		margin-left:0;
+	}
+}
+
+.press-wrapper{
+	@extend %displayBlock;
+	color:#fff;
+	font-size:14px;
+	height:100%;
+	line-height:1.4em;
+	position:relative;
+	width:100%;
+	&:hover{
+		color:#fff;
+		cursor:pointer;
+		.press-text{
+			@extend %displayBlock;
+			top:0;
+		}
+	}
+
+	hr{
+		border-top: 1px solid #fff;
+		margin:20px auto;
+	}
+}
+
+.press-logo,
+.press-text{
+	@include border-radius(10px);
+	height:100%;
+	width:100%;
+}
+
+.press-logo{
+	@extend %displayBlock;
+	text-align:center;
+	img{
+		height:auto;
+		width:100%;
+		max-width:90%;
+	}
+	&:before{
+		content:'';
+		height:100%;
+		margin-right: -0.25em; /* Adjusts for spacing */
+	}
+	img,
+	&:before{
+		display:inline-block;
+		vertical-align:middle;
+	}
+}
+
+.press-text{
+	background:$lightBlue;
+	box-sizing:border-box;
+	display:none;
+	padding:20px;
+	position:absolute;
+}
+.press-title{
+	font-weight:900;
+	font-size:21px;
+	line-height:24px;
+}

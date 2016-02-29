@@ -1,0 +1,115 @@
+//_donate.scss
+//DONATE
+.donateHero {
+	background-image: url('http://dev.movethisworld.org/wp-content/uploads/donate2.jpg');
+	height: 830px;
+	max-height: 830px;
+}
+.donateForm {
+	width: 50%;
+	background-color: #7BC7EF;
+	opacity: .9;
+	color: white;
+	padding: 60px 60px 0px 60px;
+}
+.donateForm h1 {
+	color: white;
+	font-size: 42px;
+	margin: 0px;
+}
+.donateForm h2 {
+	margin: 0px;
+	font-size: 29px;
+}
+#dgx-donate-form-donor-section,#other_radio_button,.seamless-donations-error-message-field,#donation_header,#header_desc{
+	display: none;
+}
+#other_radio_button{
+	display: block !important;
+    visibility:hidden;
+}
+.other-donation-level,#dgx_donate_giving_level_50{
+	display: block !important;
+	visibility: hidden;
+}
+.donateForm .other-donation-level input{
+	visibility: visible;
+	font-size: 43px !important;
+	text-align: right;
+	padding: 10px;
+	float: right;
+	clear: both;
+	width: 325px;
+	padding-left: 135px;
+	color: #414042;
+    margin-top: -50px !important;
+}
+.donateForm .dgx-donate-form-section input{
+	border-radius: 0px;
+	border: 0px white;
+	background: white;
+	margin: 0px;
+}
+.donateForm #dgx-donate-container{
+	margin: 0px;
+	padding: 0px;
+	background: none;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	width: 100%;
+}
+.donateForm #dgx-donate-container .dgx-donate-form-section{
+	border: 0px !important;
+	background: none;
+	padding: 0px !important;
+	width: 100%;
+	font-size: 14px;
+}
+.donateForm #dgx-donate-form-tribute-section input[type="text"] {
+	margin-left: 10px;
+}
+.money {
+	position: absolute;
+	color: #414042;
+	margin: 45px 20px;
+	font-size: 43px;
+}
+.sendCheck{
+	background-color: #004A61;
+	margin-left: -60px;
+	padding: 20px 60px 20px 60px;
+	height: 72px;
+}
+.sendCheck div {
+	float: left;
+	background-color: #004A61;
+}
+.sendCheck ul {
+	list-style-type: none;
+	float: right;
+	margin-right: -120px;
+	background-color: #004A61;
+	padding-right: 60px;
+	padding-top: 20px;
+	margin-top: -20px; 
+	padding-bottom: 20px;
+}
+.donateForm #dgx-donate-form-payment-section #dgx-donate-pay-enabled input{
+	background: none !important;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+}
+#_dgx_donate_repeating{
+	margin-top: 50px;
+}
+.donateForm input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
